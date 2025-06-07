@@ -1,0 +1,34 @@
+---
+services:
+  weaviate:
+    container_name: weaviate
+    command:
+    - --host
+    - 0.0.0.0
+    - --port
+    - '8082'
+    - --scheme
+    - http
+    image: semitechnologies/weaviate:latest
+    ports:
+    - 8082:8082
+    - 50051:50051
+    volumes:
+    - weaviate_data:/var/lib/weaviate
+    environment:
+      QUERY_DEFAULTS_LIMIT: 20
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: "true"
+      PERSISTENCE_DATA_PATH: "/var/lib/weaviate"
+      ENABLE_MODULES: ""
+      DEFAULT_VECTORIZER_MODULE: "none"
+      VECTOR_INDEX_TYPE: hnsw
+      VECTOR_INDEX_CONFIG: >
+        {
+          "efConstruction": 128,
+          "maxConnections": 64,
+          "ef": 32
+        }
+    restart: unless-stopped
+volumes:
+  weaviate_data:
+...
