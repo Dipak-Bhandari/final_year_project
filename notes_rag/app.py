@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from rag_engine import load_documents, query_docs
+from notes_rag.rag_engine import load_documents, query_docs
 from dotenv import load_dotenv
 load_dotenv() 
 app = FastAPI()
