@@ -2,6 +2,8 @@ import { Link } from "@inertiajs/react";
 import { route } from "ziggy-js";
 import { usePage } from "@inertiajs/react";
 import AppLogoIcon from "./app-logo-icon";
+import SemesterDropdown from "./semester-dropdown";
+import YearlyQuestionDropdown from "./yearly-questions-dropdown";
 
 function NavIndex() {
     const { auth } = usePage().props;
@@ -11,17 +13,17 @@ function NavIndex() {
             <div className="z-50 top-0 sticky">
                 <header className="justify-between">
                     <nav className="border h-16 w-full flex items-center justify-between gap-4 p-8 rounded-md">
-                        <div className='h-6 w-6'>
+                        <div className='h-6 w-6 ml-30'>
                             <Link href={route('home')}>
                                 <AppLogoIcon className="cursor-pointer" />
                             </Link>
                         </div>
                         <div className="flex items-center justify-center gap-4">
-                            <h2>hello</h2>
-                            <h2>what</h2>
-                            <h2>happen</h2>
+                            <SemesterDropdown />
+                            <YearlyQuestionDropdown />
+                            <h2>search</h2>
                         </div>
-                        <div className="flex items-center justify-end gap-4">
+                        <div className="flex mr-30 items-center justify-end gap-4 ">
                             {auth.user ? (
                                 <Link
                                     href={route('dashboard')}
@@ -48,7 +50,7 @@ function NavIndex() {
                         </div>
                     </nav>
                 </header>
-            </div>
+            </div >
 
         </>
     );

@@ -30,11 +30,11 @@ export default function LoginRegPopupStart() {
         <>
             {isOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-opacity-50 backdrop-blur-sm transition-opacity duration-300">
-                    <div className="relative flex w-full max-w-md flex-col items-center justify-center gap-6 rounded-lg bg-cream border border-card shadow-xl p-8 dark:bg-neutral-800 sm:px-6 lg:px-8 transform transition-transform duration-300 scale-100 hover:scale-[1.02]">
+                    <div className="relative flex w-full max-w-md flex-col items-center justify-center gap-6 rounded-lg bg-cream border border-card shadow-xl p-8 bg-accent sm:px-6 lg:px-8 transform transition-transform duration-300 scale-100 hover:scale-[1.02]">
                         {/* Close Button */}
                         <button
                             onClick={closePopup}
-                            className="absolute right-4 top-4 text-neutral-500 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors duration-200"
+                            className="absolute right-4 top-4 text-neutral-500 hover:text-red-500 dark:text-neutral-400 dark:hover:text-neutral-200 transition-colors duration-200"
                             aria-label="Close popup"
                         >
                             <svg
