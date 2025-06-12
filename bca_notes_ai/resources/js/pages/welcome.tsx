@@ -4,8 +4,12 @@ import AppFooter from '@/components/app-footer';
 import { type SharedData } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 import LoginRegPopupStart from '@/components/login-reg-popup-start';
+import { ReactNode } from 'react';
 
-export default function Welcome() {
+type WelcomeProps = {
+    children?: ReactNode;
+}
+export default function Welcome({ children }: WelcomeProps) {
     const { auth } = usePage<SharedData>().props;
 
     return (
@@ -21,10 +25,10 @@ export default function Welcome() {
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <LoginRegPopupStart />
                 </div>
-                <footer>
+                {children}
+                <footer className='bottom-0 fixed w-full'>
                     <AppFooter />
                 </footer>
-                <div className="hidden h-14.5 lg:block"></div>
             </div>
         </>
     );

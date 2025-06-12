@@ -13,5 +13,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
+Route::get('/semester/{number}', function ($number) {
+    return Inertia::render('Semester', [
+        'semester' => $number,
+    ]);
+})->name('semester.show');
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';
