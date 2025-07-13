@@ -1,31 +1,31 @@
 import { Link } from "@inertiajs/react";
-import { ArrowDown, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { type User } from "@/types";
 
-// const semesters = [
-//     "First semester",
-//     "Second semester",
-//     "Third Semester",
-//     "Fourth semester",
-//     "Fifth semester",
-//     "Sixth semester",
-//     "Seventh semester",
-//     "Eight Semester",
-// ];
+type Semester = {
+    id: number;
+    name: string;
+};
 
-const semesters = [
-    { label: "First semester", number: 1 },
-    { label: "Second semester", number: 2 },
-    { label: "Third Semester", number: 3 },
-    { label: "Fourth semester", number: 4 },
-    { label: "Fifth semester", number: 5 },
-    { label: "Sixth semester", number: 6 },
-    { label: "Seventh semester", number: 7 },
-    { label: "Eight Semester", number: 8 },
-];
+type Props = {
+    semesters?: Semester[];
+};
 
-export default function SemesterDropdown() {
+export default function SemesterDropdown({ semesters = [] }: Props) {
     const [open, setOpen] = useState(false);
+
+    // Fallback to hardcoded semesters if none provided
+    const semesterList = semesters.length > 0 ? semesters : [
+        { id: 1, name: "First Semester" },
+        { id: 2, name: "Second Semester" },
+        { id: 3, name: "Third Semester" },
+        { id: 4, name: "Fourth Semester" },
+        { id: 5, name: "Fifth Semester" },
+        { id: 6, name: "Sixth Semester" },
+        { id: 7, name: "Seventh Semester" },
+        { id: 8, name: "Eighth Semester" },
+    ];
 
     return (
         <div
@@ -34,29 +34,21 @@ export default function SemesterDropdown() {
             onMouseLeave={() => setOpen(false)}
         >
             <button
-                className={`px-4 py-2 font-sm rounded-t ${open ? " text-black dark:text-white" : ""}`}
+                className={`px-4 py-2 text-sm rounded-t flex items-center space-x-1 ${open ? " text-black dark:text-white" : "text-gray-600 dark:text-gray-400"} hover:text-black dark:hover:text-white transition-colors`}
             >
-                Syllabus
-                <ChevronDown className="inline ml-2 h-4 w-4" />
+                <span>Syllabus</span>
+                <ChevronDown className={`inline h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`} />
             </button>
             {open && (
-                <div className="absolute left-0 mt-0 w-56 bg-white text-black shadow-lg z-50 rounded-b">
+                <div className="absolute left-0 mt-0 w-56 bg-white text-black shadow-lg z-50 rounded-b dark:bg-gray-800 dark:text-white border border-gray-200 dark:border-gray-700">
                     <ul className="py-2">
-                        {/* {semesters.map((sem, idx) => (
-                            <li
-                                key={idx}
-                                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                            >
-                                {sem}
-                            </li>
-                        ))} */}
-                        {semesters.map((sem) => (
-                            <li key={sem.number}>
+                        {semesterList.map((sem) => (
+                            <li key={sem.id}>
                                 <Link
-                                    href={route('semester.show', { number: sem.number })}
-                                    className="block px-4 py-2 hover:bg-gray-100 cursor-pointer"
+                                    href={`/syllabus/${sem.id}`}
+                                    className="block px-4 py-2 hover:bg-gray-100 cursor-pointer dark:hover:bg-gray-700 transition-colors"
                                 >
-                                    {sem.label}
+                                    {sem.name}
                                 </Link>
                             </li>
                         ))}
