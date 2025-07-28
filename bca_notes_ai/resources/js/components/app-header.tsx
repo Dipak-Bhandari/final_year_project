@@ -54,8 +54,8 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
     const getInitials = useInitials();
     return (
         <>
-            <div className="border-b border-sidebar-border/80">
-                <div className="mx-auto flex h-16 items-center px-4 md:max-w-7xl">
+            <div className="border-b border-sidebar-border sticky top-0 z-50 bg-white dark:bg-black">
+                <div className="mx-auto flex h-16 bg-white dark:bg-black z-50 items-center px-4 md:max-w-7xl">
                     {/* Mobile Menu */}
                     <div className="lg:hidden">
                         <Sheet>
@@ -136,7 +136,7 @@ export function AppHeader({ breadcrumbs = [] }: AppHeaderProps) {
             </div>
             {breadcrumbs.length > 1 && (
                 <div className="flex w-full border-b border-sidebar-border/70">
-                    <div className="mx-auto flex h-12 w-full items-center justify-start px-4 text-neutral-500 md:max-w-7xl">
+                    <div className="mx-auto z-0 flex h-12 w-full items-center justify-start px-4 text-neutral-500 md:max-w-7xl">
                         <Breadcrumbs breadcrumbs={breadcrumbs} />
                     </div>
                 </div>

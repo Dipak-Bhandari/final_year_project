@@ -8,6 +8,7 @@ import SemesterDropdown from "./semester-dropdown";
 import YearlyQuestionDropdown from "./yearly-questions-dropdown";
 import UserAvatar from "./user-avatar";
 import { type SharedData, type User } from "@/types";
+import { Input } from "@headlessui/react";
 
 function NavIndex() {
     const { auth } = usePage<SharedData>().props;
@@ -34,9 +35,9 @@ function NavIndex() {
 
     return (
         <>
-            <div className="z-50 top-0 sticky">
+            <div className="z-50 top-0 sticky border-b border-sidebar-border/80 bg-white dark:bg-black">
                 <header className="justify-between">
-                    <nav className="border h-16 w-full flex items-center justify-between gap-4 p-4 md:p-8 rounded-md bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
+                    <nav className="h-16 flex md:max-w-7xl mx-auto items-center justify-between gap-4 p-4 md:p-8 bg-white dark:bg-black border-gray-200 dark:border-gray-700">
                         <div className='h-6 w-6'>
                             <Link href={route('home')}>
                                 <AppLogoIcon className="cursor-pointer" />
@@ -46,7 +47,9 @@ function NavIndex() {
                             <SemesterDropdown />
                             <YearlyQuestionDropdown />
                             <div className="hidden md:block">
-                                <span className="text-sm text-gray-500 dark:text-gray-400">search</span>
+                                <Input className="w-64 border p-1 rounded-2xl pl-6"
+                                    placeholder="Search..." type="text" onChange={(e) => console.log(e.target.value)}>
+                                </Input>
                             </div>
                         </div>
                         <div className="flex items-center justify-end gap-4">
