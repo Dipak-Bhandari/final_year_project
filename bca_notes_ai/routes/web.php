@@ -1,8 +1,12 @@
 <?php
 
+use App\Http\Controllers\Admin\ResourceController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\QuestionPaperController;
 use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\SyllabusController;
+use App\Models\Semester;
+use App\Models\Syllabus;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -19,8 +23,8 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     // Syllabus management routes
     Route::get('/admin/syllabi', function () {
         return Inertia::render('admin/SyllabiPage', [
-            'syllabi' => \App\Models\Syllabus::with('semester')->get(),
-            'semesters' => \App\Models\Semester::all(),
+            'syllabi' => Syllabus::with('semester')->get(),
+            'semesters' => Semester::all(),
         ]);
     })->name('admin.syllabi.index');
     
@@ -30,11 +34,11 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
     // User management routes
     Route::inertia('/admin/users', 'admin/UsersPage')->name('admin.users.index');
-    Route::apiResource('users', App\Http\Controllers\Admin\UserController::class)->except(['create', 'edit', 'show']);
+    Route::apiResource('users', UserController::class)->except(['create', 'edit', 'show']);
 
     // Resource upload management routes
     Route::inertia('/admin/upload', 'admin/UploadPage')->name('admin.resources.index');
-    Route::apiResource('resources', App\Http\Controllers\Admin\ResourceController::class)->except(['create', 'edit', 'show']);
+    Route::apiResource('resources', ResourceController::class)->except(['create', 'edit', 'show']);
 });
 
 // Academic content routes (public)

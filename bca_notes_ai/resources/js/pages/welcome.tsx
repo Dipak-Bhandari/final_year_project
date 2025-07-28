@@ -30,7 +30,7 @@ export default function Welcome({ children }: WelcomeProps) {
                 </div>
 
                 {/* Main Content */}
-                <main className="container mx-auto px-4 py-12">
+                <main className="container mx-auto px-4 py-12 mb-24 md:max-w-7xl">
                     <div className="text-center mb-12">
                         <div className="flex items-center justify-center space-x-3 mb-6">
                             <AppLogoIcon className="h-16 w-16" />
@@ -43,7 +43,7 @@ export default function Welcome({ children }: WelcomeProps) {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
+                            {/* <Link
                                 href="/semesters"
                                 className="inline-flex items-center space-x-2 rounded-lg bg-blue-600 px-6 py-3 text-white font-medium hover:bg-blue-700 transition-colors"
                             >
@@ -56,7 +56,7 @@ export default function Welcome({ children }: WelcomeProps) {
                             >
                                 <BookOpen className="h-5 w-5" />
                                 <span>View Syllabus</span>
-                            </Link>
+                            </Link> */}
                             {user?.isAdmin && (
                                 <Link
                                     href="/dashboard"
@@ -110,7 +110,7 @@ export default function Welcome({ children }: WelcomeProps) {
                 </main>
 
                 {children}
-                <footer className='bottom-0 fixed w-full'>
+                <footer className=' w-full'>
                     <AppFooter />
                 </footer>
             </div>
