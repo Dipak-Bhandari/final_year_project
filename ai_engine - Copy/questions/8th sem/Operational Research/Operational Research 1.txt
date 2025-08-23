@@ -1,0 +1,110 @@
+Tribhuvan University
+
+ 
+
+ 
+
+Faculty of Humanities and Social Science
+Semester: VIII
+Subject: Operational Research
+2018 Batch
+Group B
+
+Attempt any SIX questions
+
+2.
+
+3.
+
+ 
+
+What is reas solving OR model.
+A chair manufactysifc B, by using three
+machines, X, Yfnd Z. ine and the
+maximum tiffe aval
+
+[Mesaj |
+
+| Machi Z|
+
+ 
+  
+   
+ 
+ 
+  
+  
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ly. चै” eAmbination
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Requirem: 1059 1१5:
+Find the cost gr pet tion given in the
+
+following table. 430
+a. Cost of replacing.
+b. Cumulative probability
+Week 3 [5 |
+Cumulative probability of failure [0 0.1 [03/05/07 [10 |
+Discuss single channel queuing model with suitable example? Give its assump
+Write short notes on (any two)
+
+a. Kendall's notation
+
+b. Big M method
+
+Importance and advantage of duality problem
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

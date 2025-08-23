@@ -1,0 +1,159 @@
+—
+
+Course Title: Database Management System (3 Cr.)
+Course Code: CACS255
+
+yYear/Semester: IVIV
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1 Hr., Practical: 2 Hrs.)
+
+Course Description Description
+This course offers both theoretical as well as practical knowledge of database
+management system so that students can handle back end of software while
+
+developing any types of application packages.
+
+Course Objectives Objectives
+The general objectives of this subject are to provide the basic concept, theory and
+practices in design and implementation of DBMS. Students will also be good for
+handling different type of data transaction by using SQL commands.
+
+Course Contents
+
+Unit 1 Introduction to DBMS 3 Hrs.
+Introduction of Database Management System, Objective of Database
+Management System, Importance of DBMS, Merit and Demerit of DBMS.
+Application of DBMS.
+
+Unit 2 Database Design, Architecture and Model 6 Hrs.
+Overview of The Database Designing Process and View of Data, Structure of
+Database Management System, Level Database Architecture and Data
+Independence, Database Languages: DDL, DML, QBE; Data Models:
+Hierarchical, Network, Relational, E-R Model, Object Base Data Model; E-R
+Diagram: Concepts, Relationship, Entity Relationship Diagram, Weak Entity
+Sets, Strong Entity Set, Aggregation, Generalization, Converting ER Diagrams
+
+to Tables.
+
+Unit 3 Relational Database Model 4 प्राउ.
+Structure of RDBMS and Terminology, Database Schema and Schema Diagram.
+
+Keys: Super, Candidates, Primary, Foreign, Composite etc. and Relationship:
+Introduction to Relational Algebra, Relational Algebra Operations: Select,
+Project, Cartesian Product, Union, Set Difference, Natural Join, Outer Join.
+
+Unit 4 Database Normalization 4 Hrs,
+Definition and Importance of Normalization, Functional Dependencies.
+
+Normalization: INF, 2NF, 3NF, BONF.and 4NF.
+
+Unit 5 Creating and Altering Databise.and Tables(SQL) 6 Hrs.
+Introduction to SQL, Creating Database with Different Type ofArguments and
+Alter Database, Creating NormatTables and” Complexs;Tables with Different
+
+७ “
+
+   
+
+ 
+
+a Page | 67
+
+4
+Scanned by CamScanner
+
+ 
+Type of Constraints(Key, Check, Default), Alter Tables : Adding and Dropping
+Attributes and Other Constraints; Drop Statement: Table, Database.
+
+Unit 6 Manipulating and Querying Data 8 Hrs.
+Adding Data with INSERT Statement, Retrieving Data with SELECT Statement
+and FROM Clause and Filter Data with WHERE Clause; Order and Grouping
+Data with ORDER and GROUP by Clause and Summarizing the Select
+Statement; Retrieving Data from Different Tables using: INNER JOINS, OUTER
+JOIN and CROSS JOIN; Building Nested Queries, Manipulate Data Using
+UPDATE Statement and Removing Rows Using DELETE Statement; Creating
+and Altering View.
+
+Unit 7 Developing Stored Procedures, DML Triggers and indexing 5 Hrs.
+Managing Stored Procedures, Create, Alter, Drop, Execute Stored Procedure
+Encryption, Passing Data To Stored Procedures , Parameter Default. Returning
+Data From Stored Procedure Output Parameter Using The Return Statement;
+Transaction Flow, Creating Triggers, Triggers Limitation, Disabling Trigger.
+Developing Multi Row Enabled Triggers; Basic Concept of Indexing,
+Ordered Indices, Type of Indexing, Multiple Key Access, Creating And Dropping
+Index.
+
+Unit 8 Query Processing and Security 5 Hrs.
+Overview of Query Processing, Measuring of Query Cost, Selection Operation,
+Sorting, Joining Evaluation of Expression, Query Optimization; Database
+Administrator: DBA Roles and Responsibilities, Database Security Issues,
+Types of Security, Access Protection, User Accounts and Database Audits,
+Discretionary Access Control, Mandatory Access Control; Data Encryption And
+Decryptions.
+
+ 
+
+Unit 9 Transaction and Concurrency Control 4 Hrs.
+Transaction Concept, Simple Transaction Model, Atomicity and Durability,
+Transaction Isolation, Serializability, Transaction Isolation and Atomicity and
+Transaction Isolation Levels; Introduction, Lock-Based Protocol, Dead-Lock
+Handling, Multiple Granularity, Time-Based Protocol.
+
+Laboratory Works
+
+Lab works should be done covering all the topics listed above using Oracle and a
+small project work should be carried out using the concept learnt in this course.
+Project should be assigned on Individual उती.
+
+« ip ts
+
+Teaching Methods « on
+
+The general teaching pedagogy includes class legtures, group discussions, ‘case
+studies, guest lectures, research work, project work, assignments (theoretical and
+
+a.
+
+  
+
+il
+Scanned by CamScanner
+
+ 
+practical). and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+gyaluntion
+External Assessment | Total
+Practical | Total
+20 त्र -
+(3 Hrs.) | (3 Hrs.)
+Text Book
+
+1. Abraham Silberscatz, “Database System Concept”, 6" Edition, McGraw ea
+
+ 
+  
+  
+
+  
+           
+
+Reference Books Books
+1. Elmasri — Navathe, “/undamental of Database System™, 5" Edition, Pearson.
+2. James R. Groff and Paul N. Weinberg, “The complete Reference SQL”. 39
+Edition.
+3. Jason Price, “Oracle Database 11g SQL”, McGraw Hill, 2007 4
+4. Robert Vieria, “Microsoft SOL Server 2008 Programming”, Wiley India
+
+ 
+
+ 
+
+Page | 69
+
+ 
+
+Scanned by CamScanner
+

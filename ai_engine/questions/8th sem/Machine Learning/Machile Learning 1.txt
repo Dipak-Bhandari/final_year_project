@@ -1,0 +1,51 @@
+ 
+
+Tribhuvan University
+Faculty of Humanities anil Social Seience
+Semester: VIII
+
+ 
+
+Subject; Machine Learning
+2018 Batch
+
+ 
+
+Group B
+
+Attempt any SIX questions
+2. What constitutes over
+
+    
+    
+    
+   
+
+classifi ght ugha like Stpport Vector Machines.
+reductipo ip useful? Considcring a Long
+
+  
+
+   
+
+fraudent Qdaith aed oi
+
+the pro¥isiont recalled Fl-score
+
+ 
+ 
+
+   
+
+can S
+8 Wiite short notion Calfhwoy
+Janene aaagechadb yy CE
+
+1b) Sensitivity and Speficity
+©) Bayesian Belief Network
+
+Group
+Attempt any TWO questions.
+9, Whats the need of confusion matrix? Explain the frame work for building machine
+lcaming system.
+

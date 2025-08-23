@@ -1,0 +1,53 @@
+ 
+
+Tribhuvan University
+Faculty of Humanities & Socal Sci
+
+ 
+
+ 
+
+OFFICE OF THE DEAN
+2021
+Bachelor in Computer Applications
+‘Course Tite: Cloud Computing Pass Marks: 24
+Code No: CACS402 Time: 3 hours
+Semester: VIL Batch: 2018
+‘Candidates are required to answer the questions in thelr owa words as far as posible.
+Group B
+[os
+
+ 
+
+Attempt any SIX questions.
+~2--Compare and conirast the cloud service model
+‘8. How docs SaaS differ from other types oF software delivery models?
+<4 What are the main benefits of using a Community Cloud, and what types of organizations oF
+industries are best sited fo this type of deployment model?
+5, Give bret deseiption ofthe organization's cloud adaptation roadmap,
+‘<6.’ What are the main roles within a Service-oented Architecture (SOA) and how do they interact
+and collaborate to deliver value tothe business?
+इट भनन कट Aneka cloud platform designed to manage distributed computing, and what sits core
+architecture?
+
+|B Write short notes on (Any Two):
+(yp Public and Private Cloud
+‘DIAAS
+«) Data Security
+
+ 
+
+Group
+Attempt any TWO questions. Pa0=20)
+27 Explain he concept of loud security and the measures that canbe aken fo secure cloud-based
+applications and services. Additionally identifies the key threats to loud security and explain
+how they can be mitigated.
+
+‘Ge? Describe the concept behind MapReduce its funtion in distributed computing, the procedures
+
+required in a MapRedoce operation, and give a practical example.
+11, Discuss the major elements of virtualization techniques, such as hypervsors and virtual
+‘machines, and compare and contrast them. You shoul als discuss the benefits and drawhacks
+
+of each technology,
+

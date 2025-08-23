@@ -1,0 +1,24 @@
+ 
+
+Tribhuvan University
+Faculty of Humanities and Social Science
+
+ 
+
+  
+
+Semester: VIII
+Subject: Machine Learning
+2018 Batch
+Group B
+Attempt any SIX questions
+2.
+
+b) Sensitivity and Speficity
+«) Bayesian Belief Network
+
+Group
+Attempt any TWO questions.
+9. What s the need of confusion matrix? Explain the frame work for building machine
+leaming system.
+

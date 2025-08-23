@@ -1,0 +1,58 @@
+Tribhuvan University
+Faculty of Humanities & Social Seiences
+OFFICE OF THE DEAN
+
+   
+
+    
+
+2021
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Network Administra Pass Marks: 24
+Code No: CACS406 Time: 3 hours
+‘Semester: VI Bateh: 2018
+
+ 
+
+Candidates are required to answer the questions in their own words as far »s pc
+
+ 
+
+Group B
+Attempt any SIX questions. [6x5 = 30
+2, Write the rdle ofthe networkiadministrator, to improve the performance of networking services. छी
+3) Write the design considerations for the workstation architeetiure [5]
+
+4, What do you mean by network service requirements? Explain the guidelines for network
+। रक, requirement planning. (243) iS
+
+& Define data centers. Explain the security concemis related to data centers. p+4]
+
+6. Define network printer. Write a procedure to set up the network printer. [114]
+T-AWhat is a file server? Write a procedure to set up the file server. [1+4)
+
+8, Write short notes on (Any Two): (2542.5)
+a) Mail Server
+DDisaster Recovery
+"Network Operations,
+
+Attempt any TWO questions. [2x10 = 20)
+
+ 
+
+9. Suppose you are a network administrator in ABC Research Organization which has planned to
+
+ 
+
+establish a laboratory for its 25 researchers, Prepare a network design with required network
+hardware and software specifications. 10]
+10. Explain the server hardware/software strategies and service requirement Planning. [S+5]
+
+11. a) Write recent trends in network admin
+
+ 
+
+tration, 15]
+
+b) Write a plan to upgrade a server. [5]
+

@@ -1,0 +1,64 @@
+10. Define entropy and information gain. Construct decision tree (ID3 Algorithm}for the
+following:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[Day [Outlook [Temperature | Humidity Wind] Desison
+a फिका सिम्रिक
+[2__[Seany मि फक [Song |
+छ जा र
+गि खिमा जिम फिका सम्म 1
+= |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+11, What are bias -variance
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

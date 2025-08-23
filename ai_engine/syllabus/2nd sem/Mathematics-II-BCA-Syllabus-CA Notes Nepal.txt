@@ -1,0 +1,157 @@
+Course Title: Mathematies I (3 Cr.)
+
+Course Code: CACS154
+
+Year/Semester: I/II
+
+Class Load: 5 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1 Hr., Practical: 1 Hrs)
+
+Course Description
+
+This course includes the topics from calculus and computational methods such as
+limits and continuity, differentiation & its applications. integration and its
+applications, differential equation and different computational techniques which
+are essential as mathematical foundation for computing.
+
+Course Objectives
+This course makes students able to cognize the concept Calculus, Computational
+methods and their applications in the areca of Social Science and Computer
+Application.
+
+Course Contents
+
+Unit 1 Limits and Continuity 6 Hrs.
+Limit of a function, Indeterminate forms. Algebraic properties of limit (without
+proof), Theorems on Limits of Algebraic and Transcendental Function.
+Continuity of a function, types of discontinuity. Exercises on evaluation of limits
+and test of continuity. (Methematica)
+
+Unit 2 Differentiation 6 Hrs.
+Ordered Pairs, Cartesian Product, Relation, Domain and Range of a Relation,
+Inverse of a Relation; Types of Relations: Reflective, Symmetric, Transitive, and
+Equivalence Relations. Definition of Function, Domain and Range of a Function,
+Inverse function, Special Functions (Identity, Constant), Algebraic (Linear,
+Quadratic, Cubic), Trigonometric and Their Graphs. Definition of Exponential
+and Logarithmic functions, Composite Function. (Mathematica)
+
+Unit 3 Application of Differentiation 8 Hrs.
+The derivatives and slope of the curve; Increasing and decreasing function;
+convexity of curves; maximization and minimization of a function:
+Differentiation and marginal analysis; price and output; Competitive equilibrium
+of firm, Iltustrations. Drawing graphs of algebraic function by using first and
+second order derivatives. (Mathematica)
+
+Unit 4 Integration and Its Applications 8 Hrs,
+Riemann Integral; Fundamental Theorem (Without Proof): Technique of
+Integration; Evaluation and Approximation of Definite Intégrals: Improper
+Integrals; Applications of Definite Integrals; Quadrate, Rectification: Volume and
+Surface Integral. Trapezoidal and Simpson’s Rules ० Numerical
+Integration.(Mathematica) Mo | र
+
+/ )“4ु, ।४ /
+Cn Page | 32
+
+ 
+TWEEFEFFEFEEEEEEETETEE
+
+Unit 5 Differential Equations 7 Urs.
+Differential Equation and its Order and Degree, Differential Equations of First
+Order and First Degree; Differential Fquations with Separable Variables,
+Homogeneous and Exact Differential Equations.
+
+Unit 6 Computational Method 10 Hrs.
+Linear Programming Problem (LPP). Graphical Solution of LPP in Two
+Variables, Solution of LPP by Simplex Method (up to 3 variables), Solution of
+System of Linear Equations by Gauss Elimination Method, Gauss Seidel Method
+and Matrix Inversion Method, Bisection method, Newton- Raphson Method for
+Solving Non-linear Equations. (Excel/Matlab)
+
+Laboratory Works
+Mathematica and/ or Matlab should be used for above mentioned topics.
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group works, case studies,
+guest lectures, research work. project work, assignments (theoretical and
+practical), tutorials and examinations (written and verbal). The teaching faculty
+will determine the choice of teaching pedagogy as per the need of the topics.
+
+Evaluation
+
+ 
+ 
+ 
+
+= Scheme
+
+[es
+(3 Hrs.) (3 Hrs.)
+Text Book
+
+1. Thomas, G, B, Finney, R. S., “Calculus with Analytic Geometry”, Addison -
+Wesley, 9" Edition.
+
+  
+ 
+
+External Assessment
+
+   
+ 
+
+   
+    
+
+Reference Books
+
+1. Monga, G. S., “Mathematics for Management and Economics”. Vikas Publishing
+Ilouse Pvt. Ltd., New Delhi. <i
+
+2. Upadhayay, H. P., Paudel, K.C & et al, “Elements of Business Mathematics”.
+Pinnacle Publication.
+
+Budnick, F. S., “Applied Mathematics for Business. Economics, and the Social
+
+Sciences”, McGraw-Hill Ryerson Lim A /
+भे Wa
+/ WA
+& ( 9 ay Page | 33
+
+ब्‌ PFN
+(८
+
+eo
+
+ 
+
+ 
+   
+  
+ 
+ 
+  
+   
+
+6.
+
+Paudel, K. C., GC. F. B.. and et al, “Higher Secondary Mathematics”, Asmita
+Publication & Distributors Pvt. Ltd. Nepal.
+Bajracharya D. R., Shreshtha, R. M. & et al,
+Pustak Bhawan, Nepal
+
+Sthapit, A.B., Bajracharya, P. M. and et al, “Fundamentals of Business
+Mathematics”, Buddha Academic Publisheres & Distributors Pvt, Ltd., Nepal
+Yamane, T. “Mathematics for Economist’, Prentice-hall of India.
+
+Snedden. I., “Elements of Partial Differential Equation”
+McGraw.
+
+“Basic Mathematics I. IP’. Sukunda
+
+» Hill Book Company-
+
+ci
+
+ 
+
+Page | 34
+

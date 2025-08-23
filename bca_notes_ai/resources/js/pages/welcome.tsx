@@ -4,8 +4,10 @@ import AppFooter from '@/components/app-footer';
 import { type SharedData, type User } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 import LoginRegPopupStart from '@/components/login-reg-popup-start';
-import { ReactNode } from 'react';
-import { BookOpen, FileText, GraduationCap, User as UserIcon } from 'lucide-react';
+import { ReactNode, useState } from 'react';
+import { BookOpen, BotMessageSquare, FileText, GraduationCap, User as UserIcon, X } from 'lucide-react';
+import ChatAI from '@/components/chat-ai-component';
+import { Button } from '@/components/ui/button';
 
 type WelcomeProps = {
     children?: ReactNode;
@@ -14,6 +16,7 @@ type WelcomeProps = {
 export default function Welcome({ children }: WelcomeProps) {
     const { auth } = usePage<SharedData>().props;
     const user = auth.user;
+    const [chatOpen, setChatOpen] = useState(false);
 
     return (
         <>
@@ -32,6 +35,26 @@ export default function Welcome({ children }: WelcomeProps) {
                 {/* Main Content */}
                 <main className="container mx-auto px-4 py-12 mb-24 md:max-w-7xl">
                     <div className="text-center mb-12">
+                        {/*Chat bot trigger button */}
+                        <Button
+                            onClick={() => setChatOpen(!chatOpen)}
+                            className={`fixed right-6 bottom-6 z-50 flex h-14 w-14 items-center justify-center rounded-full
+                                    bg-purple-600 text-white shadow-xl hover:bg-purple-700 focus:ring hover:focus:ring-4 hover:focus:ring-purple-400
+                                    transition-all duration-300`}
+                            aria-label={chatOpen ? "Close chat" : "Open chat"}
+                            title={chatOpen ? "Close Chat" : "Open Chat"}
+                        >
+                            <BotMessageSquare className="h-8 w-8" />
+                        </Button>
+
+                        {/* Chat Panel */}
+                        {chatOpen && (
+                            <div
+                                className="fixed bottom-20 right-4 z-50 flex flex-col w-96 max-w-full h-[550px] rounded-lg shadow-2xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900"
+                            >
+                                <ChatAI />
+                            </div>
+                        )}
                         <div className="flex items-center justify-center space-x-3 mb-6">
                             <AppLogoIcon className="h-16 w-16" />
                             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">

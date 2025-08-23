@@ -1,0 +1,64 @@
+Tribhuvan University Se
+Faculty of Humanities & Social Sciences
+
+ 
+
+OFFICE OF THE DEAN
+2025
+Bachelor in Computer Applications
+Course Title: Database Management System Full Marks: 60
+Code No: CACS 255 Pass Marks: 24
+Time: 3 hours
+
+Semester: IV
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions [6x5 = 30]
+2. What is flat file system? Explain the advantages of using DBMS over flat file system. [1+4]
+3. How logical data independence is different from physical data independence? Explain three
+
+level database architecture (2+3]
+
+4. How primary key is different from super key? Explain composite key and partial key. [3+2]
+ob What are selection and projection operators in relational algebra? Given a table with schema करो
+
+Student(Rollno(PK), Fname, Lname, Address, Level, Did(FK)), »
+Department(Did(PK), Dname, HOD) m
+
+Write an RA query to find the name of students who are in ‘Bachelor’ level living in ‘Birgunj
+[213]
+
+[+4]
+
+and studies under the department with department head ‘Ramesh Sharma’.
+1 How parameters can be passed to a stored procedure? Explain with an example.
+How timestamp based algorithm uses timestamp to serialize the execution of concurrent
+transactions? Explain in detail. [5]
+
+at are different types of indexing used in database? How index can be created using SQL?
+[312]
+
+०
+
+Write with example.
+
+Group C
+
+Attempt any TWO questions. [2x10 = 20]
+
+9. ‘What are the advantages of normalization? Explain 3NF and BCNF with example. [4+6]
+10. How ER model can be mapped to the relational data model? Explain with a proper example. [10]
+
+a
+11. a) What is inner join? Perform inner join to find the customer names who are going on flight to
+
+‘South Wales’: [243]
+
+Customer (Cid, Name, Address, Age, Email)
+Booking(Cid(FK), FlightID(FK), BookedDate)
+Flight(FlightID, AirplaneCode, DepartureTime, Destination, Duration)
+b) What are unary and ternary relationship? Write with examples, / ३ [243]
+
+ 
+

@@ -1,0 +1,372 @@
+Course Title: Project III (6 Cr.)
+
+Course Code: CACS452
+
+Year/Semester: [V/VIII
+
+Class Load: Hrs./Week (Practical: 12 Hrs.)
+
+Course Description: This final year project is a practical course where students are expected
+to implement the concepts learnt during four years of their study so as to build a system. The
+course includes realization of project management, software development, and programming
+skills.
+
+Course Objectives: The objective of this course is to make students able to design and develop
+software applications by following appropriate development methodology.
+
+Course Details:
+Nature of Project:
+
+Students should develop a complete functioning system. The system should not be limited to
+the basic CRUD operations only. Being a final year project, students are highly recommended
+to implement appropriate algorithms relevant to the project. The project should include precise
+system analysis, design, implementation and result analysis. The students can work in group
+of at most two members. The students can choose appropriate language technologies that they
+have learnt till eighth semester; however it is not limited. While implementing the project,
+students should be able to write their own program modules rather than relying on predefined
+APIs or Plugins except in some unavoidable circumstances.
+
+Phases of Project:
+The following are the phases of project work:
+
+4. Proposal Submission: Students must submit and present project proposal after 3rd
+week of start of the eighth semester.
+
+5. Mid-Term: Students must submit progress report and defend midterm progress of their
+project work in the 12" week of the eighth semester.
+
+6. Final Submission: Students must submit and orally defend the project work during last
+week of the eight semester but before final board examination. Students must have to
+submit the project final report to their respective department before at least ten days of
+final defense date. The report should be submitted in standard format as prescribed. The
+hard/soft copy of report should be made available to the external expert before a week
+of presentation date. The final presentation should be followed by the demonstration
+session, where students have to demonstrate the project. A viva voice will be conducted
+by evaluation committee.
+
+Provision of Supervision:
+
+There should be a regular faculty of the campus/college assigned as a supervisor. The role of
+supervisor is to guide the students throughout the project and provide constructive suggestions.
+A supervisor can supervise at most four groups of the project in a class section’ The supervisor
+should rigorously supervise, monitor and feedback the project groups 2001
+
+Pre ee
+
+    
+
+  
+
+—*
+
+     
+Evaluation Scheme:
+
+Proposal Defense of 10% of total marks based on project proposal and its presentation.
+
+Midterm of 70% of total marks based on;
+
+a. Work Done 60%
+
+System Analysis and Design
+Implementation
+
+Understanding of methods used in project
+Ability to work with others
+
+Ability to identify problems
+
+Amount of work performed
+
+b. Documentation 10%
+
+4,
+5.
+
+ls
+
+ii.
+
+iii.
+
+iv.
+
+v.
+
+vi.
+
+is
+
+ii.
+
+iii.
+
+iv.
+
+Vv.
+
+6. Final Defense
+
+Report Organization
+
+Writing Style
+
+Completeness of Report
+
+Readability
+
+Organization and analysis of data and results
+
+of 20% of total marks based on presentation and project demonstration
+
+and viva-voice. Each group member should present about the project followed by the
+
+demonstration
+session.
+
+of project developed. The project should be ready to run for the demo
+
+The 10 marks of the proposal defense will be evaluated by the research committee formed
+
+by HOD/Coordinator
+
+as a part of proposal defense. The 70 marks of the midterm will be
+
+evaluated by the supervisor and internal examiner as a part of midterm defense. Out of the 70
+
+marks, the supervisor
+
+will evaluate for 60 marks and internal examiner will evaluate for 10
+
+marks. The remaining 20 marks of final defense will be evaluated by the external examiner
+
+from the university.
+
+Out of 100 marks, the 80 marks (Proposal + Midterm Evaluation) will be considered as internal
+assessment while the 20 marks (Final Defense) will be considered as external assessment. Each
+student in the project should get passed in each of the internal and external assessments
+individually. Any student failing to pass each of the assessments will be considered as fail.
+
+The evaluation committee and evaluation criteria should be as follow;
+
+Evaluation committee
+
+Project Supervisor
+HOD/Coordinator
+
+Internal Examiner (Regular Faculty)
+External Examiner
+
+€.
+
+. Focus of the evaluation gat
+
+Presentation Skills A Z ७0 &
+Project Demonstration र se
+Project Report
+Viva/Question Answer
+Level of Work and Understanding
+ 
+
+- Teamwork and Contribution
+
+Report Contents:
+4. Prescribed content flow for the project proposal
+1. Introduction
+2. Problem Statement
+3. Objectives
+4. Methodology
+a. Requirement Identification
+i. Study of Existing System
+ii. Literature Review
+iii. Requirement Analysis
+b. Feasibility Study
+i. Technical
+ii. Operational
+iii. Economic
+c High Level Design of System (Methodology of the
+proposed system/ Flow Chart/ Working Mechanism of Proposed System
+/ Description of Algorithms )
+5. Gantt Chart (showing the project timeline)
+6. Expected Outcome’
+7s References
+
+5. Prescribed content flow for the project report
+
+11. Cover & Title Page
+12. Certificate Page
+iv. Supervisor Recommendation
+Vv. Internal and External Examiners’ Approval Letter
+13. Acknowledgement
+14. Abstract Page
+15. Table of Contents
+16. List of Abbreviations, List of Figures, List of Tables, List of Abbreviations
+17. Main Report
+18. References
+19. Bibliography (if any)
+20. Appendices (Screen Shots/ Source Codes)
+
+6. Prescribed chapters in the main report
+
+6. Chapter 1: Introduction
+
+ 
+
+A,
+
+6.1. Introduction woe NN
+6.2. Problem Statement क 0१)
+6.3. Objectives Zs 4
+
+pesca aes 4%
+6.4. Scope and Limitation कर्‌ Uy ate ५60
+6.5. Development Methodology ”” ,.... W <
+6.6. Report Organization Oe raat ae
+
+7. Chapter 2: Background Study and Litetsture Review
+
+/05
+
+29
+ 
+
+7.1. Background Study (Description of fundamental theories, general concepts and
+terminologies related to the project)
+
+7.2. Literature Review (Review of the similar projects, theories and results by other
+researchers)
+
+8. Chapter 3: System Analysis and Design
+8.1. System Analysis
+8.1.1. | Requirement Analysis
+i. Functional Requirements (Illustrated using use case diagram and
+use case descriptions)
+ii. Non Functional Requirements
+8.1.2. Feasibility Analysis
+i. Technical
+ii. Operational
+iii. Economic
+iv. Schedule
+8.1.3. Object Modelling using Class and Object Diagrams
+8.1.4. Dynamic Modelling using State and Sequence Diagrams
+8.1.5. Process Modelling using Activity Diagrams
+8.2. System Design
+8.2.1. Refinement of Class, Object, State, Sequence and Activity diagrams
+8.2.2. Component Diagrams
+8.2.3. Deployment Diagrams
+8.3. Algorithm Details (if any)
+
+9. Chapter 4: Implementation and Testing
+
+9.1. Implementation
+9.1.1. Tools Used (CASE tools, Programming languages, Database platforms)
+9.1.2. Implementation Details of | Modules (Description of
+
+classes/procedures/functions/methods/algorithms)
+
+9.2. Testing
+9.2.1. Test Cases for Unit Testing
+9.2.2. Test Cases for System Testing
+
+9.3. Result Analysis
+
+10. Chapter 5: Conclusion and Future Recommendations
+10.1. Conclusion
+10.2. Future Recommendations
+
+While writing above chapters students should avoid basic definitions. They should relate and
+contextualize the above mentioned concepts with their project work.
+
+Citation and Referencing
+
+The listing of references should be listed in the references section. The references contain the
+list of articles, books, urls, etc. that are cited in the document. The books, articles, and others
+that are studied during the study but are not cited in the.dogument can be listed in the
+bibliography section. The citation and referencing ‘standard should be IEEE referencing
+standard. The text inside the document should be cited in IEEE style The IEEE referencing
+standard can be found in the web th 4
+
+ 
+ 
+ 
+
+  
+ 
+
+Report Format Standards
+
+G. Page Number
+The pages from certificate page to the list of tables/figures/abbreviations/approvals should
+be numbered in roman starting from i. The pages from chapter 1 onwards should be
+
+numbered in numeric starting from 1. The page number should be inserted at bottom, aligned
+center.
+
+H.
+
+o
+
+Page Size and Margin
+
+e The paper size must be a page size corresponding to A4. The margins must be set as
+Top = 1; Bottom = 1; Right = 1; Left 1.25
+
+I. Paragraph Style
+
++ All paragraphs must be justified and have spacing of 1.5.
+
+J. Text Font of Document
+« The contents in the document should be in Times New Roman font
+The font size in the paragraphs of document should be 12
+K. Section Headings :
+« Font size for the headings should be 16 for chapter headings, 14 for section headings, 12
+for sub-section headings. All the headings should be bold faced.
+L. Figures and Tables
+
+« Position of figures and tables should be aligned center. The figure caption should be
+centred below the figure and table captions should be centred above the table. All the
+captions should be of bold face with 12 font size.
+
+Final Report Binding and Submission:
+No of Copies: 3 (College Library + Self + Dean Office)
+Look and Feel: Golden Embracing with Black Binding
+
+A final approved signed copy of the report should be submitted to the Dean Office, Exam
+Section, FOHSS.
+
+Teaching Methods:
+
+The major teaching methods that can be followed for this course includes class lectures,
+laboratory activity, group discussions, presentations, and demonstrations.
+Evaluation
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Examination Scheme
+Internal Assessment External Assessment Total
+Proposal Midterm A Fi
+Defence Defence ot inal Defence
+| 10 | 70 १ 100
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+31
+

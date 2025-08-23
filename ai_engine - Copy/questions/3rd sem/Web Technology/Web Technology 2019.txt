@@ -1,0 +1,60 @@
+ 
+
+huvan University
+
+ 
+
+CS culty of Humanities & Social Sciences
+OFFICE OF THE DEAN 2019
+
+Bachelor f Arts in Computer Appia Full Maris: 60
+
+Course Tide: Web Technology as Marks 24
+
+‘Candidates are required to answer the questions in their own words a far as possible
+Group
+
+ 
+
+Attempt any SIX questions. [6s = 30)
+‘What is C88? Discuss types of CSS with example
+‘What is XML? Differenite XML schema with DID.
+
+List common application of webserver, Explain how session works.
+
+Desrie the tags and atributes for a form in HTML document?
+‘What i anonymous acces? Discuss about Iterated windows authentication
+"Expl ire technology with examples?
+
+5
+
+‘Write short note on folowing
+
++ Cookics
++ XMLDoM
+
+Group
+mp any TWO questions, [x10 20)
+
+ 
+
+9. Differentiate between tags and attabues? Wite a HTML and CSS code design your
+curnculm vite (CV) using different hil elements ik (able, mage, foemating (gs,
+Tinks)
+
+10, Develop simple web page that asks the users input (name, cma, phone, gender) and
+toc into database sing server sie script.
+
+11, What are the rls foe creating XML. document? Waite a XM code o store flowing
+‘information about student,
+
+Fach student has mane, address, phone and website element
+Address might appears multiple tines
+
+‘Addeess as atte named “ype” wit value perm
+Phone must be 10 digit
+
+ 
+
+ent and temporary
+

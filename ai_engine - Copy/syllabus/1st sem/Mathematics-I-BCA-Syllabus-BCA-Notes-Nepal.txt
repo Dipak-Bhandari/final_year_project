@@ -1,0 +1,167 @@
+Course Title: Mathematics I (3 Ce)
+
+Course Code: CACS104
+
+Year/Semester; I/I
+
+Class Load: 5 Hrs. / Week (Theory: 3 Hrs., Tutorial: 1 Hr., Practical: 1 Hr.)
+
+   
+
+Course Description
+This course includes several topics from algebra and analytical geometry such |
+set theory and real & complex number; relation, functions and graphs; sequence
+and series; matrices and determinants: permutation & combination; conic section
+
+and vector in space which are essential as mathematical foundation for
+computing.
+
+Course Objectives
+The general objective of this course is to provide the students with basic
+mathematical skills required to understand Computer Application Courses.
+
+Course Contents
+
+Unit 1 Set Theory and Real & Complex Number 7 Hrs.
+Concept, Notation and Specification of Sets, Types of Sets, Operations on Sets
+(Union, Intersection, Difference, Complement) and their Venn diagrams, Laws of
+Algebra of Sets (without proof), Cardinal Number of Set and Problems Related to
+Sets. Real Number System, Intervals, Absolute Value of Real Number.
+Introduction of Complex Number, Geometrical Representation of Complex
+Number, Simple Algebraic Properties of Complex Numbers (Addition,
+Multiplication, Inverse, Absolute Value)
+
+Unit 2 Relation, Functions and Graphs 8 Hrs.
+Ordered pairs, Cartesian product. Relation, Domain and Range of a relation,
+Inverse of a relation; Types of relations: reflective, symmetric, transitive, and
+equivalence relations. Definition of function, Domain and Range of a function,
+Inverse function, Special functions (Identity, Constant), Algebraic (lincar,
+Quadratic, Cubic). Trigonometric and their graphs. Definition of exponential and
+logarithmic functions, Composite function.(Mathematica)
+
+Unit 3 Sequence and Series 7 Hrs,
+Sequence and> Scries (Arithmetic, Geometric, Harmonic), Properties of
+Arithmetic, Geometric, Harmonic sequences, A. M., G. M., and H. M. and
+relation among them. Sum of Infinite Geometric Series. Taylor’s Theorem
+
+(without proof), Taylor’s series, Exponential scries.
+A
+
+Parr Ai
+Brees
+
+Unit 4 Matrices and Determinants fe — 8 Hrs.
+Introductions of Matrices, Types of Matrices, Equality of Matrices, Algebra of
+Matrices, Determinant, Transpose, Minors and Cofactors of Matrix. Properties of
+determinants (with out proof), Singular and non-singular matrix, adjoin and
+
+Page | 18
+NX
+५
+
+ 
+
+ 
+inverse of matrices.Linear transformations, orthogonal transformations; rank of
+matrices. (Matlab)
+
+Unit 5 Analytical Geometry 8 Hrs.
+
+Conic Sections: Definitions ( Circle. Parabola, Ellipse, Hyperbola and Related
+Terms), Examples to Explain The Defined Terms, Equations and Graphs of The
+Conic Sections Defined Above, Classifying The Defined Conic Sections by
+Eccentricity and Related Problems, Polar Equations of Lines, Circles, Ellipse,
+Parabolas, and Hyperbolas. (Mathematica / Matlab)
+Vectors in Space: Vectors in Space. Algebra of Vectors in Space, Length,
+Distance Between |'wo Points, Unit Vector, Null Vector. Scalar Product, Cross
+Product of Two and Three Vectors and Their Geometrical Interpretations and
+Related Examples. (Matlab)
+
+Unit 6 Permutation and Combination 7 Hrs.
+Basic Principle of Counting, Permutation of a. Set of Objects All Different b. Set
+of Objects Not All Different c. Circular Arrangement d. Repeated Use of The
+Same Object. Combination of Things All Different, Properties of Combination.
+
+Laboratory Works
+
+Mathematica and/ or Matlab should be used for above mentioned topics.
+
+Teaching Methods
+The general teaching pedagogy includes class Icctures, group works, case studies,
+guest lectures, research work, project work, assignments (theorctical and
+practical), tutorials and examinations (written and verbal). The teaching faculty
+will determine the choice of teaching pedagogy as per the need of the topics.
+
+Evaluation
+
+Text Book
+
+ 
+   
+   
+
+Examination Scheme
+
+     
+  
+ 
+
+Internal Assessment External Assessment
+
+Practical Practical | Total
+20 20 60 100
+(3 Hrs.) (3 Hrs.)
+
+ 
+  
+
+       
+
+1. Thomas, G. B, Finney, R. S., “Calculus with Analytic Geometry”; Addison -
+
+Wesley. 9th Edition. My Te
+
+\
+a) Page 19
+
+C/
+
+ 
+Reference Books
+1. Bajracharya D. R., Shreshtha, R. M. & et al, “Basic Mathematics I, If’ Sukunda
+Pustak Bhawan, Nepal
+
+ 
+
+bo
+
+Budnick, F. 8., “Applied Mathematics for Business, Economics and the Social
+
+Sciences”, McGraw-Hill Ryerson Limited.
+
+Monga, G. S., “Mathematics for Management and Economics”, Vikas Publishing
+
+House Pyt. Ltd., New Delhi.
+
+4. Paudel, K. C., GC. F. B., and et. al, “Higher Secondary Mathematics”, Asmita
+Publication & Distributors Pvt. Ltd, Nepal.
+
+5. Upadhayay, H. P., Paudel, K.C & ct al, “Elements of Business Mathematics”,
+
+Pinnacle Publication.
+
+Yamane, T. “Mathematics for Economist”, Prentice-hall of India.
+
+B-
+SG
+
+w
+
+A
+
+Page | 20
+
+TREES RSERSERSRSERPREREERSEERCEEEE
+
+ 
+

@@ -1,0 +1,212 @@
+ 
+
+Course Title: Multimedia System
+
+Course Code: CACS457
+
+Year/Semester: [V/VIII
+
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2 Hrs.)
+
+Course Description
+This course offers detailed concept and structure of Multimedia system. It includes introduction,
+
+Sound & Audio System, Images and Graphics, Video and Animation, Data Compression,
+Abstractions for programming , Multimedia design and applications . It does not entirely focus on
+theoretical concept but also strongly focuses on practical skill based learning
+Course objectives
+The general objectives of this course are to provide theoretical as well as practical knowledge
+of Multimedia System, applications and tools to make students capable of implementing,
+managing and developing the issues of multimedia application in their personal as well
+professional life.
+Course Contents
+Unit 1: Introduction (6 Hrs)
+
+1.1 Multimedia and its applications
+
+1.2 Global structure of Multimedia
+
+1.3 Medium
+
+1.4 Multimedia system and properties
+
+1.5 Characteristics of a Multimedia system
+
+1.6 Challenges for Multimedia Systems
+
+1.7 Components of Multimedia System
+
+1.8 Multimedia building blocks
+
+1.9 Scope of Multimedia
+
+Unit 2: Sound / Audio System (5Hrs)
+2.1 Overview sound system
+2.2 Producing digital audio
+2.2 Music and speech
+2.3 Speech Generation
+2.4 Speech Analysis
+2.5 Speech Transmission
+2.6 Representation of audio files
+2.7 Computer Music —MIDI
+N28 MIDI versus Digital Audio
+
+Unit 3: Images and Graphics (5 Hrs)
+NY Uses of images and Graphics
+3.2-Digital Image Representation
+3.3 Image and graphics Format
+3.4 Working with image and graphics
+3.5 Image Synthesis , analysis and Transmission
+
+Unit 4: Video and Animation
+4.1 Digital Video
+4.2 Video signal representation
+4.3 Computer Video Format
+4.4 Computer- Based animation
+4.5 Animation Language
+4.6 Timeline and frame based animation
+4.7 Timeline and Tween-Based animation
+
+ 
+
+//” 4
+
+  
+4.8 Methods of controlling Animation
+4.9 Display of Animation
+4.10 Transmission of Animation
+
+Unit 5: Data Compression
+
+5.1 Need for Data Compression
+
+5.2 Compression Basics
+
+5.3 Storage Space
+
+5.4 Coding Requirements
+
+5.5 Lossless and Lossy Compression techniques
+5.6 Source, Entropy and Hybrid Coding
+
+5.7 Lossy Sequential DCT- based Mode
+
+5.8 Expanded Lossy DCT-based Mode
+5.9 JPEG and MPEG Compression
+
+Unit 6:
+
+Abstractions for programming
+
+6.1 Abstractions Levels
+
+6.2 Libraries
+
+6.3 System Software
+
+6.4 Toolkits
+
+6.5 Higher Programming Languages
+6.6 Object —oriented approaches
+
+Unit 7: Multimedia design
+7.1 Development phases and development teams
+7.2 Analysis phase
+7.3 Design Phase
+7.4 Development phase
+7.5 Implementation Phase
+7.6 Evaluation and testing phase
+7.7 Multimedia User Interface Design
+
+Unit 8:
+
+Multimedia Application
+
+8.1 Media preparation and composition
+
+8.2 Media integration and communication
+
+8.2 Media Entertainment
+
+8.4 Telemedicine
+
+8.5 E-learning
+
+8.6 Digital video editing and production systems
+8.7 Video conferencing
+
+8.8 Video-on-demand
+
+Laboratory Works
+
+Labs consist of at least 8 practical experiments and two assignments covering the topics of the 4
+
+syllabus.
+
+Teaching Methods
+
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the current scenario of computing and information ghnology
+with the help of topics listed in the syllabus. The general teaching pedagogy thittycan be
+followed by teaching faculties for this course includes class lectures, laboratory activity,
+
+(8 Hrs)
+
+(6 Hrs)
+
+(6 Hrs)
+
+(6 Hrs)
+
+al
+
+group discussions, case studies, guest lectures, research work, project work. assignments ~
+
+pra)
+
+(Theoretical and Practical), and written and verbal examinations.
+
+41
+
+i
+Evaluation
+Examination Scheme
+Internal Assessment
+
+ 
+
+Theo. | Practical ।
+20 20 (3 Hrs.)
+Text Books
+
+ 
+
+External Assessment
+Theo | Practical —_|
+60 (3 Hrs.) j- ।
+
+Total
+
+ 
+
+ 
+
+ 
+
+1. Ralf Steinmetz and Klara Nahrstedt , Multimedia: Computing, Communications and
+Applications, Pearson Education Asia
+
+2. John F. Koegel Buford , Multimedia Systems, Pearson Education Asia
+
+Reference Books
+
+1. Fred Halsall , Multimedia Communications, Applications, Networks, Protocols and Standards,
+
+Pearson Education Asia
+
+2. Ralf Steinmetz and Klara Nahrstedt, Multimedia fundamentals, Pearson Education Asia
+
+ 
+
+42
+

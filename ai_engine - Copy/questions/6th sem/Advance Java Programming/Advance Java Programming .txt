@@ -1,0 +1,44 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+
+ 
+
+OFFICE OF THE DEAN
+2024
+Bachelor in Computer Applications
+Course Title: Advanced Java Programming Full Marks: 60
+Code No: CACS 354 Pass Marks: 24
+Semester: VI Time: 3 hours
+Candidates are required to answer the questions in their own words as far as possible,
+Group B
+Attempt any SIX questions. [6x5 = 30)
+2. What is the use of WindowEvent? List different methods of WindowListener interface with
+its uses. [3+2]
+3. How can you display images in GUI using Java? Explain. [5]
+4 Why do we need to create Javabeans? Explain the steps involved in creation of Javabean. [1+4]
+t A>» Whatis the use of PreparedStatement? Differentiate between Statement and PreparedStatement, [1+4]
+6. What are declaration and expression tags in JSP? Explain with example. (2.5+2.5]
+_ Joc Wet is RMI? Write 2 RMI client and seryer grosram.to find the greeter nunher-amang-tue.. ii
+numbers. [1+4]
+8. _ Write short notes on:(Any two) [2.5+2.5]
+« a) JMenubar
+b) Session handling in Servlet
+c) Marshalling and Unarshaling of arguments in RMI
+Group C
+Attempt any TWO questions. [2x10 = 20)
+
+wv Why do we need to use layout managers in GUI programming? Write a program to create a
+GUI form that takes data about a customer including cid, name, address, email and age and
+insert these data into the Customer table of the Shop database. [2+4+4]
+
+yoo in the lifecycle of Java Servlet. Write a servlet program that takes three numbers from
+an HTML page and computes the sum of natural numbers upto the greatest number among
+three numbers. [4+6]
+
+1]. What is directive element in JSP? Explain in detail. Create a JSP page that verifies the
+
+username and password entered form an HTML file and if the username and password are
+correct it displays greetings message. Otherwise redirects to register page. [4+6]
+
+ 
+

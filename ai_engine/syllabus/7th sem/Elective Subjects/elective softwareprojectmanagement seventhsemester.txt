@@ -1,0 +1,104 @@
+Course Title: Software Project Management
+
+Course Code: CACS407
+
+Year/Semester: [V/VII
+
+Class Load: 5 Hrs. /Week (Theory: 3Hrs, Practical: 2Hr.)
+
+Course Description
+
+This course provides the comprehensive knowledge about Software Project Management,
+which encompasses with Software Project Planning, Scheduling, Cost Estimation, Risk
+management, Quality management and Configuration management.
+
+Objectives: The general objective of this course is to provide fundamental knowledge of
+software project management and corresponding software tool.
+
+Unit -1
+
+Software Project Management Concepts 8 Hrs
+Introduction, Project and Software project, Software project vs other project, Importance and
+Problems in software project management, Process of SPM. Characteristics of good project
+manager, Successful Software Project Manager, Overview of Software Project Planning.
+
+Unit-2
+
+Software Project Scheduling . 8Hrs
+Objectives of activity planning, Work breakdown structure, Network planning model:
+
+Critical path method (CPM), Program evaluation and review technique (PERT), Precedence
+diagramming method (PDM), Shortening project duration, Identifying critical activities.
+Forward pass and Backward pass
+
+Unit -3
+
+Software Estimation Techniques 7 Hrs
+Software Effort Estimation: Problems with over and under estimations, Basis of software
+Estimating, Software effort estimation techniques, expert Judgment, Estimating by analogy.
+Bottoms-up estimating, Top-down approach and parametric models.
+
+Unit -4 8 Hrs
+Software Evaluation and Costing
+
+Project Evaluation: Strategic Assessment, Technical Assessment, cost-benefit analysis, Cash
+flow forecasting, cost-benefit evaluation techniques, Risk Evaluation. Selection of Appropriate
+Report, Project approach: Choosing technologies, choice of process models, structured
+methods.
+
+Unit -5
+
+Risk Management सस nels.
+Risk Identification, Planning, Evaluation and Management, Categories of Risk, Framework for
+dealing with risk, evaluating Risks to the schedule
+
+    
+
+Unit -6 भने
+Software Quality Management दि
+TQM, Six Sigma, Software Quality: defining and importance software quality ISO926, Place
+of software quality in software planning.
+
+Unit -7 . . € rs [ras
+
+ 
+
+  
+
+16
+ 
+
+Software Configuration Management 7 Hrs
+Concept, Requirement and Elements of SCM, Baseline, SCM Repository, Versioning and
+version control, SCM Process, Change Control Process. Configuration Audit and Status
+Reporting. Case Study: Version Control Software Tools (Git, CVS, SVN)
+
+Laboratory Works
+Laboratory works should be done covering all the topics listed above and a small work should
+be carried out using the concept learnt in each unit in the group. Work should be assigned on
+
+individual basis. Student may choose project Management tools like (MS Project, OpenProj,
+dot Project, Trello, Asana, ClickUp).
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions, case studies, guest
+lectures, research work, project work, assignments (theoretical and practical), and
+examinations (written and verbal), depending upon the nature of the topics. The teaching
+faculty will determine the choice of teaching pedagogy as per the need of the topics
+
+ 
+
+  
+ 
+
+References
+1. Cotterell, B. H. (2018). Software Project Management. McGraw-Hill Z
+2. Dutt, S. C. (n.d.). Software Project Management. Pearson Education India.
+3.
+
+A.S. Kelkar (n.d.). Software Project Management. PHI Learning ररिषद्कहो।
+
+pron #i
+
+17
+

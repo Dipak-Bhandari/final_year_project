@@ -1,0 +1,58 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+2024
+
+ 
+
+Bachelor in Computer Applications
+
+Course Title: Mobile Programming Full Marks: 60
+Code No: CACS 351 Pass Marks: 24
+Semester: VI Time: 3 hours
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30}
+¥ What is android? Explain different categories of mobile devices. [1+4]
+[5]
+
+¥ Explain android architecture with suitable diagram.
+
+¥ What is difference between android:layout_gravity and android:gravity attribute in linear
+
+layout. Create an android application that will convert distance entered into Kilometers into
+
+Meters using Table Layout [1+4]
+
+5. Why fragment is needed in android? Write a java code only to send data from one activity
+to another activity using implicit intent: [1+4]
+
+6 What is menu? Develop an android application to create popup menu having menu item
+“Edit”,”Copy”,”Paste”,”Redo” and “Undo. [144]
+
+7. What is JSON? Develop an android application to display 10 different image of fruit in
+Grid View with two column [i+4]
+
+me / What do you mean by storyboard? Write a swift program to find largest and smallest
+J number among three number using ternary operator. [+4]
+
+Group C
+
+Attempt any TWO questions. [2x10 = 20]
+
+9, Develop an android application to display list of Student (Student name) in ListView and
+display the student details (student image, roll, name and college) in a Custom Dialog
+when ListView item is selected. [3+7]
+
+10. Provided that MYSQL database named “Bank” with table named Customer with
+following columns (account_no, name, account_type and amount). Develop an android
+application to connect database remotely and display the Customer details in ListView
+whose deposit amount is greater than 5000, [10]
+
+iy Explain the procedure for generating API key for displaying Google map? Develop an
+
+< android application to display the Google map with marker TRIBHUVAN UNIVERSITY.
+[4+6]}
+

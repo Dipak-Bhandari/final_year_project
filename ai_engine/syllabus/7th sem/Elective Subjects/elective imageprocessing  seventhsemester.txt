@@ -1,0 +1,122 @@
+Elective Courses
+
+Course Title: Image Processing (3 Cr.)
+
+Course Code: CACS404
+
+Year/Semester: I'V/VIT
+
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2Hrs.)
+
+Course Description
+This course presents introduction to several topics on image processing techniques and their
+applications. It also explores the students to real-world applications of image processing.
+
+Course objectives
+Upon completion of this course, students should be able to 1. Explain the basic concepts of
+
+digital image processing and various image transforms. 2. Develop a broad range of image
+processing techniques and their applications. 3. To familiarize the with the image
+enhancement, image restoration and image segmentation techniques.
+
+Course Contents
+Hours
+Unit 1: Fundamental of Image processing
+Image representation, basic relationship between pixels, elements of DIP
+system, elements of visual perception-simple image formation model,
+Sampling and Quantization, Color fundamentals and models, File Formats,
+Image operations. Brightness, contrast, hue, saturation, Mach band effect
+
+Unit 2: Image Enhancement
+
+Image Transforms, Fourier Transform and Discrete Fourier Transform, Fast
+
+Fourier Transform. Cosine Transform, Frequency domain image
+enhancement, low pass filtering, high pass filtering, homomorphic filter,
+Gaussian filter
+
+Spatial domain image enhancement, point processing, contrast stretching, 12
+clipping and thresholding, digital negative, intensity level slicing. Histogram
+processing: equalization, modification, Spatial filtering — averaging,
+Smoothing and sharpening, median filtering, spatial low, high and band pass
+
+filters
+
+Unit 3: Image Restoration:
+
+Image Restoration - Image degradation model - Noise modeling — Blur,
+
+Inverse filtering- removal of blur caused by uniform linear motion, Weiner 9
+filtering, Morphological operation, erosion and dilation,
+
+Unit4; Image coding and compression
+
+Need for compression, redundancy, pixel coding, run length coding,
+Huffmancoding, Elements of information theory, Error free compression,
+Lossy compression, Image compression standards- JPEG& MPEG, wavelet
+based image compression.
+
+ 
+
+Image Segmentation: Thresholding, Region based seam tation, edges, line Wy. 10 ४
+
+and curve detection, edge operators, Image छ; uresandExtraction ,Types
+
+Unit 5: Image segmentation and feature extraction om Fito ८०७ ह
+
+    
+
+  
+
+4
+of features, feature extraction , Texture , Feature reduction algorithms,
+Image classification, clustering techniques,
+
+Case Studies in Image Security, Steganography and Digital watermarking,
+Visual effects, Case studies in Medical Imaging and remote sensing.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation
+Evaluation Scheme
+Internal Assessment External Assessment Total
+Theor Practical Theor Practical 100
+20 20 (3 Hrs.) 60 (3 Hrs.) | |
+Laboratory Work
+
+Laboratory work should be done covering all the topics listed above and a small project work
+should be carried out using the concept learnt in this course using software like matlab, python.
+Text Books:
+
+1. Gonzalez Rafel C, Digital Image Processing, Pearson Education, 2009.
+
+2. S.Sridhar, Digital Image Processing, Oxford University Press, 2011
+
+Reference Books:
+1. Milan Sonka, Vaclav Hlavac and Roger Boyle, Image Processing, Analysis and A
+Machine Vision, Second Edition, Thompson Learning, 2007 w
+
+ 
+
+12
+

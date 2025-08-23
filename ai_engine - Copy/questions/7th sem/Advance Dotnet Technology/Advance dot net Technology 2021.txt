@@ -1,0 +1,55 @@
+      
+ 
+
+il _
+Tribhuvan University —
+
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2021
+00 lt Marks 0
+i: Aton Neo :
+Cade Re: CaCsune mi Festa
+‘Semester: VIL Batch: क 2018
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions,
+
+am in thread lfecyele, Write a multithreaded program using Ci. (3-2)
+“tN hi tis eda est oe ना
+4000 ifferentitc connected and disconnected ADO.Net architecture with suite example. (5]
+5, \Define virutal directory in TIS. Develop ASP.Net cb (orm application to create and access
+
+[65 = 30)
+
+  
+
+session. (144]
+
+Explain MVC using ASP Nec core with suiable example. [5]
+
+% न ee यल with autable example (+4
+-do you mean by hosting models? Explain docker and containerization in detail. {14}
+Group ¢
+
+Attempt any TWO questions. 0= 29)
+9. Create a ASP.Net web form for employee resistration containing input fields for employee id,
+name, address, gender, department and two buttons for inserting and selecting data. You should
+insert data to a database table on insert button clicked and on select button clicked select and
+display employee data n DataGrid whose address is "Kim? and deparencnt is TT. (10)
+
+Fite « C# program to demonstrate typed dataset. {5}
+
+44 Cl program to copy contents of one file to another using binary reader and writer. [5]
+rae ‘Differentiate ASP.Net and ASP.Net core. Create ASP.Net core application containing razor
+page, model and controller to calculate simple intrest [347]
+
+ 
+
+क.
+

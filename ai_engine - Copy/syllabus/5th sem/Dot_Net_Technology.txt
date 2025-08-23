@@ -1,0 +1,161 @@
+Course Title: DotNet Technology (3 Cr.)
+
+Course Code: CACS302
+
+Year/Semester: III/V
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs., Practical: 3 Hrs.)
+
+Course Description:
+
+This course covers different concepts of .NET framework. It also covers basic to advanced features
+of C# language including language basics, creating types and inheritance, delegates, events, lambda
+expressions, LINQ, working with databases, and developing web applications using ASP.NET.
+
+Course Objectives:
+The primary objective of this course is to provide concepts of .NET framework and different
+concepts of C# programming language and make students familiar with their uses and applications.
+
+Course Contents:
+
+Unit 1: Introducing C# and the .NET Framework (7 Hrs.)
+
+Object Orientation; Type Safety, Memory Management; Platform Support; C# and CLR; CLR and
+.NET Framework; Other Frameworks; Framework Overview; .NET Standard 2.0; Applied
+Technologies
+
+Unit 2: The C# Language Basics (12 Hrs.)
+
+Writing Console and GUI Applications; Identifiers and Keywords; Writing Comments; Data Types;
+Expressions and Operators; Strings and Characters; Arrays; Variables and Parameters; Statements
+(Declaration, Expression, Selection, Iteration, and Jump Statements); Namespaces
+
+Unit 3: Creating Types in C# (12 Hrs.)
+
+Classes; Constructors and Deconstructors; this Reference; Properties; Indexers; Static Consturctors
+and Classes; Finalizers; Dynamic Binding; Operator Overloading; Inheritance; Abstract Classes and
+Methods; base Keyword; Overloading; Object Type; Structs; Access Modifiers; Interfaces; Enums;
+Generics
+
+Unit 4: Advanced C# (14 Hrs.)
+Delegates; Events; Lambda Expressions; Exception Handling; Introduction of LINQ; Working with
+Databases; Writing Web Applications using ASP.NET
+
+Laboratory Work: The laboratory work includes writing console and/or GUI programs in C#
+
+e To implement basic language features
+
+० To create classes and objects and to implement different object-oriented features
+
+® To implement inheritance
+
+¢ To implement advanced features like delegates, event handling, lambda expressions, exception
+handling
+
+¢ To implement LINQ and database applications
+
+Text Books:
+1. C# 7.0 in a Nutshell (7 Edition), the Definitive Reference, Joseph Albahari & Ben Albhari,
+O'Reilly, | « \,
+
+   
+2. Microsoft Visual C# Step by Step (9" Edition), John Sharp, Pearson Education.
+
+Reference Books:
+
+1. C# 7.0 All-in-One For Dummies (1* Editiion), John Paul Mueller, Bill Sempf, Chuck Sphar,
+John Wiley & Sons, Inc.
+
+2. Professional C# 7 and .NET Core 2.0 (7 Edition), Christian Nagel, John Wiley & Sons, Inc.
+
+Teaching Methods:
+
+The teaching faculties are expected to create environment where students can update and upgrade
+themselves with the current scenario of computing and information technology with the help of
+topics listed in the syllabus. The general teaching pedagogy that can be followed by teaching
+faculties for this course includes class lectures, laboratory activity, group discussions, case studies,
+
+guest lectures, research work, project work, assignments (Theoretical and Practical), and written and
+verbal examinations.
+
+Evaluation:
+
+ 
+
+Internal Assessment Format [FM = 20] — Subject Teacher
+Term Examination
+Mid-Term | Pre-Final
+| 5s | 5s | 5
+Practical Assessment Format [FM = 20] — External Examiner will be assigned by Dean Office,
+FOHSS.
+ee Practical | Viva | Lab Reports | Total
+। 10 [| 5 | 5 20
+Note: Assignment may be subject specific case study, seminar paper preparation, report writing, project work, research
+work, presentation, problem solving etc.
+
+  
+ 
+ 
+ 
+ 
+
+    
+  
+
+Assignment | Attendance | Total
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Final Examination Questions Format [FM = 60, Time = 3 Hrs.]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SN | Question Type ‘Oucstions I Ona Total Marks
+Group —'A'
+
+1 Objective Type Questions (Multiple 10 1 102 1-10
+Choice Questions)
+Attempt all the questions.
+Group —'B'
+
+2 Short Questions (Attempt any SIX 7 5 6x5 =30
+
+uestions.)
+
+Group -'C'
+
+3 Long Questions (Attempt any TWO 3 । ० | 2x 10=20
+questions.)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

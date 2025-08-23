@@ -1,0 +1,57 @@
+ 
+
+Tribhuvan University
+Faculty of umanities & Social Sciences
+OFFICE OF THE DEAN2019
+
+Full Maris: 60
+
+ 
+
+Semester: HL
+
+Candidates are required to answer the questions in their own words as fara possible,
+
+Groups
+
+Attempt any SIX questions oe
+
+    
+
+30]
+2. Whats Data Structure? Show the status of sack converting following infix expesion to
+
+ 
+
+pros BP FOU ASTD VW os)
+3. Whe bimry such. Conia hash ubleof se 10; set the keys 62,37, 36.44, 67, 91
+and 107 using incr probing Ps}
+
+4. What are deterministic and non-lterministic algorithms? Explain greedy algorithm. [3-2]
+5. Draw 8 BST from the string DATASTRUCTURE and traverse the rein post order and
+
+preorder Be
+
+6. Define cnelar queue? How does cular queue overcome the imitation of linear queue?
+Epi. ee]
+
+7. Whats singly linked lise? Write an algorithm toadd a nodeat the beginning and end of
+singly linked lis et]
+
+8. Defe AVL tee Contract AVL tee fom given dua et 4,6, 12,9, 5,2, 188.3, 7.11
+
+ 
+
+Groupe
+Attempt any TWO questions छ
+9. Whats sack List the applications of stack Write an algorithm or producto perfomm
+
+PUSH and POP operation in stack tay
+
+10, Wha is heap? Explain quick sort algorithm with Big-oh notation in best case average case
+
+and worst cas and trace ito sot the data 8, 10, , 12,14, 8,7, 13 eave
+
+11. Define graph and re dats srctre pin breadth Fit travers and depth तिज
+teaver with example
+

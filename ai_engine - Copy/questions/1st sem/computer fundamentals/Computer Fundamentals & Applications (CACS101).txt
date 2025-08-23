@@ -1,0 +1,113 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN 2018
+
+   
+
+& katHManou
+
+Oe)
+
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Computer Fundamentals and Application Pass Marks: 24
+Code No: CACS 101 Time: 3 hours
+Semester: I°t
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30]
+
+11. Define Computer. Explain the anatomy of digital computer with block diagram.
+
+12. Define Operating System. Explain the functions of Operating System.
+
+13. Define DBMS. Explain the different database models with their merits and demerits.
+14. Explain the different types of LAN topologies with their advantages and disadvantages.
+15. What is WWW? Differentiate between intranet, extranet and internet with exaple.
+
+16. What are contemporary technologies? Explain any two contemporary technologies with
+roles.
+
+170 Write the DOS commands to complete following tasks.
+
+a) Create sub directory theory and practical inside d:\exam\
+
+b) Create the file name marks.txt inside theory writing the content, "Theory marks in
+CFA",
+
+c) Rename the file name marks.txt with CFAmarks.txt.
+
+d) Make hidden the file CFAmarks.txt.
+
+e) Search the all files with .pdf extension.
+
+Group C
+Attempt any TWO questions. [2x10 = 20]
+
+18. i) You are provided following data:
+
+Bageswori Secondary School
+Surkhet
+
+Mark - Ledger
+E F G H I J K L M
+11] Name Eng. | Nep. | Eco. | Sociology | Computer | Total | Percentage | Result | Division
+
+12 | Gautam 56 56 76 75 | 68 |
+
+13 54 | 64 a ee
+
+14] Binod 87 65 54 59 | 66 |
+
+15] Ritu 45 67 56 72 85
+| |
+
+16]Kabindra | 89 | 34 | 63
+
+ 
+
+ 
+ 
+ 
+
+   
+  
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Are you searching Notes Of BCA Semester Wise visit our site www.bcanotesnepal.com
+Write the formula in spread sheet package to calculate following on basis on given
+
+conditions:
+1. Calculate Total marks. [1]
+2. Calculate Percentage. [1]
+3. Mark the student with either "PASS" or "FAIL" [Pass Marks 35]. [1.5]
+4. Calculate the division [if percentage >=60 then First, if percentage >=45
+and percentage <60 then Second, if percentage >=35 and percentage <45
+then Third otherwise "xxx" [1.5]
+ii) Explain the features of Font control tools in word processing package. [5]
+19. i) Define computer peripherals. Differentiate between impact and non-impact printers.
+{1+4]
+ii) Define Presentation. Write the features of good presentation package. [5]
+20. Define CMYK color model. Explain the basic tools and transforms available in
+Photoshop. [2+5+3]
+
+Are you searching Notes Of BCA Semester Wise visit our site www.bcanotesnepal.com
+

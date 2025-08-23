@@ -1,0 +1,137 @@
+PREEFFFFEEEEEEEEEEEEEI
+
+Course Title: Probability & Statistics (3 Cr.)
+
+Course Code: CACS202
+
+Year/Semester: I/TI
+
+Class Load: 5 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1 Hr., Practical: 1 Hr.)
+
+Course Description Description
+
+This course covers basic concept of statistics, measurement of central tendency,
+correlation & regression analysis, probability, sample survey, sample survey
+methods and design of experiment. These topics are essential tools for research.
+
+Course Objective
+The general objectives of this course are to provide fundamental concept of
+Statistics, Probability, Sample Survey and their applications in the area of Social
+Science and Computer Application,
+
+Course Contents
+
+Unit 1 Introduction to Statistics 3 Hrs.
+Meaning. Scope and Limitations of Statistics, Types and Sources of Data,
+Methods and Problems of Collection of Primary and Secondary Data.
+
+Unit 2 Descriptive Statistics 6 Hrs.
+Measure of Central Tendency (Arithmetic Mean, Median, Partition Values,
+Mode); Measure of Dispersion (Absolute and Relative Measures: Range, Quartile
+Deviation, Mean Deviation. Standard Deviation. and Coefficient of Variation)
+
+Unit 3 Correlation and Regression Analysis 6 Hrs.
+Correlation: Definition, Scatter diagram, Karl Pearson’s coefficient of
+correlation, Numerical problems for determination of Correlation Coefficients.
+Regression: Definition, Dependent and Independent Variables, Least Square
+method only, Numerical Problems,
+
+Unit 4 Probability 8 Hrs.
+Definition of Probability, Two basic Laws of Probability(, without proof),
+Conditional Probability: Probability Distributions (Binomial, Poisson and
+Normal); simple numerical problems.
+
+Unit 5 Sample Survey 6 Hrs.
+Concept of Population and Sample; Needs of Sampling: Censuses and Sample
+Survey; Basie Concept of Sampling: Organizational Aspect of Sample Sury
+Questionnaire Design: Sample Selection and Determination of
+Sampling and Non Sampling Erfors, <f)
+
+ 
+
+ 
+
+Sample Size:
+
+ 
+
+Unit 6Sample Survey Methods > br 3 10 Hrs.
+Types of Sampling: Simple Random Sampling with and without Replacement;
+
+\ fi Page | 41
+AA ०
+
+ 
+ 
+
+3 Random Sampling: Ratio and Regression Method of Estimation under
+Simple and Stratified Random Sampling; Systematic Sampling; Cluster
+Sampling: Multistage Sampling: Probability Proportion to Size Sampling (PPS),
+Estimation of Population Total and its Variance. Sampling Distributions (t, ४, 2)
+and Related Problems.
+
+Unit 7 Design of Experiment 6 Hrs.
+Concept of Analysis of Variance (ANOVA), F -Statistic and its Distribution,
+Linear Model in ANOVA, Analysis of One Way, ‘l'wo Way Classification (1 and
+m observations per cell) in Fixed Effect Model.
+
+Laboratory Works
+Techniques for using the computer as a tool in the analysis of statistical problems
+will be introduced. SPSS software should be used for data analysis
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions, case
+studies, guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (written and verbal), depending upon the nature of
+
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+7
+20 20 60
+(3 Hrs.) (3 Hrs.)
+
+Text Books ~
+1. Mukhopadhyay P., “Yheory and Methods of Survey Sampling”, Prentice Hall of
+India, New Delhi, 1998.
+2. Sheldon M. Ross, “Introduction to Probability and Statistics for Engineers and
+Scientists”, 3" Edition, India, AcademicDress, 2005.
+
+४:
+
+Evaluation
+
+    
+   
+ 
+
+  
+
+    
+       
+
+Reference Books 124 5
+1. Cochran W.G., “Sampling Techniques”, 3" edition, John Wiley-and Sons, Inc.
+
+New York, 1977. be j
+( १“
+
+५ २ Page | 42
+oN /
+०
+
+Hoggg & Tanis, “Probability and Statistical Inference”, 6" edition, First Indian
+Reprint, 2002
+
+Montgomery Douglas C., “Design and Analysis of Experiments”, 5" edition, John
+Wiley & Sons Inc., 2001.
+
+Upadhayay, H. P., Paudel, K.C & et al. “Elements of Business Mathematics”,
+Pinnacle Publication.
+
+ 
+
+Page | 43
+
+ 
+

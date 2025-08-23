@@ -1,0 +1,167 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2019
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Mathematics I Pass Marks: 24
+Code No: CAMT 104 Time: 3 hours
+Semester: 1°
+Centre: Symbol No:
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group A
+Attempt all the questions. [10x1 = 10]
+1. Circle (O) the correct answer.
+
+i) IfA=[-1,3) and B = [2,5], then A-B is equal to
+
+a) [-1,2) b) [-1,3)
+c) (-1,2) d) [-1,3]
+ii) If f= Jx and g(x) =x+1 then, what is the value of gof (x)?
+a) Vx+1 p) Vx +1
+c) x4 , d) x+2
+
+iii) What is the reciprocal of the complex number (2,1)?
+
+a) (1/5, 1/5) b) (2/5, -1/5)
+c) (-2/5, 1/5) d) (-2, -1)
+iv) What type of function y= f(x) =ax* +bx+cis?
+a) Constant function b) Linear function
+
+c) Identity function d) Quadratic function
+
+33 OF
+
+v) Geometrical meaning of scalar triple product of three vectors a,b,c is the
+vi)
+
+3-3 FOF
+
+a) Volume of parallelepiped formed by a,b,c as adjacent sides
+
+> >
+
+b) |a|x Projection of b on @ and C
+
+>
+
+c) |b| x Projection of b on a
+
+d) |a|x|b|x|c|
+
+If a, b, c is in H.P then, what is the value of b?
+
+at+c
+a) > b) vac
+0) 2ac ay 2. Nae
+at+c a+c
+
+2 4
+vii) Which of the following is the rank of the Matrix ; ’ ?
+
+a) 0 b)1
+c)2 d)3
+
+viii) In how many ways 6 persons can seat in a round table?
+
+a) 720 b) 360
+
+c) 120 d) 60
+
+1 0
+ix) Let =|) i} and amap T:R° —>R*defined by T(x)=A(x) then what is the image
+
+x) Ifr=
+
+1
+of u= | under T?
+
+ 
+
+|
+aH oh
+
+ 
+
+= then, this is the equation of..
+1+ cos
+
+a) Parabola b) Hyperbola
+
+c) Ellipse d) Circle
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2019
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Mathematics I Pass Marks: 24
+Code No: CAMT 104 Time: 3 hours
+
+Semester: 1°
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30]
+
+2. In class of 100 students 40 students failed in Mathematics, 70 failed in English and 20 failed
+in both subjects. Find
+a) How many students passed in both subjects?
+b) How many students passed in Mathematics only?
+
+c) How many students failed in mathematics only?
+
+2x+1
+
+3. Find the domain and range of the function f(x) = que”
+
+ 
+
+4, Find the Maclurin series of the function f(x) = sinx.
+
+1 x x?
+5. Prove that ; y a =(x-y)(y-z)(z-~x).
+1 z 2?
+
+6. Find a unit vector perpendicular to the plane containing points P(1, -1, 0), Q(2, 1, -1) and
+R(-1, 1, 2).
+7. In how many ways can be letter of words “Sunday” be arranged? How many of these
+
+arrangement begin with S? How many begin with S and don’t end with y?
+
+8. Iixtiy= [= then show that x” + y? = 1.
+
+Group C
+Attempt any TWO questions. [2x10 = 20]
+9.
+
+10.
+
+11.
+
+a) Define conic section. Find the coordinates of vertices, eccentricity and foci of the ellipse
+
+9x? + 4y* — 18x —16y-—11=0. 1+5
+b) IfT:R* > R? defined by T(x, x2) = (x; +X, X2, X,) be the linear transformation, then
+find matrix associated with linear map T. 4
+Define irrational number. Prove that V2 is an irrational number. 1+4
+
+If functions f:R > R defined by f(x) = 2x +1 and g:R > R defined by g(x) = x?-2.
+Find the formulae for composite functions f ¢ g and g e f and also verify that fe g # ge f.
+4+1
+
+a) If arithmetic mean, geometric mean and harmonic mean between two unequal positive
+numbers are A, G, H respectively. Then prove that A > G > H. 4
+
+b) What is the relation between permutation and combination of n objects taken r at a time?
+A committee of 5 is to be constituted from 6 boys and 5 girls. In how many ways can this
+
+be done so as to include at least a boy and a girl? 1+5
+

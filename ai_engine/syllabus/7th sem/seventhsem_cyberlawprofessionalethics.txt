@@ -1,0 +1,106 @@
+Course Name: Cyber Law & Professional Ethics (3 Cr.)
+Course Code: CACS401
+
+Year/Semester: ['V/VII
+
+Class Load: 4 Hrs. / Week (Theory: 3Hrs. Tutorial: 1 Hrs.)
+
+Course Description:
+
+This course presents different concepts of cyber law, cybersecurity, and ethics for IT
+professionals and IT Organizations. This course also presents different concepts related to
+intellectual properties and their protections, privacy, and social networking issues.
+
+Course Objectives:
+
+The primary objective of this course is to provide knowledge of cyber law, cybersecurity,
+privacy protection, intellectual property protection, and ethics for IT professionals and IT
+organizations
+
+Course Contents:
+
+Unit 1: An Overview of Ethics, Ethics for IT Workers and IT Users (10 Hrs.)
+
+Ethics, Ethics in the Business World; Corporate Social Responsibility; Fostering Corporate
+Social Responsibility and Good Business Ethics; Improving Business Ethics; Ethical
+Considerations in Decision Making; Ethics in Information Technology; Managing IT Worker
+Relationship; Encouraging Professionalism of IT Workers — Professional Codes of Ethics,
+Professional Organizations, Certifications and Licensing ; Encouraging Ethical Use of IT
+Resources among Users
+
+Unit 2: Cyberattacks, Cybersecurity, and Cyber Law (12 Hrs.)
+
+Threat Landscape — Computer Incidents, Types of Exploits; CIA Security Triad —
+Confidentiality, Integrity, Availability, Implementing CIA at Organizational, Network,
+Application, and End-User Level; Response to Cyberattack - Incident Notification Protection
+of Evidence and Activity Logs Incident Containment Eradication Incident Follow-Up Using
+an MSSP, and Computer Forensics; Cyber Law; Provision of Cyber Law and Electronic
+Transaction Act of Nepal
+
+Unit 3: Privacy and Freedom of Expression (10 Hrs.)
+
+Privacy Protection and the Law - Information Privacy, Privacy Laws, Applications, and Court
+Rulings; Key Privacy and Anonymity Issues - Consumer Profiling, Electronic Discovery,
+Workplace Monitoring, Surveillance; First Amendment Rights; Freedom Expressions: Key
+Issues; Social Networking Ethical Issues
+
+Unit 4: Intellectual Property (8 Hrs.)
+
+Intellectual Property, Copyright; Patient, Trade Secrets; Intellectual Property Issues:
+Plagiarism, Reverse Engineering, Open Source Code, Competitive Intelligence, Trademark
+Infringement, and Cybersquatting
+
+Unit 5: Ethical Decision in Software Development and Ethics of IT Organizations (8 Hrs.)
+Software Quality and its Importance; Strategies for Developing Quality Software; Use of
+Contingent Workers; H-1B Workers; Outsourcing; Whistle-Blowing; Green Computing
+
+A
+Teaching Methods
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the i.
+
+  
+ 
+
+the help of topics listed in the syllabus. The general teaching pedagogy that can be followed by
+teaching faculties for this course includes class lectures, laboratory activity, group discussions
+case studies, guest lectures, research work, project work, assignments (Theoretical and
+Practical), and written and verbal examinations.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation
+_ _ __Examination Scheme
+Internal Assessment External Assessment | Total
+Theo | _ Practical Theo Practical
+| 4 ~—*«i | 60 |
+
+ 
+
+ 
+
+ 
+
+ 
+
+Recommended Books:
+
+1. Ethics in Information Technology, Sixth Edition, George W. Reynolds
+
+2. Ethics and Technology: Controversies, Questions, and Strategies for Ethical Computing,
+Fifth Edition, Herman T. Tavani, John Wiley and Sons, 2016 A,
+
+3. Ethics for Information Age, Eighth Edition, Michael J. Quinn, Pearson.
+
+pis
+
+ 
+

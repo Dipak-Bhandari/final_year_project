@@ -1,0 +1,55 @@
+‘Tribhuvan University
+culty of Humanities & Social Sciences
+
+ 
+
+ 
+
+OFFICE OF THE DEAN
+mm 0७ co
+Computer Appiations O\* al Marks 6
+(Cae Tis De Stevens & Agi Pru Mrs
+Torsten
+Candia 8 {IO ee geste a tn wor far ible
+
+ 
+
+ 
+
+30)
+
+30०० तल
+Uses hn ica oon pon tae +4)
+5 brine py tan thie op iy en -n )
+
+4 Miutctairgne!tieentprimenenstnlcreie B43
+
+S.-H does AVL te fle from BST? Conseuct an AVL te from following data: 3,56, 68, 68,
+
+  
+
+44,41,31,49,20. [104]
+6 Whats Bae? Crente a B- ce fore sng following dt: 6, 4,22, 10,2, 14 3, 8,1,
+13,5,9, Bea)
+
+12. What is binary search? Writ an algorithm to search an item using binary search, [2+3]
+[RC Whats graph? Explain Kruskal’ algorithm to conte minimum spanning tee with
+ua
+Groupe
+
+example
+
+Attempt any TWO questions वनमा
+
+Dene sack, List the applistions of sak, Trace th algorithm to conver infix to postfix with
+following infix expression (AVD)-CYDIE)* QL) and evaluate the bined posts expres
+vt flowing values: A~f,B=2, C=, D3, BAR P2,G3,HSIe1 (L484 4)
+
+14 Wats dob inked ist? How desi if fom aa ike is Wet a lori or fnetion
+todd node tthe beponing and endo double inked Ii (siete)
+
+11, What shea? iferetne between mia heap and mex heap. Sot the flowing dat in
+scending order by heap sor method: 2, 9,3, 12, 15,81 pine}
+
+ 
+

@@ -1,0 +1,44 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+
+mr Ot)
+
+ 
+
+um Marks: 60
+
+Bachelor in Computer Applications ठो
+‘Course Title: Object Oriented Programming ia se0
+
+‘Code No: CACS 208 १
+
+सुट Grow
+resin
+NW oxic oor, wie he characteristics of OP Langage. गितमा
+
+2 Explain the operators availabe in Java programming. [जि
+4, Define loop. Write java program to rit first m prime numbers. (144)
+.5= Differentiate between abstract clas and inerfice with suitable example, जि
+
+ 
+
+ 
+
+(6, Define acces modifier Explain acest mies ia java withexample. विजया
+|e Define exception. Explain exception handing mechanism inva wth example. (15)
+3. weit shontnoteon (Any Two): 25+25)
+4) final keyword 8) Clletion class pac
+Groupe
+Attempt any TWO questions. एुत०-२ण
+9. 4) Write a program to crate and use java package oy
++) Define tized, Explain thee cycle of thread. ea
+10. डु Wite a program to sort name of sy five ets in ascending ode. 5]
+1) Define polymorphism. How do we achieve polymorphism in jv expiin with example? (1 +5}
+itierentate between java AWT and java Swing. Explain the different types layout
+‘manager in java OUI programming. जे
+1) Weltea java GUI program to calculate square of entered number. [5]
+
+ 
+
+ 
+

@@ -1,0 +1,28 @@
+ 
+
+Group
+Attempt any TWO questions. ato = 20)
+10. Develop a context diagram and top evel logical DED forthe system mad up ofthe
+following
+B&B isa mailorder company that dsbutes CDs, DVDsof music, gums, movies,
+softwareat discount prices to cub members
+1+ When an onde processing chk receives an onde form, he or she verifies hat the
+senders lub member by checking the Member fi
+‘+ IT thesenderis nota member, the clk retums the onder along witha membership
+pplication form.
+‘+ thecusiomer isa member, the clerk venfies the order tem databy checking the
+item fe
+‘+ Thon the clk enters the oder data and saves itt the Daily Order file. The lek
+ko prints and invoice and shipping list foreach order, which are forwarded to
+Osler Fulfilment Department.
+
+10, With proper seasoning, explain how CASE Tools sid in information system
+evelopment? You have been hired as a system analyst in TU tech software
+evelopment company and you ar asked to analyze the way system works, What
+qualities doyou need to have to analyze sch typeof systems?
+
+11, a) Why sofware project often fais? Explain diffrent types software testing?
+
+») Lis of OOAD. Differentiate betwen stnetured methodogies and abject
+coened methodologies
+

@@ -1,0 +1,38 @@
+Tribhuvan University
+Faculty of Humanities and Sacial Seience
+Semester: VII
+
+ 
+
+Subject: Knowledge Engincering
+2018 Batch
+
+ 
+
+GroupB
+
+Eee
+
+  
+      
+   
+
+raup C
+
+  
+   
+
+Attempt any TWO quest
+9, Why knowledge acquisit
+detail,
+
+igzequited? Explain the }potfedge acquisition process in
+
+10. What is the role of POS tagging in natural language processing? How NER can be used
+for information extraction process? Explain.
+
+111, What are support vectors and margins? How these concepts are used in Support Vector
+‘Machines 1a classify the datasets? Explain in detail.
+
+ 
+

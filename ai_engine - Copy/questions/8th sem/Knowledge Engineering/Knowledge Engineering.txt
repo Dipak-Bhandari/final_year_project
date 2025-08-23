@@ -1,0 +1,22 @@
+Tribhuvan University
+Faculty of Humanities and Social Science
+
+ 
+
+  
+
+Semester: VIII
+Subject: Knowledge Engineering
+2018 Batch
+Group B
+Attempt any SIX questions
+२.
+
+10. What is the role of POS tagging in natural language processing? How NER can be used
+for information extraction process? Explain,
+
+111, What are support vectors and margins? How these concepts are used in Support Vector
+Machines to classify the datasets? Explain in detail,
+
+ 
+

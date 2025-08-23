@@ -1,0 +1,158 @@
+>
+
+se Title: Scripting Language (3 Cr.)
+
+cou
+ge Code: CACS254
+
+Cour:
+year/Semester: WIV
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Practical: 3 Hrs.)
+
+Course Description Description
+This course includes both theoretical as well as practical knowledge of scripting
+language (client side & server side) along with database connectivity. So that
+
+students can develop more effective and efficient web based application packages.
+
+Course Objectives Objectives
+The general objectives of this course are to provide fun
+server side script programming and client side script programming usi
+JavaScript and PHP respectively along with database connecti vity.
+
+damental concepts of
+ng
+
+Course Contents Contents
+Unit 1 Client Side Scripting 15 Hrs.
+e, Formatting
+
+JavaScript: Introduction, Need of Client Side Scripting Languag
+and Coding Conventions, JavaScript Files, Comments, Embedding
+HTML, Using Script Tag, NoScript Tag, Operators, Control Structures,
+and For Each Loop, Defining and Invoking Functions, Built in Objects, Date
+Objects, Interacting With The Browser, Windows & Frames, Document Object
+Model, Event Handling, Forms, Cookies, Handling Regular Expression, Client
+
+Side Validations.
+
+JavaScript in
+Array
+
+Unit 2 Server Side Scripting with Database Connectivity 15 Hrs.
+
+PHP(8 Hrs.): Introduction to Server Side Scripting Language, PHP introduction,
+Basic PHP Syntax, Comments in PHP, Variables, PHP Operators, Control
+Structures(If else, switch, all loops), Arrays, For Each Loop, Functions, Form
+Handling, PHP $_GET, PHP $ POST, PHP $_REQUEST, PHP date () Function,
+PHP include File, File Handling, File Uploading, PHP Sessions, Sending Emails,
+PHP Cookies.
+MySQL(7 Hrs.): Introduction to MySQL, PHP MySQL Connect to a Database,
+Closing a Connection, MySQL Data Types, MySQL Insert, MySQL Select,
+MySQL Where Clause, MySQL Delete, MySQL Update, MySQL Aggregate
+Functions(sum, avg, count etc); MySQL Order by and Group by Clause, MySQL
+
+Subqueries, MySQL Joins,
+
+Unit 3 Advanced Server Side Scripting — , 15 Hrs.
+Object Oriented Programming in PHP:- Classes and Objects, Defining and
+
+Using properties and methods, Constriiétors and Destructors, Method
+Overriding, | Encapsulation, [nheritance, “Polymorphism, Static Members,
+
+Exception Handling Ae« 2070 111 J नो
+
+Page | 64
+
+     
+
+Scanned by CamScanner
+>
+
+AJAX(Asynehronous JavaSeript. and XML): Using PHP, Using PHP +
+
+jQuery: Playing With Elements, Hiding and Unhiding Images. Jquery UI
+JOOMLA: Introduction To CMS, Installation, Handling Joomla Back End.
+Customization In Joomla, Introduction To Extensions, Installation and Uses Of
+Extensions in Joomla, Template Development In Joomla, Artiseer(IDE), Module
+Development In Joomla, Component Development In Joomla, Introduction To
+MVC(Model, View and Controller)
+
+WordPress Administrator Level: Theme Integration, Creating pages, Managing
+Posts, Managing Widgets
+
+Laboratory Works y Works
+Laboratory works should be done covering all the topics listed above and a small
+project work should be carried out using the concept learnt in this course. Project
+
+should be assigned on Individual Basis.
+
+Teaching Methods eaching Methods
+The general teaching pedagogy includes class lectures, group discussions, C
+studies, guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+ase
+
+Evaluation
+
+ 
+  
+ 
+
+ 
+ 
+
+Examination Scheme
+
+20 20 60 100
+(3 Hrs.) (3 hrs.)
+Text Books
+
+1. Harvey M. Deitel, Paul J. Deitel & Abbey Deitel, “/nternet and World Wide Web:
+How to Program”, 5"" Edition, Pedison Edication, 2012, ISBN: 9780273764021
+
+2. Robin Nixon, “Learning PHP MySQL JavaScript and CSS”, 2" Edition, O’
+Reilly Media, 2012, ISBN 978%1.4493 192677" f= त «छ
+
+ 
+  
+
+  
+ 
+     
+
+Internal Assessment
+
+  
+
+      
+
+ 
+
+ 
+
+Page | 65
+
+Scanned by CamScanner
+Reference Books
+1. David Flanagan. “VavaSeript:_The Definitive Guide", O° Reilly Media, 2011, ISBN:
+139780596805524
+2. David Sawyer McFarland, “JavaScript & jQuery: The Missing Manual”. 210
+Edition, Pogue Press, 2011, ISBN: 978-1449399023
+3. Luke Welling & Laura Thomson, “PHP and MySQL Web Development”, sh
+Edition, Developer’s Library, 2014, ISBN: 978-0321833891
+
+A
+
+Chie,
+
+ 
+
+Page | 66
+
+4
+Scanned by CamScanner
+

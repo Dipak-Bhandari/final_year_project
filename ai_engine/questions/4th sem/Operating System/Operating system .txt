@@ -1,0 +1,95 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences |
+
+ 
+
+OFFICE OF THE DEAN
+2023
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Operating System Pass Marks: 24
+Code No: CACS251 Time: 3 hours
+Semester: IV Batch: 2020
+Candidates are required to answer the questions in their own words as far as possible.
+Group B
+Attempt any SIX questions. [6x5 = 30}
+1Z/ Define Operating System? Explain objectives of Operating System. 0
+[
+
+3. How can we solve producer-consumer problem semaphore?
+KM What do you mean by Preemptable and Non-Preemptable resources? Describe the necessary
+
+conditions for deadlock. [2+3]
+Given memory partitions of 200k, 600k, 300k, 400k and 700k (in order), how would each of
+
+the First-fit, Best-fit and Worst-fit algorithms place processes of 315k, 527k, 202k and 548k
+
+(in order)? Which algorithm makes the most efficient use of memory? [5]
+6.' ११६ 18 1124 by system threat? Explain different types of program threat. [+4]
+5% xplain methods of communication in a distributed system. [5]
+Write short notes on (Any Two): [2.5+2.5]
+a) Access Control Matrix b) Process States am Kernel
+
+-~_GroupC
+
+[2x10 = 20}
+are ed to have a ’ p4, p5 all at time 0. Draw
+strating their execution and calculate average waiting time and turnaround time
+
+ 
+     
+
+  
+  
+
+    
+   
+
+    
+   
+ 
+
+  
+ 
+
+    
+  
+
+ 
+
+ 
+
+ 
+
+a. pro ९
+2? Gantt chart illu
+
+for the process given below using: [10]
+
+a) First Come First Serve
+
+b) Shortest Remaining Time Next छ २३ 7 | ae stag
+
+c) Priority ome हनु r 0
+
+d) Round Robin (quantum = 2) ’ A. Shave memory alloc ahon
+ie :
+
+ 
+
+a “ag
+
+10, What is Disk Access Time and Disk Response Time? Suppose that a disk has 200 cylinders,
+numbered (0-199). The drive is currently serving a request at cylinder 43 and previous request was
+
+at cylinder 25. The queue of pending request, in FIFO order is: 55, 58, 39, 18, 90, 160, 150, 38, 184.
+Starting from the current head position, what is total distance (in cylinders) that the disk arm moves
+
+to satisfy all pending request for each of following disk scheduling algorithms? [2+8]
+ha .b) SSTF ¢)C-SCAN -a}LOOK
+11, Differentiate between internal and external fragmentation? Explain briefly with examples and
+[4+6]
+
+procedure to remove the types of fragmentation.
+
+ 
+

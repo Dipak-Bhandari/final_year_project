@@ -1,0 +1,20 @@
+Tribhuvan University
+Faculty of Humanities and Social Science
+Semester: VII
+Subject: Database Programming
+2018 Batch
+
+ 
+
+Group B
+
+Attempt any SIX questions
+2. Explain the 20० b
+
+  
+
+Also differentiate between functions and stored procedure with examples.
+11. Explain row trigger and statement trigger with examples. Explain any five SQL*PLUS
+
+‘commands.
+

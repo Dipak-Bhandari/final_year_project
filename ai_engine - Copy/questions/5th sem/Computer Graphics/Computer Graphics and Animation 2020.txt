@@ -1,0 +1,52 @@
+ 
+
+Bachelor in computer Application (BCA)
+Fal Mark 60
+
+(Cours Tie: Comput Graphics nd nation
+Pass Mak 36
+
+Semesters
+
+Time 3 our
+
+   
+
+बन्छन
+2 Whats computer graphics? Explain item aplication ras of computer graphics.
+3 How can you daw atl using mid-point cil agoritn? Explain with he agi,
+4 span SD bade peometictanformation waa example
+
+‘. Whats polygon clipping? Expl Subesnd Hodgman grid for polygon clipping
+
+6 Given angle wih vertices 2.3), AS.) (43) by oti 90 dee tout th origin and then
+‘rrslating 1 uitn each dirtion. Use homogenous anfomaton max to छोट new vertices
+ti tingle,
+
+7 त
+
+1. एपका he architecture of VR syst wih necesary components
+
+Group €
+rest0-20
+
+Attempts any TWO questions 1
+
+"plinth woking deal DDA line ding aor? Dit thei with
+
+(22) and (10.5) using Bescon’ ine dawing grin. (ss-10)
+
+10. Wot the ifien betwen bet spce math and image space metho. Explain Z ule 54510]
+algo for vse surface detection
+
+11 Davie he amu fr windows to inp wnsfomation, Given window bode by
+(0.0) the ower ef an (44 athe wper iat Similars,» vewpart bordered by (00) 3 the
+
+ower kt an (22) the upp sgh a window at posion
+
+(03 mappntthe ewer. What wil be th position of iewpt omit sae lave
+
+Pacenentas in window? [+510]
+
+    
+

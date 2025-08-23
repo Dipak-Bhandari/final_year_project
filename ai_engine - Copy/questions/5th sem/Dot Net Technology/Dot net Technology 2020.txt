@@ -1,0 +1,50 @@
+ 
+
+ 
+
+= sa University
+12020 sear
+Bachelor in computer Applicaion( CA) Fall Mark 60
+(Cours Title DotNet Teeholngy Pes Mark 24
+Semester s*
+Time: 3 our
+esse
+Atcaptany SIX gestion. a
+
+ 
+
+2ifereuiate Oboe Ore Programming and Objet Base Programming. Explain some of th
+jo feataes of Canpages, [243]
+
+2. Explain overview of Micron NET fmework andi omponents in dtl. [5]
+
+{What do you mean by property in C#lngunge? How it siren frm method? Compare automatic
+Propet with ther ype of rey wih sub ramp [14143]
+
+S. Define onseucr Esplin fice ps of costa wed ia CE with example. (144
+
+ 
+
+program to demanatemulievel an mile ners. [14242]
+7. Whats generis? Lis dierent ypesof ener classes. xpi delegate with example (1+1+3]
+
+8. What do you mean by nbs expen? Fup ifient types of lamba expression usd in Ci
+with example [नया
+
+Atemp any TWO questions 10-201
+
+9.) Writea program to crete ser repistration frm in one ASP.NET wpe a delay i data
+inanother pase (7
+
+1) Writes program orhandingexcepin in ASP.NET. [3]
+
+10.5) How via muta wal ahieve dynamic binding i Ci? plain with he el of stable
+progam. [14]
+
+1) ein operator vel. Wie Cé progam ०००० ७७०६ फल वत्ती
+
+13) What x LIN? Writes rogram ost employes whose sy i enter an 2000 न
+whos adress kathmandu sng LINO [=4]
+
+1b) Write aC program to show net and sels operation in dbase. (5
+

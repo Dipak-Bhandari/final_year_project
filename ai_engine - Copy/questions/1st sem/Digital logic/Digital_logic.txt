@@ -1,0 +1,138 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN 2019
+
+ 
+
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Digital Logic Pass Marks: 24
+Code No: CACS 105 Time: 3 hours
+
+Semester: 1°*
+
+Centre: Symbol No:
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group A
+Attempt all the questions. [10x1 = 10]
+1. Circle (O) the correct answer.
+
+i) Which one of the following is hexadecimal equivalent of (5073.052)s?
+
+a) A3C.150 b) B2B.140
+c) A3B.150 d) B3A.150
+ii) Which one of the following is 9's complement of (3578.501)10?
+
+a) 4926.947 b) 3926.947
+c) 4926.937 d) None of the Above
+
+iii) Which one of the following is the equivalent reflected code of 1101?
+a) 1001 b) 1011
+c) 1000 d) 1010
+
+iv) When output will go high in NOR Gate?
+a) if all inputs are high b) if any input is high
+c) if any input is low d) if all inputs are low
+
+v) According to Boolean algebra: What is the value of+ 1 =?
+
+a) b)1
+c)0 0)
+
+vi) The logic circuits whose outputs at any instant of time depends only on the present input
+But also on the past outputs are called
+
+a) Combinational circuits b) Sequential circuits c) Latches
+d) Flip-flops
+
+If you need notes of bca Second semester visit our http://www.bcanotesnepal.com
+vii) If Q = 1, the output is said to be
+a) Reset b) Set
+c) Previous state d) current state
+viii) Which one of the following are also called ripple counters?
+
+a) SSI counters b) Synchronous counters
+c) Asynchronous counters d) VLSI counters
+
+ix) How many flip-flops are required to construct MOD-30 counter?
+a)5 b)6
+c)4 d)8
+
+x) How much storage capacity does each stage in a shift register represent?
+
+a) One bit b) Two bits c) Four bits d) Eight bits
+
+If you need notes of bca Second semester visit our http://www.bcanotesnepal.com
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN 2019
+
+ 
+
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Digital Logic Pass Marks: 24
+Code No: CACS 105 Time: 3 hours
+
+Semester: 1°*
+
+Candidates are required to answer the questions in their own words as far as possible.
+Group B
+Attempt any SIX questions. [6x5 = 30]
+
+2. Subtract: 1010.110 — 101.101 using both 2's and 1's complement. [5]
+3. Simplify (Using k-map) the given Boolean function in both SOP and POS using the
+
+don’t care condition d:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[2+3]
+4, Define decoder. Draw logic diagram and truth table of 3 to 8-line decoder. [114]
+5. Define ROM. Implement the following combinational logic function using ROM: [213]
+22० 900 पा ए?
+2 | 0 1 0
+0 1
+1 0
+1 1 1 0
+6. What are the drawbacks of clocked RS flip flop? Explain the operation of JK Flip flop
+along with its circuit diagram and characteristic table. [213]
+7. What is T flip-flop? Explain clocked JK flip-flop with its logic diagram and truth table.
+[114]
+
+If you need notes of bca Second semester visit our http://www.bcanotesnepal.com
+8. Design MOD - 7 counter with state and timing diagram. [2+1+2]
+
+Group C
+
+Attempt any TWO questions. [2x10 = 20]
+9. Define PLA. Design a PLA circuit with given functions.
+
+F1 (A, B, C) =2 (3, 5, 6, 7)
+
+F2 (A, B, C) = (0, 2, 4, 7). Design PLA program table also. [3+7]
+10. Distinguish between sequential and combinational logic with example? Discuss the
+
+Design procedure of combinational logic. [4+6]
+11. A sequential circuit with two D flip-flops, A and B, two inputs x and y, and one output z, is
+
+specified by the following next state and output equations [4+3+3]
+
+A(t+1) =x'y+xA
+B(t +1) =x'B+xA
+z=B
+a) Draw the logic diagram.
+b) Derive the state table.
+
+c) Derive the state diagram.
+
+If you need notes of bca Second semester visit our http://www.bcanotesnepal.com
+
