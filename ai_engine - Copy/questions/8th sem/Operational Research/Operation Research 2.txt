@@ -1,0 +1,46 @@
+Group €
+Attempt any TWO questions.
+9. Using duality to solve the LLP.
+bey + 2p + 34
+Subject to 2x, + 4x,>= 5
+Daye Bayt xyP= 4 and %,%9,43>= 0
+10, Define various costs related to inventory. Explain the ABC analysis with beter example,
+11. a)A Scooter with first cost Rs. 80,000 has depreciation and service pattern as given
+below:
+
+Minimize 2
+
+ 
+
+ 
+
+ 
+
+Year Tt 2? Bol
+Depreciation | 25000 | O00 i: 31 4
+during
+
+year
+[=A [34000 [2000087 4
+Service
+
+charge
+How many The Seootegp@ept in service before replacement?
+'b) Explain aie tk 10 यु Zero-Sum game with example.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+

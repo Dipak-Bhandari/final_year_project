@@ -1,0 +1,44 @@
+ 
+
+‘Tribhuyan University
+ences
+
+    
+
+Faculty of Humanities & Social Sei
+OFFICE OF THE DEAN
+
+2020
+
+alt Marks: 60
+
+Schr (गण होशमा) 0190: Pass Marks: 24
+‘Course Tie: Microprocessor & Computer Architect en
+
+siss
+
+ 
+
+az CAK
+Semester: It
+Candidates are required to answer the questions in their own words as far as possible.
+
+ 
+
+[6x8 = 30),
+Expin the
+aw the ining
+What do you
+
+Attempt any TWO questions. [a0 = 20)
+9. Define the term mnemonics, instruction cycle and machine eyle. There are two tables holding
+"wey data whose starting address is 30001 and 3020H respectively. Write a program to add
+‘he content of ist table with the content of second table having same aay index. Store sum
+‘cary it the third an four able indexing fom 304011 and 306OH respectively
+10, For the expression
+१०७8)
+“rite down the code for one ares, two address and three address instuetion formas,
+4 What's parallel processing?” span the benefits oF paral processing Explain the
+
+‘asifcatons of parallel processins by M. 3. Fyn 12286)
+

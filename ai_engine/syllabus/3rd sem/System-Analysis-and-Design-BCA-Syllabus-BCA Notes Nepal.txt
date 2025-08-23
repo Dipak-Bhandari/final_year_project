@@ -1,0 +1,145 @@
+ 
+
+Course Title: System Analysis and Design (3 Cr.)
+
+Course Code: CACS203
+
+Year/Semester: U/TII
+
+Class Load: 4 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1 Hr.)
+
+Course Description
+
+This course mainly focuses on different aspect of system analysis and design such °
+as foundation, planning, analysis, design, implementation and maintenance.
+
+Course Objectives
+
+The general objective of this course is to provide concepts related to information
+systems development in a systematic approach including foundations, planning,
+analysis, design, implementation and maintenance.
+
+Course Contents
+
+Unit 1 System Development Fundamentals 9 Hrs.
+a. The Systems Development Environment
+Introduction, Modern Approach of System Analysis and Design, Information
+System and its ‘ype, Developing Information Systems and the Systems
+Development Life Cycle, The Heart of the Systems Development Process, The
+Traditional Waterfall SDLC, Approaches for Improving Development, CASE
+Tools, Rapid Application Development, Service-Oriented Architecture, Agile
+Methodologies, eXtreme Programming. Object- Oriented Analysis and Design
+b. The Origins of Software
+Introduction, System Acquisition, Reuse
+c. Managing the Information Systems Project
+Introduction, Managing Information Systems Project, Representing and
+Scheduling Project Plans, Using Project Management Software
+
+Unit 2 Planning 7 Hrs.
+a. System Development Projects: Identification and Selection
+Introduction, Identifying and Selecting Systems Development Projects, Corporate
+and Information Systems Planning
+b. System Development Projects: Initiation and Planning
+Introduction, Initiating and Planning Systems Development Projects, Process of
+Initiating" and Planning IS Development Projects, Assessing Project Feasibility,
+Building and Reviewing the Baseline Project Plan
+
+Unit 3 Analysis 13 Hrs.
+a. System Requirements हे? त )
+Introduction, Performing Requitg RE Determination, Traditional Methods for
+Determining Requirementsy Contemporaiy Methods for Deterinining System
+Requirements, Radical Methods for Determining System. Requirements,
+
+WW Page | 44
+
+८
+Requirements Management Tools, Requirements Determination Using Agile
+Methodologies
+
+b. System Process Requirements
+
+Introduction, Process Modeling, Data Flow Diagramming Mechanics, Using Data
+Flow Diagramming in the Analysis Process, Modeling Logic with Decision
+Tables
+
+ce. System Data Requirements
+
+Introduction, Conceptual Data Modeling, Gathering Information for Conceptual
+Data Modeling, Introduction to E-R Modeling, Conceptual Data Modeling and
+the E-R Model, Representing Super-types and Sub-types, Business Rules, Role of
+Packaged Conceptual Data Models — Database Patterns
+
+Unit 4 Design 12 Hrs.
+a. Designing Databases
+Introduction, Database Design, Relational Database Model, Normalization,
+Transforming E-R Diagrams into Relations, Merging Relations, Physical File
+and Database Design, Designing Fields, Designing Physical Tables
+b. Designing Forms and Reports
+Introduction, Designing Forms and Reports, Formatting Forms and Reports,
+Assessing Usability
+c. Designing Interfaces and Dialogues
+Introduction, Designing Interfaces and Dialogues, Interaction Methods and
+Devices, Designing Interfaces and Dialogues in Graphical Environments
+
+Unit 5 Implementation and Maintenance 4 Hrs.
+a, System Implementation
+Introduction, System Implementation, Software Application Testing, Installation,
+Documenting the System, Training and Supporting Users, Organizational Issues
+in Systems Implementation
+b, System Maintenance
+Introduction, Maintaining Information Systems, Conducting Systems
+Maintenance
+
+Teaching Methods
+
+‘The general teaching pedagogy includes class lectures, group discussions, case
+studies, guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (writteti and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics. ७4
+
+Page | 45
+
+ 
+
+ 
+Evaluation
+
+ 
+  
+
+    
+ 
+ 
+
+   
+  
+ 
+    
+
+Examination Scheme
+
+Internal Assessment
+बा
+“| । (3 Hrs.) | |
+Text Book
+
+1. Jeffrey A. Hoffer, Joey George, Joe Valacich, “Modern Systems Anatysis and
+Design’, 6/E, Prentice Hall India,
+
+External Assessment
+
+     
+ 
+
+ 
+ 
+
+Reference Book 2
+2. Jeffery Whitten, Lonnie Bentley, “Systems Analysis and Design. Methods”,
+7/E, McGraw-Hill ८” 2 ,
+
+Page | 46
+
+   
+

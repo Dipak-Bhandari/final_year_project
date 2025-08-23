@@ -1,0 +1,125 @@
+ 
+
+Course Name: Artificial Intelligence (3 Cr.)
+
+Course Code: CACS410
+
+Year/Semester: [V/VII
+
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2 Hrs.)
+
+Course Description: The course introduces basics of artificial intelligent. It covers fundamental
+concepts artificial intelligence, problem solving, knowledge representation, neural networks,
+machine learning, natural language processing, machine vision and expert systems.
+
+Objective:
+The objective of this course is to introduce the basic principles, techniques, and applications of
+Artificial Intelligence. Upon the completion students will be able to:
+* Gain fundamental concepts of principles of Al toward problem solving, inference,
+"perception, knowledge representation, and learning.
+¢ Investigate applications of AI techniques in expert systems, artificial neural networks and
+other machine learning models.
+
+Course Contents:
+
+UNIT 1: INTRODUCTION [6 Hrs.]
+
+1.1 Intelligence, Intelligent behavior, Artificial Intelligence, Understanding AI based on
+thought process and behavior, Hard vs. Strong AI, Soft vs. Weak Al
+
+1.2 Foundations of AI
+
+1.3 Applications of AI
+
+1.4 Intelligent Agents: Introduction of agents, Structure of Intelligent agent, Properties of
+Intelligent Agents,PEAS description of Agents, Types of Agents: Simple Reflexive,
+Model Based, Goal Based, Utility Based, Learning agent, Environment Types:
+Deterministic, Stochastic, Static, Dynamic, Observable, Semi-observable, Single Agent,
+Multi Agent
+
+UNIT 2:PROBLEM SOLVING METHODS (12Hrs.]
+
+2.1 Definition of a Problem, Problem as a state space representation, Problem formulation,
+Well-defined problems,Constraint satisfaction problem, Water jug problem,N-Queen
+problem, Cryptarithmetic problem, Graph coloring problem
+
+2.2Problem solving by searching, types of searching. Measuring problem solving
+performance, General State Space Search
+
+2.3 Uninformed:Breadth-First Search, Depth-First Search,Depth-Limited Search, Iterative
+Deepening depth first Search, Bidirectional Search, Using uninformed search techniques
+for solving N-Queens Problem, Puzzle problem etc.
+
+2.4 Informed search:Greedy Best-First Search,A* Search, Optimality of A*, Local search:
+Hill Climbing, Simulated Annealing, Using informed search techniques for solving N-
+
+Queens Problem, Puzzle problem ete. [stead A .
+
+WA
+परिषदको
+
+  
+2.5 Game Playing, Optimal Decisions in Games, Alpha — Beta Pruning, Minimax Algorithm,
+Tic-Tac —Toe Problem, Stochastic Games
+
+UNIT 3: KNOWLEDGE REPRESENTATION AND REASONING[I5Hrs.]
+
+3.1 Definition and importance of Knowledge, Issues in Knowledge Representation,
+Knowledge Representation Systems, Properties of Knowledge Representation Systems,
+Types of Knowledge, The Role of Knowledge
+
+3.2 Knowledge representation techniques: Rule Based, Semantic Nets, Frames, Logic based
+
+3.3 Propositional Logic, Syntax and Semantic of propositional logic,Proof by Resolution,
+Conjunctive Normal Form (CNF), Resolution Algorithm,Limitations of Propositional
+Logic, Forward and Backward Chaining
+
+3.4 Predicate Logic, FOPL, Syntax, Semantics, Quantification, horn clauses, Inference with
+FOPL: By converting into PL (Existential and universal instantiation), Rules of inference,
+Unification and lifting, CNF for FOPL, Inference using resolution, Resolution Refutation
+System (RRS)
+
+3.5 Handling Uncertain Knowledge, Radom Variables, Prior and Posterior Probability,
+Inference using Full Joint Distribution, Bayes' Rule and its use, Bayesian Networks,
+Reasoning in Bayesian Networks
+
+UNIT 4: LEARNING [4 Hrs.]
+
+4.1 Concepts ofmachine learning
+
+4.2 Rote learning, learning by analogy, inductive learning, Explanation based learning,
+Supervised and unsupervised learning,learning by evolution (genetic algorithm)
+
+UNIT 5: NEURAL NETWORKS AND NATURAL LANGUAGE PROCESSING [7Hrs.]
+
+5.1 Introduction to artificial neural network,Mathematical model of neural network, types of
+neural network: feed-forward, feed-back,Gate realization using neural network, Learning
+in neural networks: Back propagation algorithm,Hopfield network, Boltzmann machines
+
+5.2 Concepts of natural language understanding and natural language generation, Steps in
+natural language processing, Syntax analysis, Semantic analysis, Pragmatic analysis
+
+UNIT 6: EXPERT SYSTEM AND MACHINE VISION [4 Hrs.]
+
+6.1 Expert System, Architecture of an expert system, Stages of expert systems development.
+6.2 Concept of Machine Vision. Steps of machine vision, application of machine vision
+
+  
+
+ 
+Laboratory work:
+
+Laboratory exercises can be conducted in LISP, PROLOG or any other high level programming
+language. Laboratory exercises must cover theconcepts of rule based intelligent agents, inference
+and reasoning,search techniques, neural networks, ete.for solving practical problems.
+
+Reference Books:
+I. Stuart Russel and Peter Norvig, Artificial Intelligence A Modern Approach, Pearson
+2. E. Rich, K. Knight, Shivashankar B. Nair, Artificial Intelligence, Tata McGraw Hill.
+3. George F. Luger, Artificial Intelligence: Structures and Strategies for Complex Problem
+Solving, Benjamin/Cummings Publication
+4. D.W. Patterson, Artificial Intelligence and Expert Systems, Prentice Hall.
+5. P.H. Winston, Artificial Intelligence, Addison Wesley.
+
+ 
+

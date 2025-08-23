@@ -1,0 +1,167 @@
+Course Title: Advanced Java Programming (3 Cr.)
+
+Course Code: CACS354
+
+Year/Semester: III/VI
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs., Practical: 3 Hrs.)
+
+Course Description:
+This course covers advanced features of Java programming language including, GUI programming,
+database programming, JavaBeans, JSP, Servlet, and Remote Method Invocation (RMI).
+
+Course Objectives:
+The primary objective of this course is to provide concepts of advanced features of Java
+
+programming and make students familiar with their uses and applications.
+
+Course Contents:
+
+Unit 1: GUI Programming (12 Hrs.)
+
+Introducing Swing; Creating a Frame; Displaying Information in a Component; Working with 2D
+Shapes; Using Color; Using Special Fonts for Text; Displaying Images; Event Handling: Event
+Handling Basics, Event Classes, Event Listeners and Adapter Classes; Swing and the MVC Design
+Pattern; Layout Management; Basic Swing Components
+
+Unit 2: Database Programming (7 Hrs.)
+The Design of JDBC: JDBC Driver Types and Typical Uses of JDBC; the Structured Query
+Language; JDBC Configuration; Working with JDBC Statements; Query Execution; Scrollable and
+
+Updatable Result Sets; Row Sets
+
+Unit 3: JavaBeans (7 Hrs.)
+What Is a Java Bean? Advantages of Java Beans; Introspection; Properties, Events, and Methods
+Design Patterns; Using BeanInfo Interface; Bound and Constrained Properties; Persistence;
+
+Customizers; the Java Beans API; Writing JavaBeans
+
+Unit 4: Servlets and JSP (14 Hrs.)
+
+Background; The Life Cycle of a Servlet; A Simple Servlet; The Servlet API; The javax.servlet
+Package; Reading Servlet Parameters; The javax.servlet.http Package; Handling HTTP Requests and
+Responses; Using Cookies; Session Tracking; Introduction to JSP; Using JSP; Comparing JSP with
+
+Servlet; Java Web Frameworks
+
+Unit 5: RMI (5 Hrs.)
+
+What is RMI? The Roles of Client and Server; Remote Method Calls; Stubs and Parameter
+Marshalling; the RMI Programming Model; Interfaces and Implementations; the RMI Registry;
+Parameters and Return Values in Remote Methods; Remote Object Activation; Simple Client/Server
+Application using RMI; Comparing RMI with CORBA
+
+Laboratory Work: The laboratory work includes writing Java programs
+¢ To create GUI applications using swing, event handling, and layout management
+० To create applications to work with databases ,
+e To create JavaBeans
+
+   
+ 
+
+¢ To create server side web programs using Servlet and JSP
+¢ Tocreate distributed applications using RMI
+
+Text Books: ;
+1. Core java Volume I — Fundamentals, Tenth Edition, Cary S. Horstmann, Prentice Hall
+
+2. Core java Volume II — Advanced Features, Tenth Edition, Cary §. Horstmann, Prentice Hall
+3. Java: The Complete Reference, 10", Herbert Schildt, McGraw-Hill
+
+Reference Books:
+
+I. Advanced Java Programming, Uttam K. Roy, Oxford University Press
+
+2. Java: Advanced Features and Programming Techniques, Nathan Clark
+
+Teaching Methods:
+
+The teaching faculties are expected to create environment where students can update and upgrade
+themselves with the current scenario of computing and information technology with the help of
+topics listed in the syllabus. The general teaching pedagogy that can be followed by tcaching
+faculties for this course includes class lectures, laboratory activity, group discussions, case studies,
+guest lectures, research work, project work, assignments (Theoretical and Practical), and written and
+verbal examinations.
+
+Evaluation:
+
+ 
+
+| Internal Assessment Format [FM = 20] — Subject Teacher
+
+ 
+
+Term Examination
+
+ 
+
+Assignment | Attendance | Total
+
+ 
+
+Mid-Term | Pre-Final
+5 5 | 5 [5 20
+
+Practical Assessment Format [FM = 20] — External Examiner will be assigned by Dean Office,
+
+FOHSS.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+। 2204] Viva | Lab Reports | Total
+10 छ 3 20
+
+Note: Assignment may be subject specific case study, seminar paper preparation, report writing, project work, research
+work, presentation, problem solving etc.
+
+ 
+
+Final Examination Questions Format [FM = 60, Time = 3 Hrs.]
+
+ 
+
+ 
+
+Number of
+| ° ed Total Marks
+
+SN | Question Type Questions Question
+Group —'A'
+
+Objective Type Questions (Multiple
+Choice Questions) = sd [Ox 1= 16
+Attempt all the questions.
+
+Group —'B'
+
+Short Questions (Attempt any SIX
+questions.)
+
+Group —'C'
+
+Long Questions (Attempt any TWO
+questions.)
+
+   
+  
+
+ 
+
+ 
+
+uo
+
+ 
+
+ 
+
+ 
+

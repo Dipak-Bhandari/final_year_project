@@ -1,0 +1,57 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN 2018
+
+ 
+
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Digital Logic Pass Marks: 24
+Code No: CACS 105 Time: 3 hours
+
+ 
+
+Semester: IS ~~~ ie
+Candidates are required to answer the questions in their own words as far as possible: ,
+
+.
+7 ,
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+| Group B
+Attempt any SIX questions. [6x5 = 30]
+|
+4 Subtract: 87-8 .6 — 456. 4 using both: 10's S ‘and 9's complement, ‘, [5]
+121 Whatis university logic gate? Realize NAND and NOR asian universal logic gates.
+n [1+2+2]
+13: Simplify (using K=" map), the given Boolean function F in. ‘both sop and POS using don't
+care conditions D: B' CD! +A’ BCD. ee _
+F=B'CD' I. BCD! +ABCD' ~ ae te [243]
+14. + Define encoder: Draw v logic diagram and truth table of octal - to - binary encoder. [1+ 4]
+15. Whatis D flip-flop? Explain clocked RS flip-flop with its logic diagram and truth table,
+[1+4]
+\ ‘fae mae
+16. Design MOD -5 countér ‘with state ¢ aiid cing f diagiam. Ea. [2+1+2]
+17. Design a 4 - bit serial into parallel: ‘out ‘shift register w with timing diagram. [342]
+Group C
+Attempt any 1 TWO questions. 7 [2x10 = 20]
+18. Write ¢ a a Pir atid PAT. [Design ajPLA circuit: uit with given] functions.
+Shanes
+F1 (A, B, C) = 2 3, 5)
+F2 (AyBaa Da. Q, 4, 295 =f) Design-PLA-program. Apblealpo. 2 oa. [3+7]
+19. Define D tip flop. ‘Dein a Master- slave flip- flop by using JK flip-flop along with its
+circuit diagram and truth table. [2+8]
+
+20. Write down the difference between asynchronous and synchronous counter. Design a 4-
+bit binary ripple counter along with its circuit, state and timing diagram. [3+7]
+
+Are you searching Notes Of BCA Semester Wise visit our site www.bcanotesnepal.com
+

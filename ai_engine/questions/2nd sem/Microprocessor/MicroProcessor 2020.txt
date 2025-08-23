@@ -1,0 +1,57 @@
+ 
+
+ 
+
+Tribhuvan University
+Faculty of Humanities & Social Seiences
+OFFICE OF THE DEAN
+
+2020
+W Rtarks 60
+Haclar fo Computer Aplintons | Faas 6
+‘Course Te Miorpeoestor& Compu Artes Paani
+Code tn CACSISS z
+Semester It
+(Candidates sre rsquired to answer the questions a their awa words as far as possible,
+“Groip Di
+
+Attempt any SUX questigne” tors = 30]
+
+Explain the adressng modes of £085 wih utable xan,
+
+“3 Daeg gn NLA. ie nh
+
+1 yeu eabafo EG ow  bnintin seo
+microiostructen address] I}
+
+++, beter in dandy
+
+ee
+va Byte atch di
+
+Pantehinceeeed ORES SS
+1, Bana ae hice .
+
+ip
+OLA TES =F Wp as ga uses
+
+8, Woatare the ehigal curtlerisiSs BLES DietraBion et argh fecture? Explain,
+
+ 
+
+   
+
+Groupe
+Attempt any TWO quested (10=20)
+9. Define te tem mcmonics, insrstion Ste and machine cele. There ate two ablos balding
+‘ent data whose stating address is 30001E and 3020H respectively, Write a progtam to add
+‘the conten of Fist table with the conten of second table having somo amay index. Store sum
+24 cary into the thd ad Fun able indexing fom 304011 and 30604 respectively.
+0, Por the expression
+Ya(a+D)*(C4 Dy
+‘te dow th code for one ures, tv addres and thre address instruction formate,
+2s What ip gral preceing? Uxpun the bones of parallel processing, Exxplsin the
+‘lessifatons of porallel processing by MJ lynn, (2am
+
+ 
+

@@ -1,0 +1,131 @@
+TPEFFEFFEEEEEEEEEETEES
+
+Course Title: Web Technology (3 Cr.)
+
+Course Code: CACS205
+
+Year/Semester: T/T
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Practical: 3 Hrs.)
+
+Course Description
+This course covers different aspect of web technology such as HI'ML, CSS, issues
+
+of web technology, client ticr, server tier and advanced server side issue.
+
+Course Objectives
+The general objectives of this course are to provide fundamental concepts of
+Internet, Web Technology and Web Programming.
+
+Course Contents
+
+Unit 1 HTML and CSS 15 Hrs.
+HTML Basic: HTML Tag Reference, Global Attributes, Document, Structure
+Tags, Formatting Tags, Text Level Formatting, Block Level Formatting, List
+Tags, Hyperlink ‘lags. Executable Content Tags.
+Image & Imagemaps: Introduction, Client-Side Imagemaps, Server-Side
+Imagemaps, Using Server-Side and Client-Side Imagempas Together, Alternative
+Text for Imagemaps.
+Tables: Introduction To HTML Tables and Their Structure, The Table Tags,
+Alignment. Aligning Entire Table, Alignment within a Row, Alignment within a
+Cell, Attributes, Content Summary, Background Color, Adding a Caption,
+Setting the Width, Adding a Border, Spacing Within a Cell, Spacing between the
+Cells, Spanning Multiple Rows or Columns, Elements that can be Placed in a
+Table, Table Sections and Column Properties, Tables as a Design Tool.
+
+Frames: Introduction to Frames, Applications, Frames document, The
+<IRAMESET> tag, Nesting <FRAMESET> tag, Placing content in frames with
+the <FRAME>Tag, Targeting named Frames, Creating Floating Frames, Using
+Ilidden Frames.
+
+Forms: Creating Forms, The <FORM> tag, Named Input fields, The <[NPUT>
+tag, Multiple lines text windows, Drop Down and List Boxes, Hidden, Text, Text
+Area, Password, File Upload, Button, Submit, Reset, Radio, Checkbox, Select.
+Option, Forms and Scripting, Action Buttons. Labeling input files, Grouping
+related fields, Disabled and read-only fields, Form field event handlers, Passing
+form data.
+
+Style Sheets: Definition, Importance, Different Approaches to Style Sheets,
+Using Multiple Approaches, Linking ‘to Style Information in Separate File,
+Setting up Style Inforniation, Using. the <LINK>Tag, Embedded Style
+Information, Using <STYLE>Tag, Inline Style Information.
+
+/ हबको ७,
+। ७ की Page | 51
+
+ 
+FEE
+
+Unit 2 Issue of Web Technology 3 Hrs.
+Architectural Issues of Web Layer, Tier Technology: 2-Tier, 3-Tier and n-Ticr.
+
+Unit 3 The Client Tier 10 Hrs.
+Representing Content; Introduction to XML; Elements and Attributes; Rules for
+Writing XML; Namespaces; Schema: Simple Types and Complex Types, XSD
+Attributes, Default and Fixed Values, Facets, Use of Patterns, Order
+Indicators(All. Choice, Sequences), Occurrence Indicators ( Maxoccurs,
+Minoccurs), DTD: Internal Declaration, Private External Declaration, Public
+External Declaration, Defining Elements and Attributes: XSL/XSLT; Xpath;
+Xquery; SAX; DOM , Creating XMI. Parser.
+
+Unit 4 The Server Tier 8 Hrs,
+Web Server Concept, Creating Dynamic Content, Using Control Flow to Control
+Dynamic Content Generation, Sessions and State, Error Handling. Architecting
+Web Application, Using Tag Libraries, Writing Tag Libraries.
+
+Unit 5 Introduction to Advanced Server Side Issues 9 Hrs.
+Database Connectivity; Creating an SQL. statement: Sclect, Insert, Update, and
+Delete; Authentication: Anonymous Access, Authentication by IP address and
+Domain, Integrated Windows Authentication; Cookies; File Handling; Form
+Handling
+
+Laboratory Works
+Laboratory works should be done covering all the topics listed above and a small
+
+project work should be carried out using the concept learnt in this course. Project
+should be assigned on individual basis.
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group works, case studies
+guest lectures, research work, project work, assignments (theoretical and
+practical), tutorials and examinations (written and verbal), The teaching faculty
+will determine the choice of teaching pedagogy as per the need of the topics.
+
+Evaluation
+
+      
+
+nternal Assessment
+
+   
+ 
+
+Text Books
+
+1)
+
+bo
+
+Harvey M. Deitel, Paul J. Deitel & Abbey Deitel, “Jnternet and World Wide Web:
+How to Program”, 5" Fdition, Pearson Education, 2012, ISBN: 9780273764021
+Thomas A. Powell, “HTML & CSS: The Complete Reference”, McGraw Hill,
+Fifth Edition, 2010, ISBN: 978-0-07-174170-5
+
+Reference Books
+
+1:
+
+Nm
+
+Matt J. Crouch, “ASP.NET and VB.NET Web Programming’, Pearson Education
+Asia, 2002
+
+Rahul Banerjee, “/nternetworking Technologies”, Prentice-Hall of India Limited.
+Fourth Edition, 2000
+
+Thomas A. Powell, “Web Design: The Complete Reference”, Vata McGraw Hill,
+
+Second Edition, 2002 | त्‌
+
+Page | 53
+

@@ -1,0 +1,16 @@
+‘Tribhuvan University
+Faculty of Humanities and Social Science
+Semester: VIL
+Subject: Machine Learning
+2017 Batch
+
+ 
+
+Group B
+
+Attempt any SIX questions
+
+  
+
+margin classifier. Show the relationship BetWeen functional and geometrical margin.
+

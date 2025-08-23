@@ -1,0 +1,38 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN2019
+
+Bachelor in Computer Applications ul Mark 60
+Course Te System Alps & Design Pas Marks: 24
+“Tne: 3 hours
+
+es 30)
+
+ 
+
+3. When would you use agile methodologies? How is it erent rom waterfall approach to
+system development?
+
+4. Why is project management important? Briefly explain the siviies performed by the
+projcct manager during projet execution
+
+List various methods of interacting with a system. Briefly explain the factors tobe
+considered while designing a form?
+
+6. What are the doivrables fiom coding and testing? Briefly explain the diffrent,
+approaches to installation.
+
+‘Why is normalization required? State second noma frm and explain t with a proper
+
+example
+
+8. Construct an E-R Diagram fr football cub that hes a mame and aground and is made up
+for players A player can pay for only one club and a mmager identified by his name
+‘manage a club. A footballer has a registration number, name and age. A club manager
+also buys players. Each club plays against other clubs inthe league and matches havea
+date, venue and score
+
+9. Maintenance isan on-going process. Do you ugrec? Explain the process of maintaining
+
+snformation systems
+

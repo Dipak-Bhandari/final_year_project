@@ -1,0 +1,86 @@
+Group ¢
+Attempt any TWO questions.
+9. Solve duality to solve the LLP.
+Minimize 2= 20% + 40%,
+Subject to 36x, + 6» > 600
+Sxyt 12x, 236
+20x, 10x, = 100
+
+and X1)%2 20
+10. A City Corporation has decided to carry out MatatemniSE WORE re are four
+tasks to be completed using 5 contras ich of these contractors should Velssigned
+
+ 
+
+ 
+
+those tasks? Solve the assignmeaf freblom to get bost Fm
+
+Contractor | Task [4pTank 2 = Task 4
+
+A 1y 24 a
+fae
+c 19 dg 3
+D x IN:
+E 25
+) Two oy f. ‘ohn
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1 fers are Pipe for an increased marketshare. Tae
+prc does rease in nuke Share of A and decrease share of B.
+Date optingal strategfes for both th mani facturers and
+
+{Fr
+se | Maiitain present fe
+strattay vert
+Givg Price 25 (20 4
+a 27 116 12 i
+oe las [a | fas i
+tne Aalitsing || 2 ' °
+1B) Wrife Hungorian algdrithm to solve thdassighmentygoblem.
+
+ 
+
+ 
+

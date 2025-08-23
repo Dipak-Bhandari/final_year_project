@@ -1,0 +1,47 @@
+ 
+
+Tribhuvan University
+Faculty of Humanities & Social S
+OFFICE OF THE DEAN
+
+2021
+
+    
+
+Backelorin Computer Applications
+Course Title: Software Engineering,
+Code No: CACS2S3
+
+Semester: 1V
+
+   
+
+(Candidates are required to answer the questions in their own words a8 far as possible.
+Group B
+Attempt any SIX questions, {65=30)
+Fiat is waterfall model? Describe the activities of waterfall model and also mention its
+rawbacks. मज
+_2 Mat is CASE? Explain the importance of CASE tools in software development life cele |[2+3]
+<4 Deefine modtrization? Differentiate between cobesion and coupling with suitable example, [243]
+57 What are programming languages? Explain various software development tools. सिउ
+6. Discus: COCOMO model in cost estination ofthe software in detail. ।
+—S--W o y00 ean by vet a aid? Dilreninte etwen Black Box xing
+and Whit Box testing एन्ड
+हि sivis ns qo asunaee ito
+
+ 
+
+ 
+
+Group € |
+Attempt any TWO questions, [x10 =29)
+<A onlin challenges faced by softvare engineering along with professional and ethical espods
+10. What is Capability Maturity Modet? Explain its levels slong with key process area, a iat
+between alpha and beta testing Bees]
+lhe do you mean by software maintenance? Explain the different ‘types of maintenance?
+Explain reengineering process in detail Ravana |
+
+   
+
+ 
+

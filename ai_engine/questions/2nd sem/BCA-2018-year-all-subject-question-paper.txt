@@ -1,0 +1,360 @@
+BCA Second Semester
+All Subject Question Paper
+
+Of 2018 year 5
+
+TU, DEAN ©
+QR
+S
+w&
+©
+“ss
+YY
+
+Are you searching a notes of your studying semester of BCA. Visit on site www.bcanotesnepal.com
+Tribhuvan University
+Faculty of Humanities and Social Sciences
+
+OFFICE OF THE DEAN
+
+2018
+Bachelor in Computer Applications Full Marks: 60
+Course Title: C-Programming Pass Marks: 24
+Code No: CACS 151 Time?3-Hours
+
+Semester: I
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions, D> [6*5=30]
+11. What is software process model? Differentiate between cohesion and coupling mh)
+12. programming?[1+4]
+
+   
+ 
+
+13. Define keywords and identifiers. Define rules for defining valid
+identifiers. [2+3] List the operators used in C on the basis ofttility.
+
+. ws . Y
+Explain the concept of bitwise operation. [2+3] C)
+
+9
+
+14. Differentiate between while loop and do while A program to find input number
+is prime or composite [2+3]
+15. What is DMA? Write a program to find the RG and as number in a list of n numbers
+
+using DMA.
+[1+4]
+What is the difference between binary ah texPfile? Write a C program to write some text
+
+16. ‘Welcome to BCA
+
+program’ in a file
+test.txt. 22
+
+Explain any four graphicsdunte Ge in in.Q. Write a program to draw two concentric circles with
+17. center (50, 50) and radii SY
+
+75 and 125. RN
+Group C
+
+Attempt any<RW O
+questions, [2*10=20]
+18. Whatis onetlimensional array? How it is initialized? Write a C program to find the sum of two
+matrix of ordef-m x n. [1+1+8]
+t9. Define striictire and union. Write a C program using structure that reads the record of 35
+students with member’s roll, name, address and makes and display the records of students who
+¢ Bae obtained greater than 250 marks. [2+8]
+20\What is a function? List its advantages. Explain the concept of function call by value and
+
+call by reference with example. [1+2+7]
+
+oR OI os
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+Tribhuvan University
+Faculty of Humanities and Social Sciences
+
+OFFICE OF THE DEAN
+
+2018
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Financial Accounting Pass Marks: 24
+Code No: CAAC 152 Time: 3 hour
+
+Semester: II
+Candidates are required to answer the questions in their own words as far as possible.
+
+Ss
+S
+ee
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+Group B
+Attempt any SIX questions. [6*5=30]
+11. Following cash and bank transactions of a month are given to you,
+1 Balance of cash Rs 30,000 and bank 40,000
+2 Purchased goods for Rs 15,000, paid Rs 5,000 on cash and the balance through
+cheque after allowing a
+discount of Rs 500
+15 Rent received Rs 12,000
+23 Sales of goods at Rs 21,000, received Rs 5,000 on cash and the gd
+cheque after the deduction discount of Rs 1,600
+27 Deposited cash into the bank
+Rs 10,000 Required: Cash book with
+cash and bank column.
+12. Following information are given to you
+¢ Cheque sent for collection of Rs 5,000 but creditethhy & SulyRs 2,000
+¢ Cheque issued of Rs 4,000 but not presented atl NN
+¢ Bank interest of Rs 1,000 has been collected ~ a bit ‘aot P ecorded i in cash
+book C)
+¢ Service charge of Rs 200 shown in passbgok k ar
+¢ A debtor directly deposited Rs 2 mes Oank )
+
+Required: Bank Reconciliation sate?” y
+13. The transactions related to machinery ei a
+
+01.07.20 AN
+15 Purchased machinery WN \ 000
+01.01.20 S
+
+16 Purchased Kediiery.ot Rs 40,000
+30.06.20 Sold Machineyp purchased on 2015 for Rs 48,253 and purchased next
+17 machinéryfor RS. 50 000
+
+14. Stores transaction during the month
+Magh areas ti tmder Magh’ 1: Opening
+balance: 50Q\units@ Rs 10 per unit
+Purchased:
+
+Magh 4: (609 units @ Rs 11 per unit
+Magh 960 \godhinits @ Rs 12 per unit
+Magh 2 20: 800 units @ Rs 12 per unit
+T3sued:
+
+Magh 7: 500 units
+
+Mash 15: 500 units
+
+Magh 25: 400
+
+units Stock
+
+verification loss.
+
+Magh 28: 20
+
+units
+
+Required: Store ledger unit FIFO method.
+
+   
+ 
+  
+
+ 
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+15.
+16. What are the various users of accounting information? Explain.
+17. Differentiate between Going concern concept and Business entity
+
+ 
+
+concept.
+Group-C
+Attempt any TWO questions. [2*10=20]
+18. Following transactions are provided to you.
+01 March Started business with cash Rs 2,00,000.
+
+1380,000 and paid cash only 30,000.
+17 March Sold goods on cash Rs 1,00,000- -S
+20March Paid salary Rs 15,000 through cheque.
+23March Received interest Rs 10,008. QW
+30 March Paid to creditors cash Rs 185090. and received discount Rs 2,000.
+31 March Returned goods to creditors. of Rs 5;Q00.
+Required: Journal Entries and Creditdis: Account.
+
+04March Deposited cash into bank Rs 50,000. WS
+March Purchased goods from creditors for Rs (
+S
+
+19. The following is the trial balance of a businessméan-as on 3X Deckniber 2017.
+
+     
+   
+
+Particulars Dr Account—~ Particulars Cr Account
+Opening Stock ~~ 18,000 Sales 2,20,000
+Purchase (? 71000 Return Outwards 1,500
+Return Inward 1,000 Loan 20,000
+Wages 11,000 Bills Payable 2,500
+Carriage on Purchase 2,900 Capital 40,000
+Printing and Stationery 2,000 Discount received 1,000
+Salary 3,800
+Insurance Expenses 3,000
+Plant and machinery, 1,20,000
+Debtors 10,500
+Cash at bank 11,600
+Rent expenses 6,600
+Drawings C) 3,000
+_-Eurniture C 22,000
+JN INN No 2,85,000 2,85,000
+av. . co
+Add itional’Information:
+
+< Chsing stock is valued at Rs 25,000
+
+\pepreciation on plant & machinery @ 15% and 10% on furniture
+¢ Outstanding wages Rs 4,000
+
+¢ Prepaid insurance Rs 500
+
+Prepare: (a) Trading account (b) Profit & Loss Account
+(c) Balance Sheet as on 31 December 2017
+20. + Define company. Differentiate between private and public company.
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+11.
+
+12.
+13.
+
+14.
+
+15.
+
+16.
+17.
+
+18.
+
+19.
+
+Tribhuvan University
+Faculty of Humanities and Social Sciences
+
+OFFICE OF THE DEAN
+
+2018
+Bachelor in Computer Applications Full Marks: 60
+Course Title: English I Pass Marks: 24
+Code No: CAEN 153 Time: 3 hours
+
+Semester: I
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+
+Attempt any SIX questions. (Tee=20]
+How do you distinguish a science fiction from other kinds of fiction? Explain basing'on the storieS
+given in your textbook. YQ)
+
+What are the components of arguments? Explain with appropriate examples.
+
+Lists are used in letters, e-mail, fax messages and memos. What are the\major ob) tiveand advantages
+of using lists and bullets? Explain. Jom mS
+
+In the story ‘Who can Replace a Man’ the penner claims to have class three brain. Why do the tractors
+and the field minder leave the penner behind rejecting his request-for Heb? Why he becomes useless
+after crashing down to the ground? Explain. Wy
+
+What are the guidelines to be followed while designing leaflets? Explain basing on the text prescribed in
+your course.
+
+What do your mean by brainstorming a topic? Explain ‘with“an appropriate example.
+
+An argument states with a basic reason. Read thé follQwihg*senit -serttence and draw an immediate and
+
+then a main conclusion.
+
+If Cigarette advertising were banned, ene would save the money they would
+
+~\
+
+otherwise have spent on advertising.
+
+Group C
+Attempt any TWO questions. mS. [2*10=20]
+A lot can be done to make Hieetings bffective. What measures would you suggest to make meeting
+
+effective if you were a.member of‘a\meeting? Explain
+
+Of late, major cities especially the capital city, of Nepal have become notorious because of frequent
+traffic congestion: In thitscontext, write am argumentative essay about the benefits and disadvantages of
+our widespread use “ofmotor cars. Come to a conclusion as to whether the motors can be good thing or
+bad _thing(in lightof daily problems faced by the commuters in the capital city and elsewhere in Nepal.
+
+20° You, Ouwork for Atirora Holdings Plc, a large manufacturing company. In a recent board meeting, it was
+
+cided Revi" the company’s staff benefits. At present they include only a company pension scheme
+andcubsidized canteen. The Human Resource director asks you to research the additional benefits that
+could Sefitroduced. You should also recommend three benefits which you consider would be most
+welcomed by all the members of staff. Compile a formal report following the prescribed series of
+
+headings as discussed in your text of Communication for Business.
+
+oR OI os
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+Tribhuvan University
+
+Faculty of Humanities and Social Sciences
+
+OFFICE OF THE DEAN
+2018
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Microprocessor and Computer Architecture Pass Marks: 24
+Code No: CACS 155 Timez3-hours
+
+Semester: II
+Candidates are required to answer the questions in their own words as far as
+
+possible.
+Group B CN
+Attempt any SIX questions. [6*5=30]
+11. Explain the bus organization of 8085 microprocessor.
+
+12.
+13.
+14.
+15.
+16.
+
+Explain the opcode fetch machine cycle for MVI A, 32H with timinwutidetam,
+Explain 8085 instruction addressing mode with example: ©
+
+Explain the memory hierarchy with diagram.
+
+Explain the organization of Microprogrammed Control utte)
+
+Define control word. Explain the procedure forPenerathe control word for specific
+operation.
+
+17. Define instruction pipeline. Explain the foul-semtentiigtruction pipeline with example.
+Group XG
+Attempt any TWO questions. [2*10=20]
+
+18.
+19.
+20.
+
+Explain the functional block-of 8085-microprocessor.
+. . i a}
+Explain the design and contro) logic ef Accumulator.
+Explain the different data transfer and’ manipulation instruction with example.
+
+oe
+
+QC
+
+Are you searching a notes of your studying semester of BCA. Visit on site
+www.bcanotesnepal.com
+

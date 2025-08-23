@@ -1,0 +1,58 @@
+Tribhuyan Univer
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+ty
+
+2018
+acelin Computer Application (SCA) Ful Maris:
+Course Tile: Duet Technology as Marks: 24
+‘Code NoxCACS 102 Time: 3 hours
+
+Semester: V
+Candidates are required to answer the questions in ther own words as fr as possible
+
+Groups
+Adéimpt any Six questions: Isx6=30)
+
+2, Whats CLR? List and explain the Feature of CLR.
+1, Whatdo you mean by value type and reference type? Givean example foreach,
+
+4, Whats an interface? How interfce is used in mpl iheisnce? Explain with example.
+
+‘Why mmespase fs wed in CF? How to tele an use the namespace in #2 Explain with example,
+
+ 
+
+6. What isan Exception? Wite a program to generate divide by zero exception and index ot of
+Range exception and aso handle these exception.
+
+7. What sa Query cxpresion? Write a Ch program to select Students whose lived in Kiripur nt
+studi in Patan Muliple Campus using LINQ
+
+{8 What do youmean by sie lass and eoniracoe? Explain with salable example
+Group C
+
+ox2-20),
+
+ 
+
+Attempt any Two questions
+
+19, What do you mean by opesto overloading? Wiite a CH program to demonstrate binary an
+‘ela onal operator overoading.
+
+To,Explaia diference between FxeeuteReader and ExecueNonQuery. Provided that a mysql
+<otabase named “Company” wih able named "Produet” wit following columns (Product
+‘sing, ProductName as varcha(20), and, UnitPrice as lat). Write ac program to connect
+the database and cisplay product record that have UnitPice is grestr than RS. 1000 and update
+the product record such as UniPrice~4800) fom product database wheseProdutlé=50
+
+‘Wha s web server conical in ASP.NET? Lis five web seve: conto used in ASP.NET. Write
+
+progr exeate student registaton form in one ASP.NET page an splay the ile at with
+
+ 
+

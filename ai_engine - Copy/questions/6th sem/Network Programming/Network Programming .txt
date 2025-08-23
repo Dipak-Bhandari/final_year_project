@@ -1,0 +1,46 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+
+ 
+
+OFFICE OF THE DEAN
+2024
+Bachelor in Computer Applications
+Course Title: Network Programming Full Marks: 60
+Code No: CACS 355 Pass Marks: 24
+
+Semester: VI Time: 3 hours
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30]
+2,7 Describe the process of reading the Header using URL Connection. [5]
+ae Explain about X-www-form URI Encoder and URI Decoder with example. — [2.5+2.5]
+ee What are significance to control HTTP Keep-Alive system properties. Write a Program fora
+cookie policy that blocks all .gov cookies but allows others. [2+3], ७
+What is Java Secure Sockets Extension? Write a program for creating secure sockets with
+
+5
+१. tufoshss.edu.np. (2+3]
+6. Explain central abstractions of Java NIO. [15]
+7 ॥ Describe about UDP Socket Option and Write a Program for Scanning Local UDP Ports
+/ from 1024 port to up. (2.5+2.5]
+
+atte Multicast Group, and briefly explain the process of working with Multicast Sockets? [243]
+
+\
+
+Group C
+
+Attempt any TWO questions. [2x10 = 20]
+
+9. Explain factory method with example. Write a program to download webpage.[5+5]
+Fae What are the key differences between Socket and Server Socket? Create a simple console
+
+chat application using TCP socket. [(3+7]
+ae » Write a program to calculate area of triangle using RMI. [6]
+by Write a program to list out all the interfaces. [4]
+
+ 
+

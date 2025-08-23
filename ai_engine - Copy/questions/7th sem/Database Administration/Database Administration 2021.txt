@@ -1,0 +1,65 @@
+ 
+
+ 
+
+ee
+
+‘Tribhuvan University
+Faculty of Mumaoiteg & Social Sciences
+OFFICE OF THE DEAN”
+2021
+ut Marks
+fans Mines 24
+ies 3 homes
+ith 201%
+
+ 
+
+achetor in Computer Applica
+Course Tile: Database Adminstration
+
+their own words as far possible:
+
+[os = 30}
+
+   
+   
+
+ 
+
+any SIX questions.
+‘WhaCis panitioning? Explain the diferent method of table pariioning. [14] टी
+ion. 15]
+
+पह how vos cans ea oars fie
+छो he different guidelines to create
+
+5. What is indexing? Why
+
+the steps ined in
+10, Deseribe the memory:
+explain about orale
+
+   
+
+ 
+  
+    
+
+1. What is privilege an
+used in ORACLE dat
+
+   
+  
+
+) Create a role, assign vi
+©) Allocate unlimited space to user on “users” tablespace. (1)
+
+) Create profile with following parameter,
+i)
+ii) Idle
+iii) Sessions_per user 3
+©) Assign profile to the user.
+
+ 
+

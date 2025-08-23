@@ -1,0 +1,128 @@
+ 
+
+Course Title: Numerical Methods (3 Cr.)
+
+Course Code: CACS252
+
+Year/Semester: II/IV
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1, Practical: 2 Hrs.)
+
+Course Description
+
+This course covers solution of nonlinear equations, interpolation and
+approximation, numerical differentiation and integration and solution of linear
+algebraic equation, ordinary differential equations and partial differential
+equations. It provides knowledge for numerical analysis.
+
+Course Objectives
+The general objectives of this subject are to make students familiar with the
+
+theory of numerical analysis for solving algebraic and transcendental equations,
+solution of ordinary and partial differential equations, numerical differentiation
+and integration.
+
+Course Contents
+
+Unit 1 Solution of Nonlinear Equations 10 Hrs.
+Introduction, Types of Equation, Errors in Computing. The Bisection Method;
+The Method of False Position, Newton- Raphson Method, Solution of System of
+Nonlinear Equation, Fixed Point Iteration and Convergence
+
+Unit 2 Interpolation and Approximation 8 Hrs.
+Introduction, Errors in Polynomial Interpolation, Lagrange's Polynomials,
+Newton's Interpolation using Difference and Divided Differences, Cubic Spline
+Interpolation, Least Squares Method for Linear and Non-linear Data.
+
+Unit 3 Numerical Differentiation and Integration 5 Hrs.
+Introduction to Numerical Differentiation, Newton's Differentiation Formulas,
+Numerical Integration (Trapezoidal Rule, Simpson's 1/3 rule, 3/8 rule); Romberg
+Integration; Numerical Double Integration.
+
+Unit 4 Solution of Linear Algebraic Equations 10 Hrs.
+Review of the existence of solutions and properties of matrices. Consistency of a
+Linear System of Equations, Gaussian Elimination Method, Gauss-Jordan
+Method, Inverse of matrix using Gauss Elimination Method, Method of
+factorization, Iterative Methods(Jacobi & Gauss-Seidel  Iteration),Power
+Method. हि
+
+Unit 5 Solution of Ordinary Differential Equations 7 Hrs.
+Introduction to Differential. Equations? Initial Value Problem, Taylor Series
+Method, Picard's Method, Euler's Method and Its Accuracy, Heun's method,
+
+Ao
+
+Page 58
+ 
+
+Runge-Kutta Methods, Solution of Higher Order Equations, Boundary Value
+Problems, Shooting Method and Its Algorithm.
+
+Unit 6 Solution of Partial Differential Equations 5 Hrs.
+Introduction to Partial Differential Equations, Deriving Difference Equations,
+Laplacian Equation and Poisson's Equation.
+
+Laboratory Works
+Laboratory works will consist of program development and testing of Non-linear
+Equations, Interpolation, Numerical Differentiation and Integration, Linear
+Algebraic Equations, Ordinary and Partial Differential Equations using C or
+C++Builder.
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions. case
+studies. guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+Internal Assessment External Assessment
+20 20 60 100
+(3 1115.) G Hrs.)
+Text Books
+
+1. C.F. Gerald and P.O. Wheatley, “Applied Numerical Analysis”, 4". Edition,
+Addison Wesley Publishing Company, New York
+
+2. S.S Sastry, “/ntroduction to Methods of Numerical Analysis’’,- Prentice- Hall
+India
+
+Evaluation
+
+ 
+      
+
+        
+
+Reference Books 3
+
+1. W. Cheney and D. Kinciad, “Numerical Mathematics. and Computing”, 2°4
+edition, Brooks/Cole Publishing Co., 1985 5
+W.H. Press, B.P. Flannery et. al., “Numerical Recipes in C’; 1° dition,
+
+Cambridge Press, 1998. hh nee L of
+i yr C/\
+
+ 
+
+to
+
+Page | 59
+
+ 
++
+
+3. S. Yakwitz and F. Szidarovszky, “An Introduction to Numerical Computations”,
+2™ Edition, Macmillan Publishing Co., New York.
+4. S.S. Sastry. “Engineering Mathematics Volume two”, Prentice-Hall of India.
+
+/
+(A
+
+ 
+
+Page | 60
+
+FTEFERE EERE EERE EERE EER EEE
+
+ 
+

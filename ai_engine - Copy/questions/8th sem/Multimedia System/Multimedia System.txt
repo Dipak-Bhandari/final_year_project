@@ -1,0 +1,18 @@
+iridhuvan University
+Faculty of Humanities and Social Science
+Semester: VIII
+Subject: Multimedia System
+2018 Batch
+
+ 
+
+Group B
+Attempt any SIX questions
+2. What is meant by mul
+
+ 
+
+11, What is MIDI? What features of MIDTmakes 1 suitable for multimedia applications?
+Calculate the file size in bytes for 10 seconds recording stereo music at 44.1 KHz, 16 bit
+Resolution.
+

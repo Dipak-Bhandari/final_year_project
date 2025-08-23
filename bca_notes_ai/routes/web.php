@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\ResourceController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\QuestionPaperController;
 use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\SyllabusController;
@@ -42,9 +43,12 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 });
 
 // Academic content routes (public)
-Route::get('/semesters', [SemesterController::class, 'index'])->name('semesters.index');
-Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
-Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
+Route::middleware(['auth'])->group(function () {
+   
+    Route::get('/semesters', [SemesterController::class, 'index'])->name('semesters.index');
+    Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
+    Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
+});
 
 // Legacy route for backward compatibility
 Route::get('/semester/{number}', function ($number) {
@@ -52,6 +56,10 @@ Route::get('/semester/{number}', function ($number) {
         'semester' => $number,
     ]);
 })->name('semester.show');
+
+
+// Chat routes
+Route::post('/chat', [ChatController::class, 'ask'])->name('chat.ask');
 
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

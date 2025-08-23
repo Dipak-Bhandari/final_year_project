@@ -1,0 +1,342 @@
+Course Title: Computer Fumdamentals and Applications (4 Cr.)
+Course Code: CACS101
+
+Year/Semester: I/I
+
+Class Load: 8 Hrs. / Week (Theory: 4 Hrs., Practical: 4 Hrs.)
+
+Course Description
+
+This course offers fundamental concepts of computer and computing which
+includes introduction to computer system, computer software & database
+management system, operating system, data communication & computer network
+and contemporary technologics. It also aims at helping students convert
+theoretical concept into practical skill through the use of different application
+packages including word processor, spreadsheet package, presentation package
+and photo editing graphical package.
+
+Course Objectives
+The general objectives of this course are to provide fundamental concepts of
+information and communication technology and to make students capable of
+using different application packages in their personal as well as professional life.
+
+Course Contents
+
+Unit 1 Introduction to Computer System 16 Hrs.
+Introduction to Computer, Characteristics of Computer, Applications of
+Computer, Classification of Computer, Mobile Computing, Anatomy of a Digital
+Computer, Computer Architecture, Memory & Its Classification, Input devices,
+Output Devices, Interfaces.
+
+Unit 2 Computer Software 3 Hrs.
+
+Introduction to Software, Types of Software, Program vs. Software, Computer
+Virus and Antivirus.
+
+Unit 3 Operating System 4 Hrs.
+
+Introduction to Operating System, Function of Operating System, Types of
+Operating System, Open Source Operating System.
+
+Unit 4 Database Management System 8 Hrs.
+
+Introduction to DBMS, Database Models, SQL, Database Design and Data
+Security, Data Warehouse, Data Mining, Database Administrator
+
+Unit 5 Data Communication and Computer Network 10 Hrs.
+Introduction to communication system, Mode of Communication, Introduction to
+Computer Network, “ypes of Computer Network, LAN Topologies,
+Transmission Media, Network Devices, OSI Reference Model, Communication
+Protocols, Centralized vs. “Boe d Sys
+
+/
+» NV Page |7
+
+   
+
+ 
+Unit 6 Internet and WWW 6 Hrs.
+Internet: Introduction to Internet and its Applications, Connecting to the
+Internet, Client/Server Technology, Internet as a Clicnt/Server Technology,
+Email, Video-Conferencing, Internet Service Providers, Domain Name Server,
+Internet Address, Internet Protocols (IP, TCP, HTTP. FIP, SMTP, POP, Telnet,
+Gopher, WAIS), Introduction to Intranet, Internet vs. Intranet vs. Extranet,
+Advantages & Disadvantages of Intranct
+World Wide Web (WWW): World Wide Web and Its Evolution, Architecture
+of Web, Uniform Resource Locator (URL),Browsers: Internet Explorer, Netscape
+Navigator, Opera, Firefox, Chrome, Mozilla; Search Engine. Web Servers:
+Apache, IIS; Proxy Server; HTTP Protocol, FTP protocol.
+
+Unit 7 Contemporary Technologies 13 Hrs.
+Multimedia, e-Commerce, e-Learning, e-Governance, e- Banking, Hypermedia,
+Geographical Information System, Virtual Reality, Augmented Reality, Artificial
+Intelligence, Ambient Intelligence, Robotics, Bit Coin.
+
+Laboratory Works
+Laboratory works should cover all the units and topics mentioned below and a project
+
+work should be carried out by students individually implementing the concept and skill
+learnt in this course.
+
+Unit 1 Operating System 10 Hrs.
+a. GUI Based OS (5 Hrs.): Interface, GUI vs. CUI, Introduction to Windows,
+Features, Elements of Windows, Task Bar, Using Menus and Submenus,
+Opening a Program, Opening Multiple Program, Using Short Cuts, Using My
+Computer, Switching off the System, Desktop and Custom Wall Papers,
+Screen Saver, Using Help for Interactive Learning. Using General
+Accessories: Notepad, Paint Tool, Clip Board, Character Map, Calculator
+etc.; Using Multimedia: Using CD/DVD/BD, Using Audio/Video; Using
+Explorer to Manage Files and Folders: Copy/Delete/Rename/Short Cuts;
+Recycle Bin and It Uses. Using Format, Scandisk and Disk Defragmenter,
+Windows Installation and Setting.
+b. CUI Based OS (5 Ilrs.): Introduction to DOS, DOS Internal Commands,
+DOS External Commands.
+
+Unit 2 Word Processor 12 Hrs,
+Introduction to Word Processor, 4 atures of Word Processor, Elements of Word
+Window, Creating & Saving Document, Copy Paste and Cut Paste, Format
+Painter, Undo and Redo, Print Preview,.Printing Documents, Fonts, Effect and
+Character Formatting, Paragraph Formaiting, Styles, Finding, Replacing and
+Selection, Cover Page, Blank Page, Page Break. Working with Table, Inserting
+Picture, Clip Art, Shapes,.Smart Art and Chart, Hyperlink, Bookmarks, Cross-
+
+ 
+
+/
+/
+
+८७६ १ JX
+he SK Page | 8
+
+ 
+
+ 
+Referencing, Header, Footer, Page Number, Working with Text Box, Quick
+Parts, Word Art, Drop Cap. Signature Line, Date & Time, Object. Equation,
+Symbol, Working with Themes, Page Margins, Page Orientation, Page Size,
+Columns Handling, Hyphenation, Watermark, Page Color, Page Borders.
+Indentation, Arranging Objects, Table of Contents, Footnote and Endnote,
+Citation and Bibliography. Captions. Inserting Index, Table of Authorities,
+Mail Merge, Spelling and Grammar, Thesaurus, Translation, Word Count,
+Comments, Tracking, Changes, Compare. Protecting Document, Document
+Views, Ruler, Gridlines, Document Map, Thumbnails, Zooming, Window
+Handling, Creating and Using Macro.
+
+Unit 3 Spreadsheet Package 12 Hrs.
+Introduction to Spreadsheet Package, Features of Spreadsheet Package,
+Introduction to Microsoft Excel, Elements of Excel Window, Cell Referencing
+in Excel: Relative, Absolute, and Mixed: Managing Workbooks, Worksheets,
+Windows, Working with Worksheet, Printing Worksheet, — Using
+Formulas/functions; Formatting/Conditional Formatting Data & worksheet;
+Using Paste Special, Essential Worksheet Functions, Using Templates,
+Protecting the File and Worksheet with Passwords; Working with Graphic
+Objects: Clip Art, Word Art, Map: Working with Charts, Working with
+Internal Database, Getting More Power from Worksheet Databases, Accessing
+External Databases, Loan Amortization Scheduling and Calculation; Data
+Validation, Consolidating and Outlining, Using What- if Analysis: Data Table,
+Goal Seek, Scenario Manager; Understanding Pivot Tables, Constructing and
+Analyzing Pivot Tables, Using Custom Controls on Worksheets, Effectively
+Using the Macro Recorder
+
+Unit 4 Presentation Package 6 Hrs.
+Introduction, Creating and Saving Presentation: Entering, Editing, and Enhancing
+Text; Editing in different views- Outline View, Slide Sorter View: Creating
+Graphs, Editing and Enhancing Graphs: Adding ClipArt in Slide, Editing Arts,
+Animating Charts and Art Objects, Adding Sound, Choosing Sound Effects-
+Transitional, From Other Sources; Adding Sounds to Animations and Sound
+Objects; Recording Sound and Narration: Adding Movie in Slides, Playing and
+Editing Movie; Making Movie Poster and Icon: Slide Show, Setting Slide
+Transition, Speed and Slide Advancement; Rehearsing Slide Display Timing,
+Slide Notes and Comments: Editing Text Color, Creating Custom Color;
+Background and Schemes; Linking and Embedding Objects; Importing and
+Exporting Presentation; Printing Slides and Handouts
+
+Unit 5 Photo Editing Package © A 20 Hrs.
+Fundamentals
+Graphics Basics: Bitmap Vs. Vector-Based Graphics, Color/Bit Depth and Image
+Resolution, Graphic File Formats, Optimizing Web Graphics, Regular Text’ Vs.
+
+Bee Ny “Page | 9
+— UY
+१4 हर
+
+ 
+
+ 
+Anti- Aliased Text, Pixel Resize Vs. Smart Resize, Regular Graphics Vs.
+Interlaced Graphics, Lossy Compression Vs. Lossless Compression, Dithered
+Graphics Vs. Non-Dithered Graphics, Standard Sclection Vs. F loating Sclection,
+Tolerance, Opacity.
+
+Introduction to Color: Color Modes- RGB, CMYK, Grayscale, LAB, Bitmap;
+Hue, Saturation, and Brightness; Browser Safe Colors; Shadows, Ilighlights and
+Midtones of an Image.
+
+Interface, Tools and Options
+
+Environment: About Photoshop, The Photoshop Interface, Setting up a new
+Photoshop document. Saving a new document, The Default Palettes. Working
+with Photoshop Palettes, The Photoshop Toolbox and Options bar, Using Guides
+and Ruler,
+
+Image and Color Basics: Supported import and export image formats, Opening
+an Image in Photoshop, Creating Images In Photoshop, Saving Images In
+Photoshop, Basic Image Editing, Changing Image Size, Cropping an Image,
+Changing Color/Bit Depth, Optimizing Images using Save for Web, Working
+with Color in Photoshop
+
+Tools; Parts of the Toolbox, Toolbox Shortcuts, Tools Options, Marquees,
+Magic wand, Lassos, Move tool, Crop tool. Slice tools, Pencil, Paintbrush,
+Eraser tools, History brushes, Clone tamp-Pattern stamp, Healing brush tool,
+Retouch tool, Gradient, Paint bucket. Burn-Dodge-Sponge, Blur-Sharpen-
+Smudge, Shapes-line- rectangle-polygon-custom shapes, Path selection tool, Pen
+tool, Type tools, Notes tool-Audio annotation, Eyedropper-Color sampler-
+Measure tool, Hand-Zoom, Quick mask-Screen modes, Jump to Image Ready,
+Back ground and Foreground.
+
+Transforms: Using Free transform, Move, Rotate, Scale, Skew, Distort,
+Perspective, Flip-vertical, horizontal, Invert, Rotate 180°, Rotate 90° CW,
+Rotate 90° CCW,.
+
+Layers, Channels and Actions
+
+Photoshop Layers: About Layers-Fill and Adjustment Layers, The Layer Palette,
+
+Naming Layers, Creating Layers, Deleting Layers, Viewing Layers, Moving
+
+Layers, Layer Opacity, Locking Layers, Merging Layers, Layer Modes and
+
+Blending Options, Image Composting Using Layers.
+
+Photoshop Channels: About Channels, The Channel Palette, Creating and
+
+Viewing Channels, Modifying Channels, Deleting Channels, Alpha Channels and
+
+Masks.
+
+Actions: Using the Action?Palettes Recording Action, Playing Action, Editing
+
+Action, Loading a Saved Action. “
+
+Restoring and Enhancing Images
+
+Restoration of Photos: Restoring Damaged Photos, Photo Retouching,
+we र नट 7
+
+ 
+
+(/ Page | 10
+
+ 
+Photo Enhancement and Color Correction: Changing Levels, Changing Curves,
+Color Balance, Changing Brightness and Contrast, Changing Hue Saturation and
+Brightness, Changing a Grayscale Image to a Colored Image, Histogram,
+Gradient Map, Desatuarate, Invert, Color Replace, Selective Color, Equalize,
+Threshold, Channel Mixer, Posterize, Changing Background using Layer
+Composting
+
+Text Editing and Special Effects
+
+Text Editing in PhotoShop: About the Type Layer, Creating Vertical and
+Horizontal Types, Point and Paragraph Text Creation, Using Horizontal and
+Vertical Type Mask Tools, Using Character Palette for Text Editing, Choosing
+a Font, Changing the Type Color, Choosing a Type Size, Specifying Kerning and
+Tracking, Using Fractional Character Widths, Specifying Baseline Shift,
+Applying Underline and Strikethrough, Text Alignment and Justification,
+Specifying Anti-Aliasing, Creating Text Warp, Rasterizing Type, Converting
+‘ype to Shapes, Adding Effects to Text
+
+Photoshop Special Effects and Filters: About Special Effects, Using Filters,
+Basic Filter Examples, Artistic Filters, Distorting Filters, Filter Combinations,
+Plug-in Filters.
+
+Web Application and Animation
+
+Adobe ImageReady: About Image Ready, Opening Image Ready, The Image
+Ready Interface, Image Maps, Image Slicing, Basic Animation.
+
+Photoshop for Building Web Interface: About the Interface
+
+Teaching Methods
+
+The teaching faculties are expected to create environment where students can
+update and upgrade themselves with the current scenario of computing and
+information technology with the help of topics listed in the syllabus. The general
+teaching pedagogy that can be followed by teaching faculties for this course
+includes class lectures, group discussions, case studies, guest lectures, research
+work, project work, assignments (theoretical and practical), and written and
+verbal examinations.
+
+Evaluation
+Examination Scheme
+
+Internal Assessment External Assessment
+
+20 20 60 100
+(3 Hrs.) (3 Hrs.)
+
+WoO
+
+fr J
+८
+
+ 
+
+  
+   
+
+         
+   
+
+Page | 11
+
+ 
+Text Books
+
+NR
+
+1
+
+i)
+
+Alexis Leon, Mathews Leon, “Fundamentals of Information Technology, 2/e”,
+Vikas Publishing House Pvt Limited, 2009. ISBN: 9788182092457
+
+E Balagurusamy, “Fundamentals of Computers,” Tata McGraw Hill Education
+PVT.Ltd., 2009, ISBN: 9780070141605
+
+Peter Norton's, “Jntroduction to Computers”, 7" Edition, Tata McGraw-Hill,
+2010, ISBN: 9780070671201
+
+Reference Books
+
+Brad Dayley & DaNae Dayley, “Adobe Photoshop CS6 Bible”, Wiley Publishing Inc.,
+2012, ISBN: 978-1-118-12388-1
+
+Faithe Wempen, “Microsoft Office Power Point 2007 Bible (With CD)”, Wiley
+Publishing Inc., 2007, ISBN: 978-0470043684
+
+Herb Tyson, “Microsoft Office Word 2007 Bible (With CD)”, Wiley Publishing
+Inc., 2007 .
+
+Jim Boyce, “Windows 7 Bible ”, Wiley Publishing Inc., 2009, ISBN: 978-
+0470509098
+
+John Walkenbach, “Microsoft Office Excel 2007 Bible (With CD)”, Wiley
+Publishing Inc., 2007, ISBN: 978-0470044032
+
+Pradeep Sinha and Priti Sinha, “Computer Fundamentals (with CD)”, 6"
+Edition, BPB Publications, 2003, ISBN: 9788176567527
+
+Ramesh Rimal & et. al., “Computer Science-l, Revised Edition”, Buddha
+Academic Publishers and Distributors Pvt. Ltd. Nepal. 2013
+
+Ramesh Rimal & et. al., “Computer Science-II, Revised Edition”, Buddha
+Academic Publishers and Distributors Pvt. Ltd. Nepal, 2013
+
+(Av
+
+ 
+
+Page | 12
+

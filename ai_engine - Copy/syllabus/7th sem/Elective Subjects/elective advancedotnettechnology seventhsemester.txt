@@ -1,0 +1,131 @@
+Course Title: Advanced .Net Technology (3 Cr.)
+
+Course Code: CACS408
+
+Year/Semester: IV/VIIL
+
+Class Load: 6Hrs. /Week (Theory: 3 Hrs. Practical: 3 Hrs)
+
+Course Description
+
+This course provides skill to develop modern software program with graphical user interface
+using the language C# with ASP.net. Student will build Window-based and web-based forms,
+adding controls and setting properties of these controls.
+
+Course Objective
+
+The objective of this course is to understand the theoretical foundation as well as its practical
+aspects of Windows Application, ASP.NET Core web application framework and C# language
+features.
+
+Course Contents
+
+Unit 1: C# Basics 8 Hours
+Introduction to .NET Architecture, Class and Object: Creating class, Interface, Creating
+Objects, Access Modifiers, Arrays, Inheritance, Exception Handling and Threading: try, catch,
+finally, throw and throws, Create multithread program, Thread lifecycle. File IO: File Stream,
+Stream Reader, Stream Writer, Binary.Reader, Binary Writer, Serialization.
+
+Unit 2: Windows Application 6 Hours
+Windows Forms: Benefits, Window Forms Control, Properties and Event, NET Event, MDI
+Forms, Form Inheritance. Dialogs, Tooltips, Resizing, Menus and Context Menus, Custom
+Control Creations, Handling Multiple Events, Graphics and GDI+
+
+Unit 3: Introduction to ADO.NET 7 Hours
+Benefits of ADO.NET, ADD.NET compared to classic ADO, ADO.NET architecture
+(Connected and Disconnected), Shared and Database-Specific Classes, Using Database
+connection. Working with DataSets, Managed Providers, Data Binding, Typed DataSets,
+Working with Data Reader, Transactions
+
+Unit 4: ASP.NET working with Data and Security 12 Hours
+Web Application Using ASP.NET, ASP.NET Architecture, Working with controls, User
+Interface Elements, Deployments, Web sites, Applications and Virtual Directories in IIS.
+Accessing Data using ADO.NET, Connecting to Data, Executing Commands, State
+management ( Page-Level state, using Cookies to preserve state, ASP.NET Session State,
+Storing Object in Session State, Configuring Session State )
+
+Validation, IIS URL Authorization, Forms Authentication and Config File encryption
+
+Unit 5: ASP.NET AJAX and MVC 10 Hours
+Introduction to ASP.NET AJAX, ASP.NET AJAX Server Control, ASP.NET AJAX Server
+Data, ASP.NET AJAX Client-side Libraries. Introduction ASP.NET MVC, Web Application
+Using MVC pattern Razor View and controller, Model
+
+Unit 6: Hosting and Deploying ASP.NET Core Application 5 ier
+
+App Servers and Hosting Models: IIS, Nginx, Apache, ASP.NET Core Module, estrel,
+
+Docker and Containerization, Publish to Azure cloud cy i; a
+
+; < ) १३ 4 2. Sf
+
+DB eee pe द्र; ४ टू
+Sf oN WBS
+
+ 
+
+Vy 7
+bate,
+
+ 
+Laboratory works
+
+The laboratory work includes writing programs covering most of the concepts of above units
+using C# and .NET core SDK (3.0 or above)
+
+Teaching Methods
+
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the current scenario of computing and information technology with
+the help of topics listed in the syllabus. The general teaching pedagogy that can be followed by
+teaching faculties for this course includes class lectures, laboratory activity, group discussions,
+case studies, guest lectures, research work, project work, assignments (Theoretical and
+Practical), and written and verbal examinations.
+
+Evaluation
+
+    
+  
+
+ 
+ 
+ 
+ 
+ 
+
+Examination Scheme
+
+    
+
+   
+
+ 
+
+Internal Assessment External Assessment Total
+Theo Practical Theo Practical
+20 20 (3 Hrs. 60 (3 Hrs.
+
+ 
+
+ 
+
+ 
+
+Reference Books
+
+1. Herbert Shildt, “C#: The Complete Reference”, TMH
+
+2. C# 8.0 and .NET Core 3.0 — Modern Cross-Platform Development, Fourth Edition, by
+Mark J. Price, 2019
+
+3. ASP.NET Core in Action, by Andrew Lock, 2018
+4. lan Griffiths (2012), Programming C# 5.0, O'Reilly Media, Inc.
+5. Sharp, J. (2013). Microsoft Visual C# 2013 step by step.
+6. Albahari, J., Albahari, B., & Drayton, P. (2012). C# 5.0 in a nutshell (5th ed). Beijing ;
+Sebastopol: O’Reilly. Axa)
+jae} A
+
+ 
+
+19
+

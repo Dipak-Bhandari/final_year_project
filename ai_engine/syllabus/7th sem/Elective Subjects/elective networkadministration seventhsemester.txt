@@ -1,0 +1,85 @@
+Course Title: Network Administration (3 Cr.)
+
+Course Code: CACS406
+
+Year/Semester: [V/VII
+
+Class Load: 6 Hrs. / Week (Theory: 3Hrs. Practical: 3 Hrs.)
+
+Course Description: The course introduces the theoretical as well as practical concepts of
+Network Administration. The course includes concepts of work station, server and services,
+Network infrastructure, Implementing different network services.
+
+Course Objectives: The objectives of this course is to make the students to design and
+implement enterprise level network with its services.
+
+Course Contents:
+
+Unit I: Introduction [4Hrs.]
+Network administrator as a Profession, Network administrator professional ethics,
+Recent trends in network administration.
+
+Unit I: Work Station, Server and Services [16Hrs.]
+Workstation: Architecture design, Hardware strategies, OS installation. Servers:
+Hardware Strategies, Hardware Features & Specifications. Service: Requirements,
+Planning and Engineering, Service Launch, Disaster Recovery.
+
+Unit I: Infrastructure [6Hrs.]
+Network Architecture, Network Operations, Datacentres Overview and Running
+Datacentres.
+
+Unit III: Service Recommendation [16Hrs.]
+
+Server Upgrade, centralizing a service, Service Monitoring, Namespaces, Email
+Service, Print Services, Data Storage, Backup and Restore, Software Repository, Web
+Services.
+
+Unit IV: [6Hrs.]
+Preparing procurement plan/document for enterprise level network setup
+
+Laboratory Works:
+The laboratory work includes implementation of the mentioned content in syllabus using
+LINUX and Windows operating system.
+
+Teaching Methods
+The major teaching methods that can be followed for this course includes class lectures,
+laboratory activity, group discussions, presentations and case studies.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation
+Examination Scheme
+Internal Assessment External Assessment Total
+Theo Practical Theo Practical
+20 20 (3 Hrs. 60 3 Hrs. fe
+Text Book:
+
+1. The Practice of System and network administration, 3"! Edition, Thomas A. Limoncelli,
+Christina J. Hogan, Strata R. Chalup
+
+2. Mastering Windows Server 2019: The complete guide for IT professionals to install
+and manage Windows Server 2019 and deploy new capabilities, 2nd Edition
+
+3. Ubuntu and Centos Linux server administration, MD. Tanvir Rahman. 20198 रड
+
+8 a
+Aya) Gls v
+
+ 
+
+   
+

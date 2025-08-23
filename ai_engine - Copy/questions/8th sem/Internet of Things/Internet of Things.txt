@@ -1,0 +1,22 @@
+‘Tribhuvan University
+Faculty of Humanities and Social Science
+Semester: VIL
+Subject:
+
+2018 Batch
+
+ 
+
+ternet of Thing
+
+ 
+
+Group B
+Attempt any SIX questions
+2
+
+ 
+
+10, 1OT comprises of Physical and Logical Design. Explain both in brief.
+11. What is Raspberry Pi? Define how it is used in IOT along with installation.
+

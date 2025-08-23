@@ -1,0 +1,76 @@
+Course Title: Project II (2 Cr.)
+
+Course Code: CAPJ356
+
+Year/Semester: [I/VI
+
+Class Load: 4 Hrs. / Week (Practical: 4 Hrs.)
+
+Course Description
+
+To develop small scale project based on the application development platforms and tools JAVA,
+visual c++, PHP , Python or plate form of any current trend. This course provides practical skill
+based knowledge.
+
+Course objectives
+
+The objectives of this course are to provide project management skills (developing, implementing,
+managing collaboration) and to learn working as a team. The student will also learn about
+formulating project documentation.
+
+Course Contents
+Unit 1: Project Ideas and proposal guidance 4
+
+1.1 Project concept and Scope
+1.2 Proposal writing techniques
+
+Unit 2: Application Development 8
+
+2.1 Object oriented programming
+2.2 Frameworks and APIs
+
+2.3 Programming design patterns
+2.4 Data collection for project
+2.5 Application of GPUS
+
+Unit 3: Project management, team work and collaboration 8
+
+3.1 Project management techniques
+3.1.1 Develop project management plan
+3.1.2 Project implementation, monitor and control
+
+3.2 Collaborative development environment
+
+3.2.1 Communications planning process
+
+3.2.2 Organizing and conducting effective meeting,
+Unit 4: Project Guidance 5
+
+Unit 5: Project work
+
+ 
+Unit 6: Project documentation guidance
+
+nn
+
+4.1 documentation format
+
+4.2 Table writing format
+
+4.3 Figure writing format
+
+4.4 Writing equation
+
+4.5 References and citation techniques
+4.6 Abstract writing
+
+Reference Books:
+
+1. The Project Manager’s Guide to Software Engineering’s Best Practices, M. C. Christensen
+and R.H. Thayer,IEEE computer Society
+
+2. Angelika H. Hofmann, " Scientific Writing and Communication: Papers, Proposals, and
+Presentations Oxford University Press; 3 edition (November 17, 2016)
+
+ 
+

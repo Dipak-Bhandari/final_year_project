@@ -1,0 +1,44 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2024
+Bachelor in Computer Applications ;
+Course Title: Distributed System Full Marks: 60
+Code No: CACS 352 Pass Marks: 24
+Semester: VI Time: 3 hours
+
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30]
+2 Why distributed operating system is needed? Differentiate between network operating
+system and distributed operating system. [1+4]
+3, How does virtualization contribute to the functionality of distributed system? [5]
+हौँ What is mutual exclusion and how is it maintained in distributed environments? [5]
+s— What code migration? Explain the migration models. {1+4]
+6 Define name, address and identifier. Explain the types of communication in distributed
+system. (2+3)
+7. Explain different aspects of distribution transparency in brief. 151
+2: Write short notes on (any two) [2.5+ 2.5]
+
+J Public key cryptography
+b. Security Management
+4. RPC
+Group C
+
+Attempt any TWO questions. [2x10 = 20}
+
+9. What is clock synchronization? Why clock synchronization is needed in distributed system?
+Explain physical clock synchronization algorithm in detail. [2+2+6]
+
+10. What are the types of failure that may occur in distributed system? Explain the methods
+used to recover from the crash? Explain one phase commit and two phase commit protocol
+detail. [2.5+2.5+5]
+
+11. What is replication? Explain data-centric consistency models with suitable example, Explain
+
+the types of name resolution algorithm used in distributes system. [1+5+4]
+

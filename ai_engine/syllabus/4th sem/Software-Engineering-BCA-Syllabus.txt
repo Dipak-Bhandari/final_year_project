@@ -1,0 +1,117 @@
+TFERFRERP REFEREE REREEEES EEE EES
+
+Course Title: Software Engineering (3 Cr.)
+
+Course Code: CACS253
+
+Ycear/Semester: II/IV
+
+Class Load: 4 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1)
+
+Course Description
+This course includes the topics that provide fundamental concept and standard of
+
+software engineering so that students will be able to develop software and/or
+handle software project using the global standard of software.
+
+Course Objectives
+This Course is designed to provide the students with the basic competencies
+
+required to identify requirements, documents the system design and maintain a
+developed system. It presumes a general understanding of computers and
+programming which are covered in the first and second semester of the degree.
+
+Course Contents
+
+Unit 1 Introduction 4 Hrs.
+= of Software, Type of Software, Characteristic of Software, Attributes
+of Good Software, Definition of Software Engineering. Software Engineering
+Costs, Key Challenges that Software Engineering Facing, System Engineering
+and Software Engineering, Professional Practice.
+
+Unit 2 Software Development Process Model 8 Hrs,
+Sofiware Process, Software Process Model: The Waterfall Model, Evolutionary
+Development, Component-Based Software Engineering (CBSE); Process
+Iteration: Incremental Delivery, Spiral Development; Rapid Software
+Development: Agile Methods, Extreme Programming, Rapid Application
+Development. Software Prototyping; Rational Unified Process (RUP), Computer
+Aided Software Engineering (CASE): Overview of CASE Approach,
+Classification of CASE tools.
+
+Unit 3 Software Requirement Analysis and Specification 10 Hrs.
+System and Software Requirements, Type of Software Requirements: Functional
+and Non-Functional Requirements, Domain Requirements, User Requirements;
+Elicitation-and Analysis of Requirements: Overview of Techniques, View Points,
+Interviewing, Scenarios, Use-Case, Ethnography, Requirement Validation,
+Requirement Specification, Feasibility.
+
+Unit 4 Software Design . 10 hrs.
+Design Concept: Abstraction, Architecture, Patterns, Modularity: Cohesion,
+Coupling; Information Hiding, . Functional Independence, ; Refinement;
+Architectural Design: Repository Model, Client Server Model, Layered Model,
+
+Modular Decomposition: Va Using Structured ,Methods, User
+: 0070 4,
+
+  
+
+Page | 61
+Interface Design: Human-Computer Interaction, Information Presentation,
+Interface Evaluation; Design Notation.
+
+Unit 5 Coding 2 Hrs.
+Programming Language and Development Tools, Selecting Languages and
+‘Tools, Good Programming Practices
+
+Unit 6 Software Testing and Quality Assurance 6 Hrs.
+Verification and Validation, Techniques of Testing: Black-box and White-box
+‘Testing, Inspections: Level of Testing: Unit Testing, Integration Testing,
+Interface Testing, System Testing, Alpha and Beta Testing. Regression Testing;
+Design of Test Cases, Quality Management Activities, Product and Process
+Quality. Standards: 1S09000, Capability Maturity Model (CMM);
+
+Unit 7 Software Maintenance 3 Hrs.
+Evolving Nature of Software, Different Types of Maintenance: Fault Repair,
+Software Adaptation, Functionality Addition or Modification; Maintenance
+Prediction, Re-Enginecring, Configuration Management (CM): Importance of
+CM, Configuration Items, Versioning;
+
+Unit 8 Managing Software Projects 2 Hrs.
+Needs for the Proper Management of Software Projects, Management Activities:
+Project Planning, Estimating Costs, Project Scheduling, Risk Management,
+Managing People;
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions, case
+
+studies, guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+Evaluation
+
+        
+ 
+   
+
+Examination Scheme
+
+Internal Assessment External Assessment
+गी”
+40 00. 100
+(3115
+
+   
+    
+
+Page | 62
+
+Se त
+Se ON
+000
+छ
+—_—>
+=
+ae
+

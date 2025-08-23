@@ -1,0 +1,67 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN रै
+2023
+
+ 
+
+Bachelor In Computer Applications Full Marks: 60
+
+Course Title: Scripting Language Pass Marks: 24.
+Code No: CACS254 Time: 3hours |
+Semester: IV Batch: 2020 /
+Candidates are required to answer the questions in their own words as far as possible. YZ
+Group B BE .
+(6x5=30] 7
+
+Attempt any SIX questions.
+
+2. What is need for client side scripting? Write a JavaScript which accept user’s first and last
+
+name and print them in reverse order with space between them. [1+4]
+3 Write a HTML code to design a form with three radio button green, red, blue and black. Write
+a JavaScript code that will change the background color of the page when user clicks on
+
+particular button. (2+3] 4
+4. What do you mean by super global variable in PHP? How to read and write CSV file in PHP
+
+explain with suitable example. {2+3]
+5. What is an associative array? Write a PHP program to create a multidimensional array that
+
+holds the marks of five subject like Operating system, Scripting, Numerical method,
+
+DBMS, Software Engineering and of three student Aashis, Jayanti, Niraj. Then display the
+
+verage marks of each student. [1+4]
+hs What is use of inheritance? Write an object oriented PHP program to define Person class and
+
+derive student and employee class from it to demonstrate hierarchical inheritance. [144]
+7. What is syntax to create AJAX object? Design and develop dynamic web application using
+
+HTML, AJAX and PHP. [+4]
+a is difference between WordPress theme and template? Write the steps to add and edit \
+
+pages in WordPress. (2+3]
+Group C
+
+Attempt any TWO questions, [2x10 = 20]
+
+5 hat are different way to include JavaScript in HTML document? Create a HTML page fo
+री containing a division with image and its description in paragraph. Write a JavaScript function =,
+to change the value of description in the paragraph during onmouseover and onmouseout on |”
+
+the image. [3+7] /
+
+10, Design a HTML registration form containing text box for Name and Email, radio button for
+gender, selection list for education field Write a PHP script to validate input and then store
+data from the form into database using database connection and appropriate query. [3+3+4]
+
+11, How jQuery is differing from JavaScript? Discuss different types of jQuery selectors with
+-[4+6)
+
+é
+
+example.
+
+ 
+

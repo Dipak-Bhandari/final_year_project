@@ -1,0 +1,20 @@
+Tribhuvan University
+Faculty of Humanities and Sacial Seience
+Semester: VII
+Subject: Information Seeurity
+2017 Batch
+
+   
+
+ 
+
+GroupB
+Attempt any SIX questions
+
+ 
+
+11. What isa secutity audit? What is iis importance? Explain the security auditing
+architecture in detail.
+
+ 
+

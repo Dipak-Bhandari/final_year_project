@@ -1,0 +1,62 @@
+ 
+
+ 
+
+5 University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2021
+Bachelor im Computer Applications all Marks: 60
+Course Tie: Arti tntelligence Pass Marks: 24
+Code No: CACSA10 ‘Time: 3 hours
+Semester: VIT Batch: 2018
+
+their own words as far as possible,
+
+ 
+
+Candidates are required to answer the questions i
+Group B
+Attempt any SIX questions. [6S = 30}
+
+“W Compare Goal Based and Utility Based agent with example
+3. Using Constraint satisfaction problem solve the Crypearithmetic Problem
+
+CROSS + ROADS = DANGER
+3+ What ar various knowldge representation ses? Provide soliton of nyt.
+
+‘Se. Explain with example supervised and unsupervised ल्याए,
+Explain the architecture of Expert system, Give isto application areas
+
+{2-What isthe need of actvtion function is ANN? Implement Perepton algorithm for AND loge gt
+rey ea
+Be Write shor notes on:
+
+2) Hopetield Network
+
+‘b) Best First Search
+
+  
+
+Group C
+Attempt any TWO questions. [210 = 20]
+9. Consider the following sentences:
+
+4) Tashi only likes easy course
+by Science Courses are hard
+
+©) All courses in Computer Application are easy
+
+4) Anificial Intelligence is Computer Application Course
+
+Use resolution to ensure question what Course woud Tashi like?
+
+‘19+ Explain A* algorithm with suitable example, Differentiate between informed and uniformed
+search, (73)
+‘AL Define universal and existential quantifiers, Explain Bayesian Belief Network in brief Discuss.
+
+how back propagation algorithm is used to train ANN? [226] RX
+

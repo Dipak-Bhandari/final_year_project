@@ -1,0 +1,45 @@
+Tribhuvan University
+Faculty of Humanities and Social Science
+Semester: VIL
+Subject: Operational Research
+2017 Batch
+
+ 
+
+Group B
+
+Attempt any SIX questions
+2. What is Operational R
+
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6. Write Hungarian algorithm to solve the assignment problem.
+Classify the queueing models with example.
+8. Write short notes on (Any Two):
+
+a) BOQ
+
+») Kendall's Notation for Queueing Model -
+
+) Duality theorem
+

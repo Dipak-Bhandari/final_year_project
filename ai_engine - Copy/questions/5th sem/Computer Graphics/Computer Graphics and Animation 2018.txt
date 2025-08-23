@@ -1,0 +1,62 @@
+ 
+
+‘Tribhuvan University
+ravulty of Humanities & Social Sciences
+
+ 
+
+ 
+
+OFFICE OF THE DEAN
+2018
+stor Computer Application (BCA) ae
+Bac Computer Graphics 4m Aioation Pass Marks: 24
+‘Time: 3 hours
+
+Cade No: CACS3
+
+ 
+
+Candas are required to answer the questions in thelr own words as fr as possible
+
+Group B
+[65-20]
+
+Adem any six questions
+
+‘
+
+2
+s
+
+Attempt any two questions:
+
+‘What do you mean by rs filing? Explain boundary Ml algortn,
+Define 0
+‘Whats smmetre pope of eile? Digtz a circle whose cee is at origin and radius is 9.
+Define window and view port. Explain 2D viewing tasformaton pipeline
+Reflect prism A(@00, B(,1,0), C(.2.2) and (02,0) about yz-plane which has been rotted previcsty
+
+with #99 degre about yx.
+\Whetdo you meaa by visible surface detection? Explain bur algorithm for Visible suisse detection
+
+‘Whats animation? Explain the steps oes animation sequence,
+
+Groupe
+[x10=20
+
+ 
+
+9, Define fest rate and persistence of monitor. Explain architecture of random sean display system i
+
+block cisgram.
+
+10, How cen you draw line using Bresenham’s line ding sort? Trace ito rastrize the lie with ed
+
+pois P (1, 4) and Q 7, 8).
+
+11, Explain Cohen Sutherland line clipping algoritim, Let ABCD be the rectangular window with A@020),
+
+'B(90,20), €(90,70) and DX20,70), Use Cohen Sutherland algorithm to find the region cass and ip tbe
+lines wih end point P(10,30) and Q(0,80)
+

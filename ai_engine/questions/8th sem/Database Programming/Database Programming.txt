@@ -1,0 +1,23 @@
+Tribhuvan University
+Faculty of Humanities and Sacial Seience
+Semester: VII
+
+  
+
+Subject: Database Programming
+
+2018 Bateh
+
+ 
+
+GroupB
+
+2
+
+aw he
+
+ 
+
+11, Explain row trigger and statement rigger with examples. Explain any five SQL*PLUS
+‘commands.
+

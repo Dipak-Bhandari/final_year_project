@@ -1,0 +1,22 @@
+‘Tribhuvan University
+Faculty of Humanities anil Social Seience
+Semester: VIII
+
+ 
+
+Subject; Machine Learning
+2017 Batch
+
+ 
+
+Group B
+
+Attempt any SIX questions
+2, Whatis Machine fe
+
+   
+
+algorithm
+
+‘margin classifir. Show the xelationstup between functional and geometrical margin.
+

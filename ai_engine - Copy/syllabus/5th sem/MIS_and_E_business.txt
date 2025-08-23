@@ -1,0 +1,140 @@
+Course Title: MIS and E-Business
+
+Course Code: CACS301
+
+Year/Semester: HI/V
+
+Class Load: 5Hrs. /Week (Theory: 3Hrs, Practical 2Hrs.)
+
+Course Description
+This course provides the fundamental knowledge of Management Information System and E-
+Business and its associated infrastructure, security and protection issues, payment system and
+
+ultimately live implementation of any web application in Web server.
+
+Objectives: The general objectives of this course is to know fundamental knowledge of
+
+MIS/E-Business and implement the web application in Web Server.
+
+Unit 1:
+
+Introduction to E-Commerce: Definitions and Concepts; Defining E-Business; Pure Versus
+Partial EC; EC Framework, Classification of EC; Benefits of E-Commerce; Electronic
+Markets; Role of Internet and Web in E-Commerce; The Limitations and Barriers of EC; Social
+Networks and Social Network Services; M-Commerce: Concept, Scope, Attributes, Benefits;
+Location-based l-commerce, l-Commerce Infrastructure, Location-Based Services and
+Applications. 7LH
+
+Unit 2:
+
+The Network Infrastructure for E-Commerce: Introduction to Information Superhighway
+(I-Way), Components of the I-Way, Internet as a network infrastructure. Wireless Application
+Protocol: Wireless Application Protocol (WAP); Architecture of WAP; Working of WAP:
+Wireless Technologies: ADSL, WiMAX, WLAN, WMAN Wi-Fi. UMTS (3G), LTE (4G). (5G
+NR). Security Issues related to Wireless Communications. 8LH
+
+Unit 3: Introduction to Management Information System: Data, information, computer
+based information system (CBIS), Information System Resources, Management information
+system, Transaction processing (TPS) system, decision support system (DSS), and executive
+information system (EIS), SCM, CRMS and International Systems: Introduction, Supply
+Chain Management Systems, Customer Relationships Management Systems, enterprise
+systems and Challenges of Enterprise Systems Implementations- Managing the
+implementation, International Information Systems-Outsourcing and off-shoring. 8LH
+
+Unit 4: E-Commerce Security and Fraud Issues and Protections: Basic EC Security
+
+Terminology, The Threats, ,Attacks, and Attackers, EC Security Requirements:
+
+Confidentiality, Integrigusg Us ¢
+
+ 
+ 
+
+Availability, Authentication, Authorization and
+पि \attack: Viruses, Worms, and Trojan Horses, Heartbleed.
+
+’ locker, Page hijacking, Botnets. Malvertising,
+ch i ie attack: Social Phishing, Pharming, Identity
+
+Nonrepudiation; Technical
+
+[Dis bulted Deni cw hi
+
+s Se ; Ansoin are, sniffing;
+
+% ae,
+
+ona
+
+डिनको ‘
+क्त.
+
+त्रि
+
+  
+  
+
+  
+
+  
+
+ 
+ 
+Theft and Identify Fraud, Spam Attacks; EC defense Strategy: access control(Authorization
+and Authentication, Biometric Systems), encryption and PKI (Symmetric Key Encryption,
+Asymmetric Key Encryption, Certificate Authority(CA), Secure Socket Layer (SSL). Securing
+
+e-commerce networks: Firewalls, Virtual Private Networks, Intrusion Detection Systems (IDS),
+
+intrusion prevention System (IPS). 10LH
+
+Unit 5: E-payment systems:
+
+Online payment cards (credit cards, charge cards, debit cards, smart cards), processing cards
+in online, credit card payment procedure, e-micropayments, e-checking and its processing in
+online. Automated clearing house (ACH) network, mobile payments (Digital wallet), mobile
+payment participants and issues, international payments, emerging EC payment systems and
+issues: crypto currency, virtual currency. A case study of emerging trends in online payment
+
+system in Nepal. 6 LH
+
+Unit 6: Launching a Successful EC Website:
+Planning Online Businesses (Business Plan, The cost-benefit, risk elements of a business case,
+funding a New Online Business, EC Model selection), The process of building a website, basic
+hierarchical website structure, website hosting and obtaining a domain name (cPanel
+management, upload EC site to the web Server), web content creation and management: (Web
+content, Categories and Types of Content, Content Management and Maintenance, Catalog
+Content and its Management), Website design criteria, Site Map and Navigation, Web page
+layout grid, Colors and Graphics, Website Usability, Performance, Website Promotion,
+implementation of Payments system, Website Promotion, Search Engine Optimization (SEO).
+10LH
+
+Laboratory Works: 32LH
+Laboratory works should be done covering all the topics listed above and a project work
+should be carried out by individually implementing a fully functioning e-commerce web
+
+application along with payment system.
+
+Text Book
+Efraim Turban, D. K. (2018). Electronic Commerce:A Managerial and Social Networks Perspective.
+New York: Springer
+References Book
+Chaffey, D. (2009). E-Business and E-Commerce Management: Strategy,
+Practice (4th Edition). Harlow: Prentice Hall.
+Kalakota, A. B. (1996). Frontiers of Electronic Commerce. Pearson.
+Kenneth C. Laudon, C. G. (2014). E-commerce: business. tech
+Education Limited.
+Kenneth C. Laudon, J. Yer (20
+FIRM. New Yorgs
+
+Implementation and
+
+nology.society. New York: Pearson
+
+   
+
+). Management Information System: MANAGING THE DIGITAL
+Urs lucation Limited, .
+
+    
+

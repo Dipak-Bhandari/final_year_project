@@ -1,0 +1,110 @@
+SN
+
+Course Name: Internet of Things (3 Cr.)
+
+Course Code: CACS460
+
+Year/Semester: [V/VIII
+
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2 Hrs.)
+
+Course Description: The course introduces basics of IoT. It covers introductions of 101,
+Devices and platform for developingloT Systems, Design methodology, Data Analytics for IoT,
+Servers & Cloud offering and IoT system security.
+
+Objective:
+The objective of this course is to introduce the students about the principles, techniques,
+development and applications of IoT System.
+
+Course Contents:
+Unit 1: Introduction to IoT [8Hrs.]
+1.1 Definition and Characteristics of IoT.
+1.2 Physical and Logical Design of IoT.
+1.3 loT Enabled Technologies
+1.4 loT and M2M
+1.5 Domain Specific loTs: Home Automation, Cities, Environment, Energy, Retail, Logistics,
+Agriculture, Industry, Health and Lifestyle.
+
+Unit 2: Sensor, Actuators and Interfacing [18 Hrs.]
+2.1 Roles of Sensors and actuators, Types of sensors: Active and passive, analog and digital,
+Contact and no-contact, Absolute and relative
+2.2 Working of sensors: Position, occupancy and motion, velocity and acceleration, force, pressure,
+flow, Acoustic, Humidity, light, radiation, temperature, chemical, biosensor, camera.
+2.3 Development boards: Arduino and Raspberry pi installation, interfacing and programming using
+python.
+
+Unit 3: IoT Platform Design Methodology [6 Hrs.]
+Case Study on oT System for Weather Monitor
+
+Unit 4: Data and Amalytics for IoT (10Hrs.]
+4.1 An Introduction to Data Analytics for loT
+4.2 Machine Learning
+4.3 Big Data Analytics Tools and Technology
+4.4 Edge Streaming Analytics
+4.5 Network Analytics
+
+Unit 5: loT Physical Servers and Cloud Offering [3Hrs.] A
+Cloud storage models and Communication APIs of loT Systems wre heey
+Unit 6: Securing IoT Systems [3Hrs.]
+
+6.1 loT Security Challenges
+6.2 loTSystem’s Security Practices
+
+  
+Laboratory Work:
+
+Implement the concept mentioned in the course using Python as a programming language, Arduino or
+Raspberry pi as a System board. All sensors mentioned in course should be implemented in a single
+project or separately to observe their working mechanism.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation:
+Examination Scheme
+Internal Assessment External Assessment Total
+Theo Practical Theory | ___— Practical
+20 20 60 -
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Reference Books:
+
+1. ArshdeepBahga, Vijay Madisetti, “Internet of Things (A Hands-on-Approach)”, University Press
+India Pvt. Ltd., 2015.
+
+2. David Hanes, Gonzalo Salgueiro, Patrick Grossetete, Robert Barton, Jerome Henry,"IoT
+Fundamentals: Networking Technologies, Protocols, and Use Cases for the Internet of Things”,
+Pearson Education (Cisco Press Indian Reprint)
+
+3. Raj Kamal, “Internet of Things: Architecture and Design Principles”, McGraw Hill Education, 2017
+
+4. Gary Smart, “Practical Python Programming for oT”, ISBN-10: 1838982469 err
+
+5. Gaston C. Hillar Internet of Things with Python, ISBN-10: 1785881388 " “कछ
+
+prone, ५ wo
+रिषद्को
+कीर्तिपुर
+
+ 
+

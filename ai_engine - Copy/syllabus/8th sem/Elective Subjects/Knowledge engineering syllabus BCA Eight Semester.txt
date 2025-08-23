@@ -1,0 +1,162 @@
+Course Title: Knowledge Engineering (3 Cr.)
+Course Code: CACS458
+Year/Semester: [V/VIII
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2 Hrs.)
+Course Description
+This course offers detailed concept about knowledge representation, logic, reasoning and
+principles. It includes introduction, knowledge acquisition, knowledge representation and
+reasoning. It does not entirely focus on theoretical concept but also strongly focuses on
+practical skill based learning.
+Course objectives
+The general objectives of this course are to provide theoretical as well as practical knowledge
+of knowledge engineering to make students capable of analysis, design, implementing and
+managing of knowledge engineering in their personal as well professional life.
+Course Contents
+
+Unit 1: Introduction [6 Hrs.]
+
+1.1 Overview of data. Information and knowledge
+
+1.2 Knowledge engineering and Knowledge management
+
+1.3 Artificial intelligence use in knowledge Engineering
+
+1.4 Knowledge based system and its applications
+
+Unit 2: Knowledge Acquisition [8 Hrs]
+
+2.1 Information gathering
+
+2.2 Information retrieval
+
+2.3 Applications of Natural Language processing
+2.3.1 Morphology, lexicon, syntax and semantics
+2.3.2 Parsing, POS tagging, named entity tagging
+
+Unit3: Machine Learning [12 Hrs]
+
+3.1 Machine Learning and its applications
+3.2 Supervised and unsupervised learning
+3.3 Classification and clustering
+
+3.4 Classification algorithms
+
+3.4.1 Linear classifiers
+
+3.4.2 nearest neighbor
+
+3.4.3 Support Vector Machines
+
+3.4.4 Decision tree
+
+3.4.5 Random forest
+
+3.4.6 Neural networks
+
+3.4.7 Case based reasoning
+
+Unit 4: Knowledge representation and reasoning [7Hrs] A
+
+4.1 Proposition logic, predicate logic and reasoning Saw
+4.2 Knowledge representation languages , :
+4.3 Non-monotonic reasoning
+
+4.4 Probabilistic reasoning
+
+Unit 5: Ontology Engineering [6 Hrs]
+5.1 Overview to Ontology
+
+5.2 Classifications of ontology
+
+5.3 Methodology use in Ontology
+
+f} 2
+
+   
+
+oh
+
+wee
+
+ 
+5.4 Ontology VS Language
+
+Unit 6: Knowledge Sharing [9 Hrs]
+
+6.1 Information Distribution and Integration
+6.2 Semantic web and its applications
+
+6.2.1 RDF and linked data
+
+6.2.2 Description logic
+
+6.2.3 Web Ontology language
+
+6.3 Social web and semantics
+
+Laboratory Works
+The practical work consists of all features of knowledge engineering and case studies.
+
+Teaching Methods
+
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the current scenario of computing and information technology with
+the help of topics listed in the syllabus. The general teaching pedagogy that can be followed by
+teaching faculties for this course includes class lectures, laboratory activity, group discussions,
+case studies, guest lectures, research work, project work, assignments (Theoretical and
+Practical), and written and verbal examinations.
+
+Evaluation
+
+ 
+
+Examination Scheme
+
+Internal Assessment External Assessment Total
+
+Theo | Practical | Theo | Practical _| [| |
+20 20 (3 Hrs. 60 3 Hrs. |e
+
+Text Books
+3. Kendal, Simon, Creen, Malcolm, An Introduction to Knowledge engineering,
+Springer first edition, 2007
+4. R.J. Brachman and H.J. Levesque. Knowledge representation and resoning
+(Elsevier 2004)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Reference Books
+
+1. Stuart Russell and Peter Norvig, Artificial Intelligence: A modern approach ( Prentice
+Hall edition , second edition, 2002)
+
+2. P. Jackson, Introduction to expert systems, Addison Wesley, 1999
+
+3. John Debenham, Knowledge Engineering: Unifying Knowledge Base and Database क
+
+Design , Springer , 1998
+
+A
+
+ 
+
+44
+

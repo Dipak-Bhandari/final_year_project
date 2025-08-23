@@ -1,0 +1,158 @@
+Course Title: English I (3 Cr.)
+Course Code: CACS103
+Year/Semester: I/I
+
+Class Load: 4 Hrs. / Week (Theory: 3 Hrs., Tutorial: 1 Hr.)
+
+Course Description Description
+
+This course aims at helping students combine the knowledge of the English language
+with their technical knowledge with special emphasis on vocabulary acquisition and
+grammatical accuracy. It offers up-to-date technical content, authentic reading and
+listening passages covering a wide range of topics like the use of virtual reality in
+industry. personal computing, viruses and security, information systems, and multimedia.
+Letter-writing section offers a complete guide to writing work-related letters and
+
+comprehensive glossary of technical terms forms a useful mini-dictionary of computing
+terminology,
+
+Course Objectives
+The main objectives of the course are to:
+= impart effective language skills to students and enable them to use language
+accurately, clearly and concisely,
+"acquaint students with language used in computer study through extensive
+reading activity,
+* help them to enhance their ability to use language in a Proper way with specific
+focus on grammatical accuracy and writing competence,
+
+enable students to improve work-related letter writing skills with special
+attention to presentation and structure, and
+
+familiarize them with innovation in computer science while introducing them
+with the language used in this field.
+
+Course Contents
+
+A. LEARNING THE LANGUAGE
+
+Unit One
+1. Personal Computing
+The Processor
+Language Focus A: Contextual Relerence
+
+9 Hrs.
+
+11. Portable Computers
+Operating Systems
+Language Focus B: Word formation, prefixes
+toh
+III. Online Services "ap WS
+Data Transmission
+
+Language Focus C: Word formation, suffixes \. /
+N
+
+“ge ME
+
+ 
+Unit Two
+1. Computer Software
+Comparing Sofiware Packages
+
+Language Focus D: Making Comparisons
+
+Il. Computer Networks
+Network Configurations
+Language Focus E: Time Sequence
+
+II. Computer in Education
+CALL
+
+Language Focus F: Gi ving Examples
+
+IV. Virtual Reality
+VR Input Devices
+Language Focus G: Classifying
+
+B. ORGANIZING AND WRITING TEXTS
+Unit Three
+I. Programming and Languages
+C Languages
+Language Focus H: Organizing Information
+
+I. Computer Viruses
+Computer Security
+Language Focus I: Listing
+
+IIT. Computers in the Office
+Computer System
+Language Focus J: The Passive
+
+Unit Four
+I. Computers in Medicine
+Data Storage and Management
+Language Focus K: Explanations and Definitions
+
+Il. Robotics
+Robot Characteristics
+Language Focus L: Compound Noun
+
+Unit Five t पन
+I. Machine Translation टि
+Al and Expert System र
+Language Focus M: Cause and Effect
+
+ee ON
+| ९/
+
+ 
+
+ 
+
+12 Hrs,
+
+9 Hrs,
+
+6 Hrs.
+
+9 Hrs.
+
+Page | 16
+11. Multi Media
+Computer-to-video-conversion
+Language Focus N: Making Predictions
+
+II. Computer Graphics
+24 bit Color
+
+Language Focus O: Letter Writing
+
+Teaching Methods
+The course expects communicative language teaching (CLT). Facilitating the learning
+process, the instructors are expected to stimulate the students to work as per the spirit of
+the course and make learning a joyful experience.
+
+Evaluation
+Internal Evaluation: 40%
+Attendance - 5
+Presentation/classroom participation- 5
+Writing sample- 15
+Mid-term test- 15
+
+Final Evaluation- 60%
+Comprehension
+Vocabulary formation
+Grammar testing
+Writing of multiple forms
+
+Prescribed Texthook
+
+1. Boeckner, Keith and P. Charles Brown. Oxford English for Computing. London:
+Rutledge, 1993,
+
+ 
+
+Page | 17
+
+ 
+

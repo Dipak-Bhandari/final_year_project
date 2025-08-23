@@ -1,0 +1,43 @@
+ 
+
+Bachelor ia Computer Applications ull Marks: 60
+Course Tk: OOP in dave Pave Marks 24
+Code Ne: CCS 206 ‘Te Shaws
+Semester: का
+
+Candidates are required to answer the questions in their own words as fara posible,
+
+Groups
+Adempt any SIX questions [os 30
+2. Define OOP. Explain features of Obyet Oriented Programming Language (14
+3. Explain diferent ypes of comtalstatements used in ava. 8
+4. Define AbstactClss. Explin different ype of Access contol avaiable in java 4]
+5. Define method overriding? Write any program to implement concept of
+smulipl inbetance in Java,
+a)
+6 Why tis important to handle exception in java? White program tlasrate the use of
+exception handling sa)
+7. Define the use of state keyword. Wet any Four Swing methods used in java with
+example
+
+ 
+
+uss]
+8. Define super, inal and this keyword in java, Explain the concep of MVC re
+tenes)
+Groupe
+Attempt any TWO questions. eto =20)
+
+9. 9) Define muithcading. Wet ajava progam toshow the intra communication
+sa}
+1b) Define Steam, Weta program i java tocopy the content fom oe ile to another.
+tsa)
+10, ») Define Colleton Clas. Explain differen Wrapper ses and associat methods in
+sina
+tia}
+1) Define AWT. Explain different typeof Layout Managers inj u
++4]
+11,9) List and explain any five swing conto with heir uss BI
+1) Define JDBC. Write «progam to display al ecords fom table of database.
+ea}
+
