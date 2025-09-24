@@ -20,7 +20,7 @@ The general objectives of this course are to provide fundamental concepts of
 information and communication technology and to make students capable of
 using different application packages in their personal as well as professional life.
 
-Course Contents :
+Course Contents
 
 Unit 1 Introduction to Computer System 16 Hrs.
 Introduction to Computer, Characteristics of Computer, Applications of
@@ -47,7 +47,14 @@ Unit 5 Data Communication and Computer Network 10 Hrs.
 Introduction to communication system, Mode of Communication, Introduction to
 Computer Network, “ypes of Computer Network, LAN Topologies,
 Transmission Media, Network Devices, OSI Reference Model, Communication
-Protocols, Centralized vs. Distributed System
+Protocols, Centralized vs. “Boe d Sys
+
+/
+» NV Page |7
+
+   
+
+ 
 Unit 6 Internet and WWW 6 Hrs.
 Internet: Introduction to Internet and its Applications, Connecting to the
 Internet, Client/Server Technology, Internet as a Clicnt/Server Technology,
@@ -65,8 +72,9 @@ Multimedia, e-Commerce, e-Learning, e-Governance, e- Banking, Hypermedia,
 Geographical Information System, Virtual Reality, Augmented Reality, Artificial
 Intelligence, Ambient Intelligence, Robotics, Bit Coin.
 
-Laboratory Works:
+Laboratory Works
 Laboratory works should cover all the units and topics mentioned below and a project
+
 work should be carried out by students individually implementing the concept and skill
 learnt in this course.
 
@@ -90,7 +98,20 @@ Window, Creating & Saving Document, Copy Paste and Cut Paste, Format
 Painter, Undo and Redo, Print Preview,.Printing Documents, Fonts, Effect and
 Character Formatting, Paragraph Formaiting, Styles, Finding, Replacing and
 Selection, Cover Page, Blank Page, Page Break. Working with Table, Inserting
-Picture, Clip Art, Shapes,.Smart Art and Chart, Hyperlink, Bookmarks, Cross-Referencing, Header, Footer, Page Number, Working with Text Box, Quick
+Picture, Clip Art, Shapes,.Smart Art and Chart, Hyperlink, Bookmarks, Cross-
+
+ 
+
+/
+/
+
+८७६ १ JX
+he SK Page | 8
+
+ 
+
+ 
+Referencing, Header, Footer, Page Number, Working with Text Box, Quick
 Parts, Word Art, Drop Cap. Signature Line, Date & Time, Object. Equation,
 Symbol, Working with Themes, Page Margins, Page Orientation, Page Size,
 Columns Handling, Hyphenation, Watermark, Page Color, Page Borders.
@@ -133,7 +154,16 @@ Exporting Presentation; Printing Slides and Handouts
 Unit 5 Photo Editing Package © A 20 Hrs.
 Fundamentals
 Graphics Basics: Bitmap Vs. Vector-Based Graphics, Color/Bit Depth and Image
-Resolution, Graphic File Formats, Optimizing Web Graphics, Regular Text Vs Anti- Aliased Text, Pixel Resize Vs. Smart Resize, Regular Graphics Vs.
+Resolution, Graphic File Formats, Optimizing Web Graphics, Regular Text’ Vs.
+
+Bee Ny “Page | 9
+— UY
+१4 हर
+
+ 
+
+ 
+Anti- Aliased Text, Pixel Resize Vs. Smart Resize, Regular Graphics Vs.
 Interlaced Graphics, Lossy Compression Vs. Lossless Compression, Dithered
 Graphics Vs. Non-Dithered Graphics, Standard Sclection Vs. F loating Sclection,
 Tolerance, Opacity.
@@ -191,7 +221,14 @@ Action, Loading a Saved Action. “
 Restoring and Enhancing Images
 
 Restoration of Photos: Restoring Damaged Photos, Photo Retouching,
-Photo Enhancement and Color Correction: Changing Levels, Changing Curves,
+we र नट 7
+
+ 
+
+(/ Page | 10
+
+ 
+Photo Enhancement and Color Correction: Changing Levels, Changing Curves,
 Color Balance, Changing Brightness and Contrast, Changing Hue Saturation and
 Brightness, Changing a Grayscale Image to a Colored Image, Histogram,
 Gradient Map, Desatuarate, Invert, Color Replace, Selective Color, Equalize,
@@ -233,8 +270,73 @@ verbal examinations.
 Evaluation
 Examination Scheme
 
-|Internal Assessment |External Assessment| Total |
-| (3 Hrs.) credit | (3 Hrs.) credit|
-|Practical | Assignments | Exam | Total |
-|20 | 20 |60 |100 |
+Internal Assessment External Assessment
+
+20 20 60 100
+(3 Hrs.) (3 Hrs.)
+
+WoO
+
+fr J
+८
+
+ 
+
+  
+   
+
+         
+   
+
+Page | 11
+
+ 
+Text Books
+
+NR
+
+1
+
+i)
+
+Alexis Leon, Mathews Leon, “Fundamentals of Information Technology, 2/e”,
+Vikas Publishing House Pvt Limited, 2009. ISBN: 9788182092457
+
+E Balagurusamy, “Fundamentals of Computers,” Tata McGraw Hill Education
+PVT.Ltd., 2009, ISBN: 9780070141605
+
+Peter Norton's, “Jntroduction to Computers”, 7" Edition, Tata McGraw-Hill,
+2010, ISBN: 9780070671201
+
+Reference Books
+
+Brad Dayley & DaNae Dayley, “Adobe Photoshop CS6 Bible”, Wiley Publishing Inc.,
+2012, ISBN: 978-1-118-12388-1
+
+Faithe Wempen, “Microsoft Office Power Point 2007 Bible (With CD)”, Wiley
+Publishing Inc., 2007, ISBN: 978-0470043684
+
+Herb Tyson, “Microsoft Office Word 2007 Bible (With CD)”, Wiley Publishing
+Inc., 2007 .
+
+Jim Boyce, “Windows 7 Bible ”, Wiley Publishing Inc., 2009, ISBN: 978-
+0470509098
+
+John Walkenbach, “Microsoft Office Excel 2007 Bible (With CD)”, Wiley
+Publishing Inc., 2007, ISBN: 978-0470044032
+
+Pradeep Sinha and Priti Sinha, “Computer Fundamentals (with CD)”, 6"
+Edition, BPB Publications, 2003, ISBN: 9788176567527
+
+Ramesh Rimal & et. al., “Computer Science-l, Revised Edition”, Buddha
+Academic Publishers and Distributors Pvt. Ltd. Nepal. 2013
+
+Ramesh Rimal & et. al., “Computer Science-II, Revised Edition”, Buddha
+Academic Publishers and Distributors Pvt. Ltd. Nepal, 2013
+
+(Av
+
+ 
+
+Page | 12
 

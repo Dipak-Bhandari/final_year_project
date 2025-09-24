@@ -18,6 +18,12 @@ return new class extends Migration
             $table->id()->primary();
             $table->text('syllabus_path');
             $table->text('chunk_text');
+             $table->text('course_title');
+            $table->text('course_code');
+            $table->text('keywords');
+            $table->text('unit_title');
+            $table->boolean('is_course_content');
+            $table->boolean('is_laboratory_work');
             $table->timestamps();
         });
 

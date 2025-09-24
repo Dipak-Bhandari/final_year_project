@@ -28,7 +28,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
             'semesters' => Semester::all(),
         ]);
     })->name('admin.syllabi.index');
-    
+
     Route::post('/syllabi', [SyllabusController::class, 'store'])->name('syllabi.store');
     Route::put('/syllabi/{syllabus}', [SyllabusController::class, 'update'])->name('syllabi.update');
     Route::delete('/syllabi/{syllabus}', [SyllabusController::class, 'destroy'])->name('syllabi.destroy');
@@ -44,7 +44,7 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
 // Academic content routes (public)
 Route::middleware(['auth'])->group(function () {
-   
+
     Route::get('/semesters', [SemesterController::class, 'index'])->name('semesters.index');
     Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
     Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
@@ -60,6 +60,8 @@ Route::get('/semester/{number}', function ($number) {
 
 // Chat routes
 Route::post('/chat', [ChatController::class, 'ask'])->name('chat.ask');
+Route::get('/chat/models', [ChatController::class, 'getModels'])->name('chat.models');
+Route::get('/chat/health', [ChatController::class, 'getHealth'])->name('chat.health');
 
-require __DIR__.'/settings.php';
-require __DIR__.'/auth.php';
+require __DIR__ . '/settings.php';
+require __DIR__ . '/auth.php';
