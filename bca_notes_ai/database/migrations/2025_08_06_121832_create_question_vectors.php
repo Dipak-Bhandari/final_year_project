@@ -19,6 +19,10 @@ return new class extends Migration
             $table->id()->primary();
             $table->text('question_path');
             $table->text('chunk_text');
+             $table->text('course_title');
+            $table->text('course_code');
+            $table->text('keywords');
+            $table->string('year');
             $table->timestamps();
         });
         DB::statement('ALTER TABLE question_vectors ADD COLUMN embedding VECTOR(2560)');

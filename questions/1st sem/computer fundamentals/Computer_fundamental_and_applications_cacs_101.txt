@@ -1,3 +1,73 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
+2019
+
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Computer Fundamentals & Applications Pass Marks: 24
+Code No: CACS 101 Time: 3 hours
+Semester: 1*
+Centre: Symbol No:
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group A
+Attempt all the questions. [10x1 = 10]
+
+1. Circle (O) the correct answer.
+
+i) Which one of the following is not a non-impact printer?
+a) Inkjet b) Dot-matrix
+c) Laser d) Thermal
+ii) Which one of the following is the example of the utility software?
+
+a) Anti-virus b) Operating system
+c) Language translators d) Word Processor
+
+iii) | Which one of the following is not a Network Operating System?
+a) Unix b) Linux
+c) Windows 7 d) Windows Server
+
+iv) Which one of the following key is used to uniquely identify a row in table?
+a) Composite key b) Foreign Key
+c) Candidate Key d) Primary Key
+
+v) | Which one of the following layer of OSI reference model contains TCP protocol?
+a) Network Layer b) Transport Layer
+
+c) Data Link Layer d) Application Layer
+vi)
+
+iv)
+
+Which one of the following is not a web server?
+a) Apache b) IIS
+c) GWs d) HTTP
+Which one of the following is a crypto-currency?
+a) Credit Card b) PayPal
+c) Bit Coin d) Mater Card
+Which one of the following command is used to shut down the computer normally?
+
+a) shutdown /f b) shutdown /s
+c) shutdown /h d) shutdown /r
+
+What is the default font type in MS Word 2016?
+
+a) Arial b) Times New Roman
+c) Calibri d) Microsoft Sans Serif
+Which one of the following key is used for help in MS — PowerPoint?
+
+a) F1 b) F5
+
+c) F6 d) F1l
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+OFFICE OF THE DEAN
+
+ 
+
 2019
 Bachelor in Computer Applications Full Marks: 60
 Course Title: Computer Fundamentals & Applications Pass Marks: 24
@@ -35,16 +105,54 @@ d) Hide the root directory from E drive. [1]
 Attempt any TWO questions. [2x10 = 20]
 9. (a) From the following spreadsheet, write the formula to address the following conditions:
 
-ABC Company Kathmandu
+ABC Company
 
-| A |B | C | D | E | F | G | H | I |
-| 1| SN |Name | Addr | Post | Salary | Bonus | Tax | HA | Total
-| 2 | 1 | Ram | Ktm | Manager | 12000 |
+ 
 
-| 3 | 2 | Sham | Pokhara | Accountant | 11500 |
+ 
 
-| 4 | 3 | Hari | Pokhara | Engineer | 10000 |
-| Maximum Salary | ? |
+ 
+
+Kathmandu
+A |B C D E F G H |!I
+1|SN|Name_ | Addr Post Salary | Bonus | Tax | HA | Total
+2/1 | Ram Ktm Manager 12000
+
+ 
+
+3/2 Sham Pokhara | Accountant | 11500
+
+ 
+
+4|3 | Hari Pokhara _ | Engineer 10000
+
+ 
+
+ 
+
+ 
+
+ 
+
+Maximum Salary ?
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 Conditions:
 1. Bonus will give 15% of salary If his/ her salary is less than and equal to 6000. [1]
