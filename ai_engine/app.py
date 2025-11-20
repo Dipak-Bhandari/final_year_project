@@ -4,24 +4,24 @@ import numpy as np
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+import time
+from rank_bm25 import BM25Okapi  # For hybrid search
 
 # Make sure we can import our modules
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from ollama_client import embed_text_phi, generate_answer_phi
-from db import fetch_all_vectors
-from db import fetch_questions_by_year, fetch_repeated_questions
-import time
+from ollama_client import embed_text, generate_answer  # Updated imports
+from db import fetch_all_vectors, fetch_questions_by_year, fetch_repeated_questions, get_conn, init_db  # Added init_db
+from model_monitor import model_monitor  # Integrated monitoring
 
 app = FastAPI()
 
 @app.on_event("startup")
-async def preload_ollama_model():
-    print("Preloading Ollama model for fast first response...")
-    try:
-        embed_text_phi("hello")  # Dummy request to load model into memory
-    except Exception as e:
-        print(f"Error preloading Ollama model: {e}")
+async def startup():
+    print("Initializing DB and preloading models...")
+    # init_db()  # One-time pgvector setup
+    embed_text("hello")  # Preload embed model
+    generate_answer("warmup")  # Preload gen model
 
 # Add CORS to allow requests from your Laravel frontend
 app.add_middleware(
@@ -41,89 +41,171 @@ def cosine_similarity(a, b):
     except Exception as e:
         print(f"Error calculating cosine similarity: {e}")
         return 0.0
+
+# def get_top_k_hybrid(query_emb, table, k=10, query_text=None):
+#     """Hybrid ANN + BM25 retrieval with metadata"""
+#     from pgvector.psycopg2 import register_vector  # For vector ops
+#     conn = get_conn()
+#     register_vector(conn)
+#     cur = conn.cursor()
+#     path_col = "syllabus_path" if table == "pdf_vectors" else "question_path"
     
-
-# def get_top_k_context(query_emb, table, k=100):
-    """Retrieve top k most similar context chunks using cosine similarity"""
-    try:
-        # Determine which path column to use based on the table
-        path_col = "syllabus_path" if table == "pdf_vectors" else "question_path"
-        
-        # Fetch all vectors from the database
-        vectors = fetch_all_vectors(table, path_col)
-        
-        if not vectors:
-            print(f"Warning: No vectors found in {table}")
-            return []
-        
-        # Calculate similarity scores
-        scored = []
-        for row in vectors:
-            id_val, path, chunk_text, chunk_emb = row
-            
-            # Safety check for embedding dimensions
-            if len(query_emb) != len(chunk_emb):
-                print(f"Warning: Embedding dimension mismatch. Query: {len(query_emb)}, Chunk: {len(chunk_emb)}")
-                continue
-            
-            # Calculate cosine similarity
-            score = cosine_similarity(query_emb, chunk_emb)
-            
-            # Store score and chunk text
-            scored.append((score, chunk_text))
-        
-        # Sort by similarity score (descending)
-        scored.sort(key=lambda x: x[0], reverse=True)
-        
-        # Get top k chunks
-        top_contexts = [text for score, text in scored[:k]]
-        
-        # Print first result for debugging
-        if top_contexts:
-            print(f"Top similarity score: {scored[0][0]}")
-            print(f"Top chunk: {top_contexts[0][:100]}...")
-            
-        return top_contexts
+#     # Step 1: ANN semantic search (top 50 candidates via pgvector)
+#     query_emb_list = query_emb.tolist()  # np to list for SQL
+#     cur.execute(
+#         f"""
+#         SELECT id, {path_col}, chunk_text, embedding, course_title, course_code, keywords, 
+#                unit_title, is_course_content, is_laboratory_work, year
+#         FROM {table} 
+#         ORDER BY embedding <=> %s LIMIT 50
+#         """, (query_emb_list,)
+#     )
+#     candidates = cur.fetchall()
+#     cur.close()
+#     conn.close()
     
-    except Exception as e:
-        print(f"Error in get_top_k_context: {e}")
-        import traceback
-        traceback.print_exc()
-        return []
+#     if not candidates:
+#         print(f"Warning: No vectors found in {table}")
+#         return []
+    
+#     # Step 2: BM25 keyword scoring on candidates
+#     texts = [row[2] for row in candidates]  # chunk_text
+#     tokenized = [text.split() for text in texts]
+#     bm25 = BM25Okapi(tokenized)
+#     query_tokens = query_text.lower().split()
+#     keyword_scores = bm25.get_scores(query_tokens)
+    
+#     # Step 3: Blend scores and filter
+#     scored = []
+#     filter_course_contents = query_text and "course content" in query_text.lower()
+#     for i, row in enumerate(candidates):
+#         id_val, path, chunk_text, emb, course_title, course_code, keywords, unit_title, is_course_content, is_laboratory_work, year = row
+        
+#         # Semantic distance (approx cosine via L2 norm)
+#         emb_np = np.array(emb)
+#         dist = np.linalg.norm(query_emb - emb_np)
+#         sem_score = 1 - (dist / np.sqrt(2 * len(query_emb)))  # Normalized [0,1]
+        
+#         # Hybrid score
+#         hybrid_score = 0.7 * sem_score + 0.3 * keyword_scores[i]
+        
+#         # Filters
+#         if filter_course_contents and table == "pdf_vectors" and not is_course_content:
+#             continue
+        
+#         scored.append((hybrid_score, chunk_text, year or "", unit_title or ""))
+    
+#     # Sort and select top k
+#     scored.sort(key=lambda x: x[0], reverse=True)
+#     top_chunks = scored[:k]
+    
+#     # Extract texts and metadata
+#     context_texts = [text for _, text, _, _ in top_chunks]
+#     metadata_lines = [f"Year: {y}, Unit: {u}" for _, _, y, u in top_chunks if y or u]
+#     metadata = "\n".join(set(metadata_lines))  # Dedup
+    
+#     # Log retrieval quality
+#     if top_chunks:
+#         avg_score = np.mean([s[0] for s in top_chunks])
+#         model_monitor.log_quality_score("rag_retrieval", avg_score, f"Query: {query_text[:50]}")
+#         print(f"Hybrid retrieval: Avg score {avg_score:.3f}, Top metadata: {metadata[:100]}...")
+    
+#     return context_texts, metadata
 
-
-
-def get_top_k_context(query_emb, table, k=10, query_text=None):
+def get_top_k_hybrid(query_emb, table, k=10, query_text=None):
+    """Hybrid ANN + BM25 retrieval with metadata"""
+    from pgvector.psycopg2 import register_vector  # For vector ops
+    conn = get_conn()
+    register_vector(conn)
+    cur = conn.cursor()
     path_col = "syllabus_path" if table == "pdf_vectors" else "question_path"
-    vectors = fetch_all_vectors(table, path_col)
-    if not vectors:
-        print(f"Warning: No vectors found in {table}")
-        return []
-    scored = []
-    # If the query is about course contents, filter for those chunks
-    filter_course_contents = False
-    if query_text and "course content" in query_text.lower():
-        filter_course_contents = True
-    for row in vectors:
-        id_val, path, chunk_text, chunk_emb, course_title, course_code, keywords, unit_title, is_course_content, is_laboratory_work = row
-        if filter_course_contents and not is_course_content:
-            continue  # Only use course content chunks
-        if len(query_emb) != len(chunk_emb):
-            continue
-        score = cosine_similarity(query_emb, chunk_emb)
-        scored.append((score, chunk_text))
-    scored.sort(key=lambda x: x[0], reverse=True)
-    top_contexts = [text for score, text in scored[:k]]
-    return top_contexts
     
+    # Step 1: ANN semantic search (top 50 candidates via pgvector)
+    # Handle both list and numpy array inputs
+    if isinstance(query_emb, list):
+        query_emb_list = query_emb
+        query_emb_np = np.array(query_emb, dtype=np.float32)
+    else:
+        query_emb_list = query_emb.tolist()
+        query_emb_np = query_emb
+    
+    # Build query based on table (pdf_vectors doesn't have 'year')
+    if table == "pdf_vectors":
+        query_sql = f"""
+        SELECT id, {path_col}, chunk_text, embedding, course_title, course_code, keywords, 
+               unit_title, is_course_content, is_laboratory_work, NULL as year
+        FROM {table} 
+        ORDER BY embedding <=> %s::vector LIMIT 50
+        """
+    else:
+        query_sql = f"""
+        SELECT id, {path_col}, chunk_text, embedding, course_title, course_code, keywords, 
+               NULL as unit_title, NULL as is_course_content, NULL as is_laboratory_work, year
+        FROM {table} 
+        ORDER BY embedding <=> %s::vector LIMIT 50
+        """
+    
+    cur.execute(query_sql, (query_emb_list,))
+    candidates = cur.fetchall()
+    cur.close()
+    conn.close()
+    
+    if not candidates:
+        print(f"Warning: No vectors found in {table}")
+        return [], ""
+    
+    # Step 2: BM25 keyword scoring on candidates
+    texts = [row[2] for row in candidates]  # chunk_text
+    tokenized = [text.split() for text in texts]
+    bm25 = BM25Okapi(tokenized)
+    query_tokens = query_text.lower().split()
+    keyword_scores = bm25.get_scores(query_tokens)
+    
+    # Step 3: Blend scores and filter
+    scored = []
+    filter_course_contents = query_text and "course content" in query_text.lower()
+    for i, row in enumerate(candidates):
+        id_val, path, chunk_text, emb, course_title, course_code, keywords, unit_title, is_course_content, is_laboratory_work, year = row
+        
+        # Semantic distance (approx cosine via L2 norm)
+        emb_np = np.array(emb, dtype=np.float32)
+        dist = np.linalg.norm(query_emb_np - emb_np)
+        sem_score = 1 - (dist / np.sqrt(2 * len(query_emb_np)))  # Normalized [0,1]
+        
+        # Hybrid score
+        hybrid_score = 0.7 * sem_score + 0.3 * keyword_scores[i]
+        
+        # Filters
+        if filter_course_contents and table == "pdf_vectors" and not is_course_content:
+            continue
+        
+        scored.append((hybrid_score, chunk_text, year or "", unit_title or ""))
+    
+    # Sort and select top k
+    scored.sort(key=lambda x: x[0], reverse=True)
+    top_chunks = scored[:k]
+    
+    # Extract texts and metadata
+    context_texts = [text for _, text, _, _ in top_chunks]
+    metadata_lines = [f"Year: {y}, Unit: {u}" for _, _, y, u in top_chunks if y or u]
+    metadata = "\n".join(set(metadata_lines))  # Dedup
+    
+    # Log retrieval quality
+    if top_chunks:
+        avg_score = np.mean([s[0] for s in top_chunks])
+        model_monitor.log_quality_score("rag_retrieval", avg_score, f"Query: {query_text[:50]}")
+        print(f"Hybrid retrieval: Avg score {avg_score:.3f}, Top metadata: {metadata[:100]}...")
+    
+    return context_texts, metadata
+
 class ChatRequest(BaseModel):
     question: str
-    context_type: str = "questions"  # or "question"
+    context_type: str = "questions"  # or "syllabus"
     top_k: int = 10
 
 @app.post("/chat")
 async def chat(req: ChatRequest):
-    """API endpoint for chat"""
+    """API endpoint for chat with hybrid RAG"""
     print(f"\n--- New chat request ---")
     print(f"Question: {req.question}")
     print(f"Context type: {req.context_type}")
@@ -134,107 +216,77 @@ async def chat(req: ChatRequest):
         return {
             "success": True,
             "answer": "Hello! How can I help you with your BCA syllabus or questions today?",
-            "model_used": "phi:latest",
+            "model_used": "phi3:mini",
             "response_time": None,
             "context_chunks_used": 0
         }
+    
+    start_time = model_monitor.start_timer()  # Monitor timing
     try:
-        start_time = time.time()
-        query_emb = embed_text_phi(req.question)
+        model_monitor.log_model_usage("rag_system", "chat")  # Track usage
+        
+        query_emb = embed_text(req.question)
 
-        # Auto-detect context type for question-related queries
+        # Auto-detect context type
         question_keywords = ["question", "questions", "previous year", "board paper", "repeated", "exam", "group b", "group c"]
         auto_context = req.context_type
         if any(word in req.question.lower() for word in question_keywords):
             auto_context = "questions"
         table = "pdf_vectors" if auto_context == "syllabus" else "question_vectors"
 
-        context_chunks = get_top_k_context(query_emb, table, k=req.top_k, query_text=req.question)
+        context_chunks, metadata = get_top_k_hybrid(query_emb, table, k=req.top_k, query_text=req.question)
         if not context_chunks:
+            answer = f"I don't have enough context in the {auto_context} database to answer your question. Please try a different question or make sure the database has been populated with content."
             return {
-                "answer": f"I don't have enough context in the {auto_context} database to answer your question. Please try a different question or make sure the database has been populated with content."
+                "success": True,
+                "answer": answer,
+                "model_used": "phi3:mini",
+                "response_time": model_monitor.end_timer(start_time),
+                "context_chunks_used": 0
             }
+        
         context = "\n\n".join(context_chunks)
         print(f"Using {len(context_chunks)} context chunks for answer generation")
-        prompt = f"""You are an expert BCA teaching assistant. Answer the following question using ONLY 
+        
+        # Enhanced prompt with metadata
+        prompt = f"""You are an expert BCA teaching assistant for Tribhuvan University (TU) Nepal. Answer the following question using ONLY 
 the information provided in the context below. If the answer cannot be found in the context,
-say "I don't have enough information to answer that question based on the available course materials."
+say "I don't have enough information to answer that question based on the available course materials." Provide insights like repeated questions or unit references where relevant.
 
 Context from {auto_context}:
 {context}
 
+Metadata: {metadata}
+
 Question: {req.question}
 
 Answer:"""
-        answer = generate_answer_phi(prompt)
-        response_time = time.time() - start_time
+        
+        answer = generate_answer(prompt)
+        response_time = model_monitor.end_timer(start_time)
+        model_monitor.log_response_time("phi3:mini", "chat", response_time)  # Log response
+        
         print(f"Response time: {response_time:.2f}s")
-        if response_time > 20:
-            print("Warning: Slow response detected!")
         return {
             "success": True,
             "answer": answer,
-            "model_used": "phi:latest",
+            "model_used": "phi3:mini",
             "response_time": response_time,
             "context_chunks_used": len(context_chunks)
         }
     except Exception as e:
+        response_time = model_monitor.end_timer(start_time)
+        model_monitor.log_error("phi3:mini", "chat_error", str(e))
         print(f"Error processing chat request: {e}")
         import traceback
         traceback.print_exc()
         return {
             "success": False,
             "answer": f"Sorry, an error occurred while processing your request: {str(e)}",
-            "model_used": "phi:latest",
-            "response_time": None,
+            "model_used": "phi3:mini",
+            "response_time": response_time,
             "context_chunks_used": 0
         }
-#     try:
-#         # Step 1: Generate embedding for the question
-#         query_emb = embed_text_phi(req.question)
-        
-#         # Step 2: Determine which table to use based on context_type
-#         table = "pdf_vectors" if req.context_type == "syllabus" else "question_vectors"
-        
-#         # Step 3: Get relevant context using cosine similarity
-#         context_chunks = get_top_k_context(query_emb, table)
-        
-#         # Check if we found any context
-#         if not context_chunks:
-#             return {
-#                 "answer": f"I don't have enough context in the {req.context_type} database to answer your question. Please try a different question or make sure the database has been populated with content."
-#             }
-        
-#         # Step 4: Combine context chunks into a single context
-#         context = "\n\n".join(context_chunks)
-#         print(f"Using {len(context_chunks)} context chunks for answer generation")
-        
-#         # Step 5: Create prompt with the context and question
-#         prompt = f"""You are an expert BCA teaching assistant. Answer the following question using ONLY 
-# the information provided in the context below. If the answer cannot be found in the context,
-# say "I don't have enough information to answer that question based on the available course materials."
-
-# Context from {req.context_type}:
-# {context}
-
-# Question: {req.question}
-
-# Answer:"""
-        
-#         # Step 6: Generate answer using the prompt
-#         answer = generate_answer_phi(prompt)
-        
-#         # Step 7: Return the answer
-#         return {"answer": answer}
-        
-#     except Exception as e:
-#         print(f"Error processing chat request: {e}")
-#         import traceback
-#         traceback.print_exc()
-#         return {
-#             "answer": f"Sorry, an error occurred while processing your request: {str(e)}"
-#         }
-
 
 class QuestionQuery(BaseModel):
     year: str
@@ -257,11 +309,16 @@ async def get_repeated_questions(query: RepeatedQuery):
         return {"questions": [], "message": "No repeated questions found for this course."}
     return {"questions": [{"question": r[0], "frequency": r[1]} for r in rows]}
 
+@app.get("/health")
+async def health():
+    """Health check endpoint"""
+    return model_monitor.health_check()
+
 @app.get("/")
 def root():
     """Root endpoint for API health check"""
     return {
         "status": "BCA Notes AI is running",
-        "version": "1.0.0",
-        "description": "RAG system for BCA syllabus questions"
+        "version": "2.0.0",  # Updated version
+        "description": "Enhanced RAG system for BCA syllabus questions with hybrid search"
     }
