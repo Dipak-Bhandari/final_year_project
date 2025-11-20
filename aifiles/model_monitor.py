@@ -3,7 +3,7 @@ import logging
 import json
 from datetime import datetime
 from typing import Dict, Any, Optional
-import psycopg2  # Uncommented for DB
+# import psycopg2
 import os
 from dotenv import load_dotenv
 
@@ -139,7 +139,7 @@ class ModelMonitor:
                 AND created_at >= NOW() - INTERVAL '%s hours'
             """, (hours,))
             
-            response_stats = cur.fetchone() or (0, 0, 0, 0)  # Fixed: Handle None
+            response_stats = cur.fetchone()
             
             # Get error stats
             cur.execute("""
@@ -152,7 +152,7 @@ class ModelMonitor:
                 GROUP BY data->>'error_type'
             """, (hours,))
             
-            error_stats = dict(cur.fetchall() or [])  # Fixed: Handle empty
+            error_stats = cur.fetchall()
             
             # Get model usage stats
             cur.execute("""
@@ -166,19 +166,19 @@ class ModelMonitor:
                 GROUP BY data->>'model', data->>'operation'
             """, (hours,))
             
-            usage_stats = cur.fetchall() or []  # Fixed: Handle empty
+            usage_stats = cur.fetchall()
             
             cur.close()
             conn.close()
             
             return {
                 "response_times": {
-                    "avg_duration": response_stats[0],
-                    "max_duration": response_stats[1],
-                    "min_duration": response_stats[2],
-                    "total_requests": response_stats[3]
+                    "avg_duration": response_stats[0] if response_stats[0] else 0,
+                    "max_duration": response_stats[1] if response_stats[1] else 0,
+                    "min_duration": response_stats[2] if response_stats[2] else 0,
+                    "total_requests": response_stats[3] if response_stats[3] else 0
                 },
-                "errors": error_stats,
+                "errors": dict(error_stats),
                 "usage": usage_stats
             }
             
