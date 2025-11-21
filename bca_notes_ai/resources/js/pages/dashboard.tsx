@@ -3,6 +3,7 @@ import { Head } from '@inertiajs/react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { DollarSign, BookOpen, FileText, Users } from 'lucide-react';
 import AdminLayout from '@/layouts/admin-layout';
+import { PageHeader } from '@/components/page-header';
 
 export default function Dashboard({
     auth,
@@ -12,12 +13,17 @@ export default function Dashboard({
 }: PageProps<{ totalSyllabi: number; totalQuestionPapers: number; totalUsers: number }>) {
     return (
         <AdminLayout
-            title="Dashboard"
+            title=""
             breadcrumbs={[
                 { title: 'Dashboard', href: route('dashboard') }
             ]}
         >
-            <Head title="Dashboard" />
+            {/* <Head title="Dashboard" /> */}
+            <PageHeader
+                title="Dashboard"
+                description="Welcome to the dashboard"
+                
+            />
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 <Card>
                     <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
