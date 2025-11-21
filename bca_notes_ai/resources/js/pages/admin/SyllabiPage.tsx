@@ -99,7 +99,7 @@ export default function SyllabiPage({ syllabi, semesters, errors }: Props) {
                             Syllabus Management
                         </h2>
                         <p className="mt-1 text-base text-gray-600 dark:text-gray-400">
-                            Manage course syllabi and learning materials
+                            Manage course syllabus and learning materials
                         </p>
                     </div>
                     <button

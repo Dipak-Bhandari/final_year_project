@@ -1,13 +1,44 @@
-import { Head, Link } from '@inertiajs/react';
-import { ArrowLeft, Download, FileText, Calendar } from 'lucide-react';
-import AppLayout from '@/layouts/app-layout';
-import { type BreadcrumbItem } from '@/types';
+import { PageProps } from '@/types';
+import { Head, router } from '@inertiajs/react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '@/components/ui/table';
+import AdminLayout from '@/layouts/admin-layout';
+import { Download, PlusCircle, Trash2 } from 'lucide-react';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog';
+import { CreateQuestionPaperForm } from './QuestionPaper/partials/CreateQuestionPaperForm';
+import { useState } from 'react';
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from '@/components/ui/alert-dialog';
 
 type QuestionPaper = {
     id: number;
     course: string;
     year: number;
-    file_path: string;
+    file_name: string;
     file_url: string;
 };
 
@@ -16,121 +47,108 @@ type Semester = {
     name: string;
 };
 
-type Props = {
-    semester: Semester;
-    questionPapers: Record<string, QuestionPaper[]>;
-};
+export default function QuestionPaperPage({
+    semester,
+    questionPapers,
+}: PageProps<{ semester: Semester; questionPapers: QuestionPaper[] }>) {
+    const [dialogOpen, setDialogOpen] = useState(false);
 
-export default function QuestionPaperPage({ semester, questionPapers }: Props) {
-    const breadcrumbs: BreadcrumbItem[] = [
-        {
-            title: 'Semesters',
-            href: '/semesters',
-        },
-        {
-            title: semester.name,
-            href: `/papers/${semester.id}`,
-        },
-    ];
-
-    const courses = Object.keys(questionPapers);
+    const handleDelete = (paperId: number) => {
+        router.delete(route('question-papers.destroy', paperId), {
+            preserveScroll: true,
+        });
+    };
 
     return (
-        <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title={`${semester.name} Question Papers`} />
+        <AdminLayout
+            title={`Question Papers - ${semester.name}`}
+            breadcrumbs={[
+                { title: 'Dashboard', href: route('dashboard') },
+                { title: 'Semesters', href: route('semesters.index') },
+                { title: semester.name, href: route('semesters.show', semester.id) },
+            ]}
+        >
+            <Head title={`Question Papers - ${semester.name}`} />
 
-            <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                    <Link
-                        href="/semesters"
-                        className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                        <ArrowLeft className="h-4 w-4" />
-                        <span>Back to Semesters</span>
-                    </Link>
-                </div>
-
-                <div className="text-center">
-                    <div className="flex items-center justify-center space-x-3 mb-4">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-100 dark:bg-green-900">
-                            <FileText className="h-6 w-6 text-green-600 dark:text-green-400" />
-                        </div>
-                        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                            {semester.name} Question Papers
-                        </h1>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">
-                        Download past year question papers by course
-                    </p>
-                </div>
-
-                {courses.length === 0 ? (
-                    <div className="text-center py-12">
-                        <FileText className="mx-auto h-12 w-12 text-gray-400" />
-                        <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
-                            No question papers available
-                        </h3>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                            Question papers will be uploaded soon.
-                        </p>
-                    </div>
-                ) : (
-                    <div className="space-y-8">
-                        {courses.map((course) => (
-                            <div
-                                key={course}
-                                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
-                            >
-                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                                    {course}
-                                </h3>
-
-                                <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-                                    {questionPapers[course].map((paper) => (
-                                        <div
-                                            key={paper.id}
-                                            className="flex items-center justify-between rounded-md border border-gray-200 p-4 hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-700"
-                                        >
-                                            <div className="flex items-center space-x-3">
-                                                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-green-100 dark:bg-green-900">
-                                                    <Calendar className="h-4 w-4 text-green-600 dark:text-green-400" />
-                                                </div>
-                                                <div>
-                                                    <p className="text-sm font-medium text-gray-900 dark:text-white">
-                                                        {paper.year}
-                                                    </p>
-                                                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                                                        Question Paper
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <a
-                                                href={paper.file_url}
-                                                download
-                                                className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-blue-600 transition-colors hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
-                                                title="Download PDF"
-                                            >
+            <Card>
+                <CardHeader className="flex flex-row items-center justify-between">
+                    <CardTitle>Question Paper Details</CardTitle>
+                    <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+                        <DialogTrigger asChild>
+                            <Button>
+                                <PlusCircle className="mr-2 h-4 w-4" />
+                                Create Question Paper
+                            </Button>
+                        </DialogTrigger>
+                        <DialogContent className="sm:max-w-[425px]">
+                            <DialogHeader>
+                                <DialogTitle>Create New Question Paper</DialogTitle>
+                                <DialogDescription>
+                                    Fill in the form below to add a new paper for {semester.name}.
+                                </DialogDescription>
+                            </DialogHeader>
+                            <CreateQuestionPaperForm setOpen={setDialogOpen} />
+                        </DialogContent>
+                    </Dialog>
+                </CardHeader>
+                <CardContent>
+                    <Table>
+                        <TableHeader>
+                            <TableRow>
+                                <TableHead>Course</TableHead>
+                                <TableHead>Year</TableHead>
+                                <TableHead>File Name</TableHead>
+                                <TableHead className="text-right">Actions</TableHead>
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
+                            {questionPapers.length === 0 && (
+                                <TableRow>
+                                    <TableCell colSpan={4} className="h-24 text-center">
+                                        No question papers found.
+                                    </TableCell>
+                                </TableRow>
+                            )}
+                            {questionPapers.map((paper) => (
+                                <TableRow key={paper.id}>
+                                    <TableCell>{paper.course}</TableCell>
+                                    <TableCell>{paper.year}</TableCell>
+                                    <TableCell>{paper.file_name}</TableCell>
+                                    <TableCell className="text-right space-x-2">
+                                        <Button variant="outline" size="sm" asChild>
+                                            <a href={paper.file_url} download>
                                                 <Download className="h-4 w-4" />
                                             </a>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                )}
-
-                <div className="flex justify-center pt-6">
-                    <Link
-                        href={`/syllabus/${semester.id}`}
-                        className="inline-flex items-center space-x-2 rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-blue-700"
-                    >
-                        <span>View Syllabus</span>
-                        <ArrowLeft className="h-4 w-4 rotate-180" />
-                    </Link>
-                </div>
-            </div>
-        </AppLayout>
+                                        </Button>
+                                        <AlertDialog>
+                                            <AlertDialogTrigger asChild>
+                                                <Button variant="destructive" size="sm">
+                                                    <Trash2 className="h-4 w-4" />
+                                                </Button>
+                                            </AlertDialogTrigger>
+                                            <AlertDialogContent>
+                                                <AlertDialogHeader>
+                                                    <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                                                    <AlertDialogDescription>
+                                                        This action cannot be undone. This will permanently delete the
+                                                        question paper.
+                                                    </AlertDialogDescription>
+                                                </AlertDialogHeader>
+                                                <AlertDialogFooter>
+                                                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                                                    <AlertDialogAction onClick={() => handleDelete(paper.id)}>
+                                                        Continue
+                                                    </AlertDialogAction>
+                                                </AlertDialogFooter>
+                                            </AlertDialogContent>
+                                        </AlertDialog>
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </TableBody>
+                    </Table>
+                </CardContent>
+            </Card>
+        </AdminLayout>
     );
-} 
+}

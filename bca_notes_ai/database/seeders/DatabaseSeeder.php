@@ -24,7 +24,6 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SuperAdminSeeder::class,
             SemesterSeeder::class,
-            SyllabusSeeder::class,
         ]);
     }
 }

@@ -1,209 +1,160 @@
-import { useState, useEffect } from 'react';
-import { Head, useForm } from '@inertiajs/react';
+import { PageProps } from '@/types';
+import { Head, Link, useForm } from '@inertiajs/react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import AdminLayout from '@/layouts/admin-layout';
-import Modal from '@/components/ui/modal';
-import { Plus, Eye, Edit, Trash2, FileText, Search } from 'lucide-react';
-import { type BreadcrumbItem } from '@/types';
-import axios from 'axios';
+import { Eye, File as FileIcon, PlusCircle, Trash } from 'lucide-react';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog';
+import { useState } from 'react';
+import { Input } from '@/components/ui/input';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import { Resource, Semester } from '@/types';
+import { CreateResourceForm } from './partials/CreateResourceForm';
 
-const breadcrumbs: BreadcrumbItem[] = [
-    { title: 'Dashboard', href: '/dashboard' },
-    { title: 'Course Management', href: '/admin/syllabi' },
-    { title: 'Upload Resources', href: '/admin/upload' },
-];
+export default function UploadPage({ resources, semesters }: PageProps<{ resources: Resource[], semesters: Semester[] }>) {
+    const [open, setOpen] = useState(false);
+    const { delete: destroy, processing } = useForm();
 
-const semesters = [
-    { value: '1', label: 'Semester 1' },
-    { value: '2', label: 'Semester 2' },
-    { value: '3', label: 'Semester 3' },
-    { value: '4', label: 'Semester 4' },
-    { value: '5', label: 'Semester 5' },
-    { value: '6', label: 'Semester 6' },
-];
-
-export default function UploadPage() {
-    const [resources, setResources] = useState<any[]>([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedResource, setSelectedResource] = useState<any | null>(null);
-    const [searchTerm, setSearchTerm] = useState('');
-    // Pagination state
-    const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
-
-    const fetchResources = async () => {
-        setLoading(true);
-        setError(null);
-        try {
-            const res = await axios.get('/resources');
-            setResources(res.data.resources);
-        } catch (err: any) {
-            setError('Failed to load resources.');
-        } finally {
-            setLoading(false);
+    const deleteResource = (resource: Resource) => {
+        if (!confirm('Are you sure you want to delete this resource?')) {
+            return;
         }
-    };
-
-    useEffect(() => {
-        fetchResources();
-    }, []);
-
-    const handleAdd = () => {
-        setSelectedResource(null);
-        setIsModalOpen(true);
-    };
-    const handleEdit = (resource: any) => {
-        setSelectedResource(resource);
-        setIsModalOpen(true);
-    };
-    const handleDelete = async (id: number) => {
-        if (confirm('Are you sure you want to delete this resource?')) {
-            try {
-                await axios.delete(`/resources/${id}`);
-                setResources(resources.filter(r => r.id !== id));
-            } catch {
-                alert('Failed to delete resource.');
-            }
-        }
-    };
-
-    const filteredResources = resources.filter(resource =>
-        resource.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    // Pagination logic
-    const totalPages = Math.ceil(filteredResources.length / itemsPerPage);
-    const paginatedResources = filteredResources.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-    const handlePageChange = (page: number) => {
-        setCurrentPage(page);
+        destroy(route('resources.destroy', { resource: resource.id }));
     };
 
     return (
-        <AdminLayout title="" breadcrumbs={breadcrumbs}>
+        <AdminLayout
+            title=""
+            breadcrumbs={[
+                { title: 'Dashboard', href: route('dashboard') },
+                { title: 'Course Management', href: '#' },
+                { title: 'Upload Resources', href: route('admin.resources.index') },
+            ]}
+        >
             <Head title="Upload Resources" />
-            <div className="animate-fade-in">
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
-                    <div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Upload Resources</h2>
-                        <p className="mt-1 text-base text-gray-600 dark:text-gray-400">Upload and manage resource files for students</p>
-                    </div>
-                    <button
-                        onClick={handleAdd}
-                        className="mt-4 sm:mt-0 inline-flex items-center px-5 py-3 bg-blue-600 text-white text-base font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-                    >
-                        <Plus className="w-5 h-5 mr-2" />
-                        Add Resource
-                    </button>
-                </div>
-                <div className="mb-6">
-                    <div className="relative max-w-xs">
-                        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                        <input
-                            type="text"
-                            placeholder="Search resources..."
-                            value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
-                        />
-                    </div>
-                </div>
-                {loading ? (
-                    <div className="text-center py-12 text-gray-500 dark:text-gray-400">Loading resources...</div>
-                ) : error ? (
-                    <div className="text-center py-12 text-red-500">{error}</div>
-                ) : (
-                    <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-                        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 rounded-2xl overflow-hidden text-base">
-                            <thead className="bg-gray-50 dark:bg-gray-800">
-                                <tr>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Title</th>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Semester</th>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">File</th>
-                                    <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Description</th>
-                                    <th className="px-6 py-4 text-right text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                                {paginatedResources.map((resource, idx) => (
-                                    <tr key={resource.id} className={`transition-colors ${idx % 2 === 0 ? 'bg-white dark:bg-gray-900' : 'bg-gray-50 dark:bg-gray-800'} hover:bg-blue-50 dark:hover:bg-blue-900/30`}>
-                                        <td className="px-6 py-4 whitespace-nowrap">
-                                            <div className="text-base font-semibold text-gray-900 dark:text-white">{resource.title}</div>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap">
-                                            <span className="inline-flex items-center px-2 py-1 rounded text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">{semesters.find(s => s.value === resource.semester)?.label}</span>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap">
-                                            <a href={resource.file_path ? `/storage/${resource.file_path}` : '#'} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline flex items-center gap-1"><FileText className="w-5 h-5" />{resource.file_path?.split('/').pop()}</a>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap">
-                                            <div className="text-base text-gray-500 dark:text-gray-400">{resource.description}</div>
-                                        </td>
-                                        <td className="px-6 py-4 whitespace-nowrap text-right text-base font-medium">
-                                            <div className="flex items-center justify-end space-x-3">
-                                                <button onClick={() => { }} className="text-blue-600 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300 transition-colors" title="View"><Eye className="w-5 h-5" /></button>
-                                                <button onClick={() => handleEdit(resource)} className="text-green-600 hover:text-green-900 dark:text-green-400 dark:hover:text-green-300 transition-colors" title="Edit"><Edit className="w-5 h-5" /></button>
-                                                <button onClick={() => handleDelete(resource.id)} className="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-300 transition-colors" title="Delete"><Trash2 className="w-5 h-5" /></button>
+
+            <div className="space-y-6">
+                <Card>
+                    <CardHeader className="flex flex-row items-center justify-between">
+                        <div>
+                            <CardTitle>Upload Resources</CardTitle>
+                            <CardDescription>Upload and manage resource files for students</CardDescription>
+                        </div>
+                        <Dialog open={open} onOpenChange={setOpen}>
+                            <DialogTrigger asChild>
+                                <Button>
+                                    <PlusCircle className="mr-2 h-4 w-4" />
+                                    Add Resource
+                                </Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-[425px]">
+                                <DialogHeader>
+                                    <DialogTitle>Create New Resource</DialogTitle>
+                                    <DialogDescription>
+                                        Fill in the form below to add a new resource.
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <CreateResourceForm setOpen={setOpen} semesters={semesters} />
+                            </DialogContent>
+                        </Dialog>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="mb-4 flex items-center justify-between">
+                            <div className="w-1/3">
+                                <Input placeholder="Search resources..." />
+                            </div>
+                            <div className="w-1/4">
+                                <Select>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="All Semesters" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Semesters</SelectItem>
+                                        {semesters.map((semester) => (
+                                            <SelectItem key={semester.id} value={String(semester.id)}>
+                                                {semester.name}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        </div>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead>Semester</TableHead>
+                                    <TableHead>File</TableHead>
+                                    <TableHead className="text-right">Actions</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {resources.length > 0 ? (
+                                    resources.map((resource) => (
+                                        <TableRow key={resource.id}>
+                                            <TableCell>
+                                                <div className="font-medium">{resource.title}</div>
+                                                <div className="text-sm text-muted-foreground">{resource.description}</div>
+                                            </TableCell>
+                                            <TableCell>{resource.semester?.name}</TableCell>
+                                            <TableCell>
+                                                <a
+                                                    href={`/storage/${resource.file_path}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center text-sm text-blue-600 hover:underline"
+                                                >
+                                                    <FileIcon className="mr-2 h-4 w-4" />
+                                                    {resource.file_name} ({resource.file_size})
+                                                </a>
+                                            </TableCell>
+                                            <TableCell className="text-right space-x-2">
+                                                <Button variant="outline" size="icon" asChild>
+                                                    <a href={`/storage/${resource.file_path}`} target="_blank" rel="noopener noreferrer">
+                                                        <Eye className="h-4 w-4" />
+                                                    </a>
+                                                </Button>
+                                                <Button
+                                                    variant="destructive"
+                                                    size="icon"
+                                                    onClick={() => deleteResource(resource)}
+                                                    disabled={processing}
+                                                >
+                                                    <Trash className="h-4 w-4" />
+                                                </Button>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))
+                                ) : (
+                                    <TableRow>
+                                        <TableCell colSpan={4} className="h-24 text-center">
+                                            <div className="flex flex-col items-center justify-center space-y-2">
+                                                <FileIcon className="h-12 w-12 text-gray-400" />
+                                                <h3 className="text-lg font-medium text-gray-900 dark:text-white">No resources found</h3>
+                                                <p className="text-base text-gray-500 dark:text-gray-400">Get started by adding a new resource.</p>
                                             </div>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                )}
-                {/* Pagination Controls */}
-                {totalPages > 1 && !loading && !error && (
-                    <div className="flex justify-center items-center gap-2 mt-6">
-                        <button
-                            onClick={() => handlePageChange(currentPage - 1)}
-                            disabled={currentPage === 1}
-                            className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50"
-                        >
-                            Previous
-                        </button>
-                        {[...Array(totalPages)].map((_, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => handlePageChange(idx + 1)}
-                                className={`px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 ${currentPage === idx + 1 ? 'bg-blue-600 text-white' : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'}`}
-                            >
-                                {idx + 1}
-                            </button>
-                        ))}
-                        <button
-                            onClick={() => handlePageChange(currentPage + 1)}
-                            disabled={currentPage === totalPages}
-                            className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50"
-                        >
-                            Next
-                        </button>
-                    </div>
-                )}
-                {filteredResources.length === 0 && !loading && !error && (
-                    <div className="text-center py-12">
-                        <FileText className="mx-auto h-12 w-12 text-gray-400" />
-                        <h3 className="mt-2 text-lg font-medium text-gray-900 dark:text-white">No resources found</h3>
-                        <p className="mt-1 text-base text-gray-500 dark:text-gray-400">Get started by adding a new resource.</p>
-                    </div>
-                )}
+                                        </TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
             </div>
-            <Modal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                title={selectedResource ? 'Edit Resource' : 'Add Resource'}
-                size="lg"
-                className="animate-fade-in shadow-2xl rounded-2xl"
-            >
-                <ResourceForm
-                    resource={selectedResource}
-                    onClose={() => {
-                        setIsModalOpen(false);
-                        fetchResources();
-                    }}
-                    afterSave={fetchResources}
-                />
-            </Modal>
         </AdminLayout>
     );
 }

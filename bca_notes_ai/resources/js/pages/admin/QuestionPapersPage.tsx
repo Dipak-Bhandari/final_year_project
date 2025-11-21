@@ -1,9 +1,163 @@
-import { useState } from 'react';
-import { Head, useForm } from '@inertiajs/react';
+import { PageProps } from '@/types';
+import { Head, Link, useForm } from '@inertiajs/react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import AdminLayout from '@/layouts/admin-layout';
-import Modal from '@/components/ui/modal';
-import { Plus, Eye, Edit, Trash2, FileText, Search, Upload, X } from 'lucide-react';
-import { type BreadcrumbItem } from '@/types';
+import { Eye, File as FileIcon, PlusCircle, Trash } from 'lucide-react';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog';
+import { useState } from 'react';
+import { Input } from '@/components/ui/input';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import { QuestionPaper, Semester } from '@/types';
+import { CreateQuestionPaperForm } from './partials/CreateQuestionPaperForm';
+
+export default function QuestionPapersPage({ questionPapers, semesters }: PageProps<{ questionPapers: QuestionPaper[], semesters: Semester[] }>) {
+    const [open, setOpen] = useState(false);
+    const { delete: destroy, processing } = useForm();
+
+    const deletePaper = (paper: QuestionPaper) => {
+        if (!confirm('Are you sure you want to delete this question paper?')) {
+            return;
+        }
+        destroy(route('question-papers.destroy', { questionPaper: paper.id }));
+    };
+
+    return (
+        <AdminLayout
+            title="Question Papers"
+            breadcrumbs={[
+                { title: 'Dashboard', href: route('dashboard') },
+                { title: 'Course Management', href: '#' },
+                { title: 'Question Papers', href: route('admin.question-papers.index') },
+            ]}
+        >
+            <Head title="Question Papers" />
+
+            <div className="space-y-6">
+                <Card>
+                    <CardHeader className="flex flex-row items-center justify-between">
+                        <div>
+                            <CardTitle>Question Paper Management</CardTitle>
+                            <CardDescription>Manage and upload question papers for each semester</CardDescription>
+                        </div>
+                        <Dialog open={open} onOpenChange={setOpen}>
+                            <DialogTrigger asChild>
+                                <Button>
+                                    <PlusCircle className="mr-2 h-4 w-4" />
+                                    Add Paper
+                                </Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-[425px]">
+                                <DialogHeader>
+                                    <DialogTitle>Add New Question Paper</DialogTitle>
+                                    <DialogDescription>
+                                        Fill in the form below to add a new paper.
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <CreateQuestionPaperForm setOpen={setOpen} semesters={semesters} />
+                            </DialogContent>
+                        </Dialog>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="mb-4 flex items-center justify-between">
+                            <div className="w-1/3">
+                                <Input placeholder="Search papers..." />
+                            </div>
+                            <div className="w-1/4">
+                                <Select>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="All Semesters" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Semesters</SelectItem>
+                                        {semesters.map((semester) => (
+                                            <SelectItem key={semester.id} value={String(semester.id)}>
+                                                {semester.name}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        </div>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Title</TableHead>
+                                    <TableHead>Semester</TableHead>
+                                    <TableHead>File</TableHead>
+                                    <TableHead className="text-right">Actions</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {questionPapers.length > 0 ? (
+                                    questionPapers.map((paper) => (
+                                        <TableRow key={paper.id}>
+                                            <TableCell>
+                                                <div className="font-medium">{paper.title}</div>
+                                                <div className="text-sm text-muted-foreground">Year: {paper.year}</div>
+                                            </TableCell>
+                                            <TableCell>{paper.semester?.name}</TableCell>
+                                            <TableCell>
+                                                <a
+                                                    href={`/storage/${paper.file_path}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center text-sm text-blue-600 hover:underline"
+                                                >
+                                                    <FileIcon className="mr-2 h-4 w-4" />
+                                                    {paper.file_name} ({paper.file_size})
+                                                </a>
+                                            </TableCell>
+                                            <TableCell className="text-right space-x-2">
+                                                <Button variant="outline" size="icon" asChild>
+                                                    <a href={`/storage/${paper.file_path}`} target="_blank" rel="noopener noreferrer">
+                                                        <Eye className="h-4 w-4" />
+                                                    </a>
+                                                </Button>
+                                                <Button
+                                                    variant="destructive"
+                                                    size="icon"
+                                                    onClick={() => deletePaper(paper)}
+                                                    disabled={processing}
+                                                >
+                                                    <Trash className="h-4 w-4" />
+                                                </Button>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))
+                                ) : (
+                                    <TableRow>
+                                        <TableCell colSpan={4} className="h-24 text-center">
+                                            <div className="flex flex-col items-center justify-center space-y-2">
+                                                <FileIcon className="h-12 w-12 text-gray-400" />
+                                                <h3 className="text-lg font-medium text-gray-900 dark:text-white">No papers found</h3>
+                                                <p className="text-base text-gray-500 dark:text-gray-400">Get started by adding a new paper.</p>
+                                            </div>
+                                        </TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
+            </div>
+        </AdminLayout>
+    );
+}
 
 // Dummy data for now
 const dummyPapers = [

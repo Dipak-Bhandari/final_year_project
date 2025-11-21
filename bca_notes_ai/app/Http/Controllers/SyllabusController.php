@@ -105,4 +105,16 @@ class SyllabusController extends Controller
 
         return redirect()->back()->with('success', 'Syllabus deleted successfully.');
     }
-} 
+
+    /**
+     * Download the specified syllabus file.
+     */
+    public function download(Syllabus $syllabus)
+    {
+        if (!$syllabus->file_path || !Storage::disk('public')->exists($syllabus->file_path)) {
+            abort(404, 'File not found.');
+        }
+
+        return Storage::disk('public')->download($syllabus->file_path, $syllabus->file_name);
+    }
+}
