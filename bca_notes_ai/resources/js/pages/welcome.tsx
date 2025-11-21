@@ -1,26 +1,123 @@
 import AppLogoIcon from '@/components/app-logo-icon';
 import NavIndex from '@/components/nav-index';
 import AppFooter from '@/components/app-footer';
-import { type SharedData, type User } from '@/types';
+import { type PageProps } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 import LoginRegPopupStart from '@/components/login-reg-popup-start';
-import { ReactNode, useState } from 'react';
-import { BookOpen, BotMessageSquare, FileText, GraduationCap, User as UserIcon, X } from 'lucide-react';
+import { ReactNode, useEffect, useMemo, useState } from 'react';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { BookOpen, BotMessageSquare, FileText, GraduationCap, Search, User as UserIcon } from 'lucide-react';
 import ChatAI from '@/components/chat-ai-component';
 import { Button } from '@/components/ui/button';
 
 type WelcomeProps = {
     children?: ReactNode;
-}
+};
+
+type PublicSyllabus = {
+    id: number;
+    course: string;
+    description?: string | null;
+    file_name: string;
+    file_size?: number | null;
+    download_url: string;
+    semester?: { id: number; name: string } | null;
+};
+
+type PublicQuestionPaper = {
+    id: number;
+    course: string;
+    year: number;
+    file_name: string;
+    file_size?: number | null;
+    download_url: string;
+    semester?: { id: number; name: string } | null;
+};
+
+type WelcomePageProps = PageProps<{
+    publicSyllabi: PublicSyllabus[];
+    publicQuestionPapers: PublicQuestionPaper[];
+}>;
 
 export default function Welcome({ children }: WelcomeProps) {
-    const { auth } = usePage<SharedData>().props;
+    const { auth, publicSyllabi = [], publicQuestionPapers = [] } = usePage<WelcomePageProps>().props;
     const user = auth.user;
     const [chatOpen, setChatOpen] = useState(false);
+    const [searchValue, setSearchValue] = useState('');
+
+    useEffect(() => {
+        const handler = (event: Event) => {
+            const detail = (event as CustomEvent<string>).detail ?? '';
+            setSearchValue(detail);
+        };
+
+        window.addEventListener('landing-search', handler);
+        return () => window.removeEventListener('landing-search', handler);
+    }, []);
+
+    const normalizedSearch = searchValue.trim().toLowerCase();
+    const searchResults = useMemo(() => {
+        if (!normalizedSearch) {
+            return [];
+        }
+
+        const syllabusMatches = publicSyllabi
+            .filter((item: PublicSyllabus) => {
+                const text = [
+                    item.course,
+                    item.description,
+                    item.semester?.name,
+                ]
+                    .filter(Boolean)
+                    .join(' ')
+                    .toLowerCase();
+                return text.includes(normalizedSearch);
+            })
+            .map((item: PublicSyllabus) => ({
+                id: `syllabus-${item.id}`,
+                type: 'Syllabus' as const,
+                title: item.course,
+                meta: item.semester?.name ?? 'All semesters',
+                description: item.description ?? 'Course outline',
+                downloadUrl: item.download_url,
+                fileSize: item.file_size,
+                badgeTone: 'default' as const,
+            }));
+
+        const paperMatches = publicQuestionPapers
+            .filter((item: PublicQuestionPaper) => {
+                const text = [
+                    item.course,
+                    item.year,
+                    item.semester?.name,
+                ]
+                    .filter(Boolean)
+                    .join(' ')
+                    .toLowerCase();
+                return text.includes(normalizedSearch);
+            })
+            .map((item: PublicQuestionPaper) => ({
+                id: `paper-${item.id}`,
+                type: 'Question Paper' as const,
+                title: item.course ?? 'Question Paper',
+                meta: `${item.semester?.name ?? 'Semester'} • ${item.year}`,
+                description: 'Past exam paper',
+                downloadUrl: item.download_url,
+                fileSize: item.file_size,
+                badgeTone: 'secondary' as const,
+            }));
+
+        return [...syllabusMatches, ...paperMatches].slice(0, 8);
+    }, [normalizedSearch, publicSyllabi, publicQuestionPapers]);
+
+    const syllabusPreview = publicSyllabi.slice(0, 6);
+    const paperPreview = publicQuestionPapers.slice(0, 6);
 
     return (
         <>
-            <Head title="Welcome">
+            <Head title="Bcai Notes">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
@@ -92,6 +189,137 @@ export default function Welcome({ children }: WelcomeProps) {
                         </div>
                     </div>
 
+                    {/* Search + resource cards */}
+                    <section id="public-library" className="mt-16 space-y-8">
+                        <div className="mx-auto max-w-3xl text-center space-y-4">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-purple-100 px-3 py-1 text-sm font-medium text-purple-700 dark:bg-purple-900/30 dark:text-purple-200">
+                                <Search className="h-4 w-4" />
+                                Explore our open library
+                            </div>
+                            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                Search syllabi & question papers
+                            </h2>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                All resources published by admins are now publicly accessible—no login required.
+                                Download the PDF you need or browse the latest uploads below.
+                            </p>
+                            <Input
+                                value={searchValue}
+                                onChange={(event) => setSearchValue(event.target.value)}
+                                placeholder="Search by course, semester, or year…"
+                                className="h-12 rounded-full border-gray-300 text-base dark:border-gray-700"
+                            />
+                        </div>
+
+                        {normalizedSearch && (
+                            <div className="rounded-2xl border border-gray-200 bg-white/70 p-6 shadow-sm dark:border-gray-800 dark:bg-gray-900/60">
+                                {searchResults.length ? (
+                                    <div className="grid gap-4 md:grid-cols-2">
+                                        {searchResults.map((result) => (
+                                            <Card key={result.id} className="border border-gray-200 dark:border-gray-800">
+                                                <CardHeader className="space-y-3">
+                                                    <div className="flex items-center gap-2">
+                                                        <Badge variant={result.badgeTone}>{result.type}</Badge>
+                                                        <span className="text-sm text-muted-foreground">{result.meta}</span>
+                                                    </div>
+                                                    <CardTitle className="text-lg">{result.title}</CardTitle>
+                                                    <CardDescription>{result.description}</CardDescription>
+                                                </CardHeader>
+                                                <CardContent className="flex items-center justify-between">
+                                                    <div className="text-sm text-muted-foreground">
+                                                        {result.fileSize ? formatFileSize(result.fileSize) : 'PDF'}
+                                                    </div>
+                                                    <Button asChild variant="outline" size="sm">
+                                                        <a href={result.downloadUrl}>Download</a>
+                                                    </Button>
+                                                </CardContent>
+                                            </Card>
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <p className="text-center text-sm text-muted-foreground">
+                                        No resources matched “{searchValue}”. Try another course, semester, or year.
+                                    </p>
+                                )}
+                            </div>
+                        )}
+                    </section>
+
+                    {/* Public resource sections */}
+                    <section className="mt-16 space-y-10">
+                        <div className="space-y-4">
+                            <div>
+                                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Syllabus</h2>
+                                <p className="text-gray-600 dark:text-gray-400">
+                                    Download official course outlines shared by the admin team.
+                                </p>
+                            </div>
+                            <div className="grid gap-4 md:grid-cols-2">
+                                {syllabusPreview.map((syllabus: PublicSyllabus) => (
+                                    <Card key={syllabus.id} className="border border-gray-200 dark:border-gray-800">
+                                        <CardHeader className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <Badge variant="outline">{syllabus.semester?.name ?? 'All semesters'}</Badge>
+                                            </div>
+                                            <CardTitle className="text-xl">{syllabus.course}</CardTitle>
+                                            {syllabus.description && (
+                                                <CardDescription>{syllabus.description}</CardDescription>
+                                            )}
+                                        </CardHeader>
+                                        <CardContent className="flex items-center justify-between">
+                                            <span className="text-sm text-muted-foreground">
+                                                {syllabus.file_size ? formatFileSize(syllabus.file_size) : syllabus.file_name}
+                                            </span>
+                                            <Button asChild variant="outline" size="sm">
+                                                <a href={syllabus.download_url}>Download</a>
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                                {!syllabusPreview.length && (
+                                    <p className="text-sm text-muted-foreground">
+                                        No syllabi have been published yet.
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="space-y-4">
+                            <div>
+                                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Question papers</h2>
+                                <p className="text-gray-600 dark:text-gray-400">
+                                    Practice with previous exam papers shared by the faculty.
+                                </p>
+                            </div>
+                            <div className="grid gap-4 md:grid-cols-2">
+                                {paperPreview.map((paper: PublicQuestionPaper) => (
+                                    <Card key={paper.id} className="border border-gray-200 dark:border-gray-800">
+                                        <CardHeader className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <Badge variant="secondary">{paper.semester?.name ?? 'Semester'}</Badge>
+                                                <span className="text-sm text-muted-foreground">{paper.year}</span>
+                                            </div>
+                                            <CardTitle className="text-xl">{paper.course}</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="flex items-center justify-between">
+                                            <span className="text-sm text-muted-foreground">
+                                                {paper.file_size ? formatFileSize(paper.file_size) : paper.file_name}
+                                            </span>
+                                            <Button asChild variant="outline" size="sm">
+                                                <a href={paper.download_url}>Download</a>
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                                {!paperPreview.length && (
+                                    <p className="text-sm text-muted-foreground">
+                                        No question papers are available yet.
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                    </section>
+
                     {/* Features Grid */}
                     <div className="grid md:grid-cols-3 gap-8 mt-16">
                         <div className="text-center">
@@ -139,4 +367,18 @@ export default function Welcome({ children }: WelcomeProps) {
             </div>
         </>
     );
+}
+
+function formatFileSize(size?: number | string | null) {
+    if (size === undefined || size === null || size === '') {
+        return 'PDF';
+    }
+    const numeric = typeof size === 'string' ? parseFloat(size) : size;
+    if (!numeric || Number.isNaN(numeric)) {
+        return 'PDF';
+    }
+    const units = ['B', 'KB', 'MB', 'GB'];
+    const index = Math.min(Math.floor(Math.log(numeric) / Math.log(1024)), units.length - 1);
+    const value = numeric / Math.pow(1024, index);
+    return `${value.toFixed(1)} ${units[index]}`;
 }
