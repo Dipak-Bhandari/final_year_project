@@ -1,116 +1,154 @@
-import { Head, Link } from '@inertiajs/react';
-import { ArrowLeft, BookOpen, ChevronRight } from 'lucide-react';
-import AppLayout from '@/layouts/app-layout';
-import { type BreadcrumbItem } from '@/types';
+import { PageProps } from '@/types';
+import { Head, Link, useForm } from '@inertiajs/react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import AdminLayout from '@/layouts/admin-layout';
+import { Eye, File, PlusCircle, Trash } from 'lucide-react';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+    DialogTrigger,
+} from '@/components/ui/dialog';
+import { CreateSyllabusForm } from './Syllabus/partials/CreateSyllabusForm';
+import { useState } from 'react';
+import { Input } from '@/components/ui/input';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import { Semester, Syllabus } from '@/types/model';
 
-type Syllabus = {
-    id: number;
-    course: string;
-    units: string[];
-};
+export default function SyllabusPage({ syllabi, semesters }: PageProps<{ syllabi: Syllabus[], semesters: Semester[] }>) {
+    const [open, setOpen] = useState(false);
+    const { delete: destroy, processing } = useForm();
 
-type Semester = {
-    id: number;
-    name: string;
-};
-
-type Props = {
-    semester: Semester;
-    syllabi: Syllabus[];
-};
-
-export default function SyllabusPage({ semester, syllabi }: Props) {
-    const breadcrumbs: BreadcrumbItem[] = [
-        {
-            title: 'Semesters',
-            href: '/semesters',
-        },
-        {
-            title: semester.name,
-            href: `/syllabus/${semester.id}`,
-        },
-    ];
+    const deleteSyllabus = (syllabus: Syllabus) => {
+        if (!confirm('Are you sure you want to delete this syllabus?')) {
+            return;
+        }
+        destroy(route('syllabi.destroy', { syllabus: syllabus.id }));
+    };
 
     return (
-        <AppLayout breadcrumbs={breadcrumbs}>
-            <Head title={`${semester.name} Syllabus`} />
+        <AdminLayout
+            title="Syllabus Management"
+            breadcrumbs={[
+                { title: 'Dashboard', href: route('dashboard') },
+                { title: 'Course Management', href: '#' },
+                { title: 'Syllabi', href: route('admin.syllabi.index') },
+            ]}
+        >
+            <Head title="Syllabus Management" />
 
             <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                    <Link
-                        href="/semesters"
-                        className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-                    >
-                        <ArrowLeft className="h-4 w-4" />
-                        <span>Back to Semesters</span>
-                    </Link>
-                </div>
-
-                <div className="text-center">
-                    <div className="flex items-center justify-center space-x-3 mb-4">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900">
-                            <BookOpen className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                <Card>
+                    <CardHeader className="flex flex-row items-center justify-between">
+                        <div>
+                            <CardTitle>Syllabus Management</CardTitle>
+                            <CardDescription>Manage course syllabi and learning materials</CardDescription>
                         </div>
-                        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
-                            {semester.name} Syllabus
-                        </h1>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400">
-                        Complete course structure and learning units
-                    </p>
-                </div>
-
-                {syllabi.length === 0 ? (
-                    <div className="text-center py-12">
-                        <BookOpen className="mx-auto h-12 w-12 text-gray-400" />
-                        <h3 className="mt-2 text-sm font-medium text-gray-900 dark:text-white">
-                            No syllabi available
-                        </h3>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                            Syllabus content will be added soon.
-                        </p>
-                    </div>
-                ) : (
-                    <div className="grid gap-6 md:grid-cols-2">
-                        {syllabi.map((syllabus) => (
-                            <div
-                                key={syllabus.id}
-                                className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
-                            >
-                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                                    {syllabus.course}
-                                </h3>
-
-                                <div className="space-y-3">
-                                    {syllabus.units.map((unit, index) => (
-                                        <div
-                                            key={index}
-                                            className="flex items-start space-x-3 rounded-md bg-gray-50 p-3 dark:bg-gray-700"
-                                        >
-                                            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-100 text-xs font-medium text-blue-600 dark:bg-blue-900 dark:text-blue-400">
-                                                {index + 1}
-                                            </div>
-                                            <p className="text-sm text-gray-700 dark:text-gray-300">
-                                                {unit}
-                                            </p>
-                                        </div>
-                                    ))}
-                                </div>
+                        <Dialog open={open} onOpenChange={setOpen}>
+                            <DialogTrigger asChild>
+                                <Button>
+                                    <PlusCircle className="mr-2 h-4 w-4" />
+                                    Add Syllabus
+                                </Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-[425px]">
+                                <DialogHeader>
+                                    <DialogTitle>Create New Syllabus</DialogTitle>
+                                    <DialogDescription>
+                                        Fill in the form below to add a new syllabus.
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <CreateSyllabusForm setOpen={setOpen} semesters={semesters} />
+                            </DialogContent>
+                        </Dialog>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="mb-4 flex items-center justify-between">
+                            <div className="w-1/3">
+                                <Input placeholder="Search syllabi..." />
                             </div>
-                        ))}
-                    </div>
-                )}
-
-                <div className="flex justify-center pt-6">
-                    <Link
-                        href={`/papers/${semester.id}`}
-                        className="inline-flex items-center space-x-2 rounded-md bg-green-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-green-700"
-                    >
-                        <span>View Question Papers</span>
-                        <ChevronRight className="h-4 w-4" />
-                    </Link>
-                </div>
+                            <div className="w-1/4">
+                                <Select>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="All Semesters" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="all">All Semesters</SelectItem>
+                                        {semesters.map((semester) => (
+                                            <SelectItem key={semester.id} value={String(semester.id)}>
+                                                {semester.name}
+                                            </SelectItem>
+                                        ))}
+                                    </SelectContent>
+                                </Select>
+                            </div>
+                        </div>
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Course</TableHead>
+                                    <TableHead>Semester</TableHead>
+                                    <TableHead>File</TableHead>
+                                    <TableHead className="text-right">Actions</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {syllabi.length > 0 ? (
+                                    syllabi.map((syllabus) => (
+                                        <TableRow key={syllabus.id}>
+                                            <TableCell>
+                                                <div className="font-medium">{syllabus.course}</div>
+                                                <div className="text-sm text-muted-foreground">{syllabus.description}</div>
+                                            </TableCell>
+                                            <TableCell>{syllabus.semester?.name}</TableCell>
+                                            <TableCell>
+                                                <a
+                                                    href={route('syllabi.download', { syllabus: syllabus.id })}
+                                                    className="flex items-center text-sm text-blue-600 hover:underline"
+                                                >
+                                                    <File className="mr-2 h-4 w-4" />
+                                                    {syllabus.file_name} ({syllabus.file_size})
+                                                </a>
+                                            </TableCell>
+                                            <TableCell className="text-right space-x-2">
+                                                <Button variant="outline" size="icon" asChild>
+                                                    <Link href={route('syllabi.download', { syllabus: syllabus.id })}>
+                                                        <Eye className="h-4 w-4" />
+                                                    </Link>
+                                                </Button>
+                                                <Button
+                                                    variant="destructive"
+                                                    size="icon"
+                                                    onClick={() => deleteSyllabus(syllabus)}
+                                                    disabled={processing}
+                                                >
+                                                    <Trash className="h-4 w-4" />
+                                                </Button>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))
+                                ) : (
+                                    <TableRow>
+                                        <TableCell colSpan={4} className="h-24 text-center">
+                                            No syllabi found.
+                                        </TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
+                    </CardContent>
+                </Card>
             </div>
-        </AppLayout>
+        </AdminLayout>
     );
-} 
+}

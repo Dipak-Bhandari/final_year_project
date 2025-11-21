@@ -1,525 +1,541 @@
-import { useState } from 'react';
-import { Head, useForm } from '@inertiajs/react';
-import { Plus, Edit, Eye, Trash2, BookOpen, Search, Upload, X } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { Head, useForm, router } from '@inertiajs/react';
 import AdminLayout from '@/layouts/admin-layout';
-import Modal from '@/components/ui/modal';
 import { type BreadcrumbItem } from '@/types';
-
-type Syllabus = {
-    id: number;
-    course: string;
-    description?: string;
-    file_name: string;
-    file_path: string;
-    file_size: number;
-    semester: {
-        id: number;
-        name: string;
-    };
-};
+import { PageHeader } from '@/components/page-header';
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@/components/ui/card';
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from '@/components/ui/table';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogHeader,
+    DialogTitle,
+} from '@/components/ui/dialog';
+import {
+    Pagination,
+    PaginationContent,
+    PaginationItem,
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious,
+} from '@/components/ui/pagination';
+import InputError from '@/components/input-error';
+import { Eye, FileText, Pencil, Plus, Trash2 } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 type Semester = {
     id: number;
     name: string;
 };
 
-type Props = {
-    syllabi: Syllabus[];
-    semesters: Semester[];
-    errors?: Record<string, string>;
+type SyllabusRecord = {
+    id: number;
+    course: string;
+    description?: string | null;
+    file_name: string;
+    file_path: string;
+    file_size: number;
+    semester: Semester;
 };
 
-export default function SyllabiPage({ syllabi, semesters, errors }: Props) {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isViewModalOpen, setIsViewModalOpen] = useState(false);
-    const [selectedSyllabus, setSelectedSyllabus] = useState<Syllabus | null>(null);
+type Props = {
+    syllabi: SyllabusRecord[];
+    semesters: Semester[];
+};
+
+const breadcrumbs: BreadcrumbItem[] = [
+    { title: 'Dashboard', href: '/dashboard' },
+    { title: 'Course Management', href: '/admin/syllabi' },
+];
+
+export default function SyllabiPage({ syllabi, semesters }: Props) {
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedSemester, setSelectedSemester] = useState<number | ''>('');
+    const [semesterFilter, setSemesterFilter] = useState<string>('all');
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
+    const [formOpen, setFormOpen] = useState(false);
+    const [viewing, setViewing] = useState<SyllabusRecord | null>(null);
+    const [editing, setEditing] = useState<SyllabusRecord | null>(null);
+    const itemsPerPage = 8;
 
-    const breadcrumbs: BreadcrumbItem[] = [
-        { title: 'Dashboard', href: '/dashboard' },
-        { title: 'Course Management', href: '/admin/syllabi' },
-        { title: 'Syllabi', href: '/admin/syllabi' },
-    ];
+    const filtered = useMemo(() => {
+        return syllabi.filter((syllabus) => {
+            const matchesSearch = syllabus.course
+                .toLowerCase()
+                .includes(searchTerm.toLowerCase());
+            const matchesSemester =
+                semesterFilter === 'all' ||
+                String(syllabus.semester.id) === semesterFilter;
+            return matchesSearch && matchesSemester;
+        });
+    }, [syllabi, searchTerm, semesterFilter]);
 
-    const filteredSyllabi = syllabi.filter(syllabus => {
-        const matchesSearch = syllabus.course.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchesSemester = selectedSemester === '' || syllabus.semester.id === selectedSemester;
-        return matchesSearch && matchesSemester;
-    });
+    const paginated = useMemo(() => {
+        const start = (currentPage - 1) * itemsPerPage;
+        return filtered.slice(start, start + itemsPerPage);
+    }, [filtered, currentPage]);
 
-    const totalPages = Math.ceil(filteredSyllabi.length / itemsPerPage);
-    const paginatedSyllabi = filteredSyllabi.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    const totalPages = Math.max(1, Math.ceil(filtered.length / itemsPerPage));
 
-    const handlePageChange = (page: number) => {
-        setCurrentPage(page);
+    const openCreate = () => {
+        setEditing(null);
+        setFormOpen(true);
     };
 
-    const handleAdd = () => {
-        setSelectedSyllabus(null);
-        setIsModalOpen(true);
+    const openEdit = (syllabus: SyllabusRecord) => {
+        setEditing(syllabus);
+        setFormOpen(true);
     };
 
-    const handleEdit = (syllabus: Syllabus) => {
-        setSelectedSyllabus(syllabus);
-        setIsModalOpen(true);
-    };
-
-    const handleView = (syllabus: Syllabus) => {
-        setSelectedSyllabus(syllabus);
-        setIsViewModalOpen(true);
-    };
-
-    const handleDelete = (id: number) => {
-        if (confirm('Are you sure you want to delete this syllabus?')) {
-            // Handle delete with Inertia
-            // router.delete(`/syllabi/${id}`);
+    const handleDelete = (syllabus: SyllabusRecord) => {
+        if (
+            confirm(
+                `Delete "${syllabus.course}" syllabus? This will remove the associated file.`,
+            )
+        ) {
+            router.delete(route('syllabi.destroy', { syllabus: syllabus.id }), {
+                preserveScroll: true,
+            });
         }
-    };
-
-    const formatFileSize = (bytes: number) => {
-        if (bytes === 0) return '0 Bytes';
-        const k = 1024;
-        const sizes = ['Bytes', 'KB', 'MB', 'GB'];
-        const i = Math.floor(Math.log(bytes) / Math.log(k));
-        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
     };
 
     return (
         <AdminLayout title="" breadcrumbs={breadcrumbs}>
-            <Head title="" />
+            <Head title="Syllabus Management" />
+            <PageHeader
+                title="Syllabus Management"
+                description="Centralize and maintain every course syllabus from a single place."
+                actions={
+                    <Button onClick={openCreate}>
+                        <Plus className="mr-2 h-4 w-4" />
+                        Add syllabus
+                    </Button>
+                }
+            />
 
-            <div>
-                {/* Header */}
-                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
-                    <div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-                            Syllabus Management
-                        </h2>
-                        <p className="mt-1 text-base text-gray-600 dark:text-gray-400">
-                            Manage course syllabi and learning materials
-                        </p>
-                    </div>
-                    <button
-                        onClick={handleAdd}
-                        className="mt-4 sm:mt-0 inline-flex items-center px-5 py-3 bg-blue-600 text-white text-base font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-                    >
-                        <Plus className="w-5 h-5 mr-2" />
-                        Add Syllabus
-                    </button>
-                </div>
-
-                {/* Filters */}
-                <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="relative">
-                        <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
-                        <input
-                            type="text"
-                            placeholder="Search syllabi..."
+            <Card>
+                <CardHeader>
+                    <CardTitle className="text-lg">Courses</CardTitle>
+                    <CardDescription>
+                        Filter syllabi by semester or search for a specific course.
+                    </CardDescription>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                    <div className="grid gap-3 sm:grid-cols-[1fr,200px]">
+                        <Input
+                            placeholder="Search by course name"
                             value={searchTerm}
-                            onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
+                            onChange={(event) => {
+                                setCurrentPage(1);
+                                setSearchTerm(event.target.value);
+                            }}
                         />
+                        <Select
+                            value={semesterFilter}
+                            onValueChange={(value) => {
+                                setCurrentPage(1);
+                                setSemesterFilter(value);
+                            }}
+                        >
+                            <SelectTrigger>
+                                <SelectValue placeholder="All semesters" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="all">All semesters</SelectItem>
+                                {semesters.map((semester) => (
+                                    <SelectItem key={semester.id} value={String(semester.id)}>
+                                        {semester.name}
+                                    </SelectItem>
+                                ))}
+                            </SelectContent>
+                        </Select>
                     </div>
-                    <select
-                        value={selectedSemester}
-                        onChange={(e) => setSelectedSemester(e.target.value ? Number(e.target.value) : '')}
-                        className="px-5 py-3 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent text-base"
-                    >
-                        <option value="">All Semesters</option>
-                        {semesters.map((semester) => (
-                            <option key={semester.id} value={semester.id}>
-                                {semester.name}
-                            </option>
-                        ))}
-                    </select>
-                </div>
 
-                {/* Syllabi Table */}
-                <div className="overflow-x-auto rounded-2xl shadow border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900">
-                    <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700 rounded-2xl overflow-hidden text-base">
-                        <thead className="bg-gray-50 dark:bg-gray-800">
-                            <tr>
-                                <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Course
-                                </th>
-                                <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Semester
-                                </th>
-                                <th className="px-6 py-4 text-left text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    File
-                                </th>
-                                <th className="px-6 py-4 text-right text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                    Actions
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                            {paginatedSyllabi.map((syllabus, idx) => (
-                                <tr key={syllabus.id} className={`transition-colors ${idx % 2 === 0 ? 'bg-white dark:bg-gray-900' : 'bg-gray-50 dark:bg-gray-800'} hover:bg-blue-50 dark:hover:bg-blue-900/30`}>
-                                    <td className="px-6 py-4 whitespace-nowrap">
-                                        <div className="text-base font-semibold text-gray-900 dark:text-white">
-                                            {syllabus.course}
-                                        </div>
-                                        {syllabus.description && (
-                                            <div className="text-base text-gray-500 dark:text-gray-400">
-                                                {syllabus.description}
-                                            </div>
-                                        )}
-                                    </td>
-                                    <td className="px-6 py-4 whitespace-nowrap">
-                                        <div className="text-base text-gray-500 dark:text-gray-400">
-                                            {syllabus.semester.name}
-                                        </div>
-                                    </td>
-                                    <td className="px-6 py-4 whitespace-nowrap">
-                                        <div className="text-base text-gray-500 dark:text-gray-400">
-                                            <div className="flex items-center space-x-2">
-                                                <BookOpen className="w-5 h-5" />
-                                                <span>{syllabus.file_name}</span>
-                                                <span className="text-xs text-gray-400">
+                    <div className="overflow-hidden rounded-lg border border-border">
+                        <Table>
+                            <TableHeader>
+                                <TableRow>
+                                    <TableHead>Course</TableHead>
+                                    <TableHead>Semester</TableHead>
+                                    <TableHead>File</TableHead>
+                                    <TableHead className="text-right">Actions</TableHead>
+                                </TableRow>
+                            </TableHeader>
+                            <TableBody>
+                                {paginated.length > 0 ? (
+                                    paginated.map((syllabus) => (
+                                        <TableRow key={syllabus.id}>
+                                            <TableCell className="space-y-1">
+                                                <p className="font-medium">{syllabus.course}</p>
+                                                {syllabus.description && (
+                                                    <p className="text-sm text-muted-foreground">
+                                                        {syllabus.description}
+                                                    </p>
+                                                )}
+                                            </TableCell>
+                                            <TableCell>
+                                                <Badge variant="secondary">
+                                                    {syllabus.semester.name}
+                                                </Badge>
+                                            </TableCell>
+                                            <TableCell className="text-sm text-muted-foreground">
+                                                {syllabus.file_name}{' '}
+                                                <span className="text-xs">
                                                     ({formatFileSize(syllabus.file_size)})
                                                 </span>
+                                            </TableCell>
+                                            <TableCell>
+                                                <div className="flex justify-end gap-2">
+                                                    <Button
+                                                        variant="outline"
+                                                        size="icon"
+                                                        onClick={() => setViewing(syllabus)}
+                                                    >
+                                                        <Eye className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button
+                                                        variant="outline"
+                                                        size="icon"
+                                                        onClick={() => openEdit(syllabus)}
+                                                    >
+                                                        <Pencil className="h-4 w-4" />
+                                                    </Button>
+                                                    <Button
+                                                        variant="ghost"
+                                                        size="icon"
+                                                        className="text-destructive hover:text-destructive"
+                                                        onClick={() => handleDelete(syllabus)}
+                                                    >
+                                                        <Trash2 className="h-4 w-4" />
+                                                    </Button>
+                                                </div>
+                                            </TableCell>
+                                        </TableRow>
+                                    ))
+                                ) : (
+                                    <TableRow>
+                                        <TableCell colSpan={4}>
+                                            <div className="flex flex-col items-center justify-center gap-2 py-8 text-center">
+                                                <FileText className="h-10 w-10 text-muted-foreground" />
+                                                <p className="text-sm text-muted-foreground">
+                                                    No syllabi match your filters.
+                                                </p>
                                             </div>
-                                        </div>
-                                    </td>
-                                    <td className="px-6 py-4 whitespace-nowrap text-right text-base font-medium">
-                                        <div className="flex items-center justify-end space-x-3">
-                                            <button
-                                                onClick={() => handleView(syllabus)}
-                                                className="text-blue-600 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
-                                                title="View"
-                                            >
-                                                <Eye className="w-5 h-5" />
-                                            </button>
-                                            <button
-                                                onClick={() => handleEdit(syllabus)}
-                                                className="text-green-600 hover:text-green-900 dark:text-green-400 dark:hover:text-green-300 transition-colors"
-                                                title="Edit"
-                                            >
-                                                <Edit className="w-5 h-5" />
-                                            </button>
-                                            <button
-                                                onClick={() => handleDelete(syllabus.id)}
-                                                className="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-300 transition-colors"
-                                                title="Delete"
-                                            >
-                                                <Trash2 className="w-5 h-5" />
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </div>
-
-                {/* Pagination Controls */}
-                {totalPages > 1 && (
-                    <div className="flex justify-center items-center gap-2 mt-6">
-                        <button
-                            onClick={() => handlePageChange(currentPage - 1)}
-                            disabled={currentPage === 1}
-                            className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50"
-                        >
-                            Previous
-                        </button>
-                        {[...Array(totalPages)].map((_, idx) => (
-                            <button
-                                key={idx}
-                                onClick={() => handlePageChange(idx + 1)}
-                                className={`px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 ${currentPage === idx + 1 ? 'bg-blue-600 text-white' : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'}`}
-                            >
-                                {idx + 1}
-                            </button>
-                        ))}
-                        <button
-                            onClick={() => handlePageChange(currentPage + 1)}
-                            disabled={currentPage === totalPages}
-                            className="px-3 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600 disabled:opacity-50"
-                        >
-                            Next
-                        </button>
+                                        </TableCell>
+                                    </TableRow>
+                                )}
+                            </TableBody>
+                        </Table>
                     </div>
-                )}
 
-                {filteredSyllabi.length === 0 && (
-                    <div className="text-center py-12">
-                        <BookOpen className="mx-auto h-12 w-12 text-gray-400" />
-                        <h3 className="mt-2 text-lg font-medium text-gray-900 dark:text-white">
-                            No syllabi found
-                        </h3>
-                        <p className="mt-1 text-base text-gray-500 dark:text-gray-400">
-                            Get started by creating a new syllabus.
-                        </p>
-                    </div>
-                )}
-            </div>
+                    {filtered.length > itemsPerPage && (
+                        <Pagination>
+                            <PaginationContent>
+                                <PaginationItem>
+                                    <PaginationPrevious
+                                        href="#"
+                                        onClick={(event) => {
+                                            event.preventDefault();
+                                            setCurrentPage((page) => Math.max(1, page - 1));
+                                        }}
+                                    />
+                                </PaginationItem>
+                                {Array.from({ length: totalPages }).map((_, index) => (
+                                    <PaginationItem key={index}>
+                                        <PaginationLink
+                                            href="#"
+                                            isActive={currentPage === index + 1}
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                setCurrentPage(index + 1);
+                                            }}
+                                        >
+                                            {index + 1}
+                                        </PaginationLink>
+                                    </PaginationItem>
+                                ))}
+                                <PaginationItem>
+                                    <PaginationNext
+                                        href="#"
+                                        onClick={(event) => {
+                                            event.preventDefault();
+                                            setCurrentPage((page) =>
+                                                Math.min(totalPages, page + 1),
+                                            );
+                                        }}
+                                    />
+                                </PaginationItem>
+                            </PaginationContent>
+                        </Pagination>
+                    )}
+                </CardContent>
+            </Card>
 
-            {/* Add/Edit Modal */}
-            <Modal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                title={selectedSyllabus ? 'Edit Syllabus' : 'Add Syllabus'}
-                size="lg"
-                className="animate-fade-in shadow-2xl rounded-2xl"
-            >
-                <SyllabusForm
-                    syllabus={selectedSyllabus}
-                    semesters={semesters}
-                    onClose={() => setIsModalOpen(false)}
-                    errors={errors}
-                />
-            </Modal>
+            <Dialog open={formOpen} onOpenChange={setFormOpen}>
+                <DialogContent className="sm:max-w-2xl">
+                    <DialogHeader>
+                        <DialogTitle>
+                            {editing ? 'Edit syllabus' : 'Create syllabus'}
+                        </DialogTitle>
+                        <DialogDescription>
+                            Upload PDF files and describe the learning materials students can
+                            access.
+                        </DialogDescription>
+                    </DialogHeader>
+                    <SyllabusForm
+                        semesters={semesters}
+                        syllabus={editing}
+                        onClose={() => setFormOpen(false)}
+                    />
+                </DialogContent>
+            </Dialog>
 
-            {/* View Modal */}
-            <Modal
-                isOpen={isViewModalOpen}
-                onClose={() => setIsViewModalOpen(false)}
-                title="View Syllabus"
-                size="lg"
-            >
-                {selectedSyllabus && (
-                    <div className="space-y-4">
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                Course
-                            </label>
-                            <p className="mt-1 text-sm text-gray-900 dark:text-white">
-                                {selectedSyllabus.course}
-                            </p>
-                        </div>
-                        {selectedSyllabus.description && (
+            <Dialog open={Boolean(viewing)} onOpenChange={(open) => !open && setViewing(null)}>
+                <DialogContent className="sm:max-w-lg">
+                    <DialogHeader>
+                        <DialogTitle>Syllabus details</DialogTitle>
+                    </DialogHeader>
+                    {viewing && (
+                        <div className="space-y-4 text-sm">
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                    Description
-                                </label>
-                                <p className="mt-1 text-sm text-gray-900 dark:text-white">
-                                    {selectedSyllabus.description}
-                                </p>
+                                <p className="text-xs uppercase text-muted-foreground">Course</p>
+                                <p className="text-base font-medium">{viewing.course}</p>
                             </div>
-                        )}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                Semester
-                            </label>
-                            <p className="mt-1 text-sm text-gray-900 dark:text-white">
-                                {selectedSyllabus.semester.name}
-                            </p>
-                        </div>
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                File
-                            </label>
-                            <div className="mt-2 flex items-center space-x-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-md">
-                                <BookOpen className="w-5 h-5 text-blue-600" />
+                            {viewing.description && (
                                 <div>
-                                    <p className="text-sm font-medium text-gray-900 dark:text-white">
-                                        {selectedSyllabus.file_name}
+                                    <p className="text-xs uppercase text-muted-foreground">
+                                        Description
                                     </p>
-                                    <p className="text-xs text-gray-500 dark:text-gray-400">
-                                        {formatFileSize(selectedSyllabus.file_size)}
+                                    <p>{viewing.description}</p>
+                                </div>
+                            )}
+                            <div className="flex items-center justify-between rounded-md border border-dashed border-border px-4 py-3">
+                                <div>
+                                    <p className="font-medium">{viewing.file_name}</p>
+                                    <p className="text-xs text-muted-foreground">
+                                        {formatFileSize(viewing.file_size)}
                                     </p>
                                 </div>
+                                <Button asChild variant="outline">
+                                    <a
+                                        href={route('syllabi.download', { syllabus: viewing.id })}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Download
+                                    </a>
+                                </Button>
                             </div>
                         </div>
-                    </div>
-                )}
-            </Modal>
+                    )}
+                </DialogContent>
+            </Dialog>
         </AdminLayout>
     );
 }
 
-// Syllabus Form Component
-function SyllabusForm({ syllabus, semesters, onClose, errors }: {
-    syllabus: Syllabus | null;
+type SyllabusFormProps = {
+    syllabus: SyllabusRecord | null;
     semesters: Semester[];
     onClose: () => void;
-    errors?: Record<string, string>;
-}) {
-    const { data, setData, post, put, processing, errors: formErrors } = useForm({
-        course: syllabus?.course || '',
-        semester_id: syllabus?.semester?.id || '',
-        description: syllabus?.description || '',
-        file: null as File | null,
-        file_name: syllabus?.file_name || '',
+};
+
+function SyllabusForm({ syllabus, semesters, onClose }: SyllabusFormProps) {
+    const form = useForm<{
+        course: string;
+        description: string;
+        semester_id: string;
+        file_name: string;
+        file: File | null;
+    }>({
+        course: syllabus?.course ?? '',
+        description: syllabus?.description ?? '',
+        semester_id: syllabus ? String(syllabus.semester.id) : '',
+        file_name: syllabus?.file_name ?? '',
+        file: null,
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
         if (syllabus) {
-            put(`/syllabi/${syllabus.id}`, {
-                onSuccess: () => onClose(),
+            form.transform((data) => ({
+                ...data,
+                _method: 'put',
+            }));
+            form.post(route('syllabi.update', { syllabus: syllabus.id }), {
+                forceFormData: true,
+                preserveScroll: true,
+                onSuccess: () => {
+                    form.reset();
+                    onClose();
+                },
             });
         } else {
-            post('/syllabi', {
-                onSuccess: () => onClose(),
+            form.post(route('syllabi.store'), {
+                forceFormData: true,
+                preserveScroll: true,
+                onSuccess: () => {
+                    form.reset();
+                    onClose();
+                },
             });
         }
     };
 
-    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            setData('file', file);
-            // Auto-fill file name if not already set
-            if (!data.file_name) {
-                setData('file_name', file.name);
-            }
+    const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const file = event.target.files?.[0] ?? null;
+        form.setData('file', file);
+        if (file && !form.data.file_name) {
+            form.setData('file_name', file.name);
         }
     };
 
-    const removeFile = () => {
-        setData('file', null);
-    };
-
-    const allErrors = { ...errors, ...formErrors };
-
     return (
-        <form onSubmit={handleSubmit} className="space-y-8">
-            <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Course Name *
-                </label>
-                <input
-                    type="text"
-                    value={data.course}
-                    onChange={(e) => setData('course', e.target.value)}
-                    className={`mt-1 block w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-150 ${allErrors.course ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'}`}
-                    required
-                />
-                {allErrors.course && (
-                    <p className="mt-1 text-sm text-red-600 transition-all duration-200">{allErrors.course}</p>
-                )}
+        <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="grid gap-6 md:grid-cols-2">
+                <div className="space-y-2">
+                    <Label htmlFor="course">Course</Label>
+                    <Input
+                        id="course"
+                        value={form.data.course}
+                        onChange={(event) => form.setData('course', event.target.value)}
+                        placeholder="Advanced Database Systems"
+                    />
+                    <InputError message={form.errors.course} />
+                </div>
+                <div className="space-y-2">
+                    <Label htmlFor="semester">Semester</Label>
+                    <Select
+                        value={form.data.semester_id}
+                        onValueChange={(value) => form.setData('semester_id', value)}
+                    >
+                        <SelectTrigger id="semester">
+                            <SelectValue placeholder="Select a semester" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            {semesters.map((semester) => (
+                                <SelectItem key={semester.id} value={String(semester.id)}>
+                                    {semester.name}
+                                </SelectItem>
+                            ))}
+                        </SelectContent>
+                    </Select>
+                    <InputError message={form.errors.semester_id} />
+                </div>
             </div>
 
             <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Semester *
-                </label>
-                <select
-                    value={data.semester_id}
-                    onChange={(e) => setData('semester_id', e.target.value)}
-                    className={`mt-1 block w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-150 ${allErrors.semester_id ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'}`}
-                    required
+                <Label htmlFor="description">Description</Label>
+                <Textarea
+                    id="description"
+                    value={form.data.description}
+                    onChange={(event) => form.setData('description', event.target.value)}
+                    placeholder="Provide a short summary of the course content…"
+                    rows={4}
+                />
+                <InputError message={form.errors.description} />
+            </div>
+
+            <div className="space-y-2">
+                <Label htmlFor="file_name">File name</Label>
+                <Input
+                    id="file_name"
+                    value={form.data.file_name}
+                    onChange={(event) => form.setData('file_name', event.target.value)}
+                    placeholder="dbms-course-outline.pdf"
+                />
+                <InputError message={form.errors.file_name} />
+            </div>
+
+            <div className="space-y-2">
+                <Label htmlFor="file">
+                    Upload PDF {syllabus ? <span className="text-muted-foreground">(optional)</span> : '*'}
+                </Label>
+                <div
+                    className={cn(
+                        'flex flex-col items-center justify-center rounded-md border border-dashed border-border px-6 py-8 text-center',
+                        form.errors.file && 'border-destructive',
+                    )}
                 >
-                    <option value="">Select Semester</option>
-                    {semesters.map((semester) => (
-                        <option key={semester.id} value={semester.id}>
-                            {semester.name}
-                        </option>
-                    ))}
-                </select>
-                {allErrors.semester_id && (
-                    <p className="mt-1 text-sm text-red-600 transition-all duration-200">{allErrors.semester_id}</p>
-                )}
-            </div>
-
-            <div className="space-y-2">
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    Description
-                </label>
-                <textarea
-                    value={data.description}
-                    onChange={(e) => setData('description', e.target.value)}
-                    rows={3}
-                    className={`mt-1 block w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-150 ${allErrors.description ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'}`}
-                    placeholder="Optional description of the syllabus..."
-                />
-                {allErrors.description && (
-                    <p className="mt-1 text-sm text-red-600 transition-all duration-200">{allErrors.description}</p>
-                )}
-            </div>
-
-            <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    File Name *
-                </label>
-                <input
-                    type="text"
-                    value={data.file_name}
-                    onChange={(e) => setData('file_name', e.target.value)}
-                    className={`mt-1 block w-full px-4 py-2 border rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-150 ${allErrors.file_name ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'}`}
-                    placeholder="Enter a descriptive name for the file"
-                    required
-                />
-                {allErrors.file_name && (
-                    <p className="mt-1 text-sm text-red-600 transition-all duration-200">{allErrors.file_name}</p>
-                )}
-            </div>
-
-            <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                    PDF File {!syllabus && '*'}
-                </label>
-                <div className="mt-1">
-                    {data.file ? (
-                        <div className="flex items-center space-x-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-md">
-                            <BookOpen className="w-5 h-5 text-green-600" />
-                            <div className="flex-1">
-                                <p className="text-sm font-medium text-green-900 dark:text-green-100">
-                                    {data.file.name}
-                                </p>
-                                <p className="text-xs text-green-600 dark:text-green-400">
-                                    {(data.file.size / 1024 / 1024).toFixed(2)} MB
-                                </p>
-                            </div>
-                            <button
+                    <input
+                        id="file"
+                        type="file"
+                        accept="application/pdf"
+                        onChange={handleFileChange}
+                        className="sr-only"
+                    />
+                    {form.data.file ? (
+                        <div className="space-y-1">
+                            <p className="font-medium">{form.data.file.name}</p>
+                            <p className="text-xs text-muted-foreground">
+                                {(form.data.file.size / 1024 / 1024).toFixed(2)} MB
+                            </p>
+                            <Button
                                 type="button"
-                                onClick={removeFile}
-                                className="text-green-600 hover:text-green-800 dark:text-green-400 dark:hover:text-green-300"
+                                variant="link"
+                                className="text-sm"
+                                onClick={() => form.setData('file', null)}
                             >
-                                <X className="w-4 h-4" />
-                            </button>
+                                Remove file
+                            </Button>
                         </div>
                     ) : (
-                        <div className="flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 dark:border-gray-600 border-dashed rounded-md">
-                            <div className="space-y-1 text-center">
-                                <Upload className="mx-auto h-12 w-12 text-gray-400" />
-                                <div className="flex text-sm text-gray-600 dark:text-gray-400">
-                                    <label className="relative cursor-pointer bg-white dark:bg-gray-700 rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-blue-500">
-                                        <span>Upload a file</span>
-                                        <input
-                                            type="file"
-                                            className="sr-only"
-                                            accept=".pdf"
-                                            onChange={handleFileChange}
-                                        />
-                                    </label>
-                                    <p className="pl-1">or drag and drop</p>
-                                </div>
-                                <p className="text-xs text-gray-500 dark:text-gray-400">
-                                    PDF up to 10MB
-                                </p>
-                            </div>
-                        </div>
+                        <label
+                            htmlFor="file"
+                            className="cursor-pointer text-sm font-medium text-primary"
+                        >
+                            Click to upload or drag and drop your PDF (max 10MB)
+                        </label>
                     )}
                 </div>
-                {allErrors.file && (
-                    <p className="mt-1 text-sm text-red-600">{allErrors.file}</p>
-                )}
+                <InputError message={form.errors.file} />
             </div>
 
-            <div className="flex justify-end space-x-3 pt-4">
-                <button
-                    type="button"
-                    onClick={onClose}
-                    className="px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                >
+            <div className="flex justify-end gap-2 pt-4">
+                <Button type="button" variant="outline" onClick={onClose}>
                     Cancel
-                </button>
-                <button
-                    type="submit"
-                    disabled={processing}
-                    className="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 transition-all"
-                >
-                    {processing && <svg className="animate-spin h-4 w-4 mr-2 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>}
-                    {processing ? 'Saving...' : (syllabus ? 'Update' : 'Create') + ' Syllabus'}
-                </button>
+                </Button>
+                <Button type="submit" disabled={form.processing}>
+                    {form.processing
+                        ? 'Saving…'
+                        : syllabus
+                        ? 'Update syllabus'
+                        : 'Create syllabus'}
+                </Button>
             </div>
         </form>
     );
-} 
+}
+
+function formatFileSize(bytes: number) {
+    if (!bytes) return '0 B';
+    const units = ['B', 'KB', 'MB', 'GB'];
+    const index = Math.floor(Math.log(bytes) / Math.log(1024));
+    const value = bytes / Math.pow(1024, index);
+    return `${value.toFixed(1)} ${units[index]}`;
+}

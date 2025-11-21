@@ -13,6 +13,10 @@ class Syllabus extends Model
     protected $fillable = [
         'semester_id',
         'course',
+        'description',
+        'file_path',
+        'file_name',
+        'file_size',
         'units',
     ];
 

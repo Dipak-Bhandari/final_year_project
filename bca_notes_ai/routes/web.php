@@ -6,8 +6,11 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\QuestionPaperController;
 use App\Http\Controllers\SemesterController;
 use App\Http\Controllers\SyllabusController;
+use App\Models\QuestionPaper;
+use App\Models\Resource;
 use App\Models\Semester;
 use App\Models\Syllabus;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -18,7 +21,11 @@ Route::get('/', function () {
 // Admin-only routes
 Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::get('dashboard', function () {
-        return Inertia::render('dashboard');
+        return Inertia::render('Dashboard', [
+            'totalSyllabi' => Syllabus::count(),
+            'totalQuestionPapers' => QuestionPaper::count(),
+            'totalUsers' => User::count(),
+        ]);
     })->name('dashboard');
 
     // Syllabus management routes
@@ -33,12 +40,27 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::put('/syllabi/{syllabus}', [SyllabusController::class, 'update'])->name('syllabi.update');
     Route::delete('/syllabi/{syllabus}', [SyllabusController::class, 'destroy'])->name('syllabi.destroy');
 
+    // Question Paper management routes
+    Route::get('/admin/question-papers', function () {
+        return Inertia::render('admin/QuestionPapersPage', [
+            'questionPapers' => QuestionPaper::with('semester')->get(),
+            'semesters' => Semester::all(),
+        ]);
+    })->name('admin.question-papers.index');
+
+    Route::post('/question-papers', [QuestionPaperController::class, 'store'])->name('question-papers.store');
+    Route::put('/question-papers/{questionPaper}', [QuestionPaperController::class, 'update'])->name('question-papers.update');
+    Route::delete('/question-papers/{questionPaper}', [QuestionPaperController::class, 'destroy'])->name('question-papers.destroy');
+
     // User management routes
     Route::inertia('/admin/users', 'admin/UsersPage')->name('admin.users.index');
     Route::apiResource('users', UserController::class)->except(['create', 'edit', 'show']);
 
     // Resource upload management routes
-    Route::inertia('/admin/upload', 'admin/UploadPage')->name('admin.resources.index');
+    Route::inertia('/admin/upload', 'admin/UploadPage', [
+        'resources' => fn () => Resource::with('semester')->get(),
+        'semesters' => fn () => Semester::all(),
+    ])->name('admin.resources.index');
     Route::apiResource('resources', ResourceController::class)->except(['create', 'edit', 'show']);
 });
 
@@ -48,6 +70,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/semesters', [SemesterController::class, 'index'])->name('semesters.index');
     Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
     Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
+    Route::get('/syllabi/{syllabus}/download', [SyllabusController::class, 'download'])->name('syllabi.download');
 });
 
 // Legacy route for backward compatibility

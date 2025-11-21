@@ -1,5 +1,6 @@
 import { LucideIcon } from 'lucide-react';
 import type { Config } from 'ziggy-js';
+import { PageProps as InertiaPageProps } from '@inertiajs/react';
 
 export interface Auth {
     user: User | null;
@@ -31,6 +32,10 @@ export interface SharedData {
     [key: string]: unknown;
 }
 
+export type PageProps<T extends Record<string, unknown> = Record<string, unknown>> = InertiaPageProps<
+    T & SharedData
+>;
+
 export interface User {
     id: number;
     name: string;
@@ -43,3 +48,45 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+
+export interface Semester {
+    id: number;
+    name: string;
+    [key: string]: unknown;
+}
+
+export interface Syllabus {
+    id: number;
+    course: string;
+    description: string;
+    file_name: string;
+    file_size: string;
+    semester_id: number;
+    semester?: Semester;
+    [key: string]: unknown;
+}
+
+export interface Resource {
+    id: number;
+    title: string;
+    description: string;
+    file_path: string;
+    file_name: string;
+    file_size: string;
+    semester_id: number;
+    semester?: Semester;
+    [key: string]: unknown;
+}
+
+export interface QuestionPaper {
+    id: number;
+    title: string;
+    year: number;
+    file_name: string;
+    file_size: string;
+    file_path: string;
+    semester_id: number;
+    semester?: Semester;
+    [key: string]: unknown;
+}
+

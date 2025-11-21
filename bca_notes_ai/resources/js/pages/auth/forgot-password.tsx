@@ -1,63 +1,65 @@
-// Components
-import { Head, useForm } from '@inertiajs/react';
-import { LoaderCircle } from 'lucide-react';
+import { Head, useForm, Link } from '@inertiajs/react';
 import { FormEventHandler } from 'react';
-
-import InputError from '@/components/input-error';
-import TextLink from '@/components/text-link';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import AuthLayout from '@/layouts/auth-layout';
+import InputError from '@/components/input-error';
 
 export default function ForgotPassword({ status }: { status?: string }) {
-    const { data, setData, post, processing, errors } = useForm<Required<{ email: string }>>({
+    const { data, setData, post, processing, errors } = useForm({
         email: '',
     });
 
     const submit: FormEventHandler = (e) => {
         e.preventDefault();
-
         post(route('password.email'));
     };
 
     return (
-        <AuthLayout title="Forgot password" description="Enter your email to receive a password reset link">
-            <Head title="Forgot password" />
+        <>
+            <Head title="Forgot Password" />
+            <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
+                <Card className="w-full max-w-md">
+                    <CardHeader className="text-center">
+                        <CardTitle className="text-2xl">Forgot your password?</CardTitle>
+                        <CardDescription>
+                            No problem. Just let us know your email address and we will email you a password reset link.
+                        </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                        {status && <div className="mb-4 text-sm font-medium text-green-600">{status}</div>}
+                        <form onSubmit={submit} className="space-y-4">
+                            <div>
+                                <Label htmlFor="email">Email</Label>
+                                <Input
+                                    id="email"
+                                    type="email"
+                                    name="email"
+                                    value={data.email}
+                                    className="mt-1 block w-full"
+                                    autoFocus
+                                    onChange={(e) => setData('email', e.target.value)}
+                                />
+                                <InputError message={errors.email} className="mt-2" />
+                            </div>
 
-            {status && <div className="mb-4 text-center text-sm font-medium text-green-600">{status}</div>}
-
-            <div className="space-y-6">
-                <form onSubmit={submit}>
-                    <div className="grid gap-2">
-                        <Label htmlFor="email">Email address</Label>
-                        <Input
-                            id="email"
-                            type="email"
-                            name="email"
-                            autoComplete="off"
-                            value={data.email}
-                            autoFocus
-                            onChange={(e) => setData('email', e.target.value)}
-                            placeholder="email@example.com"
-                        />
-
-                        <InputError message={errors.email} />
-                    </div>
-
-                    <div className="my-6 flex items-center justify-start">
-                        <Button className="w-full" disabled={processing}>
-                            {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
-                            Email password reset link
-                        </Button>
-                    </div>
-                </form>
-
-                <div className="space-x-1 text-center text-sm text-muted-foreground">
-                    <span>Or, return to</span>
-                    <TextLink href={route('login')}>log in</TextLink>
-                </div>
+                            <div className="flex items-center justify-end mt-4">
+                                <Button disabled={processing}>Email Password Reset Link</Button>
+                            </div>
+                        </form>
+                         <div className="text-center mt-4 text-sm text-muted-foreground">
+                            Remembered your password?{' '}
+                            <Link
+                                href={route('login')}
+                                className="underline hover:text-primary"
+                            >
+                                Log in
+                            </Link>
+                        </div>
+                    </CardContent>
+                </Card>
             </div>
-        </AuthLayout>
+        </>
     );
 }
