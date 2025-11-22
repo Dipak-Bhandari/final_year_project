@@ -17,13 +17,23 @@ class QuestionPaperController extends Controller
     public function show(Semester $semester): Response
     {
         $questionPapers = $semester->questionPapers()
+            ->orderByDesc('year')
             ->orderBy('course')
-            ->orderBy('year', 'desc')
             ->get()
-            ->groupBy('course');
+            ->map(function (QuestionPaper $paper) {
+                $fileName = $paper->file_name ?? ($paper->file_path ? basename($paper->file_path) : 'question-paper.pdf');
+
+                return [
+                    'id' => $paper->id,
+                    'course' => $paper->course,
+                    'year' => $paper->year,
+                    'file_name' => $fileName,
+                    'download_url' => route('question-papers.download', $paper),
+                ];
+            });
 
         return Inertia::render('QuestionPaperPage', [
-            'semester' => $semester,
+            'semester' => $semester->only(['id', 'name']),
             'questionPapers' => $questionPapers,
         ]);
     }

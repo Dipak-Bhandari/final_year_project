@@ -1,0 +1,61 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+
+ 
+
+OFFICE OF THE DEAN
+2023
+Bachelor in Computer Applications Full Marks: 60
+Course Title: Database Management System Pass Marks: 24
+Code No: CACS255 Time: 3 hours
+Batch: 2020
+
+Semester: IV
+
+Candidates are required to answer the questions in their own words as far as possible.
+Group B
+
+Attempt any SIX questions. [6x5 = 30]
+
+X Define database and DBMS. Explain the benefits of DBMS in detail. [213]
+3-What are different SQL constraints to specify the rules for the data in the database? Explain. [5]
+
+I What is relational algebra? Explain different RA operations. [1+4]
+_5--Hlow candidate key is different from primary key? Also explain foreign key in detail. [2213]
+[213] 4
+
+_5< What is a stored procedure? How can it be used in a database? Explain with an example.
+ae What are the main purposes of concurrency control? Explain two phase locking protocol in detail. [1+4]
+
+ye is database security? Describe steps of query processing. [2+3]
+
+Group.C
+
+Attempt any TWO questions. । [2x10 = 20]
+97 What are fully and partial functional dependencies? Explain 2NF and 3NF in detail. [4+6]
++f 2 How different join operations can be performed? Explain with proper examples. Consider a
+database of a shipment company. Shipped items are received into the system at a single retail
+center. Shipped items make their way to their destination via one or more standard transportation
+events (i.e., flights, truck deliveries). The transportation events follow a regular schedule. Create
+
+ER diagram to represent this information. [5+5]
+11, onside the following tables: [10]
+Book(Bookid, Title, Publisher, PublishedDate, Price)
+
+Book_Authors(Bookid,Author_name)
+
+Borrower(CardNo, Name, Address, Contact)
+
+BookIssue(BookId, CardNo, IssuedDate, DueDate
+
+Write SQL query for the following:
+a) Find the name of the books taken by Ramesh Sharma.
+b) Find the Issued book name and the borrower’s name who have Issued date before 15" May,
+
+2023 and due date after 15"" June, 2023,
+c) Find the borrower’s name who has taken the book written by Laxmi Prashad Dev — BS ,
+d) Find the number of books issued on the date 25" April, 2023. Phe ee
+€) Find the borrower's name who has taken the book having price more than average price.
+
+ 
+

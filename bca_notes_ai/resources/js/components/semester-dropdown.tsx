@@ -45,7 +45,7 @@ export default function SemesterDropdown({ semesters = [] }: Props) {
                         {semesterList.map((sem) => (
                             <li key={sem.id}>
                                 <Link
-                                    href={route('syllabus.show', [sem.id])}
+                                    href={route('syllabus.show', { semester: sem.id })}
                                     className="block px-4 py-2 hover:bg-gray-100 cursor-pointer dark:hover:bg-gray-700 transition-colors"
                                 >
                                     {sem.name}

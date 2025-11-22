@@ -1,0 +1,118 @@
+Course Title: Mobile Programming (3 Cr.)
+
+Course Code: CACS351
+
+Year/Semester: III/VI
+
+Class Load: 6Hrs. /Week (Theory: 3Hrs, Practical 3Hrs.)
+
+Course Description
+
+This course provides the comprehensive knowledge related to the Mobile programming, which
+encompasses integrated development environment, infrastructure, design, and develop and
+testing of mobile application, which communicate with database to solve real word problem.
+
+Objectives: The general objectives of this course is to develop mobile application that solve real
+word problem with use of current mobile technology.
+
+Unit -1
+
+Introduction to Mobile and Mobile Programming [2 HRS]
+
+Mobile Device (Features, Categories, History, Brands, Models and Platforms), Introduction to
+Mobile Programming.
+
+Unit -2
+
+Introduction to Android Programming [4 HRS]
+
+Android Platform, History of Android, Environment Setup, Creating an android project, Laying
+out the user interface (The view hierarchy, widget attributes, creating string resources,
+previewing the layout), Creating a new class, Setting up the project, Running on the Emulator.
+
+Unit -3
+
+Designing the User Interface [5 HRS]
+
+Android layout types (Linear, Relative, Table, Absolute, Constraint), Layout attributes, Android
+widgets (Textview, Edittext, Checkbox, Radiobutton, Spinner etc.) and its attributes, Event
+Handling, working with string, string array and colors, working with resources and drawable,
+
+adding icon to the project.
+
+Unit -4
+Android Activity [4 HRS]
+The Activity life cycle, Creating multiple activities, Declaring activities in the manifest,
+
+Connecting activities with intents, Passing data between activities, Getting a result back from a
+child activity, Getting and setting data to/from the layout file.
+
+ 
+
+Unit -5
+
+UI Fragments, Menus and Dialogs [6 HRS]
+The need for UI flexibility, Introduction to fragments, Lifecycle of fragment, Creating a UI
+fragment, Creating a fragment class, Wiring widgets in fragment, Introduction to fragment
+manager, Difference between Activity and Fragments. Menus (Introduction, Types,
+Implementing menu in an application) Dialogs (Introduction, Creating a dialog fragment, Setting
+a dialog’s content)
+
+ 
+
+  
+Unit -6
+
+Listview, Gridview and Recyclerview [6 HRS]
+
+Listview (Introduction, Features, Implementing listview in an application)
+Gridview (Introduction, Features, Implementing gridview in an application)
+Recyclerview (Introduction, Features, Implementing recyclerview in an application)
+
+Unit -7
+
+Advance Android Concepts [10 HRS]
+
+Local database with SQLite (Establishing connection, creating database and tables, data
+manipulation), Introduction to API, API Types, Introduction to JSON, Retrieving contents from
+remote server, Sending contents to remote server, Implementing Google Maps in android
+application, Procedure for publishing application on Google Play Store.
+
+Unit -8
+
+Introduction to ios Programming [8 HRS]
+
+Introduction to ios and ios programming, ios platform, Environment setup, Creating an Xcode
+project, Building the interface, Making connections, Running on the simulator.
+
+Introduction to Swift language, Views and the view hierarchy, Storyboard and view controllers,
+working with widgets and its attributes, Creating a simple ios application.
+
+Laboratory Works
+
+Laboratory works should be done covering all the topics listed above and a small project work
+should be carried out using the concept learnt in this course. Project should be assigned on
+individual basis.
+
+Teaching Methods
+
+The general teaching pedagogy includes class lectures, group discussions, case studies, guest
+lectures, research work, project work, assignments (theoretical and practical), and examinations
+(written and verbal), depending upon the nature of the topics. The teaching faculty will
+determine the choice of teaching pedagogy as per the need of the topics.
+
+ 
+
+References
+1. Bill Phillips, Chris Stewart, Brian Hardy, and Kristin Marsicano, Android Programming:
+The Big Nerd Ranch Guide, Big Nerd Ranch LLC, 2nd edition, 2015. °
+2. 2. Christian Keur and Aaron Hillegass, iOS Programming: The Big Nerd Ranch Guide
+Sth edition, 2015. "
+Brian Fling, Mobile Design and Development, O'Reilly Media, Inc., 2009.
+4. Maximiliano Firtman, Programming the Mobile Web, O’Reilly Media, Inc., 2nd ed
+2013. °
+
+»
+
+ 
+

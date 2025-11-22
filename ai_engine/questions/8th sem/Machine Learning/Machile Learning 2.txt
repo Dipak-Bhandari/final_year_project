@@ -1,0 +1,90 @@
+10. Define catropy and information gain. Construct decision tree (ID3 Algorithm}for the
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+following:
+
+‘Day | Outlook | Temperature | Humidity | Wind | Decision
+T [Sumy | Hot High | Weak | Yes
+
+2 [Sunny | Hot High | Strong | No
+
+3 _( Overcast | Hot High | Weak | Yes
+
+a [Ram [Mita High | Weak [No
+
+3 Weak] Yes
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ta — [Cou — Ramagy
+Mw
+
+|. What are bias ez
+
+algorithm to evaluate fésult nfl ot sig Ne
+
+ 
+
+BYp
+
+ 
+
+Sarcing=60 GIS-80) d
+Result
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a y —_ * ~
+
+2 ye 7 f-. 70 Pass.
+
+3 a 4 t ee Fass
+
+4 i 50 ’ 1 i Eail,
+
+Sele og tle bye
+oo rae aK
+
+ 
+

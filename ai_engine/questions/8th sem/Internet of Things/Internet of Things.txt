@@ -1,0 +1,30 @@
+Cy, s Tribhuvan University
+‘ Faculty of Humanities anil Social Seience
+Semester: VIII
+
+Subject: Internet of Thing
+2018 Bate
+
+ 
+
+Group B
+
+Attempt any SIX questions
+2. Differentiate bewreen,
+
+         
+
+3.
+
+2
+
+a. Aguualol
+am
+sts
+
+the weather using any microcontroller Bosres.
+10. 1OT comprises of Physical and Logical Design. Explain both in brief.
+11. What is Raspberry Pi? Define how it is used in JOT along with installation,
+
+ 
+

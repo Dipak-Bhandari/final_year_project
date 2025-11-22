@@ -1,0 +1,100 @@
+Course Title: Database Administration
+
+Course Code: CACS405
+
+Year/Semester: [V/VII
+
+Class Load: 6 Hrs. /Week (Theory: 3Hrs, Practical 3Hrs.)
+
+Course Description
+
+This course provides the comprehensive knowledge aboutrelational database management
+system in administrative approach to integrate in enterprise levelof database in network
+environment which encompasses with oracle databaselnstances Management, database
+installment in network environment, implementing user role and privileges, multitenant database
+management, back and recovery.
+
+Objectives: The general objectives of this course is to provide core knowledge of administrative
+works on relational database management system.
+
+Unit 1Introduction to an Oracle databasel2Hrs
+
+Overview of the Oracle Database Architecture (process, memory, storage structure), DBA roles
+and responsibilities, Familiar with SQL*Plus,Accepting Values at Runtime, Overview of SQL
+Command (DDL (Tables, Constraints, IndexesViews, Synonyms, SequencesPartitioning and
+Materialized Views), DML, Join and Subquery)
+
+Unit2 Managing Database Instances5Hrs
+
+Oracle Database installation, Database creation,starting up and shutting down oracle instance,
+Oracle Network component, communicating between Databases; Using Dynamic Performance
+Views, Using the Automatic Diagnostic Repository (ADR), Using the Alert Log and Trace Files,
+Managing Initialization Parameter Files.
+
+Unit 3: Tablespace and Storage management 4Hrs
+Working with Tablespaces and Data Files, Creating and adding tablespace and
+datafiles,Managing Control Files, Online Redo Logsand Archive logs;Multiplexing online redo
+logs and control files, database archiving.
+
+Unit -4Managing Users, Roles and Privileges 6Hrs
+
+Assigning Quotas to Users, Applying the Principal of Least Privilege, Creating and Assigning
+Profiles, Administering User Authentication Methods, Managing Oracle Database Users,
+Privileges, and Roles.
+
+Unit 5: Multitenant Database Architecture 7 Hrs
+Understanding the Multitenant Architecture, Pluggable Architecture; Creating CDB; Creating
+Pluggable Databases (PDBs) within a CDB; Manage CDBs and PDBs, Backup and Duplicate,
+Manage Security in Multitenant databases
+
+Unit-6Configure the Oracle Network Environment5Hrs
+
+Overview of Network Configuration, Oracle Net Listener Configuration and Management,
+Oracle Net Naming Methods, Networking the Net Configuration Assistant, Configure Client
+Connections with Net Manager, View Listener Configuration, Start and Stop the Oracle Listener,
+Use TNSPING to Test Oracle Net Connectivity, Connect to the Database, Configure NetServices
+with Enterprise Manager
+
+  
+ 
+
+Unit -7:Backup and RecoveryS5Hrs
+
+Backup and Recovery Concepts, Database backup, restoration and recovery, defining a
+backupand recovery strategy, Backup and Recovery options; Data Dump; User-Managed Backup
+and Recovery; Configuring RMAN; RMAN Backups, Restore and Recovery, Perform CDB and
+PDB flashback.
+
+Unit-8
+
+Automate Tasks with the Scheduler4Hrs
+
+Introduction to the Scheduler, Access Rights, Scheduler Components and Workflow, create a
+Job, Job Classes, Use Time Based, Event-Based Schedules, Create an Event-Based Schedule.
+
+Laboratory Works
+Laboratory works should be done covering all the topics listed above and a small work should be
+
+carried out using the concept learnt in each unit in the group. Work should be assigned on
+individual basis.
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions, case studies, guest
+
+lectures, research work, project work, assignments (theoretical and practical), and examinations
+(written and verbal), depending upon the nature of the topics. The teaching faculty will
+determine the choice of teaching pedagogy as per the need of the topics.
+
+References
+|. Fernandez, I. Beginning Oracle Database 12c Administration. Apress.
+2. Press, O. Oracle Database 19 C: Administration Workshop vol-I/II.
+3. Thomas, B. Oracle Database 12C Administration Certified Associate. Sybex.
+4. Pro Oracle Database 18c Administration: Manage and Safeguard Your Organization’s
+Data, Michelle Malcher and Darl Kuhn, Third Edition
+5. Oracle Database 12c DBA Handbook, Manage a Scalable4 Secure Oracle Enterprise
+
+Database Environment, Bob Bryla
+pre!
+
+ 
+

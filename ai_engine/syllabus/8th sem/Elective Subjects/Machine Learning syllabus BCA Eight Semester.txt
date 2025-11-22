@@ -1,0 +1,100 @@
+Course Title: Machine Learning (3 Cr.)
+
+Course Code: CACS456
+
+Year/Semester: IV/VIIL
+
+Class Load: 6 Hrs. / Week (Theory: 3Hrs. Practical: 3Hrs.)
+
+Course Description
+This course presents comprehensive introduction to several topics on basic concepts and
+techniques of Machine Learning (ML). It also explores the understanding of the Supervised
+and unsupervised learning techniques, probability based learning techniques, performance
+evaluation of ML algorithms and applications of ML.
+Course objectives
+Upon completion of this course, students should be able to 1. Explain the concept of supervised,
+unsupervised and semi-supervised learning. 2. Develop algorithms to learn linear and non-
+linear models using software. 3. Perform creative work in the field machine learning to solve
+given problem.
+Course Contents
+Hours
+Unit 1: Introduction to machine learning
+History of machine learning, Brain-neuron learning system, Definition and
+types of learning, need of machine learning, Data and tools, review of
+statistics, training, validation and test data, theory of learning — feasibility of 10
+learning — error and noise — training versus testing, generalization bound —
+approximation-generalization tradeoff — bias and variance — learning curve
+
+Unit 2 Introduction to Supervised Learning
+
+Classification problems, Linear Regression- Predicting numerical value,
+Finding best fit line with linear regression, Perceptron, learning neural
+networks structures, Decision tree representation, appropriate problems for
+decision tree learning, basic decision tree algorithm, support vector
+machines, Separating data with maximum margin, Finding the maximum
+margin,
+
+11
+
+Unit 3: Bayesian and instance based learning
+
+Probability theory and Bayes rule. Classifying with Bayes decision theory, 11
+Conditional Probability, Bayesian Belief Network, K-nearest neighbor
+Unit 4:Introduction to un-supervised learning and dimensionality
+reduction
+
+Introduction to clustering, K- Mean clustering, different distance functions
+for clustering, Hierarchical clustering, Supervised learning after clustering,
+dimensionality reduction techniques, Principal component analysis
+
+10
+
+Unit 5: Measures for Performance Evaluation of ML algorithms
+
+Classification accuracy, Confusion matrix Miéisclassification costs, A
+Sensitivity and specificity, ROC curve, Recall and precision, box plot} Sion, f
+confidence interval 1 6
+
+Evaluation
+
+   
+
+ 
+
+y
+
+tf?) , 38
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Internal Assessment External Assessment | Total |
+Theory Practical Theory | Practical | 100
+20 20 (3 Hrs.) 60 (3 Hrs.) | - |
+Laboratory Work
+
+Laboratory work should be done covering all the topics listed above and a small project work
+should be carried out using the concept learnt in this course using software like matlab, python.
+Text Books:
+1. Tom M Mitchell, Machine Learning, First Edition, McGraw Hill Education, 2013.
+2. Stephen Marsland, Machine Learning — An Algorithmic Perspective, Second Edition,
+Chapman and Hall/CRC Machine Learning and Pattern Recognition Series, 2014.
+
+Reference Books:
+3. Peter Flach, Machine Learning: The Art and Science of Algorithms that Make Sense
+of Data, First Edition, Cambridge University Press, 2012.
+
+ 
+
+39
+

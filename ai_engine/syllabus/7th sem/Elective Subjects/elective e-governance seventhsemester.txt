@@ -1,0 +1,141 @@
+ 
+
+Course Title: E-Governance (3 Cr.)
+
+Course Code: CACS409
+
+Year/Semester: IV/VII
+
+Class Load: 4Hrs. /Week (Theory: 3 Hrs. Tutorial: 1 Hrs)
+
+Course Description:
+
+This course familiarizes students with different concepts of E-Governance, different E-Governance
+models and infrastructure development, use of data warehousing and data mining for e-governance,
+and different case studies of different countries.
+
+Course Objectives:
+e To develop knowledge of e-governance
+e To know different e-governance models and infrastructure development
+e To know to use concepts of data warehousing and mining in e-governance
+
+Course Contents:
+
+Unit 1: Introduction (6 Hrs.)
+
+E-Governance — An Overview; Why E-Governance; Issues in E-Governance Applications and
+the Digital Divide; Evolution of E-Governance, its Scope and Content; Present Global Trends
+of Growth in E-Governance; E-Governance Applications; E-Governance Initiatives in Nepal
+
+Unit 2: E-Governance Models (12 Hrs.)
+
+Introduction; Models of Digital Governance — Broadcasting/Wider Dissemination Model,
+Critical Flow Model, Comparative Analysis Model, Mobilization and Lobbying Model,
+Interactive Service Model/Government-to-Citizen-to-Government Model (G2C2G); Evolution
+in E-Governance and Maturity Models — Five Maturity Levels; Characteristics of Maturity
+Levels; Key Focus Areas; Towards Good Governance through E-Governance Models
+
+Unit 3: E-Governance Infrastructure, Stages in Evaluation and Strategies for Success (8
+Hrs.)
+
+E-readiness - Data System Infrastructure, Legal Infrastructural Preparedness, Institutional
+Infrastructural Preparedness, Human Infrastructural Preparedness, Technological
+Infrastructural Preparedness; Evolutionary Stages in E-Governance
+
+Unit 4: Applications of Data Warehousing and Data Mining in Government (6 Hrs.)
+Introduction; National Data Warehouses - Census Data, Prices of Essential Commodities;
+Other Areas for Data Warehousing and Data Mining — Agriculture, Rural Development,
+Health, Planning, Education, Commerce and Trade, Other Sectors
+
+Unit 5: CASE Studies (16 Hrs.)
+
+Nepal (E-Governance Master Plan of Nepal; E-Governance in Local Government of Nepal;
+Nagarik App)
+
+India (NICNET — Role of Nationwide Networking in E-Governance; Collectorate 2000;
+Computer-aided Administration of Registration Department (CARD); Smart Nagarpalika —
+Computerization of Urban Local Bodies (Municipalities); National Reservoir Level and
+Capacity Monitoring System; Computerization in Andra Pradesh State Trading Copporation
+Ekal Seva Kendra; Sachivalaya Vahini or E-Governance Secretariat; Bhoo
+Judiciary; E-Khazana for Government Treasury, Andhra Pradesh; E-Governance* thes
+of Director General for Foreign Trade (DGFT); PRAJA — Rural e-Seva: Ee Ne
+
+pra
+
+ 
+
+परिबदको 20
+ 
+
+Paradigm in Citizen Services; E-Panchayat (Electronic Knowledge Based Panchayat); General
+Information Services of National Informatics Centre)
+
+Other Countries (E-Governance initiative in USA; E-Governance Case Study in China —
+Beijing Business E-Park; Brazil’s Poupatempo or ‘Time Saver’ Centres; Sri Lanka —
+Kothamale Community Radio Internet Project)
+
+Recommended Books:
+
+4. E-Governance: Concepts and Case Studies, C.S.R. Prabhu, Second Edition, PHI Learning,
+2012.
+
+5. Strategic Planning and Implementation of E-Governance, P.K.Suri and Sushil, Springer,
+2019.
+
+6. A Study of the Practice of E-governance in the Developing Countries: A Qualitative
+Approach In Measuring The Maturity of E-government, Kazi Hassan Robin and Md.
+Mahmudul Hasan Rafee, 2012.
+
+7. Implementing and managing e-Government, Richard Heeks, 2006.
+
+Teaching Methods:
+
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the current scenario of computing and information technology with
+the help of topics listed in the syllabus. The general teaching pedagogy that can be followed by
+. teaching faculties for this course includes class lectures, tutorials, group discussions, case
+studies, guest lectures, research work, project work, assignments (Theoretical and Practical),
+and written and verbal examinations.
+
+Evaluation
+
+ 
+
+Examination Scheme
+
+External Assessment
+Theo Practical
+
+60 (3 Hrs.)
+
+ 
+
+Internal Assessment
+
+[Practical _|
+20 (3 Hrs.
+
+   
+
+   
+  
+
+ 
+
+   
+ 
+
+   
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+21
+

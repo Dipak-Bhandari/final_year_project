@@ -1,0 +1,103 @@
+Course Title: Geographical Information System (3 Cr.)
+Course Code: CACS454
+Year/Semester: IV/VIII
+Class Load: 5 Hrs. / Week (Theory: 3Hrs. Practical: 2 Hrs.)
+Course Description
+This course offers detailed knowledge as well as practical skills on GIS theory, design and
+implementation. It includes introduction, GIS and Map, GIS data sources and structures, spatial
+data analysis, GIS data modeling and creating map apart from this this encourages to students
+to develop a real time basic GIS project.
+Course objectives
+The general objectives of this course are to provide theoretical knowledge as well as practical
+skills of geographical information system to make students capable of capturing, analyzing and
+visualize real world data.
+Course Contents
+Unit 1: Introduction 6 Hrs.
+1.1 Definition, functions and Applications of GIS
+1.2 Components of GIS
+1.3 GIS as Information System
+1.4 Nature & Sources of GIS data
+1.5 Recent trends and future of GIS
+Unit 2: GIS and Map , 8 Hrs.
+2.1 Map and their characteristics
+2.2 Mapping concept and Techniques
+2.3 Map Projection
+Unit 3: GIS data Sources & Structures 12 Hrs.
+3.1 Capturing GIS data
+3.2 Sources: Maps, GPS, Images and Databases
+3.3 Structures: Vector, Raster and TIN data structures
+3.4 GIS data modeling
+3.5 GIS database design
+Unit 4: Spatial Data Modeling and Analysis 12 Hrs.
+4.1 Spatial data modeling
+4.2 Vector based analysis A
+4.3 Raster based analysis ¥ त
+Unit 5: GIS data modeling & Creating Maps 10 Hrs.
+5.1 Surface modeling A q
+5.2 Hydrology modeling Ry gk &
+5.3 Designing and printing the map “> x v or
+
+ 
+
+  
+
+34
+Laboratory Works
+
+Students should develop basic GIS project implementing the concepts given in course of study
+and may add more (if required).
+
+Teaching Methods
+
+The teaching faculties are expected to create environment where students can update and
+upgrade themselves with the current scenario of computing and information technology with
+the help of topics listed in the syllabus. The general teaching pedagogy that can be followed by
+teaching faculties for this course includes class lectures, laboratory activity, group discussions,
+case studies, guest lectures, research work, project work, assignments (Theoretical and
+Practical), and written and verbal examinations.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation
+Examination Scheme |
+Internal Assessment External Assessment Total
+Theo Practical Theo | Practical |
+। 20 20 (375. 603Hrs) | - | |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Reference Books
+
+1. Kang-tsung Chang, (2010). “Introduction to Geographic Information Systems” Tata
+McGraw Hill, New Delhi.
+
+2. C.P.Lo and Albert K.W.Yeung (2006). “Concepts and Techniques of Geographic
+Information Systems” Prentice Hall of India, New Delhi.
+
+3. Albert, C.T.L. and Yeung, K.W. (2002). “Concepts and Techniques of Geographical
+Information Systems”, New Delhi: Prentice Hall.
+
+4. Chakraborty, D. and Sahoo, R.N. (2007). Fundamentals of GIS. India: Viva Books.
+
+5. ESRI guide to GIS analysis Andy Mitchell, ESRI press, Red lands AS
+
+a) roy , टे
+
+35
+
+   
+

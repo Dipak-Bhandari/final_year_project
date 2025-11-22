@@ -1,0 +1,46 @@
+‘Tribbuvan University
+Faculty of Humanities Social Sciences
+OFFICE OF THE DEAN2019
+
+   
+
+Baehdor of arts ta Computer Apeleaton
+(Course Tie: Web Technology
+
+Cade Nes CCS 205
+
+Semester: IE
+
+ 
+
+(Candidates are requiced to answer te questions in thei own words as Lar as possible
+Groupe
+Atempt any SIX questions. [es = 30
+2. What is CSS? Ditusstyastof CSS wilh example
+‘3. What XML? Differentiate XML schena with DTD.
+4. Listeoaman appliation of webserver, Explain how een works
+‘5. Desrbethetaps and abuts far & fom in HTML document?
+‘6. Whats anonymous neces? Discus about negated windows auheniation
+7. Expl tie technology with examples?
+8. Wie short note on follwing:
++ Cookies
++ XMLDOM
+Groupe
+Attempt any TWO questions, pane)
+
+9, Differentiate betwern tops and stthates? Write a HTML and CSS cade design yout
+unico vitae (C¥) using diferent Min] elements Ue Gable, rag, Fortin ts,
+Tinks),
+
+10. Develop asinple web pug tot asks the wears inp (rane, comil, phone, yensn)and
+stor int database wing server se sit,
+
+1, Spat ar he rls forewing XML. document? Writes XM. codete store folowing
+‘nformation about studen.
+
+1 ach tydenthas.a name, addres, phone and webs element,
+Addn might appears anil ies
+
+“Address tasattebota aed “ype” Wi vale pensanen and temporay
++ Phone ust be 10 dig
+

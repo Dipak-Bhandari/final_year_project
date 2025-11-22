@@ -1,154 +1,112 @@
-import { PageProps } from '@/types';
-import { Head, router } from '@inertiajs/react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { type PageProps } from '@/types';
+import { Head } from '@inertiajs/react';
+import NavIndex from '@/components/nav-index';
+import { Breadcrumbs } from '@/components/breadcrumbs';
+import { useMemo, useState } from 'react';
+import { Input } from '@/components/ui/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import {
-    Table,
-    TableBody,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-} from '@/components/ui/table';
-import AdminLayout from '@/layouts/admin-layout';
-import { Download, PlusCircle, Trash2 } from 'lucide-react';
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from '@/components/ui/dialog';
-import { CreateQuestionPaperForm } from './QuestionPaper/partials/CreateQuestionPaperForm';
-import { useState } from 'react';
-import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
+import { Download } from 'lucide-react';
+import { route } from 'ziggy-js';
 
-type QuestionPaper = {
+type PublicPaper = {
     id: number;
     course: string;
     year: number;
     file_name: string;
-    file_url: string;
+    download_url: string;
 };
 
-type Semester = {
-    id: number;
-    name: string;
-};
+type Props = PageProps<{
+    semester: { id: number; name: string };
+    questionPapers: PublicPaper[];
+}>;
 
-export default function QuestionPaperPage({
-    semester,
-    questionPapers,
-}: PageProps<{ semester: Semester; questionPapers: QuestionPaper[] }>) {
-    const [dialogOpen, setDialogOpen] = useState(false);
+export default function QuestionPaperPage({ semester, questionPapers }: Props) {
+    const [query, setQuery] = useState('');
 
-    const handleDelete = (paperId: number) => {
-        router.delete(route('question-papers.destroy', paperId), {
-            preserveScroll: true,
+    const filtered = useMemo(() => {
+        const term = query.trim().toLowerCase();
+        if (!term) {
+            return questionPapers;
+        }
+        return questionPapers.filter((paper: PublicPaper) => {
+            return (
+                paper.course.toLowerCase().includes(term) ||
+                String(paper.year).includes(term)
+            );
         });
-    };
+    }, [query, questionPapers]);
+
+    const breadcrumbs = [
+        { title: 'Home', href: route('home') },
+        { title: semester.name, href: route('papers.show', { semester: semester.id }) },
+    ];
 
     return (
-        <AdminLayout
-            title={`Question Papers - ${semester.name}`}
-            breadcrumbs={[
-                { title: 'Dashboard', href: route('dashboard') },
-                { title: 'Semesters', href: route('semesters.index') },
-                { title: semester.name, href: route('semesters.show', semester.id) },
-            ]}
-        >
-            <Head title={`Question Papers - ${semester.name}`} />
+        <div className="bg-cream text-[#1b1b18] w-full dark:bg-[#0a0a0a] min-h-screen">
+            <Head title={`Question Papers • ${semester.name}`} />
+            <header className="mb-6 w-full text-sm">
+                <NavIndex />
+            </header>
+            {breadcrumbs.length > 1 && (
+                <div className="flex w-full border-b border-sidebar-border/70">
+                    <div className="mx-auto z-0 flex h-12 w-full items-center justify-start px-4 text-neutral-500 md:max-w-7xl">
+                        <Breadcrumbs breadcrumbs={breadcrumbs} />
+                    </div>
+                </div>
+            )}
+            <main className="max-w-7xl mx-auto px-4 md:px-8 py-10">
+                <div className="space-y-8">
+                <div className="space-y-4 text-center">
+                    <Badge variant="outline" className="px-4 py-1 text-base">
+                        {semester.name}
+                    </Badge>
+                    <h1 className="text-3xl font-semibold text-gray-900 dark:text-white">
+                        Question Papers & Practice Sets
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                        Download past year exam papers for {semester.name}. Use them to practice and understand exam patterns.
+                    </p>
+                    <div className="mx-auto max-w-lg">
+                        <Input
+                            placeholder="Search by course or year…"
+                            value={query}
+                            onChange={(event) => setQuery(event.target.value)}
+                            className="h-12 rounded-full"
+                        />
+                    </div>
+                </div>
 
-            <Card>
-                <CardHeader className="flex flex-row items-center justify-between">
-                    <CardTitle>Question Paper Details</CardTitle>
-                    <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-                        <DialogTrigger asChild>
-                            <Button>
-                                <PlusCircle className="mr-2 h-4 w-4" />
-                                Create Question Paper
-                            </Button>
-                        </DialogTrigger>
-                        <DialogContent className="sm:max-w-[425px]">
-                            <DialogHeader>
-                                <DialogTitle>Create New Question Paper</DialogTitle>
-                                <DialogDescription>
-                                    Fill in the form below to add a new paper for {semester.name}.
-                                </DialogDescription>
-                            </DialogHeader>
-                            <CreateQuestionPaperForm setOpen={setDialogOpen} />
-                        </DialogContent>
-                    </Dialog>
-                </CardHeader>
-                <CardContent>
-                    <Table>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHead>Course</TableHead>
-                                <TableHead>Year</TableHead>
-                                <TableHead>File Name</TableHead>
-                                <TableHead className="text-right">Actions</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {questionPapers.length === 0 && (
-                                <TableRow>
-                                    <TableCell colSpan={4} className="h-24 text-center">
-                                        No question papers found.
-                                    </TableCell>
-                                </TableRow>
-                            )}
-                            {questionPapers.map((paper) => (
-                                <TableRow key={paper.id}>
-                                    <TableCell>{paper.course}</TableCell>
-                                    <TableCell>{paper.year}</TableCell>
-                                    <TableCell>{paper.file_name}</TableCell>
-                                    <TableCell className="text-right space-x-2">
-                                        <Button variant="outline" size="sm" asChild>
-                                            <a href={paper.file_url} download>
-                                                <Download className="h-4 w-4" />
-                                            </a>
-                                        </Button>
-                                        <AlertDialog>
-                                            <AlertDialogTrigger asChild>
-                                                <Button variant="destructive" size="sm">
-                                                    <Trash2 className="h-4 w-4" />
-                                                </Button>
-                                            </AlertDialogTrigger>
-                                            <AlertDialogContent>
-                                                <AlertDialogHeader>
-                                                    <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
-                                                    <AlertDialogDescription>
-                                                        This action cannot be undone. This will permanently delete the
-                                                        question paper.
-                                                    </AlertDialogDescription>
-                                                </AlertDialogHeader>
-                                                <AlertDialogFooter>
-                                                    <AlertDialogCancel>Cancel</AlertDialogCancel>
-                                                    <AlertDialogAction onClick={() => handleDelete(paper.id)}>
-                                                        Continue
-                                                    </AlertDialogAction>
-                                                </AlertDialogFooter>
-                                            </AlertDialogContent>
-                                        </AlertDialog>
-                                    </TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                </CardContent>
-            </Card>
-        </AdminLayout>
+                {filtered.length === 0 ? (
+                    <p className="text-center text-muted-foreground">No question papers available for this semester.</p>
+                ) : (
+                    <div className="grid gap-6 md:grid-cols-2">
+                        {filtered.map((paper: PublicPaper) => (
+                            <Card key={paper.id} className="border border-gray-200 dark:border-gray-800">
+                                <CardHeader className="space-y-3">
+                                    <div className="flex items-center gap-2">
+                                        <Badge variant="secondary">{paper.year}</Badge>
+                                    </div>
+                                    <CardTitle className="text-xl">{paper.course}</CardTitle>
+                                    <CardDescription>Past exam paper for {paper.course}</CardDescription>
+                                </CardHeader>
+                                <CardContent className="flex items-center justify-between">
+                                    <span className="text-sm text-muted-foreground">{paper.file_name}</span>
+                                    <Button variant="outline" size="sm" asChild>
+                                        <a href={paper.download_url}>
+                                            <Download className="mr-2 h-4 w-4" />
+                                            Download
+                                        </a>
+                                    </Button>
+                                </CardContent>
+                            </Card>
+                        ))}
+                    </div>
+                )}
+                </div>
+            </main>
+        </div>
     );
 }

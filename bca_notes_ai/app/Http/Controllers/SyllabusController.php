@@ -18,10 +18,20 @@ class SyllabusController extends Controller
     {
         $syllabi = $semester->syllabi()
             ->orderBy('course')
-            ->get();
+            ->get()
+            ->map(function (Syllabus $syllabus) {
+                return [
+                    'id' => $syllabus->id,
+                    'course' => $syllabus->course,
+                    'description' => $syllabus->description,
+                    'file_name' => $syllabus->file_name ?? ($syllabus->file_path ? basename($syllabus->file_path) : 'syllabus.pdf'),
+                    'file_size' => $syllabus->file_size,
+                    'download_url' => route('syllabi.download', $syllabus),
+                ];
+            });
 
         return Inertia::render('SyllabusPage', [
-            'semester' => $semester,
+            'semester' => $semester->only(['id', 'name']),
             'syllabi' => $syllabi,
         ]);
     }
@@ -115,6 +125,8 @@ class SyllabusController extends Controller
             abort(404, 'File not found.');
         }
 
-        return Storage::disk('public')->download($syllabus->file_path, $syllabus->file_name);
+        $fullPath = Storage::disk('public')->path($syllabus->file_path);
+
+        return response()->download($fullPath, $syllabus->file_name);
     }
 }

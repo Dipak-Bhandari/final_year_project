@@ -1,0 +1,125 @@
+Course Title: Operational Research (3 Cr.)
+
+Course Code: CAOR451
+
+Year/ Semester: I[V/VIIT
+
+Class Load: 4Hrs. /Week (Theory: 3 Hrs. Tutorial: 1 Hrs)
+
+Course Description
+
+Operations Research is the study of scientific approaches to decision-making. Through mathematical
+modeling, it seeks to design, improve and operate complex systems in the best possible way. The
+mathematical tools used for the solution of such models are either deterministic or stochastic, depending
+on the nature of the system modeled. In addition, the course will learn very powerful modeling and
+solution techniques for decision-making problems that are used today by many successful companies
+to help them save/earn millions of dollars. The module covers topics that include: linear programming,
+transportation, assignment, inventory control, replacement theory and game theory. Analytic techniques
+and computer packages will be used to solve problems facing business managers in decision
+environments
+
+Course Objectives
+
+The general objectives of this course to provide a broad orientation of the field of optimization, with
+emphasis on basic theory and methods for continuous and discrete optimization problems in finite
+dimension, and it also gives some insight into its use for analyzing practical optimization problems.
+
+Unit 1: Introduction to Operations Research 5
+hrs.
+Introduction, History of Operations Research, Stages of Development of Operations Research
+Relationship between Manager and OR Specialist, OR Tools and Techniques, Applications of
+Operations Research, Limitations of Operations Research
+Unit 2: Linear Programming Problem 10
+hrs.
+Introduction to Linear Programming, Linear Programming Problem Formulation, Formulation with
+Different Types of Constraints, Graphical Analysis of Linear Programming, Graphical Linear
+Programming Solution, Multiple Optimal Solutions, Unbounded Solution, Infeasible Solution, Basics
+of Simplex Method, Simplex Method Computation, Simplex Method with More Than Two Variables,
+Primal and Dual Problems, Economic Interpretation
+Unit 3: Transportation and Assignment Problem 8
+hrs.
+Transportation Problems definition, linear form, Solution methods: North West corner method, least
+cost method, Vogel’s approximation method. Degeneracy in transportation, Modified Distribution
+method, unbalanced problems and profit maximization problems. Transshipment Problems.
+Assignment Problem Structure and Solution: Short-Cut Method (Hungarian Method), Unbalanced
+Assignment Problem, Infeasible Assignment Problem, Maximization in an Assignment Problem,
+Crew Assignment Problem.
+Unit 4: Queuing Theory 6
+hrs. A
+Basis of Queuing theory, elements of queuing theory, Kendall’s Notation, Operating charatteristics of
+a queuing system, Classification of Queuing models,
+
+    
+Unit 5: Inventory Control 6
+hrs.
+
+Inventory classification, Different cost associated to Inventory, Economic order quantity, Inventory
+models with deterministic demands, ABC analysis.
+
+Unit 6: Replacement theory 6
+hrs. Introduction, Replacement of capital equipment which depreciated with time, replacement by
+alternative equipment, Group and individual replacement policy
+Unit 7: Game Theory 7
+hrs.
+
+Introduction, Characteristics of Game Theory, Two Person, Zero sum games, pure strategy. Dominance
+theory, Mixed strategies (2x2, mx2), Algebraic and graphical methods
+Teaching Methods
+
+The general teaching pedagogy includes class lectures, presentations, group works, case
+studies, guest lecturers research works, project works, assignments (Theoretical and Practical).
+The teaching faculty will determine the choice of teaching pedagogy and encouraged to select
+
+software tools as per the requirements of topics for practical activities.
+
+References/ Suggested Readings:
+
+Hillier, F.S.& Lieberman, G.J. (1995). Introduction to Operations Research,7" edition.
+The McGraw-Hill Companies, Inc.
+
+Natarajan, A. M.; Balasubramani, P. & Tamilarasi, A. (2007). Operations Research.
+Pearson Education Inc.
+
+Sharma, J.K. (2009). Operational Research: Theory and Application. Macmillan
+Publishers India Ltd.
+
+Taha, H.A. (2017). Operations Research: A Introduction, 10th edition, Global edition,
+Pearson Education, Inc. Pearson Prentice Hall.
+
+Wagner, H. N. (2003). Operations Research by, Prentice hall. ND Vohra, Tata McGraw-
+Hill.
+
+Winston, L.W. (2004). Operations Research: Applications and Algorithms, Indian
+University, 4th edition.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Evaluation
+OO E = 5
+xamination Scheme
+Internal Assessment External Assessment
+Theo Practical Theo | _ Practical _|
+40 | | 60 |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+26
+
