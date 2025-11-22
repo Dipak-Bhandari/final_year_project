@@ -1,0 +1,97 @@
+Elective Courses
+Course Title: Database Programming
+Course Code: CACS453
+Year/Semester: [V/VIII
+Class Load: 6 Hrs. /Week (Theory: 3Hrs, Practical 3Hrs.)
+
+Course Description
+
+This course provides the comprehensive knowledge about database programming in relational
+database management system, which encompasses with overview of fundamental SQL
+statement, PL/SQL Block, Exception, Cursors, Record, Triggers, Procedures, Functions and
+Packages
+
+Objectives: The general objectives of this course is to enhance advance programming skills
+in relational database management system.
+
+Unit -1
+
+Introduction of RDBMS 10 Hrs
+Overview of the Oracle Database Architecture, Familiar with SQL*Plus, SQL*Plus
+Commands (DESCRIBE, LIST, APPEND, CHANGE, INPUT, DEL, CLEAR BUFFER,
+Using Script Files), Accepting Values at Runtime, Overview of Fundamental SQL
+- Fundamental Command (DDL, DML, DCL, Join and Subquery)
+
+Unit -2
+
+PL/SQL 13 Hrs
+PL/SQL Concepts, Architecture, Block _ structure, Executing PL/SQL Script,
+DBMS_OUTPUT.PUT_LINE Statement, substitution Variable feature, PL/SQL Language
+fundamentals, DML Statement in PL/SQL, Transaction Control in PL/SQL. Conditional
+Control (if, nested if, Case), Repetitive Control (While, for, simple loop, Nested, continue, loop
+label)
+
+Unit -3 5 Hrs
+PL/SQL Exception
+
+Exception scope, user-defined exception, exception propagation, advance exception concepts
+(RAISE_APPLICATION_ERROR, EXCEPTION_INIT)
+
+Unit -4
+Database Cursors 5 Hrs
+Types of cursors, cursor loop, Nested cursors cursor for loops, parameterized cursors, Nested
+cursors
+
+Unit -5
+Database Triggers 5 Hrs
+Database Triggers BEFORE, AFTER Triggers, row and statement triggers, INSTEAD OF
+triggers
+
+Unit -6
+Record and procedures ‘5 Hrs
+Record (Record types, Nested record) Procedure (Block Structure, Anonymous Block, créating
+procedure, IN, OUT parameters in Procedure)
+Unit-7
+
+  
+
+4
+if, ff
+
+i/ 7 १
+Functions and Package 5 Hrs
+Functions (creating and invoking function and optimizing function in execution, creating
+packages, extending the package, package instantiation and initialization,
+
+Laboratory Works
+Laboratory works should be done covering all the topics listed above and a small work should
+be carried out using the concept learnt in each unit in individual or group.
+
+Teaching Methods
+
+The general teaching pedagogy includes class lectures, group discussions, case studies, guest
+lectures, research work, project work, assignments (theoretical and practical), and
+examinations (written and verbal), depending upon the nature of the topics. The teaching
+faculty will determine the choice of teaching pedagogy as per the need of the topics.
+
+References
+1. Benjamin Rosenzweig, E. R. (2015). Oracle PL/SQL by Example. New Yourk: Prentice
+Hall.
+2. Gupta, S. K. (2016). Advanced Oracle PL/SQL Developer's Guide . Birmingham: Packt
+Publishing.
+
+3. Lex de Haan, T. G. (2014). Beginning Oracle SQL. Apress.
+4. McLaughlin, M. (2014). Oracle Database 12c PL/SQL Programming. New Delhi:
+
+McGrawHill Education.
+Ara) १»
+
+Do Le ina ok &
+Wy W &
+Op
+परिषदको,
+
+कीर्तिपुर
+
+33
+

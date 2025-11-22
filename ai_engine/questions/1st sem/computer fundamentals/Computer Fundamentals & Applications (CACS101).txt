@@ -8,67 +8,109 @@ Bachelor in Computer Applications Full Marks: 60
 
 Course Title: Computer Fundamentals and Application Pass Marks: 24
 
-Group B 
+Code No: CACS 101 Time: 3 hours
+rt
+
+ 
+
+Semester:
+
+Candidates are required to answer the questions in their own words as far as possible.,
+
+ 
+
+ 
+
+f Group B 1
 Attempt any SIX questions. [6x5 = 30]
-11. Define Computer. Explain the anatomy of digital computer with block diagram.
-12. Define Operating System- Explain the functions of Operating System.
+1 Define Computer. Explain the anatomy of digital computer with block diagram.
+rl Define Operating System- Explain the functions of Operating System.
 
 13. Define DBMS. Explain “the different database models with their merits and demerits.
 
-14. Explain the different types « of LAN topologies with their advantages and disadvantages.
-15 What is WWW? Differentiate between intranet, extranet and internet with example.
+id Explain the different types « of LAN topologies with their advantages and disadvantages.
+1s What is WWW? ' Differentiate between i intranet, extranet and internet with exaple.
 
-16 What are contemporary: terminologies? Explain ay two contemporary technologies with roles.
+4 What are contemporary: techriologies? Explain ay ‘two. contemporary technologies with
 
+| roles. | wo ae , 4
 17. Write the DOS commands to complete following tasks.
 
 a) Create sub directory theory and practical inside d:\exam\
-b) Create the file name marks.txt inside theory writing the content, "Theory marks in
-CFA".
-c) Rename the file name marks.txt with CFAmarks.txt.
-d) Make hidden the file CFAmarks.txt.
+b) Create the file name’ marks.txt inside theory-writing the- content, "Theory marks in
+CFA", BOs | [ pes
+c) Rename the file name marks: ‘txt with CFAmarks: txt. re
+d) Make hidden the file CFAmarks. txt.
 e) Search the all files with .pdf extension.
+ante _, Group C__ 7
+Attempt any,’ Two questions. ( a Py. nee | [2x10 = 20]
 
  
-Group C
-Attempt any, 2 questions.[2x10 = 20]
 
+ 
 
-18. 
-i) You are provided following data:
+Se ae wee tS
 
-Bageswori Secondary School - Surkhet
+18. i) You are provided following data:
+
+Bageswori $ Secondary School -
+SAT AW be ATI G Site wep al.com
 
 Mark - Ledger
+a eB 2
+| 12|Gautam | 56 | 56 | 7% | 7 | 68 | |
+| 13/Saru_ | 67 (| 54 | 64 | 64 |G
 
-| Name     | Eng | Nep | Eco | Sociology | Computer |
-| -------- | --- | --- | --- | --------- | -------- |
-| Gautam   | 56  | 56  | 76  | 75        | 68       |
-| Saru     | 67  | 54  | 64  | 64        | 76       |
-| Binod    | 87  | 65  | 54  | 59        | 66       |
-| Ritu     | 45  | 67  | 56  | 72        | 85       |
-| Kabindra | 89  | 34  | 63  | 59        | 52       |
+| 14|Binod | 87 | 6 | 54 | 59 | 66 | ft |
+| 15|Ritu | 45 | 67 | 56 | 72 |
+| 16] Kabindra | 89 | 34 | 638 | 59 | 52) | ft TC
+
+ 
+
+Are you searching Notes Of BCA Semester Wise visit our site www.bcanotesnepal.com
 Write the formula in spread sheet package to calculate following on basis on given
 
 conditions:
 
-1.Calculate Total marks. [1]
+1,
 
-2.Calculate Percentage. [1]
+2.
 
-3.Mark the student with either "PASS" or "FAIL" [Pass Marks 35]. [1.5]
-4.Calculate the division [if percentage >=60 then First, if percentage >=45
+3.
+4.
+
+Calculate Total marks. [1]
+Calculate Percentage. [1]
+Mark the student with either "PASS" or "FAIL" [Pass Marks 35]. [1.5]
+Calculate the division [if percentage >=60 then First, if percentage >=45
+
 and percentage <60 then Second, if percentage >=35 and percentage <45
 then Third otherwise "xxx"] [1.5]
 
+ii) Explain the features of Font.control.tools.in-word processing package... [5]
+_j) Define computer peripherals. Differentiate between impact and non-impact printers.
 
-ii) Explain the features of Font control tools in word processing package[5]
+“[1+4]
 
-19.
- i) Define computer peripherals. Differentiate between impact and non-impact printers.[1+4]
+ii) Define Presentation. Write the features of good presentation package. ‘[5]
 
- ii) Define Presentation. Write the features of good presentation package.[5]
+Define CMYK color model. Explain the basic tools and transforms available in
 
-20.
-Define CMYK color model. Explain the basic tools and transforms available in Photoshop.[2+5+3]
+Photoshop.
+
+!
+
+[2+5+3]
+
+ 
+
+ 
+
+ 
+
+www. beanotesmepal. com
+
+ 
+
+Are you searching Notes Of BCA Semester Wise visit our site www.bcanotesnepal.com
 

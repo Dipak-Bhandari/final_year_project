@@ -1,0 +1,166 @@
+काका BEEBE RBEESGBSBEGEEBEE ERE EERE SESE SE BS
+
+Course ‘litle: C Programming (4 Cr.)
+
+Course Code: CACS151
+
+Year/Semester: I/II
+
+Class Load: 8 Hrs. / Week (Theory: 4 Hrs, Tutorial: 1 Hr., Practical: 3 Hrs)
+
+Course Description
+This course includes both thcoretical as well as practical concept of
+
+programming. Practical skill of programming are provided using C language
+which includes basic concept of C, operators and expressions, basic input/output
+function, control structures, array & string. function, pointer, structure and union,
+file handling and graphics in C.
+
+Course Objectives
+The general objectives of this course are to provide fundamental concepts of
+programming language, programming technique and program development using
+C programming language.
+
+Course Contents
+
+Unit 1 Programming Language 10 Hrs.
+Introduction to Programming Language, Types of Programming Language,
+Language Processor, Program Errors, Features of Good Program, Different
+Programming Paradigm, Software Development Model, Program Development
+Life Cycle, System Design Tools.
+
+Unit 2 Programming Technique 5 Hrs.
+Introduction to Programming Technique, Top down & Bottom up Approach,
+Cohesion and Coupling, Structured Programming, Deterministic and Non-
+deterministic Technique, Iterative and Recursive Logic, Modular Designing &
+Programming.
+
+Unit 3 Basic Concept of C 5 Hrs.
+Introduction, History, Features, Advantages and Disadvantages, Structure of C
+program, Compiling Process, C Preprocessor and Header Files, Library Function,
+Character Set, Comments, Tokens and its types, Data types, Escape Sequences,
+Preprocessors Directives.
+
+Unit 4 Operators and Expressions 3 Hrs.
+Arithmetic Operator, Relational Opérator, Logical Operator, Assignment
+Operator, Increment/decrement Opérator, Conditional Operator. Bitwise
+Operator, Comma Operator, Sizeof Operator, Operator. Precedence and
+Associativily, Expressions and_ its Ae” Casting in Expression,
+Program Statement.
+
+ 
+
+Page 24
+ 
+
+Unit 5 Input and Output 3 Hrs.
+Input/Output Operation, Formatted I/O (scanf, printf), Unformatted VO (getch-
+putch, getche. getchar-putchar and gets-puts)
+
+Unit 6 Control Structure 6 Hrs.
+Introduction, Type of Control Structure (Branching:if, if else, if elseif and switch
+case, Looping: while, do while and for and Jumping: goto, break and continue),
+Nested Control Structure.
+
+Unit 7 Array 6 Hrs.
+Introduction, Declaration, Initialization, One Dimensional Array, Multi
+Dimensional - Array, Sorting (Bubble, Selection), Searching Sequential), String
+Handling.
+
+Unit 8 User Defined Function 5 Hrs.
+Introduction, Components, Function Parameters, Library Function ys. Users
+Defined Function, Different Forms of Function, Recursion, Passing Array to
+Function, Passing String to Function, Accessing a function (Call By Value & Call
+By Reference), Macros, Storage Class.
+
+ 
+
+Unit 9 Pointer 6 Hrs.
+Introduction, ‘The Address(&) and Indirection(*) Operators, Declaration &
+Initialization, Pointer to Pointer, Pointer Expressions, Pointer Arithmetic. Passing
+Pointer to a Function, Pointer and Array, Array of Pointer, Pointer and String,
+Dynamic Memory Allocation.
+
+Unit 10Structure 5 Hrs.
+Introduction, Declaration, Initialization, Nested Structure, Array of structure,
+Array within Structure, Passing Structure & Array of Structure to function,
+Structure & Pointer, Bit Fields, Union and Its Importance, Structure vs. Union,
+
+Unit 11Data File Handling 4 Hrs.
+Introduction, Types of File, Opening & Closing Data File, Read & Write
+Function, Writing & Reading Data To and From Data File, Updating Data File,
+Random Accessing Files, Printing a File.
+
+Unit 12Introduction to Graphics 2 Hrs.
+Initialization, Graphical Mode, Graphical Functions.
+
+ 
+
+Laboratory Works
+Laboratory works should be done covering all the topics listed above and a small project
+work should be carried out using the concept ee in this cotrse only. Projeet should be
+assigned on individual basis. 0:
+
+[, Page | 25
+
+ 
+Teaching Methods
+
+The general teaching pedagogy includes class lectures, group discussions, case studies,
+guest lectures, research work, project work, assignments (theoretical and practical), and
+examinations (written and verbal), depending upon the nature of the topics. The teaching
+faculty will determine the choice of teaching pedagogy as per the need of the topics.
+
+Evaluation
+
+ 
+
+   
+ 
+
+ 
+  
+
+Exami
+
+ination Scheme
+20 20 60 100
+(3 Irs.) (3 hrs.)
+Text Books
+
+1. Brain W. Kerighan & Dennis Ritchie, "The C Programming Language", Second
+Edition, Prentice Hall, 1988. ISBN: 978-0131103627
+
+2. Byrons S. Gotterfried, "Programming with C, 3/e", McGraw Hill Education India,
+2013, ISBN: 978-0-07-014590-0
+
+  
+  
+     
+
+Reference Books
+
+ 
+
+3. Al Kelley, Ira Pohl, "A Book on C", 4" Edition, Pearson Education, 1998, ISBN:
+978-0201183993
+
+4. Deitel & Deitel, “C: How to program’, 7" Edition, Pearson Education, 2012, ISBN:
+9780273776840
+
+5. E Balagurusamy, “Programming in ANSI C. Sixth Edition”, Tata Me GrawHill
+2012 ISBN: 9781259004612
+
+6. Yeshvant Kanetkar, "Let us C”, 13" Edition, BPB Publication,2013, ISBN: 978-81-
+8333-163-0 ;
+
+7. Ramesh Rimal & et. al., “Computer Science-II, Revised Edition”, Buddha Academic
+
+013
+
+७
+
+ 
+
+Page | 26
+

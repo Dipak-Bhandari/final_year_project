@@ -1,0 +1,227 @@
+ 
+
+Course Title: Operating System (3 Cr.)
+
+Course Code: CACS251
+
+Year/Semester: 11/1१/
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1, Practical: 2 Hrs.)
+
+Course Description
+This course includes the topics that help students understand operating system
+
+and it’s functionality along with its types.
+
+Course Objectives
+The general objectives of this subject are to provide the basic feature, function
+and interface with the hardware and application software to run the computer
+smoothly.
+
+Course Contents
+
+Unit 1 Introduction to Operating System 2 Hrs.
+History, Introduction and Generation of Operating System, Objectives (Resource
+Manager and Extended Machine), Types of Operating system, Function of
+Operating system.
+
+Unit 2 Operating System Structure 2 Hrs.
+Introduction, Layered System, Kernel, I'ypes of Kernel (Monolithic/Macro
+Kernel and Micro / Exo-Kernel), Client-Server Model, Virtual Machines, Shell.
+
+Unit 3 Process Management 15 Hrs.
+Process Concepts(3 Hrs.): Definitions of Process, The Process Model, Process
+States, Process State Transition, The Process Control Block, Operations on
+Processes (Creation, Termination, Hierarchies, Implementation), Cooperating
+Processes, System Calls (Process Management, File management, Directory
+Management).
+
+Threads (1 Hr): Definitions of Threads, Types of Thread Process (Single and
+Multithreaded Process), Benefits of Multithread, Multithreading Models (Many-
+to-One Model, One-to-One Model, Many-to Many Model).
+
+Inter-Process Communication and Synchronization(6 Hrs.): Introduction,
+Race Condition, Critical Regions. Avoiding Critical Region: Mutual Exclusion
+
+ 
+  
+ 
+ 
+ 
+
+And Serializability; Mutual Exclusion Conditions, Proposals for
+Mutual Exclusion: Disabling. Interrupts. Lock Variable, S
+(Peterson's Solution), The TSL Instfiction, Sleep and Wakeup, Ty
+Exclusion (Semaphore, Monitors, Mutexes, Messag i
+Serializability: Locking Protocols and Time St
+Problems (Dining Philosophers Problems; The R
+Sleeping Barber's Problem)” A - 4
+
+छ get
+शि? a bay 4.
+o <r ( f& Page | 54
+
+ 
+ 
+
+Unit 4
+
+Process Scheduling(5 Hrs): Basic Concept, Type of Scheduling (Preemptive
+Scheduling, Nonpreemptive Scheduling, Batch, Interactive, Real Time
+Scheduling), Scheduling Criteria or Performance Analysis, Scheduling Algorithm
+(Round-Robin, First Come First Served, Shortest-Job- First, Shortest Process
+Next, Shortest Remaining Time Next, Real Time, Priority Fair Share,
+Guaranteed, Lottery Scheduling. HRN, Multiple Queue. Multilevel Feedback
+Queue); Some Numerical Examples on Scheduling.
+
+Deadlocks 4 Hrs.
+System Model, System Resources: Preemptable and Non-Preemptable:
+Conditions for Resource Deadlocks, Deadlock Modeling, The OSTRICH
+Algorithm, Method of Handling Deadlocks, Deadlock Prevention, Deadlock
+Avoidance: Banker's Algorithm, Deadlock Detection: Resource Allocation
+Graph, Recovery from Deadlock.
+
+Unit 5 Memory Management 7 Hrs.
+
+ 
+
+Unit6
+
+Unit 7
+
+Basic Memory Management (3 Hrs.): Introduction, Memory Ilierarchy, Logical
+Versus Physical Address Space, Memory Management with Swapping: Memory
+Management with Bitmaps and with Linked List; Memory Management without
+Swapping, Contiguous-Memory Allocation: Memory Protection, Memory
+Allocation, Fragmentation (Inter Fragmentation and External Fragmentation);
+Non-Contiguous Memory Allocation, Fixed Partitioning Vs. Variable
+Partitioning, Relocation and Protection, Coalescing and Compaction.
+
+Virtual Memory (4 Hours): Background, Paging, Structure of Page Table:
+Hierarchical Page Table, Hashed Page Table, Inverted Page Table, Shared Page
+Table; Block Mapping Vs. Direct Mapping, Demand Paging, Page Replacement
+and Page Faults, Page Replacement Algorithms: FIFO,OPR,LRU, SCP; Some
+Numerical Examples on Page Replacement, Thrashing, Segmentation,
+Segmentation With Paging.
+
+Input/ Output Device Management 4 Hrs.
+Principle of I/O Hardware: I/O Devices, Device Controllers, Memory Mapped
+VO, Direct Memory Access; Principle of I/O Software: Goals of I/O Software,
+Program I/O, Interrupt -Driven I/O, I/O Using DMA; I/O Software Layers:
+Interrupts Handler, Device Drivers, Device Independent I/O Software, User -
+Space I/O Software; Disk: Disk Hardware: Disk Scheduling: Seek Time. Rational
+Delay, Transfer Time: Disk Scheduling Algorithms: FCFS Scheduling, SSTF
+Scheduling, SCAN Scheduling, C-SCAN Scheduling
+
+  
+ 
+
+  
+
+File System Interface Management
+File Concept: File Naming, File Structure, File T
+
+File Operation and File Descriptors: Diréctpries: S
+
+ 
+
+Hierarchical Directory Systems, Path Names, Directory Operation: Access
+MW
+
+x | Page | 55
+ 
+
+Methods: Sequential, Direct: Protection: Types of Access, Access Control List,
+Access Control Matrix
+
+Unit 8 Security Management
+Introduction, Security Problems, User Authentication: Passwords, password
+Vulnerabilities, Encrypted password, One Time Password and Biometrics
+password; User Authorization, Program ‘Threats: Trojan Horse, Trap Door, Stack
+and Buffer Overflow; System Threats: Worms, Viruses, Denial of Services.
+
+Unit 9 Distributed Operating System
+Introduction, Advantages of Distributed System over Centralized System,
+Advantages of Distributed System over Independent PCs, Disadvantages of
+
+Distributed
+
+3 Hrs.
+
+4 Hrs.
+
+System, Hardware and Software Concepts. Communication in
+
+Distributed Systems, Message Passing, Remote Procedure Call, Process in
+Distribution System, Clock Synchronization.
+
+Unit 10 Case Study
+DOS and Windows Operating System, Unix Operating System, Linux Operating
+System
+
+Laboratory Works
+Lab works should be done covering all the topics listed above and a small project
+
+work should be carried out using the concept learnt in this course. Project should
+be assigned on Individual Basis.
+
+Teaching Methods
+The general teaching pedagogy includes class lectures, group discussions, case
+
+studies, guest lectures, research work, project work, assignments (theoretical and
+
+2 Hrs.
+
+practical), and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics.
+
+Evaluation
+
+      
+  
+
+ 
+    
+
+Examination Scheme
+
+|
+Theory Practical , | Theory Practical
+की
+20 20 00
+(3 Hrs.) (3 Lrs.)
+
+Total
+
+   
+ 
+
+   
+ 
+
+ 
+
+Page | 56
+ 
+
+Text Books
+|. Andrew S. Tanenbaum, "Modern Operating System 6/e", PHI, 2011/12
+
+2. Silberschatz, P.B. Galvin, G. Gagne, "Operating System Concepts 8/e ", Wiley
+India, 2014 ISBN : 9788126520510
+
+Reference Books
+1. Andrew S. Tanenbaum, "Distributed Operating System", Pearson
+
+2. DM Dhamdhere, "System Programming and Operating System", Tata McGraw-
+Hill, 2009
+
+P. Pal Choudhury, "Operating Systems Principles and Design", PHI, 2011
+
+७७
+
+का
+
+RA
+

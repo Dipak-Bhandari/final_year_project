@@ -1,18 +1,18 @@
-import { Link } from "@inertiajs/react";
+import { Link, usePage } from "@inertiajs/react";
 import { route } from "ziggy-js";
-import { usePage } from "@inertiajs/react";
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown, LogOut, Settings } from "lucide-react";
 import AppLogoIcon from "./app-logo-icon";
 import SemesterDropdown from "./semester-dropdown";
 import YearlyQuestionDropdown from "./yearly-questions-dropdown";
 import UserAvatar from "./user-avatar";
-import { type SharedData, type User } from "@/types";
-import { Input } from "@headlessui/react";
+import { type SharedData, type Semester } from "@/types";
+import { Input } from "@/components/ui/input";
 
 function NavIndex() {
-    const { auth } = usePage<SharedData>().props;
+    const { auth, globalSemesters = [] } = usePage<SharedData & { globalSemesters?: Semester[] }>().props;
     const [userMenuOpen, setUserMenuOpen] = useState(false);
+    const [searchValue, setSearchValue] = useState('');
     const user = auth.user;
     const menuRef = useRef<HTMLDivElement>(null);
 
@@ -33,6 +33,21 @@ function NavIndex() {
         };
     }, [userMenuOpen]);
 
+    const handleSearchChange = (value: string) => {
+        setSearchValue(value);
+        if (typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('landing-search', { detail: value }));
+        }
+    };
+
+    const handleSearchFocus = () => {
+        if (typeof window === 'undefined') return;
+        const target = document.getElementById('public-library');
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     return (
         <>
             <div className="z-50 top-0 sticky border-b border-sidebar-border/80 bg-white dark:bg-black">
@@ -44,13 +59,18 @@ function NavIndex() {
                             </Link>
                         </div>
                         <div className="flex items-center justify-center gap-4">
-                            <SemesterDropdown />
-                            <YearlyQuestionDropdown />
-                            <div className="hidden md:block">
-                                <Input className="w-64 border p-1 rounded-2xl pl-6"
-                                    placeholder="Search..." type="text" onChange={(e) => console.log(e.target.value)}>
-                                </Input>
-                            </div>
+                            <SemesterDropdown semesters={globalSemesters} />
+                            <YearlyQuestionDropdown semesters={globalSemesters} />
+                            {/* <div className="hidden md:block">
+                                <Input
+                                    className="w-64 rounded-full"
+                                    placeholder="Search resources..."
+                                    type="text"
+                                    value={searchValue}
+                                    onFocus={handleSearchFocus}
+                                    onChange={(e) => handleSearchChange(e.target.value)}
+                                />
+                            </div> */}
                         </div>
                         <div className="flex items-center justify-end gap-4">
                             {user ? (

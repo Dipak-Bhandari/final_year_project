@@ -1,0 +1,133 @@
+Course Title: Microprocessor and Computer Architecture (3 Cr.)
+
+Course Code: CACS155
+
+Year/Semester: I/II
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs, Tutorial: 1 Hr., Practical: 2 Hrs.)
+
+Course Description
+This course is an introduction to microprocessor and computer architecture. It
+covers topics in both the physical design of the computer (organization) and the
+logical design of the computer (architecture).
+
+Course Objectives
+
+The course has following specific objectives:
+
+¢ To explain the microprocessor.
+
+० To explain the assembly language programming,
+
+¢ To explain the overview of computer organization,
+¢ To explain the principle of CPU system.
+
+¢ To explain the principle of memory system
+
+० To explain the principle of data flow,
+
+Course Contents
+
+Unit 1 Fundamental of Microprocessor 5 Hrs.
+Introduction to Microprocessors, Microprocessor systems with bus organization,
+Microprocessor architecture and operation, 8085 Microprocessor and_ its
+operation, 8085 instruction cycle, machine cycle, T states, Addressing modes
+in 8085, Introduction to 8086.
+
+Unit 2 Introduction To Assembly Language Programming 10 Hrs.
+Assembly Language Programming Basics, Classification of Instructions and
+Addressing Mode, 8085 Instruction Sets. Assembling, Executing and Debugging
+the Programs, Developing Counters and Time Delay Routines, Interfacing
+Concepts
+
+Unit 3 Basic Computer Architecture 4 Hrs.
+Introduction: History of computer architecture, Overview of computer
+organization, Memory Hierarchy and cache, Organization of hard disk.
+Instruction Codes: Stored Program Organization-Indirect Address, Computer
+Registers, Common bus system, Instruction set, liming and Control-Instruction
+Cycle
+
+Unit 4 Microprogrammed Control | 10 Hrs.
+Basic Computer Design of Accurtulator: Control of AC Register, ALU
+Organization; Control Memory-Address Sequencing: Conditional Branching,
+Mapping of —_Instruction-Subroutines: Micro Program: Symbolic Micro
+
+A ५४ 58 10
+/\ ४ Page | 35
+
+Y
+
+ 
+ 
+
+Program, Binary Micro Program; Design of Control Unit: Basic Requirement of
+Control Unit, Structure of Control Unit, Micro Program Sequencer.
+
+Unit 5 Central Processing Unit 10 Hrs,
+General Register Organization: Control Word, Stack Organization and
+Instruction: Formats-Addressing Modes.
+
+Data Transfer and Manipulation: Data Transfer Instructions, Data
+Manipulation Instructions, Arithmetic __ Instructions, Logical 10 Bit
+Manipulation Instructions, Shift Instructions.
+
+Program Control: Status Bit Conditions, Conditional Branch Instructions,
+Subroutine Call and Return, Program Interrupt, Types of Interrupts
+
+Unit 6 Pipeline, Vector Processing and Multiprocessors 6 Hrs.
+Parallel Processing, Pipeline Examples: Four Segment Instruction Pipeline, Data
+Dependency, Handling of Branch Instructions; Vector Processing: Vector
+operations, Matrix Multiplication;
+
+Laboratory Works
+8085 Assembly Language program
+1. Multi byte Addition & Subtraction, Multi byte decimal addition & subtraction.
+2. Adder and substractor circuit.
+3. Study of 8259 programmable interrupt controller - Development of interrupt
+service routine.
+4. Keyboard/display controller - Keyboard scan - blinking and rolling display.
+. Parallel data transfer
+6. Study of Microcomputer development system.
+
+an
+
+Teaching methods
+The general teaching pedagogy includes class Icctures, group works, case studies,
+guest lectures, research work, project work, assignments (theoretical and
+practical), tutorials and examinations (written and verbal). The teaching faculty
+will determine the choice of teaching pedagogy as per the need of the topics.
+
+Internal Assessment
+20 20 60
+(3 Hrs.) (3 Hrs.)
+
+Evaluation
+
+  
+ 
+
+ 
+  
+     
+
+। "/ Page | 36
+टु Book
+
+I. Morris Mano.M., Computer System architecture, PIII.
+
+Reference Books
+
+ 
+
+1. Hamacher.V.C.,Vranesic.Z.G 1910 Zaky.S.G., “Computer
+McGraw Hill, New York.
+2. Hayes."Computer System Architecture",Mc Graw Hill.
+
+a oh
+
+Organisation”,
+
+Page | 37
+
+ 
+

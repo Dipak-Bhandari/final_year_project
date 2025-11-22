@@ -1,0 +1,67 @@
+Tribhuvan University
+Faculty of Humanities & Social Sciences
+
+ 
+
+OFFICE OF THE DEAN
+2025
+Bachelor in Computer Applications
+Course Title: Scripting Language Full Marks: 60
+Code No: CACS 254 Pass Marks: 24
+Time: 3 hours
+
+Semester: IV
+Candidates are required to answer the questions in their own words as far as possible.
+
+Group B
+Attempt any SIX questions. [6x5 = 30]
+2, Write a JavaScript program to accept n integers into an array calculate and display the sum and
+average of the numbers; also find the largest number among them. [223]
+३%० HP and JavaScript are both programming languages that generate dynamic results for web pages.
+~ What is their main difference, and why would you use both of them? [5]
+4, Explain event handling in JavaScript? Difference between map and forEach method in JavaScript. [243]
+
+5. What is jQuery? Explain any four jQuery effect methods with example. [124]
+
+oY ‘Write the necessary scripts to check for unique phone numbers in the 'students' table without reloading
+[5]
+
+the webpage, using AJAX.
+7 What is the use of $_FILES array? Explain different types of array available in PHP. [1+4]
+
+8. Why is the error_reporting function important for PHP applications? Explain how cookies are stored,
+(2+3]
+
+accessed, and destroyed using server-side PHP scripts.
+Group C
+
+Attempt any TWO questions. [2x10 = 20]
+9. What are the major features of CMS? Implement an interface in PHP with specific properties (radius
+for a Cirele class, side for a Square class, and base and height for a Triangle class) to ensure that
+multiple classes define their own implementation of a method (calculateArea), utilizing these
+
+“~~~ properties in their calculations. [(3+7]
+reate a webpage with a form for BCA entrance exam, including fields for name, email, mobile
+
+yA
+number, password, gender, intermediate faculty, and date of birth. Store the entered data in the MySQL
+
+database 'FOHSS' in the table 'BCA', and validate the form using JavaScript with following rules.
+[2+4+4]
+
+Required: All fields are mandatory.
+Format: Must follow valid formats, such as a proper email address and a 10-digit mobile number.
+
+ii.
+
+iii, | Valid Date: Ensure the input follows a valid date format for date of birth (YYYY-MM-DD).
+11, Write a JavaScript program to create and design a calculator with the following features:
+
+a When the user presses numbers or an arithmetic operator, it should append to the input bar.
+
+¢ When the user presses the equals (=) button, the entered value should be calculated and displayed.
+
+ 
+
+ 
+

@@ -1,0 +1,141 @@
+BEEEFEEEEEEEEEEEEEE EEE
+
+Course Title: Data Structures and Algorithms (3 Cr.)
+
+Course Code: CACS201
+
+Year/Semester: D/ILL
+
+Class Load: 6 Hrs. / Week (Theory: 3 Hrs., Practical: 3 Hrs.)
+
+Course Description
+1175 course includes fundamental concept of data structures such as stack, queue, list,
+
+linked list, trees and graph; application of these data structures along with several
+algorithms,
+
+Course Objectives
+The general objective of this course is to provide fundamental concepts of data
+structures, different algorithms and their implementation.
+
+Course Contents
+Unit 1 Introduction to data structure 2 Hrs.
+Definition, Abstract Data Type, Importance of Data structure.
+
+ 
+
+Unit 2 The Stack 3 Hrs.
+Introduction, Stack as an ADT, POP and PUSH Operation, Stack Application:
+Evaluation of Infix, Postfix, and Prefix Expressions, Conversion of Expression.
+
+Unit 3 Queue 3 Hrs,
+Introduction, Queue as an ADT, Primitive Operations in Queue, Linear and
+Circular Queue and Their Application, Enqueue and Dequeue, Priority Queue
+
+Unit 4 List 2 Hrs,
+
+Introduction, Static and Dynamic List Structure, Array Implementation of Lists,
+Queues as a List
+
+Unit 5 Linked Lists 5 Hrs.
+Introduction, Linked List as an ADT, Dynamic Implementation, Insertion &
+Deletion of Node To and From a List, Insertion and Deletion After and Before
+Nodes, Linked Stacks and Queues, Doubly Linked Lists and Its Advantages
+
+Unit 6 Recursion. 4 Hrs.
+
+Introduction, Principle of Recursion, Recursion ys. Iteration, Recursion Example:
+
+TOI and Fibonacci Series, Applications of Recursion, Search Tree
+Unit 7 Trees “4 5 Hrs.
+Introduction, Basic Operation in Binary tree, Tree Search and Insertion/Deletion,
+Binary Tree Traversals (pre-order, post-order and in-order), Tree Height, Level.
+and Depth, Balanced Trees: AVL Balanced Trees. Balancing Algorithm, The
+Huffman Algorithm, Game tree, B-Tree 4
+
+VGC (Vv
+( ८” हु Page | 38
+ 
+
+Unit 8 Sorting 5 Hrs,
+Introduction, Internal and External Sort. Insertion and Selection Sort, Exchange
+Sort, Bubble and Quick Sort, Merge and Radix Sort, Shell Sort, Binary Sort,
+Heap Sort as Priority Queue, Efficiency of Sorting, Big 'O" Notation
+
+Unit 9 Searching 5 Hrs.
+Introduction to Search Technique; essential of search, Sequential search, Binary
+search, Tree search, General search tree, | lashing: Hash function and hash tables,
+Collision resolution technique, Efficiency comparisons of different search
+technique
+
+Unit 10Graphs 5 Hrs.
+Introduction, Graphs as an ADT, Transitive Closure, Warshall's Algorithm,
+Types of Graph, Graph Traversal and Spanning Forests, Kruskal's and Round-
+Robin Algorithms, Shortest-path Algorithm, Greedy Algorithm, Dijkstra's
+Algorithm
+
+Unit 11Algorithms 5 Hrs.
+Deterministic and Non-deterministic Algorithm, Divide and Conquer Algorithm,
+Series and Parallel Algorithm, Heuristic and Approximate Algorithms
+
+Laboratory Works
+There shall be 10 lab exercises based on C or Java
+1. Implementations of different operations related to Stack
+
+2. Implementations of different operations related to lincar and circular queues
+
+3. Solutions of TOH and Fibonacci Series using Recursion
+
+4. Implementations of different operations related to linked list: singly and
+doubly linked
+
+5. Implementation of trees: AVL trees, Balancing of AVL
+
+6. Implementation of Merge sort
+
+7. Implementation of different searching technique: sequential, Tree and Binary
+
+8. Implementation of Graphs: Graph traversals
+
+9. Implementation of Hashing
+
+10. Implementations of Heap
+
+Teaching Metheds
+
+The general teaching pedagogy includes class lectures, group discussions, case
+studies, guest lectures, research work, project work, assignments (theoretical and
+practical), and examinations (written and verbal), depending upon the nature of
+the topics. The teaching faculty will determine the choice of teaching pedagogy
+as per the need of the topics. ; rs
+
+Page | 39
+
+ 
+Pee
+
+‘Teamation
+
+ 
+
+2. eee 1 Assessment
+20 20 60 100
+(3 Hrs.) (3 hrs.)
+
+Text Book
+
+1. Y. Langsam, M.J. Augenstein and A. M. Tenenbaum, "Data Structures using C
+and C++", PHI
+
+Reference Books
+
+1. G. W. Rowe, "Introduction to Data Structure and Algorithms with C and C pate
+
+PHI ६
+2. Robert Lafore, Data Structures and Algorithms in Java (2nd Edition), Sams
+Publishing. ae ;
+
+Page | 40
+
+ 
+

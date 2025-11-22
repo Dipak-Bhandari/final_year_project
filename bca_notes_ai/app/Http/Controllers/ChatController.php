@@ -32,15 +32,21 @@ class ChatController extends Controller
             // Validate the request
             $request->validate([
                 'question' => 'required|string|max:1000',
-                'context_type' => 'sometimes|string|in:syllabus,question'
+                'context_type' => 'sometimes|string|in:syllabus,questions,question',
+                'top_k' => 'sometimes|integer|min:1|max:50'
             ]);
+
+            // Normalize context_type: 'question' -> 'questions'
+            $contextType = $request->input('context_type', 'syllabus');
+            if ($contextType === 'question') {
+                $contextType = 'questions';
+            }
 
             // Prepare the request payload
             $payload = [
                 'question' => $request->input('question'),
-                'context_type' => $request->input('context_type', 'syllabus'), // Default to syllabus
-                'model' => 'phi:latest',
-                'temperature' => 0.7
+                'context_type' => $contextType,
+                'top_k' => $request->input('top_k', 10) // Default to 10
             ];
 
             // Make the request to the AI engine

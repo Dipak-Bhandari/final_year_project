@@ -12,10 +12,57 @@ use App\Models\Semester;
 use App\Models\Syllabus;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('welcome');
+    $semesters = Semester::select('id', 'name')->orderBy('id')->get();
+
+    $syllabi = Syllabus::with('semester:id,name')
+        ->latest('updated_at')
+        ->take(24)
+        ->get()
+        ->map(function (Syllabus $syllabus) {
+            $fileExists = $syllabus->file_path
+                ? Storage::disk('public')->exists($syllabus->file_path)
+                : false;
+
+            return [
+                'id' => $syllabus->id,
+                'course' => $syllabus->course,
+                'description' => $syllabus->description,
+                'file_name' => $syllabus->file_name ?? ($syllabus->file_path ? basename($syllabus->file_path) : 'syllabus.pdf'),
+                'file_size' => $syllabus->file_size ?? ($fileExists ? Storage::disk('public')->size($syllabus->file_path) : null),
+                'download_url' => route('syllabi.download', $syllabus),
+                'semester' => $syllabus->semester ? $syllabus->semester->only(['id', 'name']) : null,
+            ];
+        });
+
+    $questionPapers = QuestionPaper::with('semester:id,name')
+        ->orderByDesc('year')
+        ->take(24)
+        ->get()
+        ->map(function (QuestionPaper $paper) {
+            $hasFile = $paper->file_path
+                ? Storage::disk('public')->exists($paper->file_path)
+                : false;
+
+            return [
+                'id' => $paper->id,
+                'course' => $paper->course,
+                'year' => $paper->year,
+                'file_name' => $paper->file_name ?? ($paper->file_path ? basename($paper->file_path) : 'question-paper.pdf'),
+                'file_size' => $hasFile ? Storage::disk('public')->size($paper->file_path) : null,
+                'download_url' => route('question-papers.download', $paper),
+                'semester' => $paper->semester ? $paper->semester->only(['id', 'name']) : null,
+            ];
+        });
+
+    return Inertia::render('welcome', [
+        'publicSyllabi' => $syllabi,
+        'publicQuestionPapers' => $questionPapers,
+        'globalSemesters' => $semesters,
+    ]);
 })->name('home');
 
 // Admin-only routes
@@ -68,10 +115,12 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 Route::middleware(['auth'])->group(function () {
 
     Route::get('/semesters', [SemesterController::class, 'index'])->name('semesters.index');
-    Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
-    Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
-    Route::get('/syllabi/{syllabus}/download', [SyllabusController::class, 'download'])->name('syllabi.download');
 });
+
+Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('syllabus.show');
+Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
+Route::get('/syllabi/{syllabus}/download', [SyllabusController::class, 'download'])->name('syllabi.download');
+Route::get('/question-papers/{questionPaper}/download', [QuestionPaperController::class, 'download'])->name('question-papers.download');
 
 // Legacy route for backward compatibility
 Route::get('/semester/{number}', function ($number) {

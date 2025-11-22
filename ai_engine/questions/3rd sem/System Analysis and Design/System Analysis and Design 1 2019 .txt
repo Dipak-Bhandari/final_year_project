@@ -1,0 +1,44 @@
+Tribhuvan University
+Faculty of Humaites& Socal Sciences
+
+ 
+
+OFFICE OF THEDEAN2019
+Daehdor a Computer Appiations Pullaeest
+(Cure Tae Syste Anlyss& Deige Pew Mase
+Code Wer CACS 205 “Thee: 3 hours
+
+ 
+
+Semester IL
+
+(Condiates are required fa annwer the questions in thir ows words as fara posible,
+
+Groups
+
+Adtenpt any $1 questons, W6xs= 30)
+
+‘3 When would yous age methodologies? How gt different fons watesEappresch to
+system developent?
+
+44, Why i pojct management ingorant? Reel expluin tha sctvitespefonned by tbe
+joc manager during reer exceton,
+
+‘5. List vaious methods of ifeuting with a syetem. Broly expan the fatto tae
+considered while designing foro?
+
+5, Whatarethe divers ftom coding and testing? Briety explain the different
+sppmaches toiasaaton.
+
+1. Why is nomalizationrequied? Statesccond normal form and explain it witb a proper
+sample
+
+Construct an E-R Diagrum fr football cub tht basa muoe aod a ound and Se made op
+for payers. player can ply for only one cub an & manager identified by his mame
+rounaye a clb. A foutaler has 2 mgstution number, name and age. A club omnager
+ko buns players. Each club plays against other clubs inthe kage and matches havea
+date, venveand score,
+
+9, Maintenance isan ongoing process. Do you see? Exphuia the proces of msntiniog
+information systems.
+

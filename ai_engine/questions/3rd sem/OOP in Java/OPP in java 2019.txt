@@ -1,0 +1,59 @@
+ 
+
+Kaehelor fa Computer Applcstinas
+‘Ceuta Tie: OOF Indeve
+
+(Code Wer CACS 208
+
+Semester It
+
+ 
+
+   
+
+ 
+
+(Candidates ure required la answerthe questions ia thie ora wordsas fur as possible,
+
+GroupB
+Ademge any SIX questions, 5-90)
+
+2. Define OOP. Eaphin features of Objet Oriented Programming Langwge [144]
+5. Explain dite types of rons statements used in java, 0
+
+Define Absuat Class Fuplhin diferenttypesof Ascess controls avaible injve(1 +4)
+5. Define metind overidng? Write any program to implement concept of
+ipl iaetance fa Jara,
+
+14
+6. Why tis bnpetantohande exception i java? Wailea program folate theuse of
+xeeption handling. ns)
+
+1, Define these of stale keyword, Wet any fourSwing methods sed in ova wid
+camp,
+
+ 
+
+oy
+B aod his Keyword in java, Exp the concept of MYC in ie,
+pen
+Groupe
+Adesnpt any TWO questions, Beto = 29
+
+9. 9)Define muidveading Weite a ova program toshow the ite-thrad communication,
+
+  
+
+4)
+by Defi Steam, Write program in ava to copy the content om one fle (oanotber,
+to
+10, a)Define Coloction Clase. Explain diferent Wrapper cies and asoratl metinds ia
+ive,
+ray
+Defias AWT, Explain diferent ype af Layout Manager in java, 0
++4
+1, 8) List and explain any five swing contrat with teicuses, 8
+
+') Define DBC. Write program to display al eeods from abl of database,
+nea
+

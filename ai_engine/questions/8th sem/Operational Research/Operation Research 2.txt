@@ -1,0 +1,49 @@
+Group C
+Attempt any TWO questions.
+9. Using duatity to solve de LLP.
+Minimize 2= 4x, +2 +35
+Subject tox, + 4x, >=5
+Dat Bay tage A and Xp. ty>= 0
+
+10, Define various ests relaed to inventory. Explain the ABC analysis with betler example,
+11. a)A Seooter with fis cost Rs, 80,000 has deprecation and service pater as given
+
+below:
+
+ 
+
+z
+T4000 | $000_| 4000
+
+%
+
+ 
+
+~~
+
+ 
+
+[saga +29000 [34000
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+cr.
+
+ 
+
+ 
+
+ 
+
+pt in service before replacement?
+
+Zero-Sum game with example.
+

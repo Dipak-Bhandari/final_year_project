@@ -29,6 +29,9 @@ export interface SharedData {
     auth: Auth;
     ziggy: Config & { location: string };
     sidebarOpen: boolean;
+    globalSemesters?: Semester[];
+    publicSyllabi?: Syllabus[];
+    publicQuestionPapers?: QuestionPaper[];
     [key: string]: unknown;
 }
 
@@ -60,7 +63,7 @@ export interface Syllabus {
     course: string;
     description: string;
     file_name: string;
-    file_size: string;
+    file_size?: number | string | null;
     semester_id: number;
     semester?: Semester;
     [key: string]: unknown;
@@ -72,7 +75,7 @@ export interface Resource {
     description: string;
     file_path: string;
     file_name: string;
-    file_size: string;
+    file_size?: number | string | null;
     semester_id: number;
     semester?: Semester;
     [key: string]: unknown;
@@ -80,10 +83,11 @@ export interface Resource {
 
 export interface QuestionPaper {
     id: number;
-    title: string;
+    title?: string;
+    course?: string;
     year: number;
     file_name: string;
-    file_size: string;
+    file_size?: number | string | null;
     file_path: string;
     semester_id: number;
     semester?: Semester;
