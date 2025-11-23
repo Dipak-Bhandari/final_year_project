@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import InputError from '@/components/input-error';
+import AuthLayout from '@/layouts/auth-layout';
 
 export default function Register() {
     const { data, setData, post, processing, errors, reset } = useForm({
@@ -22,13 +23,13 @@ export default function Register() {
     };
 
     return (
-        <>
+        <AuthLayout title="Create an account" description="Enter your details below to create your account">
             <Head title="Register" />
-            <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
+            <div className="flex flex-col items-center justify-center dark:bg-gray-900">
                 <Card className="w-full max-w-md">
                     <CardHeader className="text-center">
-                        <CardTitle className="text-2xl">Create an account</CardTitle>
-                        <CardDescription>Enter your details below to create your account</CardDescription>
+                        {/* <CardTitle className="text-2xl">Create an account</CardTitle> */}
+                        {/* <CardDescription>Enter your details below to create your account</CardDescription> */}
                     </CardHeader>
                     <CardContent>
                         <form onSubmit={submit} className="space-y-4">
@@ -110,6 +111,6 @@ export default function Register() {
                     </CardContent>
                 </Card>
             </div>
-        </>
+            </AuthLayout>
     );
 }
