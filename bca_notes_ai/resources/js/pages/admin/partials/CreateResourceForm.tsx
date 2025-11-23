@@ -73,14 +73,17 @@ export function CreateResourceForm({ setOpen, semesters }: { setOpen: (open: boo
             </div>
 
             <div className="space-y-2">
-                <Label htmlFor="file">Resource File (PDF)</Label>
+                <Label htmlFor="file">Resource File (PDF, Images)</Label>
                 <Input
                     id="file"
                     type="file"
-                    accept="application/pdf"
+                    accept="application/pdf,image/jpeg,image/jpg,image/png,image/gif,image/webp"
                     onChange={(e) => setData('file', e.target.files ? e.target.files[0] : null)}
                 />
                 <InputError message={errors.file} />
+                <p className="text-xs text-muted-foreground">
+                    Accepted formats: PDF, JPG, JPEG, PNG, GIF, WEBP (Max 20MB)
+                </p>
             </div>
 
             <div className="flex justify-end">

@@ -15,8 +15,8 @@ class UpdateResourceRequest extends FormRequest
     {
         return [
             'title' => ['required', 'string', 'max:255'],
-            'semester' => ['required', 'string', 'max:10'],
-            'file' => ['nullable', 'file', 'mimes:pdf', 'max:10240'], // 10MB
+            'semester_id' => ['required', 'exists:semesters,id'],
+            'file' => ['nullable', 'file', 'mimes:pdf,jpg,jpeg,png,gif,webp', 'max:20480'], // 20MB - supports PDFs and images
             'description' => ['nullable', 'string'],
         ];
     }

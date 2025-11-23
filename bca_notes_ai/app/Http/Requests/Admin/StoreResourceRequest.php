@@ -8,15 +8,15 @@ class StoreResourceRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return auth()->user()?->isAdmin() ?? false;
+        return $this->user()?->isAdmin() ?? false;
     }
 
     public function rules(): array
     {
         return [
             'title' => ['required', 'string', 'max:255'],
-            'semester' => ['required', 'string', 'max:10'],
-            'file' => ['required', 'file', 'mimes:pdf', 'max:10240'], // 10MB
+            'semester_id' => ['required', 'exists:semesters,id'],
+            'file' => ['required', 'file', 'mimes:pdf,jpg,jpeg,png,gif,webp', 'max:20480'], // 20MB - supports PDFs and images
             'description' => ['nullable', 'string'],
         ];
     }
