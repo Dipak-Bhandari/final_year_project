@@ -36,13 +36,24 @@ type PublicQuestionPaper = {
     semester?: { id: number; name: string } | null;
 };
 
+type PublicResource = {
+    id: number;
+    title: string;
+    description?: string | null;
+    file_name: string;
+    file_size?: number | null;
+    download_url: string;
+    semester?: { id: number; name: string } | null;
+};
+
 type WelcomePageProps = PageProps<{
     publicSyllabi: PublicSyllabus[];
     publicQuestionPapers: PublicQuestionPaper[];
+    publicResources: PublicResource[];
 }>;
 
 export default function Welcome({ children }: WelcomeProps) {
-    const { auth, publicSyllabi = [], publicQuestionPapers = [] } = usePage<WelcomePageProps>().props;
+    const { auth, publicSyllabi = [], publicQuestionPapers = [], publicResources = [] } = usePage<WelcomePageProps>().props;
     const user = auth.user;
     const [chatOpen, setChatOpen] = useState(false);
     const [searchValue, setSearchValue] = useState('');
@@ -109,11 +120,35 @@ export default function Welcome({ children }: WelcomeProps) {
                 badgeTone: 'secondary' as const,
             }));
 
-        return [...syllabusMatches, ...paperMatches].slice(0, 8);
-    }, [normalizedSearch, publicSyllabi, publicQuestionPapers]);
+        const resourceMatches = publicResources
+            .filter((item: PublicResource) => {
+                const text = [
+                    item.title,
+                    item.description,
+                    item.semester?.name,
+                ]
+                    .filter(Boolean)
+                    .join(' ')
+                    .toLowerCase();
+                return text.includes(normalizedSearch);
+            })
+            .map((item: PublicResource) => ({
+                id: `resource-${item.id}`,
+                type: 'Resource' as const,
+                title: item.title,
+                meta: item.semester?.name ?? 'All semesters',
+                description: item.description ?? 'Study resource',
+                downloadUrl: item.download_url,
+                fileSize: item.file_size,
+                badgeTone: 'outline' as const,
+            }));
+
+        return [...syllabusMatches, ...paperMatches, ...resourceMatches].slice(0, 8);
+    }, [normalizedSearch, publicSyllabi, publicQuestionPapers, publicResources]);
 
     const syllabusPreview = publicSyllabi.slice(0, 6);
     const paperPreview = publicQuestionPapers.slice(0, 6);
+    const resourcePreview = publicResources.slice(0, 6);
 
     return (
         <>
@@ -283,7 +318,7 @@ export default function Welcome({ children }: WelcomeProps) {
                                 )}
                             </div>
                         </div>
-
+{/* 
                         <div className="space-y-4">
                             <div>
                                 <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Question papers</h2>
@@ -314,6 +349,43 @@ export default function Welcome({ children }: WelcomeProps) {
                                 {!paperPreview.length && (
                                     <p className="text-sm text-muted-foreground">
                                         No question papers are available yet.
+                                    </p>
+                                )}
+                            </div>
+                        </div> */}
+
+                        <div className="space-y-4">
+                            <div>
+                                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Resources</h2>
+                                <p className="text-gray-600 dark:text-gray-400">
+                                    Access lecture notes, study materials, and additional resources shared by the admin team.
+                                </p>
+                            </div>
+                            <div className="grid gap-4 md:grid-cols-2">
+                                {resourcePreview.map((resource: PublicResource) => (
+                                    <Card key={resource.id} className="border border-gray-200 dark:border-gray-800">
+                                        <CardHeader className="space-y-2">
+                                            <div className="flex items-center gap-2">
+                                                <Badge variant="outline">{resource.semester?.name ?? 'All semesters'}</Badge>
+                                            </div>
+                                            <CardTitle className="text-xl">{resource.title}</CardTitle>
+                                            {resource.description && (
+                                                <CardDescription>{resource.description}</CardDescription>
+                                            )}
+                                        </CardHeader>
+                                        <CardContent className="flex items-center justify-between">
+                                            <span className="text-sm text-muted-foreground">
+                                                {resource.file_size ? formatFileSize(resource.file_size) : resource.file_name}
+                                            </span>
+                                            <Button asChild variant="outline" size="sm">
+                                                <a href={resource.download_url}>Download</a>
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                ))}
+                                {!resourcePreview.length && (
+                                    <p className="text-sm text-muted-foreground">
+                                        No resources have been published yet.
                                     </p>
                                 )}
                             </div>

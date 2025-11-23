@@ -58,9 +58,31 @@ Route::get('/', function () {
             ];
         });
 
+    $resources = Resource::latest('created_at')
+        ->take(24)
+        ->get()
+        ->map(function ($resource) {
+            $fileExists = $resource->file_path
+                ? Storage::disk('public')->exists($resource->file_path)
+                : false;
+            
+            $semester = Semester::where('name', $resource->semester)->first();
+
+            return [
+                'id' => $resource->id,
+                'title' => $resource->title,
+                'description' => $resource->description,
+                'file_name' => $resource->file_path ? basename($resource->file_path) : 'resource.pdf',
+                'file_size' => $fileExists ? Storage::disk('public')->size($resource->file_path) : null,
+                'download_url' => route('resources.download', $resource),
+                'semester' => $semester ? $semester->only(['id', 'name']) : null,
+            ];
+        });
+
     return Inertia::render('welcome', [
         'publicSyllabi' => $syllabi,
         'publicQuestionPapers' => $questionPapers,
+        'publicResources' => $resources,
         'globalSemesters' => $semesters,
     ]);
 })->name('home');
@@ -105,7 +127,17 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
     // Resource upload management routes
     Route::inertia('/admin/upload', 'admin/UploadPage', [
-        'resources' => fn () => Resource::with('semester')->get(),
+        'resources' => fn () => Resource::all()->map(function ($resource) {
+            // Find semester by name match
+            $semester = Semester::where('name', $resource->semester)->first();
+            // Extract file name from file path
+            $file_name = $resource->file_path ? basename($resource->file_path) : null;
+            return [
+                ...$resource->toArray(),
+                'semester' => $semester ? ['id' => $semester->id, 'name' => $semester->name] : null,
+                'file_name' => $file_name,
+            ];
+        }),
         'semesters' => fn () => Semester::all(),
     ])->name('admin.resources.index');
     Route::apiResource('resources', ResourceController::class)->except(['create', 'edit', 'show']);
@@ -121,6 +153,8 @@ Route::get('/syllabus/{semester}', [SyllabusController::class, 'show'])->name('s
 Route::get('/papers/{semester}', [QuestionPaperController::class, 'show'])->name('papers.show');
 Route::get('/syllabi/{syllabus}/download', [SyllabusController::class, 'download'])->name('syllabi.download');
 Route::get('/question-papers/{questionPaper}/download', [QuestionPaperController::class, 'download'])->name('question-papers.download');
+Route::get('/resources/{resource}/download', [ResourceController::class, 'download'])->name('resources.download');
+Route::get('/resources/{semester}', [ResourceController::class, 'show'])->name('resources.show');
 
 // Legacy route for backward compatibility
 Route::get('/semester/{number}', function ($number) {

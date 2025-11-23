@@ -82,7 +82,7 @@ export default function UploadPage({ resources, semesters }: PageProps) {
             <Head title="Upload Resources" />
             <PageHeader
                 title="Upload Resources"
-                description="Publish lecture notes, assignments, and supporting PDFs for students."
+                description="Publish lecture notes, assignments, images, and supporting files for students."
                 actions={
                     <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
                         <DialogTrigger asChild>
@@ -95,7 +95,7 @@ export default function UploadPage({ resources, semesters }: PageProps) {
                             <DialogHeader>
                                 <DialogTitle>Create new resource</DialogTitle>
                                 <DialogDescription>
-                                    Upload PDF files and map them to the right semester.
+                                    Upload PDF files or images and map them to the right semester.
                                 </DialogDescription>
                             </DialogHeader>
                             <CreateResourceForm setOpen={setDialogOpen} semesters={semesters} />

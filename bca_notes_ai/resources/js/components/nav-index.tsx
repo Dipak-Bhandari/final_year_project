@@ -5,6 +5,7 @@ import { ChevronDown, LogOut, Settings } from "lucide-react";
 import AppLogoIcon from "./app-logo-icon";
 import SemesterDropdown from "./semester-dropdown";
 import YearlyQuestionDropdown from "./yearly-questions-dropdown";
+import ResourcesDropdown from "./resources-dropdown";
 import UserAvatar from "./user-avatar";
 import { type SharedData, type Semester } from "@/types";
 import { Input } from "@/components/ui/input";
@@ -60,7 +61,8 @@ function NavIndex() {
                         </div>
                         <div className="flex items-center justify-center gap-4">
                             <SemesterDropdown semesters={globalSemesters} />
-                            <YearlyQuestionDropdown semesters={globalSemesters} />
+                            {/* <YearlyQuestionDropdown semesters={globalSemesters} /> */}
+                            <ResourcesDropdown semesters={globalSemesters} />
                             {/* <div className="hidden md:block">
                                 <Input
                                     className="w-64 rounded-full"
